@@ -14,6 +14,7 @@ import argparse
 import logging
 import os
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from pathlib import Path
@@ -148,7 +149,8 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
 
     # 7. AI analysis
     ai_done = ai_failed = 0
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    provider = analyse_news.resolve_provider(config)
+    ai_rate_limited = False
     max_attempts = config["ai"].get("max_ai_attempts", settings.get("max_ai_attempts", 3))
     queue = [a for a in merged if (a.get("analysis") or {}).get("status") in ("pending", "failed", "skipped_no_key")
              and a.get("ai_attempts", 0) < max_attempts]
@@ -156,19 +158,29 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
     queue = queue[: settings.get("max_ai_articles_per_run", 30)]
     if not use_ai:
         LOG.info("AI analysis disabled for this run (--no-ai)")
-    elif not api_key:
-        LOG.warning("OPENAI_API_KEY not set: articles saved with rule-based classification and publisher excerpts only")
+    elif not provider:
+        LOG.warning("No AI provider available (GITHUB_TOKEN, GEMINI_API_KEY or OPENAI_API_KEY): "
+                    "articles saved with rule-based classification and publisher excerpts only")
         for a in queue:
             a["analysis"] = _pending_analysis("skipped_no_key")
         if queue:
-            errors.append("ai: OPENAI_API_KEY not configured; analysis skipped")
+            errors.append("ai: no AI provider configured; analysis skipped")
     else:
-        for a in queue:
+        LOG.info("AI provider: %s (model %s), %d article(s) queued", provider["name"], provider["model"], len(queue))
+        gap = float(provider.get("seconds_between_calls", 0) or 0)
+        for i, a in enumerate(queue):
+            if i and gap:
+                time.sleep(gap)  # stay inside free-tier requests-per-minute limits
             a["content"] = content_by_id.get(a["id"]) or a.get("content") or a.get("excerpt") or ""
             try:
-                analysis = analyse_news.analyse_article(a, config, api_key=api_key)
+                analysis = analyse_news.analyse_article(a, config, provider=provider)
                 analyse_news.apply_analysis(a, analysis, config)
                 ai_done += 1
+            except analyse_news.RateLimited as exc:
+                ai_rate_limited = True
+                errors.append(f"ai: {provider['name']} quota reached; remaining articles wait for the next run ({str(exc)[:120]})")
+                LOG.warning("Rate limit reached on %s. Remaining articles stay queued for the next run.", provider["name"])
+                break
             except PermissionError as exc:
                 errors.append(f"ai: {exc}")
                 LOG.error("%s Stopping AI processing for this run.", exc)
@@ -199,7 +211,9 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
         "schedule_utc": config.get("schedule_utc", []),
         "repository": os.getenv("GITHUB_REPOSITORY") or meta.get("repository"),
         "categories": {k: v["label"] for k, v in config["categories"].items()},
-        "ai_enabled": bool(api_key) and use_ai,
+        "ai_enabled": bool(provider) and use_ai,
+        "ai_provider": provider["name"] if provider and use_ai else None,
+        "ai_model": provider["model"] if provider and use_ai else None,
         "last_run": {
             "started_at": started,
             "finished_at": finished,
@@ -215,6 +229,7 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
             "duplicates_merged": dup_new + dup_archive,
             "ai_processed": ai_done,
             "ai_failed": ai_failed,
+            "ai_rate_limited": ai_rate_limited,
             "archived_out": trimmed,
             "errors": errors[:50],
         },

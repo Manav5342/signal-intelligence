@@ -161,15 +161,32 @@ def test_parse_ai_response_rejects_incomplete(config):
         analyse_news.parse_ai_response("not json at all", config)
 
 
-def test_missing_api_key_raises(config, monkeypatch):
-    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+def test_missing_api_key_raises(config):
+    assert analyse_news.resolve_provider(config) is None
     with pytest.raises(analyse_news.AIUnavailable):
-        analyse_news.analyse_article(make_article(title="t"), config, api_key="")
+        analyse_news.analyse_article(make_article(title="t"), config)
+
+
+def test_resolve_provider_prefers_free_github_when_only_token(config):
+    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x"})
+    assert p["name"] == "github" and p["url"].startswith("https://models.github.ai/") and p["model"] == "openai/gpt-4.1-mini"
+    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x", "GEMINI_API_KEY": "g"})
+    assert p["name"] == "gemini"
+    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x", "OPENAI_API_KEY": "sk"})
+    assert p["name"] == "openai"
+    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x", "OPENAI_API_KEY": "sk", "AI_PROVIDER": "github", "AI_MODEL": "openai/gpt-4o-mini"})
+    assert p["name"] == "github" and p["model"] == "openai/gpt-4o-mini"
+    assert analyse_news.resolve_provider(config, {"AI_PROVIDER": "gemini", "GITHUB_TOKEN": "x"}) is None
+
+
+def gh_provider(config):
+    return analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_test"})
 
 
 class FakeResp:
-    def __init__(self, status, body):
+    def __init__(self, status, body, headers=None):
         self.status_code, self._body, self.text = status, body, json.dumps(body)
+        self.headers = headers or {}
 
     def json(self):
         return self._body
@@ -178,25 +195,51 @@ class FakeResp:
 class FakeAISession:
     def __init__(self, responses):
         self.responses = list(responses)
-        self.calls = []
+        self.calls, self.payloads, self.urls = [], [], []
 
     def post(self, url, **kw):
         self.calls.append(kw["json"]["model"])
+        self.payloads.append(dict(kw["json"]))
+        self.urls.append(url)
         return self.responses.pop(0)
 
 
-def test_call_openai_falls_back_on_model_error(config, monkeypatch):
-    monkeypatch.delenv("OPENAI_MODEL", raising=False)
-    ok = FakeResp(200, {"model": "gpt-5-mini", "choices": [{"message": {"content": json.dumps(GOOD)}}]})
-    sess = FakeAISession([FakeResp(404, {"error": "model not found"}), ok])
-    content, model = analyse_news.call_openai([], config, "sk-test", sess)
-    assert model == "gpt-5-mini" and sess.calls == ["gpt-4.1-mini", "gpt-5-mini"]
+def _session(responses):
+    return FakeAISession(responses)
+
+
+OK = FakeResp(200, {"model": "m", "choices": [{"message": {"content": json.dumps(GOOD)}}]})
+
+
+def test_call_model_falls_back_on_model_error(config):
+    ok = FakeResp(200, {"model": "openai/gpt-4o-mini", "choices": [{"message": {"content": json.dumps(GOOD)}}]})
+    sess = _session([FakeResp(404, {"error": "unknown model"}), ok])
+    content, model = analyse_news.call_model([], gh_provider(config), config, sess)
+    assert model == "openai/gpt-4o-mini" and sess.calls == ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]
+    assert sess.urls[0] == "https://models.github.ai/inference/chat/completions"
+    assert "max_tokens" in sess.payloads[0] and "max_completion_tokens" not in sess.payloads[0]
+
+
+def test_call_model_drops_json_mode_if_unsupported(config):
+    sess = _session([FakeResp(400, {"error": "response_format not supported"}), OK])
+    analyse_news.call_model([], gh_provider(config), config, sess)
+    assert "response_format" in sess.payloads[0] and "response_format" not in sess.payloads[1]
+
+
+def test_call_model_daily_quota_raises_rate_limited(config):
+    sess = _session([FakeResp(429, {"error": "quota"}, {"retry-after": "40000"})])
+    with pytest.raises(analyse_news.RateLimited):
+        analyse_news.call_model([], gh_provider(config), config, sess)
+
+
+def test_call_model_bad_credentials(config):
+    with pytest.raises(PermissionError):
+        analyse_news.call_model([], gh_provider(config), config, _session([FakeResp(401, {"error": "bad"})]))
 
 
 def test_headline_only_forces_validation(config):
-    ok = FakeResp(200, {"model": "m", "choices": [{"message": {"content": json.dumps(GOOD)}}]})
-    out = analyse_news.analyse_article(make_article(title="t", content=""), config, "sk-test", FakeAISession([ok]))
-    assert out["evidence"] == "headline_only" and out["needs_validation"] is True
+    out = analyse_news.analyse_article(make_article(title="t", content=""), config, gh_provider(config), _session([OK]))
+    assert out["evidence"] == "headline_only" and out["needs_validation"] is True and out["provider"] == "github"
 
 
 # ---------- URL validation ----------
@@ -238,7 +281,6 @@ def _fake_fetch(feed_bytes, fail=False):
 
 def test_pipeline_empty_db_no_key(tmp_path, config, feed_bytes, now, monkeypatch):
     monkeypatch.setattr(run_pipeline, "fetch_all", _fake_fetch(feed_bytes))
-    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     news, health = tmp_path / "news.json", tmp_path / "health.json"
     db = run_pipeline.run(config, news, health, check_urls=False, now=now)
     titles = [a["title"] for a in db["articles"]]
@@ -255,7 +297,6 @@ def test_pipeline_empty_db_no_key(tmp_path, config, feed_bytes, now, monkeypatch
 
 def test_pipeline_preserves_archive_and_limits(tmp_path, config, feed_bytes, now, monkeypatch):
     monkeypatch.setattr(run_pipeline, "fetch_all", _fake_fetch(feed_bytes))
-    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     news, health = tmp_path / "news.json", tmp_path / "health.json"
     old = run_pipeline.empty_database(config)
     old["articles"] = [dict(make_article(id=f"old{i}", url=f"https://example.com/old{i}", title=f"Old story number {i} placeholder",
@@ -283,7 +324,7 @@ def test_pipeline_with_ai(tmp_path, config, feed_bytes, now, monkeypatch):
     monkeypatch.setenv("OPENAI_API_KEY", "sk-test")
     calls = []
 
-    def fake_analyse(article, config, api_key=None, session=None):
+    def fake_analyse(article, config, provider=None, session=None):
         calls.append(article["id"])
         if "DMARC" in article["title"]:
             raise ValueError("bad json")
@@ -296,3 +337,21 @@ def test_pipeline_with_ai(tmp_path, config, feed_bytes, now, monkeypatch):
     statuses = {a["title"][:20]: a["analysis"]["status"] for a in db["articles"]}
     assert sorted(statuses.values()) == ["complete", "failed"]
     assert db["meta"]["last_run"]["ai_processed"] == 1 and db["meta"]["last_run"]["ai_failed"] == 1
+    assert db["meta"]["ai_provider"] == "openai"
+
+
+def test_pipeline_free_github_rate_limit_keeps_articles_queued(tmp_path, config, feed_bytes, now, monkeypatch):
+    monkeypatch.setattr(run_pipeline, "fetch_all", _fake_fetch(feed_bytes))
+    monkeypatch.setenv("GITHUB_TOKEN", "ghs_test")
+    monkeypatch.setattr(run_pipeline.time, "sleep", lambda s: None)
+    seen = []
+
+    def fake_analyse(article, config, provider=None, session=None):
+        seen.append(provider["name"])
+        raise analyse_news.RateLimited("HTTP 429")
+
+    monkeypatch.setattr(analyse_news, "analyse_article", fake_analyse)
+    db = run_pipeline.run(config, tmp_path / "n.json", tmp_path / "h.json", check_urls=False, now=now)
+    assert seen == ["github"]  # stopped after the first 429
+    assert all(a["analysis"]["status"] == "pending" and a["ai_attempts"] == 0 for a in db["articles"])
+    assert db["meta"]["last_run"]["ai_rate_limited"] is True and db["meta"]["ai_provider"] == "github"

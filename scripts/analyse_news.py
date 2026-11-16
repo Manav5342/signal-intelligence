@@ -1,4 +1,12 @@
-"""AI analysis via the OpenAI Chat Completions API.
+"""AI analysis through any OpenAI-compatible chat API.
+
+Providers (config.json -> ai.providers):
+  github  GitHub Models: free, uses the workflow's built-in GITHUB_TOKEN (needs `models: read`)
+  gemini  Google Gemini API free tier: needs a free GEMINI_API_KEY from Google AI Studio
+  openai  OpenAI API: paid, needs OPENAI_API_KEY
+
+With ai.provider = "auto", the first provider in ai.auto_order whose key is present is used.
+Set the AI_PROVIDER / AI_MODEL environment variables (repo variables) to override.
 
 The model only sees what the publisher syndicated in its feed (headline, date, publisher,
 summary/content). It is instructed to separate reported facts from interpretation, never
@@ -18,11 +26,35 @@ from .classify import PRIORITIES, REGIONS
 from .common import iso, utc_now
 
 LOG = logging.getLogger("signal.ai")
-OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 
 
 class AIUnavailable(Exception):
-    """Raised when no API key is configured."""
+    """Raised when no AI provider key is configured."""
+
+
+class RateLimited(Exception):
+    """The provider's request quota is used up; stop for this run and retry next run."""
+
+
+def resolve_provider(config: dict[str, Any], env: dict[str, str] | None = None) -> dict[str, Any] | None:
+    """Return {"name", "url", "key", "model", ...} for the provider to use, or None."""
+    env = os.environ if env is None else env
+    ai = config["ai"]
+    providers = ai.get("providers", {})
+    wanted = (env.get("AI_PROVIDER") or ai.get("provider") or "auto").strip().lower()
+    order = ai.get("auto_order", list(providers)) if wanted == "auto" else [wanted]
+    for name in order:
+        cfg = providers.get(name)
+        if not cfg:
+            LOG.warning("Unknown AI provider %r", name)
+            continue
+        key = (env.get(cfg["key_env"]) or "").strip()
+        if key:
+            out = dict(cfg, name=name, key=key)
+            if env.get("AI_MODEL"):
+                out["model"] = env["AI_MODEL"].strip()
+            return out
+    return None
 
 
 SYSTEM_PROMPT = """You are Signal, an analyst writing for a B2B marketing professional who works on marketing operations, lead generation, CRM, email campaigns, WhatsApp automation and marketing analytics (in India and globally).
@@ -125,24 +157,28 @@ def parse_ai_response(content: str, config: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
-def call_openai(messages: list[dict[str, str]], config: dict[str, Any], api_key: str, session: requests.Session | None = None) -> tuple[str, str]:
-    """Return (content, model_used). Tries the configured model, then fallbacks on 404/400 model errors."""
+def call_model(messages: list[dict[str, str]], provider: dict[str, Any], config: dict[str, Any],
+               session: requests.Session | None = None) -> tuple[str, str]:
+    """Return (content, model_used). Tries the provider's model, then its fallbacks.
+    Raises PermissionError on a rejected key and RateLimited when the quota is exhausted."""
     session = session or requests.Session()
     ai = config["ai"]
-    models = [os.getenv("OPENAI_MODEL") or ai["model"]] + [m for m in ai.get("fallback_models", []) if m]
-    last_error = None
+    models = [provider["model"]] + [m for m in provider.get("fallback_models", []) if m]
+    last_error, rate_limited = None, False
     for model in dict.fromkeys(models):
         payload = {
             "model": model,
             "messages": messages,
             "response_format": {"type": "json_object"},
-            "max_completion_tokens": ai.get("max_output_tokens", 1400),
+            provider.get("token_param", "max_tokens"): ai.get("max_output_tokens", 1400),
         }
-        for attempt in range(ai.get("max_retries", 3)):
+        attempt = 0
+        while attempt < ai.get("max_retries", 3):
+            attempt += 1
             try:
                 resp = session.post(
-                    OPENAI_URL,
-                    headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+                    provider["url"],
+                    headers={"Authorization": f"Bearer {provider['key']}", "Content-Type": "application/json"},
                     json=payload,
                     timeout=ai.get("request_timeout_seconds", 90),
                 )
@@ -155,26 +191,43 @@ def call_openai(messages: list[dict[str, str]], config: dict[str, Any], api_key:
                 return body["choices"][0]["message"]["content"], body.get("model", model)
             snippet = resp.text[:300]
             last_error = f"HTTP {resp.status_code}: {snippet}"
-            if resp.status_code in (429, 500, 502, 503, 504):
+            if resp.status_code == 429:
+                rate_limited = True
+                wait = resp.headers.get("retry-after") if hasattr(resp, "headers") else None
+                wait = int(wait) if wait and str(wait).isdigit() else 2 ** (attempt + 2)
+                if wait > 90:  # daily quota: don't burn the run waiting
+                    break
+                time.sleep(wait)
+                continue
+            if resp.status_code in (500, 502, 503, 504):
                 time.sleep(min(30, 2 ** (attempt + 1)))
                 continue
-            if resp.status_code == 401:
-                raise PermissionError("OpenAI rejected the API key (401). Check the OPENAI_API_KEY secret.")
-            break  # 400/404 etc: try next model
+            if resp.status_code in (401, 403):
+                raise PermissionError(f"{provider['name']} rejected the credentials (HTTP {resp.status_code}). "
+                                      f"Check the {provider['key_env']} secret or the workflow's `models: read` permission.")
+            if resp.status_code in (400, 422) and "response_format" in payload and "response_format" in snippet.lower():
+                payload.pop("response_format")  # provider doesn't support JSON mode; parser handles plain JSON
+                attempt -= 1
+                continue
+            break  # other 4xx (e.g. unknown model): try the next model
+        if rate_limited:
+            raise RateLimited(last_error or "rate limited")
         LOG.warning("Model %s failed: %s", model, last_error)
-    raise RuntimeError(last_error or "OpenAI request failed")
+    raise RuntimeError(last_error or "AI request failed")
 
 
-def analyse_article(article: dict[str, Any], config: dict[str, Any], api_key: str | None = None, session: requests.Session | None = None) -> dict[str, Any]:
-    api_key = api_key if api_key is not None else os.getenv("OPENAI_API_KEY", "")
-    if not api_key.strip():
-        raise AIUnavailable("OPENAI_API_KEY is not set")
-    content, model = call_openai(build_messages(article, config), config, api_key.strip(), session)
+def analyse_article(article: dict[str, Any], config: dict[str, Any], provider: dict[str, Any] | None = None,
+                    session: requests.Session | None = None) -> dict[str, Any]:
+    provider = provider or resolve_provider(config)
+    if not provider or not provider.get("key"):
+        raise AIUnavailable("No AI provider key is available (GITHUB_TOKEN, GEMINI_API_KEY or OPENAI_API_KEY)")
+    content, model = call_model(build_messages(article, config), provider, config, session)
     parsed = parse_ai_response(content, config)
     text = article.get("content") or ""
     parsed.update({
         "status": "complete",
         "model": model,
+        "provider": provider["name"],
         "generated_at": iso(utc_now()),
         "evidence": "feed_full_text" if len(text) > 1500 else "feed_excerpt" if text else "headline_only",
     })
@@ -199,6 +252,6 @@ def apply_analysis(article: dict[str, Any], analysis: dict[str, Any], config: di
     if analysis.get("topics"):
         article["topics"] = analysis["topics"]
     article["classification"] = "ai"
-    keep = ("status", "model", "generated_at", "evidence", "reported_facts", "summary", "why_it_matters",
+    keep = ("status", "model", "provider", "generated_at", "evidence", "reported_facts", "summary", "why_it_matters",
             "applications", "recommendations", "priority_reason", "needs_validation", "validation_note")
     article["analysis"] = {k: analysis.get(k) for k in keep}

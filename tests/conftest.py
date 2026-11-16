@@ -13,6 +13,12 @@ FIXTURES = ROOT / "tests" / "fixtures"
 NOW = datetime(2026, 11, 16, 6, 0, tzinfo=timezone.utc)
 
 
+@pytest.fixture(autouse=True)
+def clean_ai_env(monkeypatch):
+    for k in ("GITHUB_TOKEN", "GEMINI_API_KEY", "OPENAI_API_KEY", "AI_PROVIDER", "AI_MODEL"):
+        monkeypatch.delenv(k, raising=False)
+
+
 @pytest.fixture
 def config():
     return load_config()

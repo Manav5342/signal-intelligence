@@ -5,8 +5,8 @@
 Signal is a personal intelligence portal. Twice a day it collects the latest developments in AI, B2B marketing, email, WhatsApp marketing, marketing analytics and martech from official blogs, industry publications and Indian outlets. It removes duplicates, categorises each article, labels it Global or India, and adds AI analysis: a summary, why it matters, practical applications and strategic recommendations. Everything is published as a fast static dashboard on GitHub Pages.
 
 - **Runs without your laptop.** GitHub Actions collects news at **6:00 AM and 2:00 PM IST** (00:30 and 08:30 UTC).
-- **Free hosting.** GitHub Pages and GitHub Actions are free for public repositories. The only optional cost is OpenAI API usage (see [Costs](#costs)).
-- **No secrets in the browser.** The OpenAI key lives in GitHub Actions Secrets. The website is plain HTML, CSS and JS that reads `data/news.json`.
+- **Completely free.** GitHub Pages and GitHub Actions are free for public repositories, and AI analysis runs on the free GitHub Models tier using the workflow's own token. No API key or credit card is needed (see [Costs](#costs)).
+- **No secrets in the browser.** Any AI credentials live only in GitHub Actions. The website is plain HTML, CSS and JS that reads `data/news.json`.
 
 ## The design: a twice-daily business paper
 Signal is laid out like a printed business daily:
@@ -36,7 +36,7 @@ GitHub Actions (cron 00:30 + 08:30 UTC, or "Run workflow")
        3. classify.py         relevance, category, region (India only with real geographic relevance), priority
        4. validate_sources.py checks each new article URL resolves before saving
        5. deduplicate.py      canonical URL + normalised headline + same story from other publishers
-       6. analyse_news.py     OpenAI analysis (facts vs interpretation, validated JSON)
+       6. analyse_news.py     AI analysis via GitHub Models (free) / Gemini / OpenAI (facts vs interpretation, validated JSON)
        7. archive             merge with existing articles, keep newest `archive_limit` (default 100)
        8. writes data/news.json + data/source_health.json, commits them, deploys to GitHub Pages
 Browser
@@ -62,7 +62,7 @@ signal-intelligence/
 │   ├── fetch_news.py             Feed fetching and parsing
 │   ├── classify.py               Relevance, category, region, priority rules
 │   ├── deduplicate.py            Duplicate detection
-│   ├── analyse_news.py           OpenAI analysis and response validation
+│   ├── analyse_news.py           AI analysis (GitHub Models, Gemini or OpenAI) and response validation
 │   ├── validate_sources.py       Feed health and article-URL checks
 │   └── common.py                 Shared helpers
 ├── tests/                        pytest suite, Node tests for lib.js, optional browser check
@@ -80,7 +80,7 @@ signal-intelligence/
 
 ## Deploy it: step by step
 
-You need a free GitHub account and, for AI analysis, an OpenAI API key with billing enabled.
+All you need is a free GitHub account. AI analysis is free through GitHub Models, with no key to create.
 
 ### 1. Create the repository
 1. On GitHub, click **+ → New repository**.
@@ -108,14 +108,17 @@ git push -u origin main
 **Settings → Actions → General → Workflow permissions → Read and write permissions → Save.**
 This lets the scheduled run commit the updated `data/news.json`, which is how the archive is preserved between runs.
 
-### 5. Add your OpenAI API key (secret)
-1. Create a key at https://platform.openai.com/api-keys.
-2. In the repo: **Settings → Secrets and variables → Actions → Secrets → New repository secret**.
-3. Name: `OPENAI_API_KEY`. Value: your key. Click **Add secret**.
+### 5. AI analysis: nothing to do (free by default)
+The workflow requests the `models: read` permission, so its built-in token can call **GitHub Models** for free. You don't create a key.
 
-Optional: to choose the model, open the **Variables** tab → **New repository variable** → name `OPENAI_MODEL`, value e.g. `gpt-4.1-mini`. If it isn’t set, `config.json` → `ai.model` is used, with `ai.fallback_models` tried if that model is unavailable.
+Optional alternatives (the first one found is used, in this order):
+| Secret to add | Provider | Cost |
+|---|---|---|
+| `OPENAI_API_KEY` | OpenAI API | Paid (pay as you go) |
+| `GEMINI_API_KEY` | Google Gemini API, free tier (key from https://aistudio.google.com/apikey) | Free. Google's pricing page notes free-tier requests may be used to improve Google products. |
+| *(none)* | GitHub Models, `openai/gpt-4.1-mini` | Free, rate-limited |
 
-Without a key, Signal still works. It collects, deduplicates and categorises with rules, shows publisher excerpts, and tells you AI analysis is off. Once you add the key, pending articles are analysed on the next run.
+To add one, go to **Settings → Secrets and variables → Actions → New repository secret**. To force a provider or model, add repository **variables** `AI_PROVIDER` (`github`, `gemini` or `openai`) and/or `AI_MODEL`.
 
 ### 6. Run the first collection manually
 1. Open the **Actions** tab. If asked, click **I understand my workflows, go ahead and enable them**.
@@ -159,7 +162,7 @@ python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\
 pip install -r requirements-dev.txt
 python -m scripts.validate_sources --no-write           # check feeds from your machine
 python -m scripts.run_pipeline --no-ai                  # collect without OpenAI
-OPENAI_API_KEY=sk-... python -m scripts.run_pipeline    # full run
+GITHUB_TOKEN=<a PAT with models:read> python -m scripts.run_pipeline   # full run with free GitHub Models
 python -m http.server 8000                              # open http://localhost:8000
 ```
 Open the dashboard through a local server. Opening `index.html` directly from disk blocks `fetch()` and the page shows a clear error.
@@ -184,7 +187,9 @@ python tests/e2e/browser_check.py          # optional: real browser (needs Playw
 | `settings.duplicate_title_similarity` | 0.6 | Headline similarity for cross-publisher duplicates. Higher = stricter. |
 | `settings.duplicate_window_hours` | 72 | Same-story matching only within this time window. |
 | `settings.validate_article_urls` | true | Check article links before saving. |
-| `ai.model` / `ai.fallback_models` | `gpt-4.1-mini` | Overridable with the `OPENAI_MODEL` repo variable. |
+| `ai.provider` | `auto` | `auto` picks OpenAI, then Gemini, then GitHub Models, depending on which credentials exist. Override with the `AI_PROVIDER` variable. |
+| `ai.providers.*.model` | `openai/gpt-4.1-mini` (GitHub) | Per-provider model and fallbacks. Override with the `AI_MODEL` variable. |
+| `ai.providers.*.seconds_between_calls` | 5 (free tiers) | Pause between AI calls to stay inside per-minute limits. |
 | `categories.*.keywords` | — | Edit to tune what counts as each category. |
 | `india_terms` | — | Geographic signals for the India label. Company names are deliberately excluded. |
 | `sources[]` | 33 feeds | Add, remove or set `"enabled": false`. |
@@ -214,12 +219,19 @@ The starting list covers OpenAI, Google AI, Microsoft AI, MIT Technology Review,
 | GitHub Pages hosting | Free (public repo) |
 | GitHub Actions | Free for public repos. Each run takes a few minutes. |
 | Feeds | Free (public RSS) |
-| **OpenAI API (optional)** | Pay-as-you-go |
+| AI analysis (GitHub Models, default) | Free, rate-limited |
 
-OpenAI estimate: each article uses roughly 1.5–3k input tokens and about 600–900 output tokens. At the cap of 30 articles × 2 runs/day, that’s about 150k input and 50k output tokens per day. At a small model such as `gpt-4.1-mini` (listed at about US$0.40 per 1M input and US$1.60 per 1M output tokens in late 2026), that works out to **about US$0.15 per day, or roughly US$4–5 per month at the cap**. Typical runs analyse fewer articles and cost less. Prices change, so check https://openai.com/api/pricing and set a monthly budget limit in your OpenAI account. Lower `max_ai_articles_per_run` to reduce cost further.
+**Free-tier limits and how Signal stays inside them.** GitHub Models' free tier is rate-limited per account (around 150 requests a day for smaller models, with a per-minute cap). It's meant for prototyping and personal projects, and GitHub can change the limits. Signal:
+- analyses at most `max_ai_articles_per_run` (30) stories per run, so at most 60 requests a day at two runs a day;
+- waits `seconds_between_calls` (5 s) between requests to respect per-minute limits;
+- stops cleanly if the quota runs out. Unanalysed stories stay queued and are analysed at the next run, and the dashboard says so.
+
+GitHub Models calls made from Actions count against the same per-account allowance as any other GitHub Models use on your account.
+
+Paid AI is optional: if you add `OPENAI_API_KEY`, Signal uses OpenAI instead. Check current prices at https://openai.com/api/pricing and set a spending limit.
 
 ## Security
-- `OPENAI_API_KEY` exists only as a GitHub Actions secret and in the runner’s environment during a run. It is never written to any file.
+- The default AI access uses the workflow’s short-lived built-in token (`models: read`). Optional `GEMINI_API_KEY` / `OPENAI_API_KEY` exist only as GitHub Actions secrets and in the runner’s environment during a run. They are never written to any file.
 - The frontend contains no keys or tokens. `ci.yml` scans `index.html` and `assets/` for key-like strings on every push.
 - A Content-Security-Policy restricts the page to its own scripts, styles and data. All feed text is HTML-escaped before display, and only `http(s)` links are rendered.
 - Article URLs are checked to be public `http(s)` addresses (no localhost/private IPs) before saving.
