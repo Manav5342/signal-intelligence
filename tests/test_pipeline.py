@@ -171,12 +171,12 @@ def test_resolve_provider_uses_free_gemini_by_default(config):
     assert analyse_news.resolve_provider(config, {}) is None
     assert analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x"}) is None  # GitHub Models retired
     p = analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "g"})
-    assert p["name"] == "gemini" and p["model"] == "gemini-2.5-flash-lite"
+    assert p["name"] == "gemini" and p["model"] == "gemini-3.5-flash-lite"
     assert p["url"] == "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
     p = analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "g", "OPENAI_API_KEY": "sk"})
     assert p["name"] == "openai"
-    p = analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "g", "OPENAI_API_KEY": "sk", "AI_PROVIDER": "gemini", "AI_MODEL": "gemini-2.5-flash"})
-    assert p["name"] == "gemini" and p["model"] == "gemini-2.5-flash"
+    p = analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "g", "OPENAI_API_KEY": "sk", "AI_PROVIDER": "gemini", "AI_MODEL": "gemini-3.5-flash"})
+    assert p["name"] == "gemini" and p["model"] == "gemini-3.5-flash"
     assert analyse_news.resolve_provider(config, {"AI_PROVIDER": "openai", "GEMINI_API_KEY": "g"}) is None
 
 
@@ -216,7 +216,7 @@ def test_call_model_falls_back_on_model_error(config):
     ok = FakeResp(200, {"model": "gemini-flash-lite-latest", "choices": [{"message": {"content": json.dumps(GOOD)}}]})
     sess = _session([FakeResp(404, {"error": "unknown model"}), ok])
     content, model = analyse_news.call_model([], gh_provider(config), config, sess)
-    assert model == "gemini-flash-lite-latest" and sess.calls == ["gemini-2.5-flash-lite", "gemini-flash-lite-latest"]
+    assert model == "gemini-flash-lite-latest" and sess.calls == ["gemini-3.5-flash-lite", "gemini-flash-lite-latest"]
     assert sess.urls[0] == "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
     assert sess.payloads[0]["max_tokens"] == 3000 and "max_completion_tokens" not in sess.payloads[0]
 

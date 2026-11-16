@@ -118,7 +118,7 @@ Signal picks the provider automatically:
 | Secret present | Provider used | Cost |
 |---|---|---|
 | `OPENAI_API_KEY` | OpenAI API | Paid (pay as you go) |
-| `GEMINI_API_KEY` only | Google Gemini API, free tier (`gemini-2.5-flash-lite`) | Free. Google's pricing page notes that free-tier requests may be used to improve Google products. |
+| `GEMINI_API_KEY` only | Google Gemini API, free tier (`gemini-3.5-flash-lite`) | Free. Google's pricing page notes that free-tier requests may be used to improve Google products. |
 | neither | No AI. Stories show publisher excerpts and rule-based sections. | Free |
 
 To force a provider or model, add repository **variables** `AI_PROVIDER` (`gemini` or `openai`) and/or `AI_MODEL`. To test the AI setup on its own, run **Actions → Validate sources**. Its summary includes an AI provider check.
@@ -193,7 +193,7 @@ python tests/e2e/browser_check.py          # optional: real browser (needs Playw
 | `settings.duplicate_window_hours` | 72 | Same-story matching only within this time window. |
 | `settings.validate_article_urls` | true | Check article links before saving. |
 | `ai.provider` | `auto` | `auto` picks OpenAI if its key exists, otherwise Gemini. Override with the `AI_PROVIDER` variable. |
-| `ai.providers.*.model` | `gemini-2.5-flash-lite` | Per-provider model and fallbacks. Override with the `AI_MODEL` variable. |
+| `ai.providers.*.model` | `gemini-3.5-flash-lite` | Per-provider model and fallbacks. Override with the `AI_MODEL` variable. |
 | `ai.providers.*.seconds_between_calls` | 7 (Gemini) | Pause between AI calls to stay inside per-minute limits. |
 | `categories.*.keywords` | — | Edit to tune what counts as each category. |
 | `india_terms` | — | Geographic signals for the India label. Company names are deliberately excluded. |
@@ -230,7 +230,7 @@ The starting list covers OpenAI, Google AI, Microsoft AI, MIT Technology Review,
 - it analyses at most `max_ai_articles_per_run` (20) stories per run, so at most 40 requests a day;
 - it waits `seconds_between_calls` (7 s) between requests to stay under per-minute limits;
 - if the quota runs out, it stops cleanly. Unanalysed stories stay queued for the next run, and the dashboard says so;
-- it tries fallback models (`gemini-flash-lite-latest`, `gemini-2.5-flash`, …) if Google retires the default.
+- it tries fallback models (`gemini-flash-lite-latest`, `gemini-3.5-flash`, …) if Google retires the default.
 
 Paid AI is optional: if you add `OPENAI_API_KEY`, Signal uses OpenAI instead. Check current prices at https://openai.com/api/pricing and set a spending limit.
 
