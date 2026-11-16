@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-16T02:59:28Z",
+  "checked_at": "2026-11-16T10:05:31Z",
   "total": 32,
   "ok": 32,
   "failed": 0,
@@ -10,8 +10,8 @@
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
       "status_code": 200,
-      "entries": 1389,
-      "usable_items": 1389,
+      "entries": 1390,
+      "usable_items": 1390,
       "error": null
     },
     {
@@ -90,8 +90,8 @@
       "url": "https://news.google.com/rss/search?q=site%3Amarketingbrew.com&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 63,
-      "usable_items": 63,
+      "entries": 67,
+      "usable_items": 67,
       "error": null
     },
     {
@@ -110,8 +110,8 @@
       "url": "https://news.google.com/rss/search?q=%22B2B+marketing%22+OR+%22account-based+marketing%22+OR+%22demand+generation%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 55,
-      "usable_items": 55,
+      "entries": 45,
+      "usable_items": 45,
       "error": null
     },
     {
@@ -170,8 +170,8 @@
       "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 49,
-      "usable_items": 49,
+      "entries": 51,
+      "usable_items": 51,
       "error": null
     },
     {
@@ -190,8 +190,8 @@
       "url": "https://news.google.com/rss/search?q=Wati+WhatsApp&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 18,
-      "usable_items": 18,
+      "entries": 19,
+      "usable_items": 19,
       "error": null
     },
     {
@@ -250,8 +250,8 @@
       "url": "https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 95,
-      "usable_items": 95,
+      "entries": 96,
+      "usable_items": 96,
       "error": null
     },
     {
