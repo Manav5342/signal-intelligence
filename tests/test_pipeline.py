@@ -167,20 +167,21 @@ def test_missing_api_key_raises(config):
         analyse_news.analyse_article(make_article(title="t"), config)
 
 
-def test_resolve_provider_prefers_free_github_when_only_token(config):
-    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x"})
-    assert p["name"] == "github" and p["url"].startswith("https://models.github.ai/") and p["model"] == "openai/gpt-4.1-mini"
-    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x", "GEMINI_API_KEY": "g"})
-    assert p["name"] == "gemini"
-    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x", "OPENAI_API_KEY": "sk"})
+def test_resolve_provider_uses_free_gemini_by_default(config):
+    assert analyse_news.resolve_provider(config, {}) is None
+    assert analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x"}) is None  # GitHub Models retired
+    p = analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "g"})
+    assert p["name"] == "gemini" and p["model"] == "gemini-2.5-flash-lite"
+    assert p["url"] == "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+    p = analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "g", "OPENAI_API_KEY": "sk"})
     assert p["name"] == "openai"
-    p = analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_x", "OPENAI_API_KEY": "sk", "AI_PROVIDER": "github", "AI_MODEL": "openai/gpt-4o-mini"})
-    assert p["name"] == "github" and p["model"] == "openai/gpt-4o-mini"
-    assert analyse_news.resolve_provider(config, {"AI_PROVIDER": "gemini", "GITHUB_TOKEN": "x"}) is None
+    p = analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "g", "OPENAI_API_KEY": "sk", "AI_PROVIDER": "gemini", "AI_MODEL": "gemini-2.5-flash"})
+    assert p["name"] == "gemini" and p["model"] == "gemini-2.5-flash"
+    assert analyse_news.resolve_provider(config, {"AI_PROVIDER": "openai", "GEMINI_API_KEY": "g"}) is None
 
 
 def gh_provider(config):
-    return analyse_news.resolve_provider(config, {"GITHUB_TOKEN": "ghs_test"})
+    return analyse_news.resolve_provider(config, {"GEMINI_API_KEY": "test-key"})
 
 
 class FakeResp:
@@ -212,12 +213,12 @@ OK = FakeResp(200, {"model": "m", "choices": [{"message": {"content": json.dumps
 
 
 def test_call_model_falls_back_on_model_error(config):
-    ok = FakeResp(200, {"model": "openai/gpt-4o-mini", "choices": [{"message": {"content": json.dumps(GOOD)}}]})
+    ok = FakeResp(200, {"model": "gemini-flash-lite-latest", "choices": [{"message": {"content": json.dumps(GOOD)}}]})
     sess = _session([FakeResp(404, {"error": "unknown model"}), ok])
     content, model = analyse_news.call_model([], gh_provider(config), config, sess)
-    assert model == "openai/gpt-4o-mini" and sess.calls == ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]
-    assert sess.urls[0] == "https://models.github.ai/inference/chat/completions"
-    assert "max_tokens" in sess.payloads[0] and "max_completion_tokens" not in sess.payloads[0]
+    assert model == "gemini-flash-lite-latest" and sess.calls == ["gemini-2.5-flash-lite", "gemini-flash-lite-latest"]
+    assert sess.urls[0] == "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+    assert sess.payloads[0]["max_tokens"] == 3000 and "max_completion_tokens" not in sess.payloads[0]
 
 
 def test_call_model_drops_json_mode_if_unsupported(config):
@@ -239,7 +240,7 @@ def test_call_model_bad_credentials(config):
 
 def test_headline_only_forces_validation(config):
     out = analyse_news.analyse_article(make_article(title="t", content=""), config, gh_provider(config), _session([OK]))
-    assert out["evidence"] == "headline_only" and out["needs_validation"] is True and out["provider"] == "github"
+    assert out["evidence"] == "headline_only" and out["needs_validation"] is True and out["provider"] == "gemini"
 
 
 # ---------- URL validation ----------
@@ -340,9 +341,9 @@ def test_pipeline_with_ai(tmp_path, config, feed_bytes, now, monkeypatch):
     assert db["meta"]["ai_provider"] == "openai"
 
 
-def test_pipeline_free_github_rate_limit_keeps_articles_queued(tmp_path, config, feed_bytes, now, monkeypatch):
+def test_pipeline_free_tier_rate_limit_keeps_articles_queued(tmp_path, config, feed_bytes, now, monkeypatch):
     monkeypatch.setattr(run_pipeline, "fetch_all", _fake_fetch(feed_bytes))
-    monkeypatch.setenv("GITHUB_TOKEN", "ghs_test")
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key")
     monkeypatch.setattr(run_pipeline.time, "sleep", lambda s: None)
     seen = []
 
@@ -352,9 +353,9 @@ def test_pipeline_free_github_rate_limit_keeps_articles_queued(tmp_path, config,
 
     monkeypatch.setattr(analyse_news, "analyse_article", fake_analyse)
     db = run_pipeline.run(config, tmp_path / "n.json", tmp_path / "h.json", check_urls=False, now=now)
-    assert seen == ["github"]  # stopped after the first 429
+    assert seen == ["gemini"]  # stopped after the first 429
     assert all(a["analysis"]["status"] == "pending" and a["ai_attempts"] == 0 for a in db["articles"])
-    assert db["meta"]["last_run"]["ai_rate_limited"] is True and db["meta"]["ai_provider"] == "github"
+    assert db["meta"]["last_run"]["ai_rate_limited"] is True and db["meta"]["ai_provider"] == "gemini"
 
 
 class TextResp(FakeResp):
@@ -372,7 +373,7 @@ def test_non_json_200_gives_a_clear_error(config):
         analyse_news.call_model([], gh_provider(config), config, sess)
 
 
-def test_github_provider_sends_api_headers(config):
+def test_provider_request_does_not_follow_redirects(config):
     class Capture(FakeAISession):
         def post(self, url, **kw):
             self.headers = kw["headers"]
@@ -380,12 +381,12 @@ def test_github_provider_sends_api_headers(config):
             return super().post(url, **kw)
     sess = Capture([OK])
     analyse_news.call_model([], gh_provider(config), config, sess)
-    assert sess.headers["X-GitHub-Api-Version"] == "2022-11-28" and sess.redirects is False
+    assert sess.headers["Authorization"] == "Bearer test-key" and sess.redirects is False
 
 
 def test_pipeline_stops_after_consecutive_ai_failures(tmp_path, config, feed_bytes, now, monkeypatch):
     monkeypatch.setattr(run_pipeline, "fetch_all", _fake_fetch(feed_bytes))
-    monkeypatch.setenv("GITHUB_TOKEN", "ghs_test")
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key")
     monkeypatch.setattr(run_pipeline.time, "sleep", lambda s: None)
     cfg = json.loads(json.dumps(config))
     cfg["settings"]["max_consecutive_ai_failures"] = 1

@@ -195,7 +195,7 @@
     else {
       if (run.status === "failed") msgs.push("The last collection couldn’t reach any source, so this is the previous edition.");
       else if (run.status === "partial" && run.sources_failed) msgs.push(run.sources_failed + " of " + run.sources_total + " sources didn’t answer during the last collection. Everything else was updated.");
-      if (meta.last_successful_update && meta.ai_enabled === false) msgs.push("AI analysis was unavailable during the last collection, so new stories show the publisher’s excerpt and rule-based sections. Check the workflow log on GitHub.");
+      if (meta.last_successful_update && meta.ai_enabled === false) msgs.push("AI analysis is off because no AI key is set up. Add the free <code>GEMINI_API_KEY</code> secret on GitHub (see the README). Until then, stories show the publisher’s excerpt and rule-based sections.");
       if (run.ai_rate_limited) msgs.push("The free AI quota ran out during the last collection. Stories still waiting for analysis will be analysed at the next one.");
     }
     n.hidden = !msgs.length;

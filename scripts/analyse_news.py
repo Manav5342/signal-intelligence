@@ -1,9 +1,9 @@
 """AI analysis through any OpenAI-compatible chat API.
 
 Providers (config.json -> ai.providers):
-  github  GitHub Models: free, uses the workflow's built-in GITHUB_TOKEN (needs `models: read`)
   gemini  Google Gemini API free tier: needs a free GEMINI_API_KEY from Google AI Studio
   openai  OpenAI API: paid, needs OPENAI_API_KEY
+(GitHub Models was retired by GitHub on 30 July 2026 and is no longer supported.)
 
 With ai.provider = "auto", the first provider in ai.auto_order whose key is present is used.
 Set the AI_PROVIDER / AI_MODEL environment variables (repo variables) to override.
@@ -189,7 +189,7 @@ def call_model(messages: list[dict[str, str]], provider: dict[str, Any], config:
             "model": model,
             "messages": messages,
             "response_format": {"type": "json_object"},
-            provider.get("token_param", "max_tokens"): ai.get("max_output_tokens", 1400),
+            provider.get("token_param", "max_tokens"): provider.get("max_output_tokens", ai.get("max_output_tokens", 1400)),
         }
         attempt = 0
         while attempt < ai.get("max_retries", 3):
@@ -228,7 +228,7 @@ def call_model(messages: list[dict[str, str]], provider: dict[str, Any], config:
                 continue
             if resp.status_code in (401, 403):
                 raise PermissionError(f"{provider['name']} rejected the credentials (HTTP {resp.status_code}). "
-                                      f"Check the {provider['key_env']} secret or the workflow's `models: read` permission.")
+                                      f"Check the {provider['key_env']} secret.")
             if resp.status_code in (400, 422) and "response_format" in payload and "response_format" in snippet.lower():
                 payload.pop("response_format")  # provider doesn't support JSON mode; parser handles plain JSON
                 attempt -= 1
@@ -244,7 +244,7 @@ def analyse_article(article: dict[str, Any], config: dict[str, Any], provider: d
                     session: requests.Session | None = None) -> dict[str, Any]:
     provider = provider or resolve_provider(config)
     if not provider or not provider.get("key"):
-        raise AIUnavailable("No AI provider key is available (GITHUB_TOKEN, GEMINI_API_KEY or OPENAI_API_KEY)")
+        raise AIUnavailable("No AI provider key is available (GEMINI_API_KEY or OPENAI_API_KEY)")
     content, model = call_model(build_messages(article, config), provider, config, session)
     parsed = parse_ai_response(content, config)
     text = article.get("content") or ""

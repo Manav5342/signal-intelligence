@@ -9,7 +9,7 @@
     "archive_limit": 100,
     "freshness_days": 7,
     "max_new_articles_per_run": 60,
-    "max_ai_articles_per_run": 30,
+    "max_ai_articles_per_run": 20,
     "max_ai_attempts": 3,
     "min_relevance_score": 3,
     "request_timeout_seconds": 20,
@@ -25,38 +25,25 @@
     "provider": "auto",
     "auto_order": [
       "openai",
-      "gemini",
-      "github"
+      "gemini"
     ],
     "max_output_tokens": 1400,
     "request_timeout_seconds": 90,
     "max_retries": 3,
     "providers": {
-      "github": {
-        "label": "GitHub Models (free, no key needed in GitHub Actions)",
-        "url": "https://models.github.ai/inference/chat/completions",
-        "key_env": "GITHUB_TOKEN",
-        "model": "openai/gpt-4.1-mini",
-        "fallback_models": [
-          "openai/gpt-4o-mini"
-        ],
-        "token_param": "max_tokens",
-        "seconds_between_calls": 5,
-        "extra_headers": {
-          "Accept": "application/vnd.github+json",
-          "X-GitHub-Api-Version": "2022-11-28"
-        }
-      },
       "gemini": {
-        "label": "Google Gemini API (free tier with a free key from Google AI Studio)",
+        "label": "Google Gemini API free tier (free key from Google AI Studio, no card needed)",
         "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
         "key_env": "GEMINI_API_KEY",
         "model": "gemini-2.5-flash-lite",
         "fallback_models": [
-          "gemini-2.5-flash"
+          "gemini-flash-lite-latest",
+          "gemini-2.5-flash",
+          "gemini-flash-latest"
         ],
         "token_param": "max_tokens",
-        "seconds_between_calls": 5
+        "seconds_between_calls": 7,
+        "max_output_tokens": 3000
       },
       "openai": {
         "label": "OpenAI API (paid)",

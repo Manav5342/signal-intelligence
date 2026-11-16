@@ -164,12 +164,12 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
     if not use_ai:
         LOG.info("AI analysis disabled for this run (--no-ai)")
     elif not provider:
-        LOG.warning("No AI provider available (GITHUB_TOKEN, GEMINI_API_KEY or OPENAI_API_KEY): "
+        LOG.warning("No AI provider available (add a free GEMINI_API_KEY secret, or OPENAI_API_KEY): "
                     "articles saved with rule-based classification and publisher excerpts only")
         for a in queue:
             a["analysis"] = _pending_analysis("skipped_no_key")
         if queue:
-            errors.append("ai: no AI provider configured; analysis skipped")
+            errors.append("ai: no AI provider configured (add the free GEMINI_API_KEY secret); analysis skipped")
     else:
         LOG.info("AI provider: %s (model %s), %d article(s) queued", provider["name"], provider["model"], len(queue))
         gap = float(provider.get("seconds_between_calls", 0) or 0)

@@ -19,7 +19,7 @@ def main() -> int:
     config = load_config()
     provider = resolve_provider(config)
     if not provider:
-        print("No AI provider available: set GITHUB_TOKEN (with models: read), GEMINI_API_KEY or OPENAI_API_KEY.")
+        print("No AI provider available: add the free GEMINI_API_KEY secret (or OPENAI_API_KEY).")
         return 1
     print(f"Provider: {provider['name']}  model: {provider['model']}  url: {provider['url']}")
     headers = {"Authorization": f"Bearer {provider['key']}", "Content-Type": "application/json"}

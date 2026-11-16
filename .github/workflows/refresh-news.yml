@@ -23,7 +23,6 @@ on:
 
 permissions:
   contents: write   # commit the updated data/news.json back to the repo (the archive)
-  models: read      # free AI analysis through GitHub Models using the built-in token
   pages: write      # deploy to GitHub Pages
   id-token: write   # required by actions/deploy-pages
 
@@ -53,9 +52,7 @@ jobs:
       - name: Run pipeline
         id: run
         env:
-          # Free by default: GitHub Models via the workflow's own token (no secret needed).
-          GITHUB_TOKEN: ${{ github.token }}
-          # Optional: add either secret to switch provider (see README).
+          # Free: Google Gemini API free tier. Paid alternative: OpenAI. See README.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           AI_PROVIDER: ${{ vars.AI_PROVIDER }}

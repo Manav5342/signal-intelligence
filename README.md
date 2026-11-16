@@ -5,7 +5,7 @@
 Signal is a personal intelligence portal. Twice a day it collects the latest developments in AI, B2B marketing, email, WhatsApp marketing, marketing analytics and martech from official blogs, industry publications and Indian outlets. It removes duplicates, categorises each article, labels it Global or India, and adds AI analysis: a summary, why it matters, practical applications and strategic recommendations. Everything is published as a fast static dashboard on GitHub Pages.
 
 - **Runs without your laptop.** GitHub Actions collects news at **6:00 AM and 2:00 PM IST** (00:30 and 08:30 UTC).
-- **Completely free.** GitHub Pages and GitHub Actions are free for public repositories, and AI analysis runs on the free GitHub Models tier using the workflow's own token. No API key or credit card is needed (see [Costs](#costs)).
+- **Completely free.** GitHub Pages and GitHub Actions are free for public repositories, and AI analysis uses the free tier of the Google Gemini API: a free key, no credit card (see [Costs](#costs)).
 - **No secrets in the browser.** Any AI credentials live only in GitHub Actions. The website is plain HTML, CSS and JS that reads `data/news.json`.
 
 ## The design: a twice-daily business paper
@@ -36,7 +36,7 @@ GitHub Actions (cron 00:30 + 08:30 UTC, or "Run workflow")
        3. classify.py         relevance, category, region (India only with real geographic relevance), priority
        4. validate_sources.py checks each new article URL resolves before saving
        5. deduplicate.py      canonical URL + normalised headline + same story from other publishers
-       6. analyse_news.py     AI analysis via GitHub Models (free) / Gemini / OpenAI (facts vs interpretation, validated JSON)
+       6. analyse_news.py     AI analysis via Gemini (free tier) or OpenAI (paid) (facts vs interpretation, validated JSON)
        7. archive             merge with existing articles, keep newest `archive_limit` (default 100)
        8. writes data/news.json + data/source_health.json, commits them, deploys to GitHub Pages
 Browser
@@ -62,7 +62,7 @@ signal-intelligence/
 │   ├── fetch_news.py             Feed fetching and parsing
 │   ├── classify.py               Relevance, category, region, priority rules
 │   ├── deduplicate.py            Duplicate detection
-│   ├── analyse_news.py           AI analysis (GitHub Models, Gemini or OpenAI) and response validation
+│   ├── analyse_news.py           AI analysis (Gemini free tier or OpenAI) and response validation
 │   ├── validate_sources.py       Feed health and article-URL checks
 │   └── common.py                 Shared helpers
 ├── tests/                        pytest suite, Node tests for lib.js, optional browser check
@@ -80,7 +80,7 @@ signal-intelligence/
 
 ## Deploy it: step by step
 
-All you need is a free GitHub account. AI analysis is free through GitHub Models, with no key to create.
+All you need is a free GitHub account and a free Google account (for the Gemini API key). No credit card is required.
 
 ### 1. Create the repository
 1. On GitHub, click **+ → New repository**.
@@ -108,17 +108,22 @@ git push -u origin main
 **Settings → Actions → General → Workflow permissions → Read and write permissions → Save.**
 This lets the scheduled run commit the updated `data/news.json`, which is how the archive is preserved between runs.
 
-### 5. AI analysis: nothing to do (free by default)
-The workflow requests the `models: read` permission, so its built-in token can call **GitHub Models** for free. You don't create a key.
+### 5. Add a free Gemini API key (for AI analysis)
+1. Go to https://aistudio.google.com/apikey and sign in with any Google account.
+2. Click **Create API key**. No credit card or billing is needed for the free tier.
+3. In your GitHub repo, open **Settings → Secrets and variables → Actions → New repository secret**.
+4. Name it `GEMINI_API_KEY`, paste the key, and click **Add secret**.
 
-Optional alternatives (the first one found is used, in this order):
-| Secret to add | Provider | Cost |
+Signal picks the provider automatically:
+| Secret present | Provider used | Cost |
 |---|---|---|
 | `OPENAI_API_KEY` | OpenAI API | Paid (pay as you go) |
-| `GEMINI_API_KEY` | Google Gemini API, free tier (key from https://aistudio.google.com/apikey) | Free. Google's pricing page notes free-tier requests may be used to improve Google products. |
-| *(none)* | GitHub Models, `openai/gpt-4.1-mini` | Free, rate-limited |
+| `GEMINI_API_KEY` only | Google Gemini API, free tier (`gemini-2.5-flash-lite`) | Free. Google's pricing page notes that free-tier requests may be used to improve Google products. |
+| neither | No AI. Stories show publisher excerpts and rule-based sections. | Free |
 
-To add one, go to **Settings → Secrets and variables → Actions → New repository secret**. To force a provider or model, add repository **variables** `AI_PROVIDER` (`github`, `gemini` or `openai`) and/or `AI_MODEL`.
+To force a provider or model, add repository **variables** `AI_PROVIDER` (`gemini` or `openai`) and/or `AI_MODEL`. To test the AI setup on its own, run **Actions → Validate sources**. Its summary includes an AI provider check.
+
+> GitHub Models, which GitHub offered as a free AI service, was retired by GitHub on 30 July 2026, so Signal doesn't use it.
 
 ### 6. Run the first collection manually
 1. Open the **Actions** tab. If asked, click **I understand my workflows, go ahead and enable them**.
@@ -162,7 +167,7 @@ python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\
 pip install -r requirements-dev.txt
 python -m scripts.validate_sources --no-write           # check feeds from your machine
 python -m scripts.run_pipeline --no-ai                  # collect without OpenAI
-GITHUB_TOKEN=<a PAT with models:read> python -m scripts.run_pipeline   # full run with free GitHub Models
+GEMINI_API_KEY=... python -m scripts.run_pipeline      # full run with free Gemini
 python -m http.server 8000                              # open http://localhost:8000
 ```
 Open the dashboard through a local server. Opening `index.html` directly from disk blocks `fetch()` and the page shows a clear error.
@@ -187,9 +192,9 @@ python tests/e2e/browser_check.py          # optional: real browser (needs Playw
 | `settings.duplicate_title_similarity` | 0.6 | Headline similarity for cross-publisher duplicates. Higher = stricter. |
 | `settings.duplicate_window_hours` | 72 | Same-story matching only within this time window. |
 | `settings.validate_article_urls` | true | Check article links before saving. |
-| `ai.provider` | `auto` | `auto` picks OpenAI, then Gemini, then GitHub Models, depending on which credentials exist. Override with the `AI_PROVIDER` variable. |
-| `ai.providers.*.model` | `openai/gpt-4.1-mini` (GitHub) | Per-provider model and fallbacks. Override with the `AI_MODEL` variable. |
-| `ai.providers.*.seconds_between_calls` | 5 (free tiers) | Pause between AI calls to stay inside per-minute limits. |
+| `ai.provider` | `auto` | `auto` picks OpenAI if its key exists, otherwise Gemini. Override with the `AI_PROVIDER` variable. |
+| `ai.providers.*.model` | `gemini-2.5-flash-lite` | Per-provider model and fallbacks. Override with the `AI_MODEL` variable. |
+| `ai.providers.*.seconds_between_calls` | 7 (Gemini) | Pause between AI calls to stay inside per-minute limits. |
 | `categories.*.keywords` | — | Edit to tune what counts as each category. |
 | `india_terms` | — | Geographic signals for the India label. Company names are deliberately excluded. |
 | `sources[]` | 33 feeds | Add, remove or set `"enabled": false`. |
@@ -219,19 +224,18 @@ The starting list covers OpenAI, Google AI, Microsoft AI, MIT Technology Review,
 | GitHub Pages hosting | Free (public repo) |
 | GitHub Actions | Free for public repos. Each run takes a few minutes. |
 | Feeds | Free (public RSS) |
-| AI analysis (GitHub Models, default) | Free, rate-limited |
+| AI analysis (Gemini API free tier) | Free, rate-limited |
 
-**Free-tier limits and how Signal stays inside them.** GitHub Models' free tier is rate-limited per account (around 150 requests a day for smaller models, with a per-minute cap). It's meant for prototyping and personal projects, and GitHub can change the limits. Signal:
-- analyses at most `max_ai_articles_per_run` (30) stories per run, so at most 60 requests a day at two runs a day;
-- waits `seconds_between_calls` (5 s) between requests to respect per-minute limits;
-- stops cleanly if the quota runs out. Unanalysed stories stay queued and are analysed at the next run, and the dashboard says so.
-
-GitHub Models calls made from Actions count against the same per-account allowance as any other GitHub Models use on your account.
+**Free-tier limits and how Signal stays inside them.** Google limits free-tier requests per minute and per day per project, and has changed these limits several times. Signal is built to cope:
+- it analyses at most `max_ai_articles_per_run` (20) stories per run, so at most 40 requests a day;
+- it waits `seconds_between_calls` (7 s) between requests to stay under per-minute limits;
+- if the quota runs out, it stops cleanly. Unanalysed stories stay queued for the next run, and the dashboard says so;
+- it tries fallback models (`gemini-flash-lite-latest`, `gemini-2.5-flash`, …) if Google retires the default.
 
 Paid AI is optional: if you add `OPENAI_API_KEY`, Signal uses OpenAI instead. Check current prices at https://openai.com/api/pricing and set a spending limit.
 
 ## Security
-- The default AI access uses the workflow’s short-lived built-in token (`models: read`). Optional `GEMINI_API_KEY` / `OPENAI_API_KEY` exist only as GitHub Actions secrets and in the runner’s environment during a run. They are never written to any file.
+- `GEMINI_API_KEY` / `OPENAI_API_KEY` exist only as GitHub Actions secrets and in the runner’s environment during a run. They are never written to any file.
 - The frontend contains no keys or tokens. `ci.yml` scans `index.html` and `assets/` for key-like strings on every push.
 - A Content-Security-Policy restricts the page to its own scripts, styles and data. All feed text is HTML-escaped before display, and only `http(s)` links are rendered.
 - Article URLs are checked to be public `http(s)` addresses (no localhost/private IPs) before saving.
