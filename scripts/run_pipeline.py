@@ -218,6 +218,7 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
     status = "success" if sources_ok and not errors else "partial" if sources_ok else "failed"
     finished = iso(utc_now())
     meta = db["meta"]
+    meta.pop("repository", None)  # not needed by the public page
     meta.update({
         "schema_version": SCHEMA_VERSION,
         "generated_at": finished,
