@@ -1,7 +1,338 @@
 {
-  "checked_at": null,
-  "total": 0,
-  "ok": 0,
-  "failed": 0,
-  "sources": []
+  "checked_at": "2026-11-16T02:21:04Z",
+  "total": 33,
+  "ok": 29,
+  "failed": 4,
+  "sources": [
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "ok": true,
+      "status_code": 200,
+      "entries": 1389,
+      "usable_items": 1389,
+      "error": null
+    },
+    {
+      "id": "google-ai-blog",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 20,
+      "usable_items": 20,
+      "error": null
+    },
+    {
+      "id": "microsoft-ai-blog",
+      "name": "Microsoft AI Blog",
+      "url": "https://blogs.microsoft.com/ai/feed/",
+      "ok": false,
+      "status_code": 410,
+      "entries": 0,
+      "usable_items": 0,
+      "error": "HTTPError: 410 Client Error: Gone for url: https://blogs.microsoft.com/ai/feed/"
+    },
+    {
+      "id": "mit-tech-review-ai",
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 20,
+      "usable_items": 20,
+      "error": null
+    },
+    {
+      "id": "gnews-anthropic",
+      "name": "Google News: Anthropic & Claude",
+      "url": "https://news.google.com/rss/search?q=Anthropic+Claude&hl=en-US&gl=US&ceid=US:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 100,
+      "usable_items": 100,
+      "error": null
+    },
+    {
+      "id": "hubspot-marketing-blog",
+      "name": "HubSpot Blog",
+      "url": "https://blog.hubspot.com/marketing/rss.xml",
+      "ok": true,
+      "status_code": 200,
+      "entries": 50,
+      "usable_items": 50,
+      "error": null
+    },
+    {
+      "id": "demand-gen-report",
+      "name": "Demand Gen Report",
+      "url": "https://www.demandgenreport.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "marketing-brew",
+      "name": "Marketing Brew",
+      "url": "https://www.marketingbrew.com/feed",
+      "ok": false,
+      "status_code": 404,
+      "entries": 0,
+      "usable_items": 0,
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://www.marketingbrew.com/feed"
+    },
+    {
+      "id": "search-engine-journal",
+      "name": "Search Engine Journal",
+      "url": "https://www.searchenginejournal.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 20,
+      "usable_items": 20,
+      "error": null
+    },
+    {
+      "id": "gnews-b2b",
+      "name": "Google News: B2B marketing",
+      "url": "https://news.google.com/rss/search?q=%22B2B+marketing%22+OR+%22account-based+marketing%22+OR+%22demand+generation%22&hl=en-US&gl=US&ceid=US:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 55,
+      "usable_items": 55,
+      "error": null
+    },
+    {
+      "id": "litmus-blog",
+      "name": "Litmus",
+      "url": "https://www.litmus.com/blog/feed",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "mailgun-blog",
+      "name": "Mailgun",
+      "url": "https://www.mailgun.com/blog/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "validity-blog",
+      "name": "Validity",
+      "url": "https://www.validity.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "email-on-acid",
+      "name": "Email on Acid",
+      "url": "https://www.emailonacid.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 0,
+      "usable_items": 0,
+      "error": null
+    },
+    {
+      "id": "google-workspace-updates",
+      "name": "Google Workspace Updates",
+      "url": "https://workspaceupdates.googleblog.com/feeds/posts/default",
+      "ok": true,
+      "status_code": 200,
+      "entries": 25,
+      "usable_items": 25,
+      "error": null
+    },
+    {
+      "id": "gnews-email",
+      "name": "Google News: Email deliverability",
+      "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 49,
+      "usable_items": 49,
+      "error": null
+    },
+    {
+      "id": "meta-newsroom",
+      "name": "Meta Newsroom",
+      "url": "https://about.fb.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "wati-blog",
+      "name": "Wati Blog",
+      "url": "https://www.wati.io/blog/feed/",
+      "ok": false,
+      "status_code": 200,
+      "entries": 0,
+      "usable_items": 0,
+      "error": "ValueError: Unparseable feed: <unknown>:7:35: not well-formed (invalid token)"
+    },
+    {
+      "id": "gnews-whatsapp-global",
+      "name": "Google News: WhatsApp Business",
+      "url": "https://news.google.com/rss/search?q=%22WhatsApp+Business%22+OR+%22WhatsApp+Business+Platform%22+OR+%22Click-to-WhatsApp%22&hl=en-US&gl=US&ceid=US:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 50,
+      "usable_items": 50,
+      "error": null
+    },
+    {
+      "id": "gnews-whatsapp-india",
+      "name": "Google News India: WhatsApp marketing",
+      "url": "https://news.google.com/rss/search?q=%22WhatsApp+Business%22+OR+%22WhatsApp+marketing%22+India&hl=en-IN&gl=IN&ceid=IN:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 53,
+      "usable_items": 53,
+      "error": null
+    },
+    {
+      "id": "salesforce-news",
+      "name": "Salesforce",
+      "url": "https://www.salesforce.com/news/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "google-analytics-blog",
+      "name": "Google Analytics Blog",
+      "url": "https://blog.google/products/marketingplatform/analytics/rss/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 20,
+      "usable_items": 20,
+      "error": null
+    },
+    {
+      "id": "power-bi-blog",
+      "name": "Microsoft Power BI Blog",
+      "url": "https://powerbi.microsoft.com/en-us/blog/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 20,
+      "usable_items": 20,
+      "error": null
+    },
+    {
+      "id": "gnews-hubspot",
+      "name": "Google News: HubSpot",
+      "url": "https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 95,
+      "usable_items": 95,
+      "error": null
+    },
+    {
+      "id": "martech-org",
+      "name": "MarTech",
+      "url": "https://martech.org/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "search-engine-land",
+      "name": "Search Engine Land",
+      "url": "https://searchengineland.com/feed",
+      "ok": false,
+      "status_code": 403,
+      "entries": 0,
+      "usable_items": 0,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://searchengineland.com/feed"
+    },
+    {
+      "id": "inc42",
+      "name": "Inc42",
+      "url": "https://inc42.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 24,
+      "usable_items": 24,
+      "error": null
+    },
+    {
+      "id": "yourstory",
+      "name": "YourStory",
+      "url": "https://yourstory.com/feed",
+      "ok": true,
+      "status_code": 200,
+      "entries": 20,
+      "usable_items": 20,
+      "error": null
+    },
+    {
+      "id": "medianama",
+      "name": "MediaNama",
+      "url": "https://www.medianama.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
+    },
+    {
+      "id": "et-tech",
+      "name": "Economic Times Tech",
+      "url": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms",
+      "ok": true,
+      "status_code": 200,
+      "entries": 50,
+      "usable_items": 50,
+      "error": null
+    },
+    {
+      "id": "gnews-exchange4media",
+      "name": "Google News: exchange4media",
+      "url": "https://news.google.com/rss/search?q=site%3Aexchange4media.com+marketing&hl=en-IN&gl=IN&ceid=IN:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 100,
+      "usable_items": 100,
+      "error": null
+    },
+    {
+      "id": "gnews-india-martech",
+      "name": "Google News India: SaaS & martech",
+      "url": "https://news.google.com/rss/search?q=India+SaaS+OR+martech+OR+%22B2B+marketing%22+OR+%22marketing+technology%22&hl=en-IN&gl=IN&ceid=IN:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 43,
+      "usable_items": 43,
+      "error": null
+    }
+  ]
 }
