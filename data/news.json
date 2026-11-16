@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "project": "Signal",
+    "generated_at": null,
+    "last_successful_update": null,
+    "archive_limit": 100,
+    "schedule_utc": [
+      "30 0 * * *",
+      "30 8 * * *"
+    ],
+    "repository": null,
+    "categories": {
+      "ai": "AI & Technology",
+      "b2b": "B2B Marketing",
+      "email": "Email Marketing",
+      "whatsapp": "WhatsApp Marketing",
+      "analytics": "Marketing Analytics",
+      "martech": "Marketing Technology"
+    },
+    "last_run": null
+  },
+  "articles": []
+}

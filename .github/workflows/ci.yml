@@ -1,0 +1,37 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Python tests
+        run: python -m pytest -q tests
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Frontend logic tests
+        run: node --test tests/frontend/lib.test.js
+      - name: Check no secrets in frontend
+        run: |
+          if grep -RInIE "(sk-[A-Za-z0-9_-]{20,}|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})" index.html assets/; then
+            echo "::error::Possible secret or key reference found in frontend files"; exit 1
+          fi
+          echo "Frontend is clean."

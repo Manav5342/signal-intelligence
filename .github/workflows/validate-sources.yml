@@ -1,0 +1,29 @@
+name: Validate sources
+
+# Checks every configured feed from GitHub's runners and prints a health table.
+# Run it after editing config.json. It doesn't change any data.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'   # Mondays 08:30 IST
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check feeds
+        run: |
+          set -o pipefail
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          python -m scripts.validate_sources --no-write | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,130 @@
+name: Refresh news
+
+# GitHub Actions cron uses UTC.
+#   00:30 UTC = 06:00 IST
+#   08:30 UTC = 14:00 IST
+# Scheduled runs can start a few minutes late when GitHub is busy.
+on:
+  schedule:
+    - cron: '30 0 * * *'
+    - cron: '30 8 * * *'
+  workflow_dispatch:
+    inputs:
+      skip_ai:
+        description: 'Collect and classify only (no OpenAI calls)'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'assets/**'
+      - '.github/workflows/refresh-news.yml'
+
+permissions:
+  contents: write   # commit the updated data/news.json back to the repo (the archive)
+  pages: write      # deploy to GitHub Pages
+  id-token: write   # required by actions/deploy-pages
+
+concurrency:
+  group: signal-refresh
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    name: Collect & analyse
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        id: run
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: |
+          set +e
+          ARGS=""
+          if [ "${{ inputs.skip_ai }}" = "true" ]; then ARGS="--no-ai"; fi
+          python -m scripts.run_pipeline $ARGS
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          try:
+              m = json.load(open("data/news.json"))["meta"]
+              r = m.get("last_run") or {}
+              print("### Signal run: " + str(r.get("status")))
+              for k in ("sources_ok", "sources_failed", "new_articles", "duplicates_merged", "ai_processed", "ai_failed", "archived_out"):
+                  print(f"- **{k}**: {r.get(k)}")
+              print(f"- **articles in archive**: {len(json.load(open('data/news.json'))['articles'])}")
+              if r.get("errors"):
+                  print("\n<details><summary>Errors</summary>\n")
+                  for e in r["errors"]:
+                      print(f"- {e}")
+                  print("\n</details>")
+          except Exception as exc:
+              print(f"Could not read run summary: {exc}")
+          PY
+          exit 0
+
+      - name: Commit updated data
+        if: steps.run.outputs.code != '1'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json data/source_health.json
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "data: refresh news $(date -u +'%Y-%m-%d %H:%M UTC') [skip ci]"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Warn if every source failed
+        if: steps.run.outputs.code == '2'
+        run: echo "::warning::Every source failed this run. The archive was kept and the dashboard will show a notice."
+
+      - name: Fail if the pipeline crashed
+        if: steps.run.outputs.code == '1'
+        run: |
+          echo "::error::The pipeline crashed (exit 1). data/news.json was left untouched. See the 'Run pipeline' log."
+          exit 1
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: collect
+    if: always() && (needs.collect.result == 'success' || needs.collect.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}   # includes the data commit made above
+
+      - name: Assemble static site (frontend + data only)
+        run: |
+          mkdir -p _site
+          cp -r index.html assets data .nojekyll _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
