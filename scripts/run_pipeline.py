@@ -159,7 +159,9 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
     max_attempts = config["ai"].get("max_ai_attempts", settings.get("max_ai_attempts", 3))
     queue = [a for a in merged if (a.get("analysis") or {}).get("status") in ("pending", "failed", "skipped_no_key")
              and a.get("ai_attempts", 0) < max_attempts]
-    queue.sort(key=lambda a: (PRIORITY_WEIGHT.get(a.get("priority"), 1), _sort_key(a)), reverse=True)
+    # Spend the (free) quota on stories with real feed text first; headline-only items last.
+    queue.sort(key=lambda a: (bool(content_by_id.get(a["id"]) or a.get("excerpt")),
+                              PRIORITY_WEIGHT.get(a.get("priority"), 1), _sort_key(a)), reverse=True)
     queue = queue[: settings.get("max_ai_articles_per_run", 30)]
     if not use_ai:
         LOG.info("AI analysis disabled for this run (--no-ai)")
