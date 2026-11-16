@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-16T02:29:31Z",
-    "last_successful_update": "2026-11-16T02:29:31Z",
+    "generated_at": "2026-11-16T02:40:28Z",
+    "last_successful_update": "2026-11-16T02:40:28Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -19,27 +19,27 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-16T02:29:24Z",
-      "finished_at": "2026-11-16T02:29:31Z",
+      "started_at": "2026-11-16T02:37:10Z",
+      "finished_at": "2026-11-16T02:40:28Z",
       "status": "success",
       "trigger": "workflow_dispatch",
       "sources_total": 32,
       "sources_ok": 32,
       "sources_failed": 0,
-      "new_articles": 58,
-      "skipped_stale": 503,
-      "skipped_irrelevant": 192,
+      "new_articles": 60,
+      "skipped_stale": 501,
+      "skipped_irrelevant": 202,
       "invalid_urls": 0,
-      "duplicates_merged": 2,
-      "ai_processed": 0,
+      "duplicates_merged": 1,
+      "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 12,
+      "archived_out": 59,
       "errors": []
     },
-    "ai_enabled": false,
-    "ai_provider": null,
-    "ai_model": null
+    "ai_enabled": true,
+    "ai_provider": "gemini",
+    "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
     {
@@ -56,21 +56,45 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The development covers Anthropic globally without specific focus on the Indian market.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic",
+        "France 24"
+      ],
       "topics": [
-        "anthropic"
+        "Anthropic",
+        "Artificial Intelligence",
+        "AI Vendors"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:37:31Z",
+        "evidence": "headline_only",
+        "reported_facts": "France 24 reports on five key things to know about Anthropic in a recently published article. The syndicated feed text contains only the headline, meaning no specific details, facts, or figures are provided in the source text.",
+        "summary": "France 24 has published an article outlining five key aspects of the artificial intelligence company Anthropic. Due to the lack of syndicated body text in the feed, the specific points covered in the piece remain unknown. Readers must consult the original publication to understand the details regarding Anthropic's business, technology, or market position.",
+        "why_it_matters": "As Anthropic is a major player in generative AI and foundational models that increasingly power B2B marketing tools, tracking general coverage of the company helps marketing operations teams anticipate vendor shifts, safety updates, or enterprise offerings. However, without the specific contents of this article, direct strategic implications cannot be determined.",
+        "applications": [
+          "Review the original France 24 article to identify any new enterprise features or strategic directions from Anthropic",
+          "Monitor how major AI vendor developments might impact current AI-driven copywriting and lead generation stacks",
+          "Assess whether Anthropic's positioning aligns with organizational data privacy and compliance requirements for marketing automation"
+        ],
+        "recommendations": [
+          "Explore the original publisher link; relevant tool types: industry news aggregators; likely benefit: staying informed on AI vendor updates; implementation considerations: verify source credibility.",
+          "Audit existing marketing technology integrations that rely on foundational LLMs; relevant tool types: CRM and AI middleware; likely benefit: risk mitigation; implementation considerations: check API dependencies.",
+          "Brief marketing operations teams on upcoming vendor shifts; relevant tool types: internal communication tools; likely benefit: aligned strategic planning; implementation considerations: ensure cross-functional visibility."
+        ],
+        "priority_reason": "The feed contains only a headline with no actionable details or market-changing specifics.",
+        "needs_validation": true,
+        "validation_note": "Read the full original article on France 24 to ascertain the five specific points discussed regarding Anthropic."
       }
     },
     {
@@ -87,21 +111,47 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "Anthropic is a global AI foundational model provider and public market listings of this scale have worldwide technology sector implications.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic",
+        "France 24"
+      ],
       "topics": [
-        "anthropic"
+        "AI",
+        "IPO",
+        "Market Trends",
+        "Vendor Risk"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:37:41Z",
+        "evidence": "headline_only",
+        "reported_facts": "France 24 reports that Anthropic's record IPO faces some big questions. No further body text was syndicated in the feed to provide additional details.",
+        "summary": "France 24 reports that Anthropic's anticipated record initial public offering is encountering significant scrutiny and questions. Because only the headline was provided in the feed, specific financial details, valuation figures, and the nature of the questions remain unknown. Any broader market interpretation must await the full publication details.",
+        "why_it_matters": "A major public offering by a leading foundational AI model provider like Anthropic could significantly influence market valuations, investor sentiment, and enterprise pricing models for AI-driven marketing technologies. B2B marketers relying on AI infrastructure need to monitor financial stability and market shifts that could impact vendor roadmaps and ecosystem pricing.",
+        "applications": [
+          "Monitor enterprise AI vendor stability and roadmap commitments in light of public market developments",
+          "Assess potential changes to API pricing and feature availability as AI providers face public market pressures",
+          "Review risk management and multi-model redundancy strategies for AI-powered lead generation and content generation stacks",
+          "Evaluate enterprise procurement terms regarding data privacy and long-term service agreements"
+        ],
+        "recommendations": [
+          "Explore multi-vendor LLM deployment strategies using tool types like LLM gateways to hedge against single-vendor reliance; likely benefit is operational resilience; implementation consideration requires testing output consistency across models",
+          "Review current contracts with AI tool providers; relevant tool type is contract management and vendor risk assessment software; likely benefit is identifying exposure to pricing or policy changes; implementation consideration involves legal and procurement review",
+          "Monitor financial and strategic updates from major AI labs; relevant tool type is financial news and market intelligence feeds; likely benefit is proactive adaptation to vendor shifts; implementation consideration involves assigning tracking ownership to an operations lead"
+        ],
+        "priority_reason": "The feed contains only a headline with no operational details, making it a background market development rather than an immediate action item.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article on France 24 to ascertain specific details regarding Anthropic's IPO plans, timelines, and the nature of the questions raised."
       }
     },
     {
@@ -118,21 +168,46 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The development discusses an international tech company's index concerning a specific foreign market (Japan), making it of global B2B interest rather than strictly domestic to India.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic",
+        "Nikkei Asia"
+      ],
       "topics": [
-        "anthropic"
+        "artificial intelligence",
+        "japan",
+        "regional index",
+        "market challenges"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:37:50Z",
+        "evidence": "headline_only",
+        "reported_facts": "Nikkei Asia reports on an Anthropic index addressing artificial intelligence challenges in Japan. The provided text consists solely of the headline, with no body text syndicated in the feed.",
+        "summary": "Nikkei Asia has published an article examining an Anthropic index regarding the artificial intelligence challenges faced by Japan. As only the headline is currently available without syndicated body text, the precise metrics, findings, and implications of the index cannot be detailed. However, the report highlights the intersection of advanced AI model providers like Anthropic and the specific market or adoption hurdles in Japan.",
+        "why_it_matters": "Understanding regional AI adoption indexes helps B2B marketers gauge local market readiness, technology constraints, and regulatory pressures when deploying automated tools in specific Asian markets. If this index highlights infrastructure or trust barriers in major economies, it may signal broader trends for enterprise AI deployment and regional lead generation strategies.",
+        "applications": [
+          "Monitor regional AI indices to adjust localisation and automation strategies for campaigns targeting specific geographical markets.",
+          "Evaluate whether enterprise clients in markets like Japan face unique regulatory or technological bottlenecks when adopting AI-driven CRM tools.",
+          "Benchmark regional readiness before launching advanced conversational AI or WhatsApp automation workflows in foreign territories."
+        ],
+        "recommendations": [
+          "Explore the full Nikkei Asia article to review the specific metrics cited in the Anthropic index; potential benefit is understanding local market hurdles; implementation consideration requires access to the complete publication.",
+          "Test regional messaging compliance when deploying AI-generated email campaigns in markets with distinct technology adoption profiles; potential benefit is avoiding messaging misalignment; implementation consideration involves regional legal review.",
+          "Audit current B2B marketing tech stacks for regional compatibility and localization depth; potential benefit is smoother international expansion; implementation consideration involves consulting regional IT leads."
+        ],
+        "priority_reason": "The feed contains only a headline with no actionable data, policy details, or tool updates for immediate B2B marketing execution.",
+        "needs_validation": true,
+        "validation_note": "Verify the full body text of the Nikkei Asia article to extract the specific findings, metrics, and implications of the Anthropic index regarding Japan's AI challenges."
       }
     },
     {
@@ -149,22 +224,46 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The headline reports general market trends for global AI tools without specific focus on the Indian market.",
+      "priority": "Low",
       "priority_score": 10,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Claude",
+        "ChatGPT"
+      ],
       "topics": [
-        "chatgpt",
-        "claude"
+        "AI models",
+        "market trends",
+        "downloads",
+        "generative AI"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:38:00Z",
+        "evidence": "headline_only",
+        "reported_facts": "The Times of India reports that Claude downloads have surged while ChatGPT installs have fallen by 21%. The provided feed text contains only this headline, with no additional body text or context available.",
+        "summary": "According to The Times of India, recent install trends show a notable shift in the generative AI market, with Claude experiencing a surge in downloads alongside a 21% decline in ChatGPT installations. Since the feed only provided a headline, it is interpreted that consumer or professional interest in AI assistants may be diversifying or shifting between these two major platforms. However, exact timeframes, geographic scope, and underlying drivers of this shift cannot be verified from the excerpt alone.",
+        "why_it_matters": "Shifts in adoption rates between major AI platforms like Claude and ChatGPT can influence which ecosystem developers prioritise for integrations, plugins, and custom enterprise tools. B2B marketing teams monitoring AI market dynamics should track whether this download trend reflects a broader enterprise preference for alternative language models, which could impact tool selection for content generation and workflow automation.",
+        "applications": [
+          "Evaluate internal team adoption rates and preferences between Claude and ChatGPT for daily marketing operations.",
+          "Test content generation workflows and prompt engineering across both platforms to compare output quality.",
+          "Monitor competitor use of alternative AI models in automated lead nurturing and content creation."
+        ],
+        "recommendations": [
+          "Explore multi-model AI orchestration tools; likely benefit is avoiding vendor lock-in; implementation requires assessing security and data privacy compliance.",
+          "Test Claude for long-form content generation and data analysis tasks; likely benefit is leveraging distinct context window advantages; implementation involves running side-by-side comparative tests against current ChatGPT workflows.",
+          "Audit current generative AI tool stacks within the marketing department; likely benefit is identifying cost efficiencies and capability gaps; implementation requires a brief survey of team members."
+        ],
+        "priority_reason": "The item is a headline-only report of application download trends without actionable B2B operational details.",
+        "needs_validation": true,
+        "validation_note": "Verify the original article to check the timeframe, geographic market, sample size, and specific data sources behind the reported download surge and decline."
       }
     },
     {
@@ -181,21 +280,44 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The announcement is from OpenAI and relates to foundational AI models and theoretical physics without regional restriction.",
+      "priority": "Low",
       "priority_score": 8,
       "excerpt": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
-      "companies": [],
+      "companies": [
+        "OpenAI"
+      ],
       "topics": [
-        "gpt"
+        "AI models",
+        "GPT-6 Astra",
+        "scientific research"
       ],
       "also_covered_by": [],
       "url_check": "restricted",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:38:09Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "OpenAI News reports on a candidate nonperturbative lattice definition of the Standard Model. The publisher states that GPT-6 Astra helped turn this idea into a detailed proof.",
+        "summary": "OpenAI News announces a development involving a nonperturbative lattice definition of the Standard Model, aided by the use of GPT-6 Astra in developing a detailed proof. The text is an excerpt indicating an advance in theoretical physics research supported by advanced AI models. This highlights the growing capability of large language models to assist in complex scientific and mathematical proofs.",
+        "why_it_matters": "While primarily a scientific advancement rather than a standard B2B marketing feature release, this development signals ongoing capabilities in advanced reasoning models like GPT-6 Astra. For marketing operations and AI tool evaluation, it demonstrates the increasing depth of specialized reasoning tasks that future AI infrastructure may support. B2B marketers should monitor how these foundational reasoning improvements eventually trickle down to enterprise productivity and analytics tooling.",
+        "applications": [
+          "Assess future versions of enterprise AI models for complex data analysis tasks.",
+          "Explore advanced reasoning capabilities for specialized market research modeling.",
+          "Review internal AI tool stacks to anticipate upgrades in analytical precision."
+        ],
+        "recommendations": [
+          "Explore advanced reasoning model updates from AI vendors; relevant tool types include LLMs and analytical assistants; likely benefit is improved complex problem solving; implementation consideration involves monitoring API readiness and cost.",
+          "Test current enterprise AI systems on analytical logic tasks; relevant tool types include LLM evaluation frameworks; likely benefit is understanding current capability ceilings; implementation consideration requires structured benchmark prompts.",
+          "Monitor AI research publications for enterprise applicability; relevant tool types include industry newsletters and intelligence feeds; likely benefit is early strategic awareness; implementation consideration is separating research hype from commercial utility."
+        ],
+        "priority_reason": "It is a theoretical physics research update with no immediate, direct impact on daily B2B marketing operations or campaign execution.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article to understand the exact methodology used by GPT-6 Astra and whether any enterprise or marketing analytics applications are mentioned."
       }
     },
     {
@@ -212,21 +334,46 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The announcement originates from OpenAI without any specific geographic restriction or focus on India.",
+      "priority": "Low",
       "priority_score": 8,
       "excerpt": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
-      "companies": [],
+      "companies": [
+        "OpenAI"
+      ],
       "topics": [
-        "openai"
+        "AI",
+        "Science",
+        "Research",
+        "Content"
       ],
       "also_covered_by": [],
       "url_check": "restricted",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:38:18Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "OpenAI News reports the launch of a new science blog. The publication shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery according to the text.",
+        "summary": "OpenAI News has launched a dedicated science blog to showcase research findings, practical methods, and firsthand accounts of artificial intelligence being applied to scientific discovery. Based strictly on the provided text, the blog is designed to highlight how researchers utilise AI in their work. Beyond this stated purpose, B2B marketers must look to the full source article to determine if these methodologies intersect with enterprise predictive analytics or data modelling.",
+        "why_it_matters": "Understanding how advanced AI methodologies are applied in scientific research can offer B2B marketers tangential insights into complex data processing and predictive modelling. However, the current excerpt is broad and lacks immediate commercial, campaign, or CRM-specific implications.",
+        "applications": [
+          "Review the full blog posts to identify advanced data processing techniques that could inform marketing analytics models.",
+          "Monitor how researchers structure complex prompts or workflows for potential replication in content automation.",
+          "Assess case studies on AI-driven discovery to see if B2B customer research methodologies can be enhanced."
+        ],
+        "recommendations": [
+          "Explore the published articles on the new blog to identify transferable data interpretation methods.",
+          "Utilise content curation tools to track relevant scientific AI updates if they intersect with your industry vertical.",
+          "Weigh the relevance of scientific AI findings against current B2B marketing analytics use cases to avoid wasting resources.",
+          "Verify the actual publishing cadence and content depth in the original article before allocating time to monitor it."
+        ],
+        "priority_reason": "The text only announces a new blog without detailing specific B2B marketing tools, policy updates, or actionable platform changes.",
+        "needs_validation": true,
+        "validation_note": "Read the full original article to determine the exact nature, frequency, and technical depth of the published content to assess its relevance to B2B marketing analytics."
       }
     },
     {
@@ -243,21 +390,45 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The development concerns Anthropic, a global artificial intelligence company, with no specific local market focus mentioned.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic",
+        "CNN"
+      ],
       "topics": [
-        "anthropic"
+        "Artificial Intelligence",
+        "Anthropic",
+        "Tech Profile"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:38:27Z",
+        "evidence": "headline_only",
+        "reported_facts": "CNN reports on an engineer behind Anthropic's major product who also makes miso, based solely on the article headline. No additional body text, metrics, dates, or product details were provided in the syndicated feed.",
+        "summary": "CNN has published a profile focusing on an engineer responsible for Anthropic's most successful product offering. Because only the headline was provided in the feed, specific technical details, product names, and business outcomes are entirely absent. The piece appears to offer a human-interest look at the technical talent driving AI development at Anthropic.",
+        "why_it_matters": "Understanding the talent and organizational background behind major AI model developers provides context on how conversational and analytical tools are built. However, without specific details on model capabilities or enterprise features, this piece has no direct operational impact on B2B marketing workflows today.",
+        "applications": [
+          "Monitor Anthropic news channels for subsequent product or API releases",
+          "Review competitor AI model updates if technical capabilities are later disclosed",
+          "Assess whether upcoming Anthropic tool releases impact current AI-driven automation workflows"
+        ],
+        "recommendations": [
+          "Explore full article; Review original CNN publication; Verify technical announcements; Benefit: Obtain complete context on Anthropic developments",
+          "Monitor Anthropic developer changelogs; Check API documentation; Benefit: Stay informed on platform capabilities; Consideration: Requires manual tracking",
+          "Review internal AI tool stack; Assess dependency on Anthropic models; Benefit: Maintain operational readiness; Consideration: Low urgency based on headline alone"
+        ],
+        "priority_reason": "The feed contains only a headline about a personnel profile without any actionable marketing, platform, or technical updates.",
+        "needs_validation": true,
+        "validation_note": "Read the full article on CNN to check if any specific AI products, enterprise features, or marketing-relevant technologies are discussed."
       }
     },
     {
@@ -274,22 +445,46 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The development concerns an AI product release from Anthropic with worldwide applicability.",
+      "priority": "Low",
       "priority_score": 10,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic",
+        "ZDNET"
+      ],
       "topics": [
-        "anthropic",
-        "claude"
+        "AI",
+        "Spreadsheets",
+        "Marketing Operations",
+        "Analytics"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:38:36Z",
+        "evidence": "headline_only",
+        "reported_facts": "ZDNET reports on four ways Anthropic's new Claude Sheets outperform using a Google Sheets connector in testing. No body text or further details were syndicated in the feed.",
+        "summary": "ZDNET has published an article comparing Anthropic's new Claude Sheets feature against traditional Google Sheets connectors, citing four specific advantages. Due to the lack of syndicated feed text, the exact nature of these advantages remains unspecified. B2B marketers must review the original source to understand how Claude Sheets integrates with spreadsheet workflows.",
+        "why_it_matters": "Spreadsheets are foundational for marketing operations, pipeline tracking, and reporting data analysis. If Claude Sheets offers superior functionality over standard connectors, it could change how marketing analysts clean data, generate reports, and build automated workflows without relying on complex third-party tools.",
+        "applications": [
+          "Investigate Claude Sheets for processing raw lead export data from CRM systems",
+          "Evaluate its capabilities in generating automated marketing performance reports compared to existing connectors",
+          "Test natural language data querying for campaign analytics within spreadsheet environments"
+        ],
+        "recommendations": [
+          "Explore the original ZDNET article; Tool type: AI assistant and spreadsheet integration; Benefit: uncover workflow efficiencies; Consideration: verify feature availability and data privacy terms.",
+          "Test Claude Sheets against current Google Sheets connectors for a sample lead generation dataset; Tool type: LLM-powered spreadsheet add-on; Benefit: assess speed and accuracy gains; Consideration: check API rate limits or usage costs.",
+          "Audit current marketing analytics workflows that rely on brittle spreadsheet connectors; Tool type: Marketing data pipeline tools; Benefit: identify potential migration paths; Consideration: evaluate team training requirements for prompt-based spreadsheet work."
+        ],
+        "priority_reason": "The feed contains only a headline with no operational details, requiring manual validation of the source article before any workflow changes can be considered.",
+        "needs_validation": true,
+        "validation_note": "Read the full ZDNET article to review the four specific advantages of Claude Sheets over Google Sheets connectors and check for any B2B marketing use cases."
       }
     },
     {
@@ -306,21 +501,45 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The development concerns a global technology release with no specific geographic restriction mentioned.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "BigGo Finance"
+      ],
       "topics": [
-        "claude"
+        "Claude Fable 5.2",
+        "Generative AI",
+        "Web Performance",
+        "Interactive Content"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:38:46Z",
+        "evidence": "headline_only",
+        "reported_facts": "BigGo Finance reports that Claude Fable 5.2 built a 97 KB underwater world at 180 FPS without a game engine. No further details were provided in the syndicated feed text.",
+        "summary": "BigGo Finance reports that a tool or model named Claude Fable 5.2 has generated a 97 KB underwater world running at 180 FPS without requiring a game engine. Because the syndicated feed contains only a headline, the exact nature, mechanics, and capabilities of Claude Fable 5.2 remain unverified. Interpreted strictly from the headline, this points to lightweight, high-performance generative simulation capabilities that bypass traditional rendering engines. However, without body text, it is unclear whether this is an AI model update, a software release, or a technical demonstration.",
+        "why_it_matters": "For B2B marketers and technologists working with interactive content, lightweight rendering capabilities could eventually transform how immersive product demos or web-based experiences are delivered. If generative models can build high-performance environments with minimal file sizes, web load times and cross-device accessibility for interactive campaigns could improve significantly. However, until official documentation confirms marketing use cases, this remains an emerging technology to monitor from a distance.",
+        "applications": [
+          "Exploring ultra-lightweight interactive product visualisations for web-based B2B landing pages",
+          "Testing high-performance browser-based environments for virtual exhibitions or trade shows",
+          "Assessing how compressed generative code might reduce asset delivery times in digital campaigns"
+        ],
+        "recommendations": [
+          "Explore official Anthropic or release documentation regarding Claude Fable 5.2 to identify intended use cases and API availability; likely benefit is early awareness of new creative rendering capabilities; implementation consideration is that this may currently be experimental or speculative.",
+          "Monitor tech and AI development channels for benchmarks on lightweight rendering tool types; relevant tool type is generative AI code and asset creation platforms; likely benefit is understanding future web performance capabilities; implementation consideration is potential divergence from standard martech stacks.",
+          "Evaluate current web asset delivery methods to see where heavy rendering or game engines currently bottleneck user experience; relevant tool type is web analytics and performance auditing tools; likely benefit is identifying high-friction user journeys; implementation consideration is ensuring compatibility with existing CRM and tracking pixels."
+        ],
+        "priority_reason": "The feed contains only a headline with no actionable B2B marketing details or verified product release notes.",
+        "needs_validation": true,
+        "validation_note": "Verify the original article to confirm what Claude Fable 5.2 is, whether it is an official product release, and if it has any application to web development or digital marketing."
       }
     },
     {
@@ -337,22 +556,45 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The development concerns an international AI model release by Anthropic without specific geographic restriction.",
+      "priority": "Low",
       "priority_score": 10,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic"
+      ],
       "topics": [
-        "anthropic",
-        "claude"
+        "AI",
+        "Generative AI",
+        "Content Creation",
+        "MarTech"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:38:56Z",
+        "evidence": "headline_only",
+        "reported_facts": "The Decoder reports in an article titled 'Anthropic's Claude Fable 5.2 doesn't generate images, it paints them' that a new iteration of Anthropic's Claude model exists. No body text was provided in the syndicated feed beyond the headline.",
+        "summary": "The Decoder reports on the release or existence of Anthropic's Claude Fable 5.2, with a headline suggesting advanced visual generation capabilities described as painting rather than standard generation. As no further details were syndicated in the feed, this summary relies entirely on the headline's framing of the model's creative visual outputs. B2B marketers should treat these capability claims as unverified until the full article or official release notes are reviewed.",
+        "why_it_matters": "If generative AI models develop more advanced visual design capabilities, it could impact how marketing teams produce creative assets for campaigns, landing pages, and B2B content. However, without technical specifics on Claude Fable 5.2, any immediate impact on marketing operations or campaign workflows remains speculative.",
+        "applications": [
+          "Review official Anthropic announcements regarding Claude Fable 5.2 to assess visual asset generation capabilities.",
+          "Monitor whether new model iterations integrate into existing content creation workflows or martech toolchains.",
+          "Evaluate potential use cases for advanced visual generation in personalized B2B campaign collateral."
+        ],
+        "recommendations": [
+          "Explore the original source article; check official Anthropic release notes; determine if Claude Fable 5.2 offers practical creative utilities for B2B design; verify feature availability before planning workflows.",
+          "Test current Claude models for text-based campaign planning while awaiting verified details on Fable 5.2; benchmark output quality against existing design tools; measure time saved in asset ideation; ensure brand guideline compliance.",
+          "Audit current generative AI tool stacks; assess team readiness for advanced multimodal models; identify specific creative bottlenecks in campaign production; measure ROI on content generation spend."
+        ],
+        "priority_reason": "The feed contains only a headline with no operational details, requiring verification before any action can be taken.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article text from The Decoder to confirm what specific capabilities Claude Fable 5.2 actually possesses regarding image generation."
       }
     },
     {
@@ -369,21 +611,41 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The report covers a general technology development without specific geographic targeting.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Wccftech"
+      ],
       "topics": [
-        "claude"
+        "AI",
+        "Generative AI",
+        "Rendering",
+        "Performance"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:39:05Z",
+        "evidence": "headline_only",
+        "reported_facts": "Wccftech reports that Claude Fable 5.2 created an underwater world in 97 KB that runs at 180 FPS on an RTX 5070 Ti without a game engine. No body text or further details were syndicated in the feed.",
+        "summary": "Wccftech reports that a system named Claude Fable 5.2 has generated an extremely lightweight underwater world measuring just 97 KB, capable of running at 180 frames per second on specific hardware without a traditional game engine. Because the provided feed only contained the headline, the exact nature of Claude Fable 5.2—whether it is an AI model variant or an automated development tool—remains unconfirmed. Interpreting this development suggests a potential leap in generative efficiency and asset compression, though its direct relevance to B2B marketing operations requires verification.",
+        "why_it_matters": "While primarily a technological and graphical milestone, advancements in extreme file compression and high-performance rendering can eventually influence how interactive web content, rich media ads, and immersive product demonstrations are delivered in B2B marketing. Marketers tracking generative technology will need to watch how such rendering efficiency translates into web-based lead generation assets and lighter interactive microsites. However, until full details are available, this remains a technical novelty rather than an immediate operational change.",
+        "applications": [
+          "Exploring lightweight interactive 3D product configurators for B2B buyer journeys",
+          "Investigating hyper-compressed web assets to improve page load speeds and landing page conversion rates",
+          "Assessing generative AI capabilities for rapid prototyping of visual marketing collateral"
+        ],
+        "recommendations": [],
+        "priority_reason": "The text is a headline-only excerpt about a technical benchmark with no immediate application to B2B marketing operations.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article on Wccftech to confirm the exact nature of Claude Fable 5.2 and whether it is relevant to commercial software or marketing technology."
       }
     },
     {
@@ -400,22 +662,45 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "region_reason": "Anthropic is a global AI provider operating internationally.",
       "priority": "Medium",
       "priority_score": 10,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic"
+      ],
       "topics": [
-        "anthropic",
-        "claude"
+        "Anthropic",
+        "IPO",
+        "Artificial Intelligence",
+        "MarTech"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:39:15Z",
+        "evidence": "headline_only",
+        "reported_facts": "Stocks Down Under reports that Anthropic, the maker of Claude, is allegedly targeting an IPO on the Nasdaq this week with a valuation of $1.4 trillion. No body text was syndicated in the feed, leaving the details unverified.",
+        "summary": "Stocks Down Under reports that Anthropic is targeting an IPO on the Nasdaq this week with a $1.4 trillion valuation. As this is based solely on a headline without body text, the financial figures and timeline remain unverified. If accurate, such a monumental public debut would significantly impact the valuation and market positioning of major artificial intelligence providers.",
+        "why_it_matters": "A public offering of this magnitude for a major foundational AI model provider would inject massive capital into the AI sector, likely accelerating product development, enterprise feature rollouts, and platform integrations. For B2B marketers utilizing AI-driven martech and automation, shifts in Anthropic's commercial strategy, pricing models, or enterprise compliance offerings could directly impact operational toolsets.",
+        "applications": [
+          "Monitor enterprise service-level agreements and pricing structures if Claude-powered marketing tools experience commercial restructuring post-IPO.",
+          "Evaluate upcoming enterprise governance and data privacy updates from Anthropic to ensure compliance in lead generation and customer data processing.",
+          "Assess whether increased capital injection by Anthropic accelerates advanced marketing automation and content generation features in connected MarTech stacks."
+        ],
+        "recommendations": [
+          "Explore current enterprise integrations with Claude; relevant tool types include AI content assistants and CRM automation tools. The likely benefit is early awareness of capability expansions. Implementation consideration: verify data privacy and residency commitments.",
+          "Monitor official financial filings and press releases from Anthropic; relevant tool types include financial news aggregators. The likely benefit is validating IPO timelines and strategic growth pivots. Implementation consideration: distinguish verified announcements from market speculation.",
+          "Audit dependency on LLM-based workflows; relevant tool types include multi-model orchestration platforms. The likely benefit is mitigating vendor lock-in risks. Implementation consideration: maintain fallback models for automated email and messaging campaigns."
+        ],
+        "priority_reason": "A potential multi-trillion-dollar IPO of a major AI provider is a significant market event, though details require validation.",
+        "needs_validation": true,
+        "validation_note": "Verify the original article to confirm if the IPO details, timing, and valuation figures are substantiated beyond the headline."
       }
     },
     {
@@ -432,21 +717,48 @@
       "category": "b2b",
       "category_label": "B2B Marketing",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "region_reason": "The report discusses Google Ads performance trends from an agency dataset without specifying a regional restriction.",
       "priority": "Medium",
       "priority_score": 8,
       "excerpt": "One agency's data on 14 B2B advertisers finds the same non-brand Google Ads keywords cost more per click, even after controlling for their own spending. The post Higher Spend Came With Pricier Clicks For 14 B2B Google Advertisers appeared first on Search Engine Journal .",
-      "companies": [],
+      "companies": [
+        "Google"
+      ],
       "topics": [
-        "b2b"
+        "Google Ads",
+        "B2B Marketing",
+        "Cost Per Click",
+        "Paid Search",
+        "Lead Generation"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:39:25Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "Search Engine Journal reports that data from one agency regarding 14 B2B advertisers shows that identical non-brand Google Ads keywords cost more per click, even after controlling for the advertisers' own spending levels. The provided text is a short excerpt, so specific cost figures and the agency's identity are not mentioned in the source.",
+        "summary": "Search Engine Journal highlights agency data indicating that B2B advertisers face higher cost-per-click rates for the same non-brand Google Ads keywords as their spending increases, independent of their own budget scale. While the excerpt lacks granular data on percentage increases or timeframes, it suggests diminishing efficiency in paid search auctions for B2B brands. This trend may point to rising auction competition, shifts in advertiser bidding behavior, or platform-side changes in how keyword value is determined for enterprise and B2B search terms.",
+        "why_it_matters": "Rising costs per click for non-brand B2B search terms directly squeeze customer acquisition costs (CAC) and lower return on ad spend (ROAS) for paid search channels. B2B marketing operations must monitor these efficiency drops to reallocate budgets effectively between high-intent paid search and alternative acquisition channels like LinkedIn or account-based marketing. If bidding escalation continues unchecked, it forces teams to rely more heavily on long-tail keyword strategies and rigorous conversion rate optimization to maintain pipeline velocity.",
+        "applications": [
+          "Audit historical Google Ads non-brand campaign data to identify if cost-per-click inflation correlates with budget scaling.",
+          "Diversify paid acquisition spend into alternative B2B channels such as LinkedIn Ads or targeted WhatsApp outreach to reduce dependence on inflating search auctions.",
+          "Refine negative keyword lists and tightly control match types to filter out irrelevant traffic that drives up acquisition costs.",
+          "Align marketing analytics with CRM revenue data to calculate true pipeline value against rising search acquisition costs."
+        ],
+        "recommendations": [
+          "Explore advanced bidding strategies and portfolio bid strategies in Google Ads, with the benefit of better budget control, keeping in mind that auction pressure may still raise base costs.",
+          "Test alternative B2B ad platforms like LinkedIn or Microsoft Advertising to compare cost-per-click efficiency against Google Ads.",
+          "Audit current search query reports monthly to prevent budget waste on inefficient non-brand terms.",
+          "Review attribution models to ensure paid search is properly credited for downstream pipeline contribution rather than just initial clicks."
+        ],
+        "priority_reason": "It highlights an important cost trend in paid search performance that impacts B2B lead generation efficiency.",
+        "needs_validation": true,
+        "validation_note": "Verify the original Search Engine Journal article to check the identity of the agency, the specific percentage increase in CPC, and the timeframe of the dataset."
       }
     },
     {
@@ -463,22 +775,47 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "Anthropic and Claude operate on a global scale with worldwide enterprise users.",
+      "priority": "Low",
       "priority_score": 10,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic"
+      ],
       "topics": [
-        "anthropic",
-        "claude"
+        "AI",
+        "Anthropic",
+        "Claude",
+        "Corporate Governance",
+        "MarTech"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:39:34Z",
+        "evidence": "headline_only",
+        "reported_facts": "Medium reports in an article by Kumar Ankit that investors can buy Anthropic stock, but they still will not control Claude. No further details are provided in the syndicated feed text.",
+        "summary": "Medium reports that while Anthropic stock is available for purchase, investors will not gain control over the Claude AI model. As the feed text contains only the headline, the exact mechanism, ownership structure, or financial implications discussed in the article remain unconfirmed. B2B marketers monitoring AI investments must await the full article to understand the context of this ownership or governance dynamic.",
+        "why_it_matters": "For B2B marketing operations relying heavily on foundational AI models like Claude, changes in corporate ownership or investor governance can influence platform roadmaps, enterprise pricing models, and data privacy policies. Understanding who controls these technologies helps marketing leaders assess long-term vendor stability and platform dependency.",
+        "applications": [
+          "Review current dependency on Claude for automated content generation and customer interaction workflows",
+          "Monitor vendor updates regarding enterprise data governance and roadmap stability",
+          "Assess risk mitigation strategies for multi-model AI architectures in marketing automation"
+        ],
+        "recommendations": [
+          "Explore the full article on Medium; Tool types: Web reader; Benefit: Gain context on Anthropic corporate structure; Consideration: Verify factual backing of the headline claims",
+          "Review enterprise AI vendor agreements; Tool types: Contract management platforms; Benefit: Understand rights and service level commitments; Consideration: Check termination and data portability clauses",
+          "Test multi-model fallback systems; Tool types: LLM orchestration tools; Benefit: Prevent workflow disruption if a single provider changes terms; Consideration: Requires technical integration effort",
+          "Audit current generative AI usage across content and analytics teams; Tool types: Internal audit logs; Benefit: Map operational exposure to Anthropic; Consideration: May require cross-departmental coordination"
+        ],
+        "priority_reason": "The feed contains only a headline with no operational details or immediate action items for marketers.",
+        "needs_validation": true,
+        "validation_note": "Read the full article on Medium to verify the context, financial details, and specific claims regarding Anthropic stock and Claude control."
       }
     },
     {
@@ -495,21 +832,47 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "The development involves global technology giants Anthropic, AMD, and Nvidia without specific regional constraints.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Anthropic",
+        "AMD",
+        "Nvidia",
+        "Yahoo Finance"
+      ],
       "topics": [
-        "anthropic"
+        "ai infrastructure",
+        "hardware",
+        "market analysis"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:39:43Z",
+        "evidence": "headline_only",
+        "reported_facts": "Yahoo Finance reports that Anthropic has delivered news described as positive for AMD investors and negative for Nvidia. No body text or further details were syndicated in the feed to explain the underlying announcements or technical developments.",
+        "summary": "Yahoo Finance published a headline indicating that a recent development involving Anthropic holds positive implications for AMD investors and negative implications for Nvidia. Because only the headline was provided in the feed, specific details regarding hardware adoption, partnership terms, or technological benchmarks remain unknown. Any interpretation of enterprise AI infrastructure shifts must remain cautious until the full article is reviewed.",
+        "why_it_matters": "Shifts in AI hardware preference among foundational model providers like Anthropic directly impact enterprise computing costs, cloud infrastructure availability, and the competitive positioning of major silicon vendors. B2B marketers relying on AI-driven infrastructure and LLMs should monitor underlying hardware trends as they eventually influence API pricing, performance capabilities, and platform reliability across marketing technology stacks.",
+        "applications": [
+          "Monitor enterprise AI vendor roadmaps to anticipate changes in model pricing and API performance capabilities.",
+          "Evaluate upcoming multi-model deployment strategies to avoid over-reliance on a single hardware ecosystem.",
+          "Assess potential cost efficiencies in AI-powered marketing automation tools if compute costs shift among chip providers."
+        ],
+        "recommendations": [
+          "Explore multi-model AI architectures in marketing automation platforms to maintain operational flexibility, with the benefit of avoiding vendor lock-in; consider API management overhead during implementation.",
+          "Test emerging LLMs built on alternative hardware setups against current workflows to benchmark performance, with the benefit of identifying cost-saving opportunities; ensure strict data privacy compliance during testing.",
+          "Review cloud infrastructure and enterprise software contracts for flexibility regarding underlying AI compute dependencies, with the benefit of mitigating unexpected price volatility; legal review is recommended."
+        ],
+        "priority_reason": "The feed contains only a headline with no actionable operational details for B2B marketers at this stage.",
+        "needs_validation": true,
+        "validation_note": "Verify the original article to determine the exact nature of Anthropic's announcement regarding AMD and Nvidia, and whether it involves hardware procurement, performance benchmarks, or financial partnerships."
       }
     },
     {
@@ -523,24 +886,48 @@
       "credibility": "aggregator",
       "published_at": "2026-11-15T10:00:42Z",
       "collected_at": "2026-11-16T02:21:00Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
+      "region_reason": "HubSpot is a global software platform and Forbes is an international publication.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "HubSpot",
+        "Forbes"
+      ],
       "topics": [
-        "hubspot"
+        "founder comeback",
+        "small business",
+        "strategy"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:39:53Z",
+        "evidence": "headline_only",
+        "reported_facts": "Forbes reports on lessons small businesses can learn from a founder comeback at HubSpot. No body text was provided in the syndicated feed.",
+        "summary": "Forbes has published an article discussing strategic lessons that small businesses can draw from a founder comeback at HubSpot. Because only the headline was syndicated in the feed, specific details regarding the nature of the comeback, leadership changes, or exact strategic takeaways are currently unknown. Marketers and business leaders must consult the original article to understand the context and specific advice offered.",
+        "why_it_matters": "HubSpot is a dominant player in the B2B marketing, CRM, and inbound automation space, so leadership or strategic shifts at the company can signal broader philosophy changes that affect users. However, without the article text, the direct business implications for B2B marketers, CRM administrators, or campaign strategists remain speculative.",
+        "applications": [
+          "Review current HubSpot CRM workflows and strategic alignments in light of company developments",
+          "Examine founder-led growth strategies for small B2B agency or SaaS positioning",
+          "Monitor official communications from HubSpot regarding product roadmap shifts or strategic pivots"
+        ],
+        "recommendations": [
+          "Explore the original Forbes article; Tool types: Web browser / publication reader; Likely benefit: Gaining leadership and growth insights; Implementation considerations: Read source text directly before acting.",
+          "Audit current dependency on HubSpot marketing and CRM infrastructure; Tool types: CRM audit tools; Likely benefit: Risk mitigation and alignment check; Implementation considerations: Assess if any strategic shifts impact current integrations.",
+          "Review small business scaling playbooks inspired by enterprise tech founders; Tool types: Business strategy frameworks; Likely benefit: Improved go-to-market execution; Implementation considerations: Adapt enterprise lessons to SMB budget constraints."
+        ],
+        "priority_reason": "The feed contains only a headline with no body text, making immediate operational impact impossible to determine.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article content on Forbes to extract the specific strategic lessons and details of the HubSpot founder comeback."
       }
     },
     {
@@ -557,23 +944,48 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "India",
-      "region_reason": "Headline references India-specific context (sebi).",
+      "region_reason": "The development directly involves Sebi (Securities and Exchange Board of India) formulating regulatory guidelines for the Indian capital markets.",
       "priority": "Medium",
       "priority_score": 6,
       "excerpt": "Markets regulator Sebi will soon issue detailed guidelines for the responsible use of Artificial Intelligence (AI) in the capital markets, its chairman Tuhin Kanta Pandey said, emphasising the need to balance technological innovation with investor protection. The Sebi chief said the proposed…",
-      "companies": [],
+      "companies": [
+        "Sebi"
+      ],
       "topics": [
-        "ai adoption",
-        "artificial intelligence",
-        "machine learning"
+        "Artificial Intelligence",
+        "Regulation",
+        "Investor Protection",
+        "Cybersecurity",
+        "India"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:40:09Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "YourStory reports that markets regulator Sebi will soon issue detailed guidelines for the responsible use of Artificial Intelligence in capital markets, focusing on investor protection and innovation balance. Sebi Chairman Tuhin Kanta Pandey stated that these guidelines will establish guardrails such as mandatory disclosures, entity accountability, and a human-in-the-loop requirement for critical decisions. Additionally, Pandey noted that Sebi uses an AI supervisory tool called 'Sudarshan' and is reviewing frameworks for startups, cybersecurity, and quantum computing risks.",
+        "summary": "Sebi is preparing to release comprehensive AI usage guidelines for capital markets to ensure investor protection, market integrity, and adequate oversight through a human-in-the-loop framework. According to the reported facts, these upcoming regulations will enforce transparency via disclosures and clear accountability for regulated entities deploying artificial intelligence. Beyond AI governance, the regulator is evaluating cybersecurity frameworks, quantum computing vulnerabilities, and structural changes to the Innovators Growth Platform to support deep-tech and biotech startups. From an interpretation standpoint, while these rules currently target financial institutions and capital market intermediaries, they signal a broader regulatory tightening across India that may eventually influence compliance standards for B2B tech vendors selling AI-driven marketing and analytics solutions to financial clients.",
+        "why_it_matters": "For B2B marketing and technology providers operating in or selling into the Indian financial sector, incoming Sebi guidelines mean that any AI-driven lead scoring, automated communication, or predictive analytics tools must incorporate stringent human oversight, transparency, and accountability measures. Marketing operations teams will need to align their automated workflows and generative AI deployments with regulatory compliance demands, ensuring that client-facing or investor-facing interactions maintain audit trails and human validation.",
+        "applications": [
+          "Audit existing AI-powered lead scoring and customer segmentation workflows to ensure a human-in-the-loop review step is documented before automated financial actions occur.",
+          "Update automated email campaigns and WhatsApp conversational bots targeting financial sector clients to ensure clear disclosures regarding the use of AI.",
+          "Review data privacy and security measures for marketing analytics tools used by financial institutions to align with stricter Sebi cybersecurity and incident response expectations.",
+          "Prepare compliance and legal documentation for marketing technology offerings that utilise machine learning models, ensuring accountability criteria are met."
+        ],
+        "recommendations": [
+          "Explore compliance management platforms to track AI model usage and ensure transparent disclosure practices for marketing automation.",
+          "Test current CRM workflows to introduce mandatory manual approval gates for automated communications sent to capital market segments.",
+          "Consult legal counsel regarding India-specific regulatory impacts on B2B data handling and AI applications within financial services.",
+          "Evaluate vendor readiness to ensure third-party martech tools comply with emerging regulatory expectations around AI accountability."
+        ],
+        "priority_reason": "It establishes upcoming compliance guardrails for AI usage that will affect how financial services and associated vendors deploy marketing and automation technologies in India.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -587,24 +999,50 @@
       "credibility": "aggregator",
       "published_at": "2026-11-15T09:01:28Z",
       "collected_at": "2026-11-16T02:21:00Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
+      "category": "martech",
+      "category_label": "Marketing Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "region_reason": "HubSpot is a global B2B marketing platform operating across international markets.",
       "priority": "Medium",
       "priority_score": 7,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "HubSpot",
+        "Business Chief"
+      ],
       "topics": [
-        "hubspot"
+        "CRM",
+        "MarTech",
+        "Leadership",
+        "Strategy"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:40:19Z",
+        "evidence": "headline_only",
+        "reported_facts": "Business Chief reports that HubSpot has named a new Chief Executive Officer as part of a company turnaround strategy. The provided text consists solely of the headline, with no additional body text available in the feed.",
+        "summary": "Business Chief reports that HubSpot has appointed a new CEO to execute a company turnaround strategy. Since the feed only provided a headline, exact details regarding the identity of the new CEO, the timeline, and the specific drivers of the turnaround strategy remain unknown. Leadership transitions at major CRM and marketing automation platforms frequently precede shifts in product roadmap priorities, enterprise pricing, or partner ecosystems. Marketers relying heavily on the HubSpot ecosystem should monitor upcoming official announcements for strategic pivots that could impact CRM administration, sales-marketing alignment tools, or platform integrations.",
+        "why_it_matters": "A change in executive leadership at a core CRM and marketing automation provider often signals strategic realignments that can influence platform pricing, feature development roadmaps, and support models. For B2B marketing operations teams, shifts at the top of a major vendor can eventually trickle down to affect integration capabilities, API availability, and the overall total cost of ownership. Staying informed on these corporate developments helps marketing leaders anticipate potential changes to their primary technology stack and adjust their operational planning accordingly.",
+        "applications": [
+          "Review current HubSpot contract terms and renewal dates to protect against potential pricing or packaging shifts",
+          "Audit existing custom integrations and dependencies built on the HubSpot platform to prepare for any future API or architectural updates",
+          "Monitor official HubSpot communications and investor relations updates for specifics regarding the turnaround strategy and product priorities"
+        ],
+        "recommendations": [
+          "Explore upcoming vendor communications; check official HubSpot blog or investor relations for CEO transition details; anticipate potential roadmap shifts; ensure stakeholder awareness.",
+          "Review CRM and marketing automation tool redundancy; evaluate reliance on HubSpot-specific features; identify critical dependencies; mitigate vendor lock-in risks.",
+          "Engage with HubSpot account representatives; inquire about upcoming strategic changes; assess potential impact on tier pricing; secure favorable renewal terms if applicable.",
+          "Monitor marketing technology industry news; track partner ecosystem reactions; identify early signals of feature depreciation or new investments; maintain agility in stack management."
+        ],
+        "priority_reason": "Executive leadership changes at core MarTech vendors are important to track for long-term strategic planning, though immediate operational impacts are not yet detailed.",
+        "needs_validation": true,
+        "validation_note": "Verify the name of the new CEO, the official reasons behind the turnaround strategy, and any immediate implications for product roadmaps in the full article."
       }
     },
     {
@@ -621,21 +1059,48 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "region_reason": "The security breach involves global software tools without specific geographic restriction to India.",
       "priority": "Medium",
       "priority_score": 10,
       "excerpt": "",
-      "companies": [],
+      "companies": [
+        "Cursor",
+        "Fireworks AI",
+        "Claude"
+      ],
       "topics": [
-        "claude"
+        "AI Security",
+        "Data Breach",
+        "API Keys",
+        "Developer Tools"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 1,
+      "classification": "ai",
+      "ai_attempts": 2,
       "analysis": {
-        "status": "failed",
-        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-16T02:40:28Z",
+        "evidence": "headline_only",
+        "reported_facts": "BigGo Finance reports that Cursor confirmed a data breach involving a stolen Fireworks AI key. The breach allowed hackers to poison the Claude Code extension affecting up to 5,000 users. No further details are available in the syndicated feed text.",
+        "summary": "BigGo Finance reports that Cursor experienced a security breach where a stolen Fireworks AI key enabled hackers to poison the Claude Code extension, impacting up to 5,000 users. Because only the headline was provided in the feed, specific details regarding how the attack occurred or the exact remediation steps remain unconfirmed. This incident highlights ongoing cybersecurity vulnerabilities within modern AI-assisted development tooling and third-party extension ecosystems. B2B marketing and technology teams relying on developer extensions must monitor such incidents closely to ensure their internal code and toolchains remain secure.",
+        "why_it_matters": "Incidents involving compromised developer extensions and AI API keys highlight supply chain risks in software tools that marketing and engineering teams frequently integrate. For B2B organizations building custom marketing applications or internal automation scripts using AI tools, a breach in underlying developer platforms can expose proprietary data, lead generation workflows, or customer credentials. Understanding how tool vendors handle API security and third-party access is critical for maintaining robust enterprise security standards.",
+        "applications": [
+          "Review internal usage of the Cursor editor and Claude Code extensions across marketing operations and technical teams.",
+          "Audit all active AI API keys, including Fireworks AI credentials, used within marketing automation and custom CRM integrations.",
+          "Establish stricter vendor risk assessments for third-party extensions and AI tooling integrated into marketing technology stacks.",
+          "Communicate with IT and security teams to verify that no compromised extensions were deployed in development environments."
+        ],
+        "recommendations": [
+          "Explore comprehensive API key management tools; benefit is centralized rotation and monitoring; consideration must be given to developer adoption friction.",
+          "Test automated credential scanning tools within code repositories; benefit is early detection of exposed keys; consideration requires integration into CI/CD pipelines.",
+          "Review vendor security disclosures for all AI-assisted tools used in marketing operations; benefit is proactive risk mitigation; consideration requires dedicated compliance oversight."
+        ],
+        "priority_reason": "It highlights important supply chain and API security risks for technical marketing teams, though direct operational impact depends on internal tool usage.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article to understand the exact attack vector, scope of the breach, affected versions, and official remediation steps recommended by Cursor."
       }
     },
     {
@@ -670,6 +1135,37 @@
       }
     },
     {
+      "id": "9794fdba85e4014f",
+      "title": "Non-Engineer Publishes iPhone App in 13 Days, All Code Generated by AI: Anthropic's Claude Code Is Changing How Development Gets Done",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9aeFdRWjFSUkQ0eG5NRE5TOG9QNDk3aEhVcmZwVmZ2dHVSTVNfUU9wbXF4M3BBYllXMjdlbjVwd1gwcGhGVTZTaERCTXNBN3lzRWVLMm5rWVFnM3I1bkt3Q0M4anFIN1BheDg4RmgyVGlFakxuaUE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9aeFdRWjFSUkQ0eG5NRE5TOG9QNDk3aEhVcmZwVmZ2dHVSTVNfUU9wbXF4M3BBYllXMjdlbjVwd1gwcGhGVTZTaERCTXNBN3lzRWVLMm5rWVFnM3I1bkt3Q0M4anFIN1BheDg4RmgyVGlFakxuaUE?oc=5",
+      "source": "BigGo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-15T02:55:00Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "c6ba4d99691adc1e",
       "title": "Indian-origin founder praises young programmer's cold email after failed attempt to deliver 24 doughnuts: 'One of the coolest' | Trending",
       "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPM3pyelV1RlpFeHlEMVJiVzhIaEVDdkh1WHRhdHRHN1lUdWtHOHMzOWtTaHVhTTlaN1dFMTFDWS10UVNOZl9vNVhvZW9iempaQnQyaEJ3QVFCMnlibmhESzRCNGZYSS1SeDBhVXpONmFTNERFQWVqMDdyNE5XY0E2OEd2NG54RmNtU29VOUNnMkFpaWloVmE3bUFuTnB5OEV2SFpoY0NIVVpNOG0zSjk3NnBWZW5HaXpBQmhpR2l0aGNKVDJRVG9FZHRuVmx3OUhpNGZQajdoNkFBZmNjSjRNcWJoVHBIYUJ5WW1fOFBlV082TWlYYU1ncGduMGJXVGtIRjlHa0NUSTgxcWNEVHI40gGUAkFVX3lxTFByVmRjbzdZcTdBbHY2aktnSm9JSjduWXZ1aGx0bldnRnltQ1JvOU1aa1g2UlByajdFQ0kxMHQ1NExydG9MSGFOTU53NG5xZ1M4S0htS2hYUURjcE13YjY1a0NGMHlqaUMtWktVZlMtQ1JTbUlGOTBqNEpEM0VqYXAzZEVacWhjYzN3MGZlMEhJY3drc0JLd0JaaWROVWJCaXB5bkFyVlF0QkpMc25MREwtZFM0c05DMW1aSlFtWkNfS3pSNFZUcGxCS1pFVl9RY25uYlFaVHVsZVhUZ3JJeTdMczBIajNDYmdCSUhTNnB1T1MzTVpnS3JzOHdrRTUwVVlvUkdneVdyUjNkREdNbW02WVhDTA?oc=5",
@@ -690,6 +1186,36 @@
       "companies": [],
       "topics": [
         "cold email"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "b08cefd9996dfc5a",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "canonical_url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
+      "source": "TechCrunch",
+      "source_id": "techcrunch-ai",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-14T17:30:00Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "companies": [],
+      "topics": [
+        "openai"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -1412,18 +1938,18 @@
       }
     },
     {
-      "id": "8969f398642ac368",
-      "title": "HubSpot brings co-founder Brian Halligan back as CEO",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFpNLThZRFB0MlJHS0VIc0h3OHJXX1k3M2YwSUJjS1E4Yno4UEFnNlZmYW1LVkhzNmpIMFNqR0lVSDlkTHlaYzhHZE1vMm9ERGJNNDRsMWEzY2hQZ3VkcW44VkZkb1l0UHNmc1IxUk81QXk0QkJpVE1NVl91bDNOSw?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFpNLThZRFB0MlJHS0VIc0h3OHJXX1k3M2YwSUJjS1E4Yno4UEFnNlZmYW1LVkhzNmpIMFNqR0lVSDlkTHlaYzhHZE1vMm9ERGJNNDRsMWEzY2hQZ3VkcW44VkZkb1l0UHNmc1IxUk81QXk0QkJpVE1NVl91bDNOSw?oc=5",
-      "source": "Diya TV",
-      "source_id": "gnews-hubspot",
-      "via": "Google News: HubSpot",
+      "id": "9a54c0f466e5cac1",
+      "title": "Anthropic Is the AI Leader But It Faces Many Challengers",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UcXpxbkFEU2NnQk84UW1ZT2JVUkdQVlBQakNGWXRaVHpsalNnaGRpSGVSV21aMkdId3RpVHJHT21ldDdKM0xSMlFXRGxWdE9ld3RQMzM4NEltbjlkUWJJY08teGRUajk2OXZnVXlVdDdaa3BJcmlYRl9TaHh1RFk?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UcXpxbkFEU2NnQk84UW1ZT2JVUkdQVlBQakNGWXRaVHpsalNnaGRpSGVSV21aMkdId3RpVHJHT21ldDdKM0xSMlFXRGxWdE9ld3RQMzM4NEltbjlkUWJJY08teGRUajk2OXZnVXlVdDdaa3BJcmlYRl9TaHh1RFk?oc=5",
+      "source": "Barron's",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
       "credibility": "aggregator",
-      "published_at": "2026-11-13T19:45:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
+      "published_at": "2026-11-13T19:53:00Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
       "region": "Global",
       "region_reason": "No India-specific market, regulatory or geographic focus detected.",
       "priority": "Low",
@@ -1431,7 +1957,7 @@
       "excerpt": "",
       "companies": [],
       "topics": [
-        "hubspot"
+        "anthropic"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -1500,6 +2026,36 @@
       "analysis": {
         "status": "failed",
         "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "ef9d66b176c90bec",
+      "title": "Claude gets manufacturing plugin to read plant records and diagnoses breakdowns",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQ1otY2RFbjJ5Z1lfRGJ2a1lzdXB6YzNubnM1X2RocGNqbzZ0MS1UR0MzTEJNazM5bjVfX2dfbE1oLVV6dEpTQlBicWFnbnVkQWlSU2Q4MUgwNVZHMHVDLWpWSzdjU3o0LXFmYlBGMkdNcmlFSEJNV0pwSTQ5andMc0E0aHFsMjUxV3lTVzh3aGpwUklBQUhld1pna2RKR0VJZGlGSjMtYnJIZlZkaWdMT19yQlNyZGgxSEN4dWM1bGRodUF0M05sWmhQX2U?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQ1otY2RFbjJ5Z1lfRGJ2a1lzdXB6YzNubnM1X2RocGNqbzZ0MS1UR0MzTEJNazM5bjVfX2dfbE1oLVV6dEpTQlBicWFnbnVkQWlSU2Q4MUgwNVZHMHVDLWpWSzdjU3o0LXFmYlBGMkdNcmlFSEJNV0pwSTQ5andMc0E0aHFsMjUxV3lTVzh3aGpwUklBQUhld1pna2RKR0VJZGlGSjMtYnJIZlZkaWdMT19yQlNyZGgxSEN4dWM1bGRodUF0M05sWmhQX2U?oc=5",
+      "source": "Putman Media",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T16:01:28Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -1629,6 +2185,66 @@
       }
     },
     {
+      "id": "b5572505217a25f9",
+      "title": "Wall Street Braces for Anthropic’s Aggressive Spending",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTVpSYzU1cWtsQ0gxRXJPRUdXZlVmc1c5T1V4SlcySnEtd051UUIweW52UzhGOExhNTNrNklaaS1vTmFWZnozN3dic0dVcTZFMVdpRzFYY0FEX3pteHVjSTBmTEZiTjBVWlRKd0FzeFpGazN3Q2NXY1V0SmMxUWxxaW1UOXhDUQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTVpSYzU1cWtsQ0gxRXJPRUdXZlVmc1c5T1V4SlcySnEtd051UUIweW52UzhGOExhNTNrNklaaS1vTmFWZnozN3dic0dVcTZFMVdpRzFYY0FEX3pteHVjSTBmTEZiTjBVWlRKd0FzeFpGazN3Q2NXY1V0SmMxUWxxaW1UOXhDUQ?oc=5",
+      "source": "The New York Times",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T15:09:27Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "71ca71a0ccf413bd",
+      "title": "Why Silicon Valley’s Knives Came Out for Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUWxHUTR3T2hmZ0hnbEpjd1VtQUpIS3V4MjY5LUhvQzhTS1BaMEVwVEg5bVFnTlp1dGc3SEZrdG55VDByX1lXbVhxdTFLUlp4NklDXzFWZ1FOa2U0OFZlc1JsUi0zWXFXYXkxMVJHdU50X1psazB4SzZzZmVDNVJsdjRlSGdVdDJjRmQ0?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUWxHUTR3T2hmZ0hnbEpjd1VtQUpIS3V4MjY5LUhvQzhTS1BaMEVwVEg5bVFnTlp1dGc3SEZrdG55VDByX1lXbVhxdTFLUlp4NklDXzFWZ1FOa2U0OFZlc1JsUi0zWXFXYXkxMVJHdU50X1psazB4SzZzZmVDNVJsdjRlSGdVdDJjRmQ0?oc=5",
+      "source": "The New York Times",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T15:09:04Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "5bf4951adbe9698d",
       "title": "Introducing ChatGPT Wallet",
       "url": "https://openai.com/index/introducing-chatgpt-wallet",
@@ -1710,6 +2326,36 @@
       "topics": [
         "ai agents",
         "ai model"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "31bce081153991a0",
+      "title": "Before you ask for better leads, define ‘better’",
+      "url": "https://martech.org/before-you-ask-for-better-leads-define-better/",
+      "canonical_url": "https://martech.org/before-you-ask-for-better-leads-define-better",
+      "source": "MarTech",
+      "source_id": "martech-org",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T13:58:00Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "Sales wants more leads. They also want better leads. But what does “better” actually mean? Without a shared definition of what makes an account a good fit, lead quality becomes subjective. Sales may prioritize certain companies while marketing targets others, creating a cycle of misaligned…",
+      "companies": [],
+      "topics": [
+        "saas"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -1967,6 +2613,36 @@
       }
     },
     {
+      "id": "b1f4b6725ea3e29b",
+      "title": "HubSpot’s Dual C-Suite Reset: Refounding Bet or Enterprise Catch-Up?",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPM2ZzMlJFbjAwR1lsdHNfYzNWWi1Zc1Q1ZWtYalZlM0M4Nk11Tng3Y0JjZFJzb05HcDA3RUFUX3JZMlBCcTR4Zmt1RXU3a2hjM0stUHNjNUJjUXh4S1ZqZjB3R1BGbXQxNGhQYWFSeVRxYjctREVCeWxzYmJnd05PZkRqczZWSDlnQlJlVkVuWGxseW9NMGZGYS1iV2pPeDJYQUE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPM2ZzMlJFbjAwR1lsdHNfYzNWWi1Zc1Q1ZWtYalZlM0M4Nk11Tng3Y0JjZFJzb05HcDA3RUFUX3JZMlBCcTR4Zmt1RXU3a2hjM0stUHNjNUJjUXh4S1ZqZjB3R1BGbXQxNGhQYWFSeVRxYjctREVCeWxzYmJnd05PZkRqczZWSDlnQlJlVkVuWGxseW9NMGZGYS1iV2pPeDJYQUE?oc=5",
+      "source": "The Futurum Group",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T12:06:27Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "1878d3d5ca13080e",
       "title": "Brands that turned Microsoft Outlook outage into marketing gold",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRDJ3Nk5KWEdYdFF2T3M0OGJ5M0lFaG5qeHFEZk9PclN5b0kyUlRwbjMzSk5jeU1yWlpxY3R3V1paU1lNb19OUjhtaG1GekVET2NQNzMwMGZXQ3lDREs0WkRLNzVUMC12VE9ZWS1Fb1JuNi1oUzRKajdyalBUSDFlV0VYMVBwT3JTNzdSVllXY1lGc3lZbGhTVl9tYlV0QXpsM3RKVTRxTlBQLTFGcU5POXhQSUo1bmFDN01ZbzZB?oc=5",
@@ -2029,6 +2705,37 @@
       }
     },
     {
+      "id": "792679ab60c2774b",
+      "title": "Zaggle Q2 Profit Slips 30% YoY To ₹24.5 Cr Despite Revenue Uptick",
+      "url": "https://inc42.com/buzz/zaggle-q2-profit-slips-30-yoy-to-%e2%82%b924-5-cr-despite-revenue-uptick/",
+      "canonical_url": "https://inc42.com/buzz/zaggle-q2-profit-slips-30-yoy-to-%e2%82%b924-5-cr-despite-revenue-uptick",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T11:58:31Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (₹).",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "Fintech SaaS company Zaggle’s net profit plunged 30% to ₹24.5 Cr in the second quarter (Q2) of the fiscal year 2026-27 (FY27) as against ₹35 Cr in the year-ago period. Sequentially, the company’s profit rose 40% from ₹17.5 Cr in Q1 FY27 . Operating revenue grew 34.2% YoY and 37% QoQ to ₹580 Cr in…",
+      "companies": [],
+      "topics": [
+        "acquisition",
+        "saas"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "fbaa76d7cb85dbb7",
       "title": "Anthropic has launched Claude Meetings for video calls",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ0xUc0NqNWZIY2tkYkt3VVBPU0JqMXZSRW5KcjFhSDJzVlBBM1hFZWQwdGYzZXQ3clBUczJZNThjbEpaeXhmb3RMZkRIei03MEpRaE9fYmoxdWJfUTNzNGEwaTJia19qdEhIa0FXcHVQSWFzd3lqWlRKeVByNWxlcFVn?oc=5",
@@ -2050,6 +2757,67 @@
       "topics": [
         "anthropic",
         "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "0ba94d608c8f88ec",
+      "title": "How far do Google’s smart glasses protect bystanders? We looked at five everyday situations",
+      "url": "https://www.medianama.com/2026/11/223-google-smart-glasses-remove-bystanders-faces/",
+      "canonical_url": "https://medianama.com/2026/11/223-google-smart-glasses-remove-bystanders-faces",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T11:47:24Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "Google’s new smart glasses remove bystanders’ faces from images before its Gemini AI processes them, the company said in a blog post on November 12. Google describes this protection only for images sent to Gemini when a wearer asks about what they are seeing. The post does not say whether it also…",
+      "companies": [],
+      "topics": [
+        "gemini",
+        "ai models"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "4f9ac142b5ee6ac3",
+      "title": "AI is the top 2027 budget grower, surpassing last year’s ABM lead",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQU0ZIVnd6U2xGVFIzNTZTRkw1QTl5QnJaMnY4YnV4dDlpQTRxUHNScTZZZDhSUFBqNkQ2QmMxbTA5NjMxd0J3c1dlSUJrRlZxZHpVRE90a1NvbEVVNFltMkhZd0wtaFRQUG11eS1SSFlKRWd4V3dMS1RXeElldGMwN3lsOUFtR3VqY1hPN0tzSkV2N0VnTGsxWGNMdW9iYWVHbHBkUE9BMHpwX3R1Rm8yRFd1WXJNaVRCbkhSUQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQU0ZIVnd6U2xGVFIzNTZTRkw1QTl5QnJaMnY4YnV4dDlpQTRxUHNScTZZZDhSUFBqNkQ2QmMxbTA5NjMxd0J3c1dlSUJrRlZxZHpVRE90a1NvbEVVNFltMkhZd0wtaFRQUG11eS1SSFlKRWd4V3dMS1RXeElldGMwN3lsOUFtR3VqY1hPN0tzSkV2N0VnTGsxWGNMdW9iYWVHbHBkUE9BMHpwX3R1Rm8yRFd1WXJNaVRCbkhSUQ?oc=5",
+      "source": "MarketScale",
+      "source_id": "gnews-b2b",
+      "via": "Google News: B2B marketing",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T11:35:59Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "abm"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -2252,6 +3020,42 @@
       }
     },
     {
+      "id": "95d7157dcf214a90",
+      "title": "Brian Halligan appointed Co-Founder & CEO of HubSpot",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ2lWVWZTNnp0SnlMbWxkeGl1aDZISzdPeGFSMHVJclYwa2p5aUVzdXF5aEx2R3BSMWtrN0tKbVI3N2RjejJnZGd6bjRyMUJsQnNEQmVqQnBtYVotVjdLNXluNEtraGprbllDaUdOVFp4enUxUjVqbGRqNmhkZEJxUFR3NWlNaE1DemE4UjI2VU5ONEsxREdpOTZRa2hReHVQRDRCeUx6RmJmS05oU0tkc2h0cWs?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ2lWVWZTNnp0SnlMbWxkeGl1aDZISzdPeGFSMHVJclYwa2p5aUVzdXF5aEx2R3BSMWtrN0tKbVI3N2RjejJnZGd6bjRyMUJsQnNEQmVqQnBtYVotVjdLNXluNEtraGprbllDaUdOVFp4enUxUjVqbGRqNmhkZEJxUFR3NWlNaE1DemE4UjI2VU5ONEsxREdpOTZRa2hReHVQRDRCeUx6RmJmS05oU0tkc2h0cWs?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T10:32:33Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Low",
+      "priority_score": 3,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [
+        {
+          "source": "Diya TV",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFpNLThZRFB0MlJHS0VIc0h3OHJXX1k3M2YwSUJjS1E4Yno4UEFnNlZmYW1LVkhzNmpIMFNqR0lVSDlkTHlaYzhHZE1vMm9ERGJNNDRsMWEzY2hQZ3VkcW44VkZkb1l0UHNmc1IxUk81QXk0QkJpVE1NVl91bDNOSw?oc=5",
+          "title": "HubSpot brings co-founder Brian Halligan back as CEO"
+        }
+      ],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "d1318183fe172893",
       "title": "Shield helps technicians hand off legacy portal work with OpenAI",
       "url": "https://openai.com/business/customer-stories/shield",
@@ -2334,6 +3138,66 @@
       "topics": [
         "anthropic",
         "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "6cf801f3fc024ced",
+      "title": "Halligan Returns to HubSpot, Calling It a Refounding",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1zSVdqNXBsVHJ3aGpnWDRPdVRvYjRoQW9UNlNGQmxJNGpvR1Z6X2hRZTlseGdSbmFFX0JmME1kWDF3cDRiUnlURE0ybmdiYmdLbjJWWlc2NDBNMXFkYWQ4Qjh5NUs4ajJMb1ZlUmgweVFSaWxrSmpuSXpxQQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1zSVdqNXBsVHJ3aGpnWDRPdVRvYjRoQW9UNlNGQmxJNGpvR1Z6X2hRZTlseGdSbmFFX0JmME1kWDF3cDRiUnlURE0ybmdiYmdLbjJWWlc2NDBNMXFkYWQ4Qjh5NUs4ajJMb1ZlUmgweVFSaWxrSmpuSXpxQQ?oc=5",
+      "source": "CX Today",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T07:36:19Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "dd402c449701fb4f",
+      "title": "Is footage from Indian homes going abroad to train robots? MeitY questions Pronto and other platforms",
+      "url": "https://www.medianama.com/2026/11/223-footage-train-robots-meity-questions-platforms/",
+      "canonical_url": "https://medianama.com/2026/11/223-footage-train-robots-meity-questions-platforms",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T07:24:45Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (indian, meity).",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "The Ministry of Electronics and Information Technology (MeitY) has asked home services platforms whether they are selling or sending footage recorded inside Indian homes to physical AI developers outside India. The Economic Times reported that MeitY Secretary S. Krishnan chaired a meeting on…",
+      "companies": [],
+      "topics": [
+        "ai models"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -2465,6 +3329,68 @@
       }
     },
     {
+      "id": "2a521c09e2a9e207",
+      "title": "HubSpot co-founder returns to lead \"refounding",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSnpBZUpOaXFSci1GdjBfWFY3ek5SZFFiWWFBS2cyYjcwRHJlNjdKSTFUZldvazJjU3BxTVhvSjRkVXlQN1BzejlMSWhXWXlsdEdMVXF5NGRQcUpoTHVoUlEzMEFSTl8welVpR1hPRXlDWmhSbEoxaUVERmgtOExnVGhLYjc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSnpBZUpOaXFSci1GdjBfWFY3ek5SZFFiWWFBS2cyYjcwRHJlNjdKSTFUZldvazJjU3BxTVhvSjRkVXlQN1BzejlMSWhXWXlsdEdMVXF5NGRQcUpoTHVoUlEzMEFSTl8welVpR1hPRXlDWmhSbEoxaUVERmgtOExnVGhLYjc?oc=5",
+      "source": "Briefs Finance",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T06:15:00Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "f201d0d34e3ba052",
+      "title": "Hyderabad Police’s new AI tool can link suspects to criminal networks. But how does it work?",
+      "url": "https://www.medianama.com/2026/11/223-hyderabad-polices-ai-tool-criminal-networks/",
+      "canonical_url": "https://medianama.com/2026/11/223-hyderabad-polices-ai-tool-criminal-networks",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T06:07:14Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (hyderabad).",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "Hyderabad Police have launched Dooradrishti , an artificial intelligence (AI) platform designed to compile profiles of people accused of crimes, analyse their activities and identify connections between individuals and criminal networks . The system brings together existing police records to help…",
+      "companies": [],
+      "topics": [
+        "gpt",
+        "artificial intelligence",
+        "machine learning"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "5f1c1bc4542a3b94",
       "title": "Google rolls out Gemini 4 Hydrogen with 2.5x speed boost, four reasoning levels",
       "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/google-rolls-out-gemini-4-hydrogen-with-2-5x-speed-boost-four-reasoning-levels/articleshow/135789016.cms",
@@ -2528,6 +3454,94 @@
       }
     },
     {
+      "id": "e84b4a7febcb4207",
+      "title": "HubSpot co-founder Brian Halligan returns as CEO as CFO prepares to retire",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV2FuOS1fdTRab1Y1VVZJVEpUanRrNTdOS1VVRWMyaDBxMkkyUEluLUZTRXlKaXNQWHVrcnhkeEliSHJpQTJpeGZRMl9ZN2dsaVJUNmNSQnV1QkxWYVFwRnA1cVJhV1ktSTFhS1c0SDVRaDJ4NWtEbW00NThJbFFLb1NjcmNoeWh6ZlZLdWhOWTBOVlpSLXFZ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV2FuOS1fdTRab1Y1VVZJVEpUanRrNTdOS1VVRWMyaDBxMkkyUEluLUZTRXlKaXNQWHVrcnhkeEliSHJpQTJpeGZRMl9ZN2dsaVJUNmNSQnV1QkxWYVFwRnA1cVJhV1ktSTFhS1c0SDVRaDJ4NWtEbW00NThJbFFLb1NjcmNoeWh6ZlZLdWhOWTBOVlpSLXFZ?oc=5",
+      "source": "The American Bazaar",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-12T21:50:41Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "6e7f4ca7daf14e21",
+      "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "canonical_url": "https://technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking",
+      "source": "MIT Technology Review",
+      "source_id": "mit-tech-review-ai",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T20:16:24Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while an industry group claimed they were…",
+      "companies": [],
+      "topics": [],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "bfa9c0cbe2e14e71",
+      "title": "Google Makes Gemini 4 Hydrogen The Default Model In AI Mode via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096/",
+      "canonical_url": "https://searchenginejournal.com/google-gemini-4-hydrogen-default-ai-mode/597096",
+      "source": "Search Engine Journal",
+      "source_id": "search-engine-journal",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T20:09:18Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "Google made Gemini 4 Hydrogen the default model in AI Mode worldwide and is using it for the hardest AI Overview questions. The post Google Makes Gemini 4 Hydrogen The Default Model In AI Mode appeared first on Search Engine Journal .",
+      "companies": [],
+      "topics": [
+        "gemini"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "e61b0a4e671103c8",
       "title": "Salesforce: AI Sales Agents Are Improving CRM Data Accuracy, Freeing Reps to Sell",
       "url": "https://www.demandgenreport.com/industry-news/news-brief/salesforce-ai-sales-agents-are-improving-crm-data-accuracy-freeing-reps-to-sell/55360/",
@@ -2549,6 +3563,36 @@
       "topics": [
         "salesforce",
         "crm"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "c98570e7099e9c05",
+      "title": "Does The Affiliate Model Survive Checkout Inside AI Mode And Gemini? – Ask An SEO via @sejournal, @rollerblader",
+      "url": "https://www.searchenginejournal.com/does-the-affiliate-model-survive-checkout-inside-ai-mode-and-gemini-ask-an-seo/585080/",
+      "canonical_url": "https://searchenginejournal.com/does-the-affiliate-model-survive-checkout-inside-ai-mode-and-gemini-ask-an-seo/585080",
+      "source": "Search Engine Journal",
+      "source_id": "search-engine-journal",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T20:00:07Z",
+      "collected_at": "2026-11-16T02:37:10Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "Affiliate links still help protect your commissions as AI checkout grows, but stronger tracking and better program choices add crucial layers of protection. The post Does The Affiliate Model Survive Checkout Inside AI Mode And Gemini? – Ask An SEO appeared first on Search Engine Journal .",
+      "companies": [],
+      "topics": [
+        "gemini"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -2582,609 +3626,6 @@
       ],
       "also_covered_by": [],
       "url_check": "restricted",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "ad614f81e42f72e5",
-      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
-      "canonical_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
-      "source": "Google AI Blog",
-      "source_id": "google-ai-blog",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-12T18:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
-      "companies": [],
-      "topics": [
-        "gemini"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "9d06313cdb5125ad",
-      "title": "New Data: Holiday Shoppers Will Rely on Agents. Retailers Must Be Ready.",
-      "url": "https://www.salesforce.com/news/stories/ai-first-holiday/",
-      "canonical_url": "https://salesforce.com/news/stories/ai-first-holiday",
-      "source": "Salesforce",
-      "source_id": "salesforce-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-12T18:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "Somewhere on Cyber Monday, a shopper will ask AI to find the best price on a stand mixer for their sister-in-law, check whether the reviews recommend it, and flag anything that won’t arrive before December 20. Then they’ll close the app and buy it themselves. For millions of people in 2026, holiday…",
-      "companies": [],
-      "topics": [
-        "ai agent",
-        "ai agents",
-        "agentic",
-        "ai assistant"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "1642a7600f69e23a",
-      "title": "Handing Reps Claude Isn’t A Sales AI Strategy. Here’s What To Do Instead",
-      "url": "https://www.demandgenreport.com/demanding-views/handing-reps-claude-isnt-a-sales-ai-strategy-heres-what-to-do-instead/55250/",
-      "canonical_url": "https://demandgenreport.com/demanding-views/handing-reps-claude-isnt-a-sales-ai-strategy-heres-what-to-do-instead/55250",
-      "source": "Demand Gen Report",
-      "source_id": "demand-gen-report",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-12T17:00:55Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "Ask me which product is doing the most to reshape sales technology right now, and I won’t point to a sales technology company. I’ll point to Claude. Anthropic built it as a general-purpose model for knowledge work and coding, and the company keeps pushing it deeper into the enterprise . Sales teams…",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude",
-        "foundation model"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "6343212a54f99ab7",
-      "title": "From AI ambition to business impact",
-      "url": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/",
-      "canonical_url": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact",
-      "source": "Official Microsoft Blog",
-      "source_id": "microsoft-ai-blog",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-12T17:00:03Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "Most business leaders I meet no longer need to be convinced that AI works. They’ve seen the pilots, the demos and the copilots. The question I hear in boardrooms now is different: How do we move from AI that impresses to AI that changes how the business actually runs? That is the question Microsoft…",
-      "companies": [],
-      "topics": [
-        "copilot",
-        "ai agent",
-        "agentic",
-        "ai-powered"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "6dc8deba4508fd99",
-      "title": "For AI Advice to Be Any Good, It Has to Actually Change the Outcome",
-      "url": "https://www.salesforce.com/news/stories/visual-ai-assistants-ivg-lessons/",
-      "canonical_url": "https://salesforce.com/news/stories/visual-ai-assistants-ivg-lessons",
-      "source": "Salesforce",
-      "source_id": "salesforce-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-12T16:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "A technician kneels beside a commercial water heater, phone propped against a pipe, an AI assistant watching through the camera. She reaches for the wrong valve and the assistant says, “Stop, that’s the supply line.” Whether that counts as useful guidance depends entirely on what happens next. Did…",
-      "companies": [],
-      "topics": [
-        "gemini",
-        "ai models",
-        "ai assistant"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "c18ff48d78fdba8a",
-      "title": "IAB unveils framework for measuring AI’s part in conversions",
-      "url": "https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions/",
-      "canonical_url": "https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions",
-      "source": "MarTech",
-      "source_id": "martech-org",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-12T14:06:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "The IAB today introduced “The AI-Era Attribution Blueprint,” a new framework for measuring AI’s role in conversions. Its goal is to provide advertisers, agencies, publishers, and AI platforms with a common way to determine who can claim credit for a sale influenced or completed by AI. The blueprint…",
-      "companies": [],
-      "topics": [
-        "martech"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "dfa8e0f9c98dabf6",
-      "title": "Attain Scaled CTV Acquisition, Beating Its CPA Goal",
-      "url": "https://www.demandgenreport.com/case-studies/attain-scaled-ctv-acquisition-beating-its-cpa-goal/55305/",
-      "canonical_url": "https://demandgenreport.com/case-studies/attain-scaled-ctv-acquisition-beating-its-cpa-goal/55305",
-      "source": "Demand Gen Report",
-      "source_id": "demand-gen-report",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-12T12:00:29Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "Key Takeaways Attain beat its internal cost-per-acquisition goal by 16.7% after it activated lookalike segments on tvScientific by Pinterest’s CTV platform. Phased budget increases, paired with continuous shifts toward top-performing audiences, let Attain raise CTV spend and install volume without…",
-      "companies": [],
-      "topics": [
-        "b2b",
-        "customer acquisition"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "90d79223706ea3ab",
-      "title": "Gondola doubles revenue as its team builds more with Codex",
-      "url": "https://openai.com/business/customer-stories/gondola",
-      "canonical_url": "https://openai.com/business/customer-stories/gondola",
-      "source": "OpenAI News",
-      "source_id": "openai-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-12T12:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
-      "companies": [],
-      "topics": [
-        "chatgpt"
-      ],
-      "also_covered_by": [],
-      "url_check": "restricted",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "1fe223b20c4f21d2",
-      "title": "Meta fined by UK regulator over repeated inaccuracies in WhatsApp Business data",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOG9jOW1aUnh1M2dsSDZXTzJMWmNyazdnU2RnNVZrTHhuU0RjR3dCUzdsYnJ3X2NMYnNaX3VibUxvdm4tQkxQUGxaOUh6SkFKNy1COXJteWw1Ykp6MEoxYm9mUUFkT2RvbDRjSnZSSGZka0NzOUcxbVllZGxHU0Q4WXVTOHpzNUF0Rk93VjEtVWpHR1VycmstaXE2STY5WDV3MGpUcDZfQ1Bfakpmc0h4bUNHeHVGcUswT0psOTFIdlhJaEU?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOG9jOW1aUnh1M2dsSDZXTzJMWmNyazdnU2RnNVZrTHhuU0RjR3dCUzdsYnJ3X2NMYnNaX3VibUxvdm4tQkxQUGxaOUh6SkFKNy1COXJteWw1Ykp6MEoxYm9mUUFkT2RvbDRjSnZSSGZka0NzOUcxbVllZGxHU0Q4WXVTOHpzNUF0Rk93VjEtVWpHR1VycmstaXE2STY5WDV3MGpUcDZfQ1Bfakpmc0h4bUNHeHVGcUswT0psOTFIdlhJaEU?oc=5",
-      "source": "CNA",
-      "source_id": "gnews-whatsapp-global",
-      "via": "Google News: WhatsApp Business",
-      "credibility": "aggregator",
-      "published_at": "2026-11-12T11:15:33Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 11,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "whatsapp",
-        "whatsapp business"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "ff62c4b9f599337f",
-      "title": "India Becomes ChatGPT's Biggest Market | OpenAI's India Chief | Corner Office Conversation",
-      "url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135763467.cms",
-      "canonical_url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135763467.cms",
-      "source": "Economic Times Tech",
-      "source_id": "et-tech",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-12T09:26:16Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "Headline references India-specific context (india).",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "openai",
-        "chatgpt"
-      ],
-      "also_covered_by": [
-        {
-          "source": "Economic Times Tech",
-          "url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135764546.cms",
-          "title": "India Becomes ChatGPT's Biggest Market | OpenAI's India Chief | Corner Office Conversation"
-        },
-        {
-          "source": "Economic Times Tech",
-          "url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135764629.cms",
-          "title": "India Becomes ChatGPT's Biggest Market | OpenAI's India Chief | Corner Office Conversation"
-        }
-      ],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "b06379671ede1f62",
-      "title": "Supporting research on AI and children’s safety",
-      "url": "https://openai.com/index/children-first-declaration",
-      "canonical_url": "https://openai.com/index/children-first-declaration",
-      "source": "OpenAI News",
-      "source_id": "openai-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-12T00:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
-      "companies": [],
-      "topics": [
-        "openai"
-      ],
-      "also_covered_by": [],
-      "url_check": "restricted",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "628516bca1ef053d",
-      "title": "Demand Spring Launches Four New Tools for CMOs",
-      "url": "https://www.demandgenreport.com/industry-news/news-brief/demand-spring-launches-four-new-tools-for-cmos/55307/",
-      "canonical_url": "https://demandgenreport.com/industry-news/news-brief/demand-spring-launches-four-new-tools-for-cmos/55307",
-      "source": "Demand Gen Report",
-      "source_id": "demand-gen-report",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-11T20:00:36Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "Key Takeaways Demand Spring launched four transformation offers to help CMOs improve growth strategy, martech performance, AI adoption and revenue marketing execution. The services combine strategy and implementation to help marketing leaders connect AI and martech investments more directly to…",
-      "companies": [],
-      "topics": [
-        "b2b",
-        "personalization",
-        "buying committee"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "cce714811b519a82",
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
-      "source": "Google AI Blog",
-      "source_id": "google-ai-blog",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-11T18:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 11,
-      "excerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
-      "companies": [],
-      "topics": [
-        "gemini",
-        "multimodal"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "7bdc832209fdf7ca",
-      "title": "Madison Logic CEO Keith Turco Reads the B2B Market and Calls What’s Ahead in 2027",
-      "url": "https://www.demandgenreport.com/blog/madison-logic-ceo-keith-turco-reads-the-b2b-market-and-calls-whats-ahead-in-2027/55238/",
-      "canonical_url": "https://demandgenreport.com/blog/madison-logic-ceo-keith-turco-reads-the-b2b-market-and-calls-whats-ahead-in-2027/55238",
-      "source": "Demand Gen Report",
-      "source_id": "demand-gen-report",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-11T17:00:31Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "Key Takeaways Madison Logic CEO Keith Turco will join James Hickey of B2BMX Insights on Nov. 18, 2026, at 2 p.m. ET for a free Demand Gen Report webinar on how AI and performance-driven strategies will shape B2B marketing in 2027. A Madison Logic/Harris Poll found that 90% of marketers say anyone…",
-      "companies": [],
-      "topics": [
-        "b2b",
-        "demand gen",
-        "go-to-market"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "711ef9a7e6d6f4d6",
-      "title": "Salesforce Releases R&D Agents That Improve Its AI Models",
-      "url": "https://www.salesforce.com/news/stories/agents-that-improve-ai-models/",
-      "canonical_url": "https://salesforce.com/news/stories/agents-that-improve-ai-models",
-      "source": "Salesforce",
-      "source_id": "salesforce-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-11T16:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "Salesforce AI Research recently published SFR-AutoR&D , a set of agents built to run the research loop end-to-end, autonomously improving codebases and training AI models. Given one goal, a system to work on, and a compute budget, SFR-AutoR&D agents formulate hypotheses, implement methods, and run…",
-      "companies": [],
-      "topics": [
-        "salesforce",
-        "data cloud",
-        "agentforce"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "80b38ea7da372c49",
-      "title": "ChatGPT Plus for veterans and servicemembers",
-      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
-      "canonical_url": "https://openai.com/index/chatgpt-plus-for-veterans",
-      "source": "OpenAI News",
-      "source_id": "openai-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-11T08:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
-      "companies": [],
-      "topics": [
-        "chatgpt"
-      ],
-      "also_covered_by": [],
-      "url_check": "restricted",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "3c0c9ce60bfb756b",
-      "title": "TSMC to invest up to USD 1 billion in Anthropic, OpenAI",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/tsmc-to-invest-up-to-usd-1-billion-in-anthropic-openai/articleshow/135726655.cms",
-      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/tsmc-to-invest-up-to-usd-1-billion-in-anthropic-openai/articleshow/135726655.cms",
-      "source": "Economic Times Tech",
-      "source_id": "et-tech",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-11T05:13:09Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "Taiwan Semiconductor Manufacturing Company (TSMC) has approved investments of up to USD 1 billion in two major Artificial Intelligence companies, Anthropic and OpenAI, as the world's largest dedicated semiconductor foundry expands its strategic presence in the technology ecosystem.",
-      "companies": [],
-      "topics": [
-        "openai",
-        "anthropic",
-        "artificial intelligence"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "86618a52e5010f1a",
-      "title": "Expanding Gemini in Gmail to more Google Workspace users",
-      "url": "http://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html",
-      "canonical_url": "https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html",
-      "source": "Google Workspace Updates",
-      "source_id": "google-workspace-updates",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-10T21:45:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "email",
-      "category_label": "Email Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "We’re expanding the availability of some Gemini in Gmail features to more Google Workspace users aged 18 and older. Previously available to consumer accounts and specific Workspace editions, these tools are now being brought to the core Workspace experience by expanding availability to all…",
-      "companies": [],
-      "topics": [
-        "gmail"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "b73105fe4ec5f060",
-      "title": "Gemini Intelligence: New features, on more devices",
-      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
-      "canonical_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
-      "source": "Google AI Blog",
-      "source_id": "google-ai-blog",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-10T19:00:00Z",
-      "collected_at": "2026-11-16T02:29:24Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
-      "companies": [],
-      "topics": [
-        "gemini"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
       "analysis": {
