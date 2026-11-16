@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-16T02:21:04Z",
-  "total": 33,
-  "ok": 29,
-  "failed": 4,
+  "checked_at": "2026-11-16T02:29:27Z",
+  "total": 32,
+  "ok": 32,
+  "failed": 0,
   "sources": [
     {
       "id": "openai-news",
@@ -26,13 +26,13 @@
     },
     {
       "id": "microsoft-ai-blog",
-      "name": "Microsoft AI Blog",
-      "url": "https://blogs.microsoft.com/ai/feed/",
-      "ok": false,
-      "status_code": 410,
-      "entries": 0,
-      "usable_items": 0,
-      "error": "HTTPError: 410 Client Error: Gone for url: https://blogs.microsoft.com/ai/feed/"
+      "name": "Official Microsoft Blog",
+      "url": "https://blogs.microsoft.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "entries": 10,
+      "usable_items": 10,
+      "error": null
     },
     {
       "id": "mit-tech-review-ai",
@@ -86,13 +86,13 @@
     },
     {
       "id": "marketing-brew",
-      "name": "Marketing Brew",
-      "url": "https://www.marketingbrew.com/feed",
-      "ok": false,
-      "status_code": 404,
-      "entries": 0,
-      "usable_items": 0,
-      "error": "HTTPError: 404 Client Error: Not Found for url: https://www.marketingbrew.com/feed"
+      "name": "Google News: Marketing Brew",
+      "url": "https://news.google.com/rss/search?q=site%3Amarketingbrew.com&hl=en-US&gl=US&ceid=US:en",
+      "ok": true,
+      "status_code": 200,
+      "entries": 63,
+      "usable_items": 63,
+      "error": null
     },
     {
       "id": "search-engine-journal",
@@ -186,13 +186,13 @@
     },
     {
       "id": "wati-blog",
-      "name": "Wati Blog",
-      "url": "https://www.wati.io/blog/feed/",
-      "ok": false,
+      "name": "Google News: Wati",
+      "url": "https://news.google.com/rss/search?q=Wati+WhatsApp&hl=en-IN&gl=IN&ceid=IN:en",
+      "ok": true,
       "status_code": 200,
-      "entries": 0,
-      "usable_items": 0,
-      "error": "ValueError: Unparseable feed: <unknown>:7:35: not well-formed (invalid token)"
+      "entries": 18,
+      "usable_items": 18,
+      "error": null
     },
     {
       "id": "gnews-whatsapp-global",
@@ -263,16 +263,6 @@
       "entries": 10,
       "usable_items": 10,
       "error": null
-    },
-    {
-      "id": "search-engine-land",
-      "name": "Search Engine Land",
-      "url": "https://searchengineland.com/feed",
-      "ok": false,
-      "status_code": 403,
-      "entries": 0,
-      "usable_items": 0,
-      "error": "HTTPError: 403 Client Error: Forbidden for url: https://searchengineland.com/feed"
     },
     {
       "id": "inc42",

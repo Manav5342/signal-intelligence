@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-16T02:23:34Z",
-    "last_successful_update": "2026-11-16T02:23:34Z",
+    "generated_at": "2026-11-16T02:29:31Z",
+    "last_successful_update": "2026-11-16T02:29:31Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -19,62 +19,27 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-16T02:21:00Z",
-      "finished_at": "2026-11-16T02:23:34Z",
-      "status": "partial",
+      "started_at": "2026-11-16T02:29:24Z",
+      "finished_at": "2026-11-16T02:29:31Z",
+      "status": "success",
       "trigger": "workflow_dispatch",
-      "sources_total": 33,
-      "sources_ok": 29,
-      "sources_failed": 4,
-      "new_articles": 54,
-      "skipped_stale": 2073,
-      "skipped_irrelevant": 113,
+      "sources_total": 32,
+      "sources_ok": 32,
+      "sources_failed": 0,
+      "new_articles": 58,
+      "skipped_stale": 503,
+      "skipped_irrelevant": 192,
       "invalid_urls": 0,
-      "duplicates_merged": 6,
+      "duplicates_merged": 2,
       "ai_processed": 0,
-      "ai_failed": 30,
+      "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 0,
-      "errors": [
-        "source:microsoft-ai-blog: HTTPError: 410 Client Error: Gone for url: https://blogs.microsoft.com/ai/feed/",
-        "source:marketing-brew: HTTPError: 404 Client Error: Not Found for url: https://www.marketingbrew.com/feed",
-        "source:wati-blog: ValueError: Unparseable feed: <unknown>:7:35: not well-formed (invalid token)",
-        "source:search-engine-land: HTTPError: 403 Client Error: Forbidden for url: https://searchengineland.com/feed",
-        "ai:55c4c60f2d42b87c: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:86d9a29fe3a383d7: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:025d7a45a859f773: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:c3ff7cf652a41a9f: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:87d7014c15ee68a3: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:4b0fc5b701ffd77d: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:61d44005f25707a5: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:8b8eb5160b844b38: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:89841b97c06c2b18: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:6e11b5a22f5df9a8: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:3908231cf6859651: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:82c459e4321ffe8f: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:604f1c7440393b37: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:27e710d84b3674d3: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:c85e8de014d9f40e: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:31056637b9f0ea9b: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:6373036a727f403a: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:f65726f18cae93bd: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:ac814ab5a340f159: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:c0202ff277fc6ad5: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:5b622551fdf913b0: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:f4256db0014aeb4b: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:e89c42888406d621: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:33d548fd74e3ba1e: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:c9da56a30462287e: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:5f1176420cb22927: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:a6a64e1a7c3b0653: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:3c2edad06aad3cc0: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:f17748102e2c4282: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-        "ai:4e379f6cb9d33e5a: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-      ]
+      "archived_out": 12,
+      "errors": []
     },
-    "ai_enabled": true,
-    "ai_provider": "github",
-    "ai_model": "openai/gpt-4.1-mini"
+    "ai_enabled": false,
+    "ai_provider": null,
+    "ai_model": null
   },
   "articles": [
     {
@@ -705,6 +670,36 @@
       }
     },
     {
+      "id": "c6ba4d99691adc1e",
+      "title": "Indian-origin founder praises young programmer's cold email after failed attempt to deliver 24 doughnuts: 'One of the coolest' | Trending",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPM3pyelV1RlpFeHlEMVJiVzhIaEVDdkh1WHRhdHRHN1lUdWtHOHMzOWtTaHVhTTlaN1dFMTFDWS10UVNOZl9vNVhvZW9iempaQnQyaEJ3QVFCMnlibmhESzRCNGZYSS1SeDBhVXpONmFTNERFQWVqMDdyNE5XY0E2OEd2NG54RmNtU29VOUNnMkFpaWloVmE3bUFuTnB5OEV2SFpoY0NIVVpNOG0zSjk3NnBWZW5HaXpBQmhpR2l0aGNKVDJRVG9FZHRuVmx3OUhpNGZQajdoNkFBZmNjSjRNcWJoVHBIYUJ5WW1fOFBlV082TWlYYU1ncGduMGJXVGtIRjlHa0NUSTgxcWNEVHI40gGUAkFVX3lxTFByVmRjbzdZcTdBbHY2aktnSm9JSjduWXZ1aGx0bldnRnltQ1JvOU1aa1g2UlByajdFQ0kxMHQ1NExydG9MSGFOTU53NG5xZ1M4S0htS2hYUURjcE13YjY1a0NGMHlqaUMtWktVZlMtQ1JTbUlGOTBqNEpEM0VqYXAzZEVacWhjYzN3MGZlMEhJY3drc0JLd0JaaWROVWJCaXB5bkFyVlF0QkpMc25MREwtZFM0c05DMW1aSlFtWkNfS3pSNFZUcGxCS1pFVl9RY25uYlFaVHVsZVhUZ3JJeTdMczBIajNDYmdCSUhTNnB1T1MzTVpnS3JzOHdrRTUwVVlvUkdneVdyUjNkREdNbW02WVhDTA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPM3pyelV1RlpFeHlEMVJiVzhIaEVDdkh1WHRhdHRHN1lUdWtHOHMzOWtTaHVhTTlaN1dFMTFDWS10UVNOZl9vNVhvZW9iempaQnQyaEJ3QVFCMnlibmhESzRCNGZYSS1SeDBhVXpONmFTNERFQWVqMDdyNE5XY0E2OEd2NG54RmNtU29VOUNnMkFpaWloVmE3bUFuTnB5OEV2SFpoY0NIVVpNOG0zSjk3NnBWZW5HaXpBQmhpR2l0aGNKVDJRVG9FZHRuVmx3OUhpNGZQajdoNkFBZmNjSjRNcWJoVHBIYUJ5WW1fOFBlV082TWlYYU1ncGduMGJXVGtIRjlHa0NUSTgxcWNEVHI40gGUAkFVX3lxTFByVmRjbzdZcTdBbHY2aktnSm9JSjduWXZ1aGx0bldnRnltQ1JvOU1aa1g2UlByajdFQ0kxMHQ1NExydG9MSGFOTU53NG5xZ1M4S0htS2hYUURjcE13YjY1a0NGMHlqaUMtWktVZlMtQ1JTbUlGOTBqNEpEM0VqYXAzZEVacWhjYzN3MGZlMEhJY3drc0JLd0JaaWROVWJCaXB5bkFyVlF0QkpMc25MREwtZFM0c05DMW1aSlFtWkNfS3pSNFZUcGxCS1pFVl9RY25uYlFaVHVsZVhUZ3JJeTdMczBIajNDYmdCSUhTNnB1T1MzTVpnS3JzOHdrRTUwVVlvUkdneVdyUjNkREdNbW02WVhDTA?oc=5",
+      "source": "Hindustan Times",
+      "source_id": "gnews-email",
+      "via": "Google News: Email deliverability",
+      "credibility": "aggregator",
+      "published_at": "2026-11-15T01:57:16Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "email",
+      "category_label": "Email Marketing",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (indian).",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "cold email"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "5b622551fdf913b0",
       "title": "Cursor confirms security breach led to malicious Claude Code extension",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZGZ6cDY2N1VKakpFcW9sN0NqTkJBck9xMGxNbGdzTDJQUmt0cmNmdzlBdWdaQ2tzbEF4U1JoZVBsWGFQTWxuZUN4WHVNcGhTMjBCOE85eWVLdFZnRk9JV0c3QWRXUnl1Y0JkM3dPNGlyNHNnR29PT3J6eU95cHZ3SW1WOHEwcUM4ZG1FR3BPSHkzaUdDc0Z0TExMSHRlV2c1OFg4REhaeGphZHd6cTR1YUliWnBFRFVlWUE?oc=5",
@@ -800,6 +795,126 @@
       }
     },
     {
+      "id": "c53e6be8b35c18f4",
+      "title": "Anthropic IPO Sparks 2X Leveraged ETF Filing as Wall Street Prepares for Nasdaq Debut",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeFdEdlczV0JtemNqLVVqQ19WV29HakhMUHRGakdWczNteGw1dzd1dmdseWF2Sy1WNVpONVR2WVprOTE5Qm5zVWVtcmhaUEU1dk42aFRpZ1ZDanp1bkdwcTQ2a2xtQU5EOGV6eXdLRlVzaDhaRUsyZ2lDTlF6Sy1BREphZ2tPWGdrbHoxNUJtT0lHbGZvODJGR1JsQ1N1aDJzcUhnNmF6NWJFX1oxbXpWMnh0R0M?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeFdEdlczV0JtemNqLVVqQ19WV29HakhMUHRGakdWczNteGw1dzd1dmdseWF2Sy1WNVpONVR2WVprOTE5Qm5zVWVtcmhaUEU1dk42aFRpZ1ZDanp1bkdwcTQ2a2xtQU5EOGV6eXdLRlVzaDhaRUsyZ2lDTlF6Sy1BREphZ2tPWGdrbHoxNUJtT0lHbGZvODJGR1JsQ1N1aDJzcUhnNmF6NWJFX1oxbXpWMnh0R0M?oc=5",
+      "source": "Coinpaper",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-14T13:48:35Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "5699ac805c116367",
+      "title": "Core Update, ChatGPT Business Hub & AI Mode’s New Model – SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-core-update-chatgpt-business-hub-ai-modes-new-model/597135/",
+      "canonical_url": "https://searchenginejournal.com/seo-pulse-core-update-chatgpt-business-hub-ai-modes-new-model/597135",
+      "source": "Search Engine Journal",
+      "source_id": "search-engine-journal",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-14T13:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "A core update rolls out, AI search gets a new default model, ChatGPT shares mention and click counts, and sites plan for less search traffic. The post Core Update, ChatGPT Business Hub & AI Mode’s New Model – SEO Pulse appeared first on Search Engine Journal .",
+      "companies": [],
+      "topics": [
+        "chatgpt"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1334d21d181aa451",
+      "title": "HubSpot Names Karen Burgess as Chief Financial Officer",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yMTVvT21pd2xtOGRMRGxvQWYzbVJOZFQxWUQ5bm15M21wcEQ1OGtjdmtlM2JlbFMtY2pzV2RyVzVoM3RWT1RiSFd3OWxxZEN3aXk0bmRJNnRiSXRSb01FSHhjYjh0bVZNMENTSktuWldVUEdhclJnVjFneWMwSUE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yMTVvT21pd2xtOGRMRGxvQWYzbVJOZFQxWUQ5bm15M21wcEQ1OGtjdmtlM2JlbFMtY2pzV2RyVzVoM3RWT1RiSFd3OWxxZEN3aXk0bmRJNnRiSXRSb01FSHhjYjh0bVZNMENTSktuWldVUEdhclJnVjFneWMwSUE?oc=5",
+      "source": "https://hrtoday.in/",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-14T11:14:11Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "82ab4237a0e8d5e7",
+      "title": "Indian-American CEO quits after laying off 660 employees – What’s lies ahead for Hubspot?",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOc0xMYUdIcWd1dFMzbEVFcEd0TEJ0QXZ0TFF1YjZtNXBBUXZ3VFdrdU5hZlV6UDlrSV9vR3ZDMVVIekNKamI2YkJ5Q3Y3emRWMFRfeDk5eGRsY3R0bXRUcFhiX2ZtN0IyTlhlRlVIOXl6aTlMZUFIbW5GdHRaT3A3YWtsdTVKWXlLd1B3Mk1ocTlHak5GdTVwcXpFcEhEZnI4T29Gb0pfUnVKWlZydElMaUpGanE1S2FMV0RtdVFjWTdDaHowdnlhVzJkSHdSSHZaZ1VCYW01ZDNVblpHTWdz0gHmAUFVX3lxTE1DNjNXMzE4YW9xN2I4dWZrYjQ1c3d0b3NhM3NGQ0VnUEtvdkdLYWZIZ24yeFJXUUQ3TktGM3o5LXFYVE9wd095TTN6MGllWjZRcEpKSDMyeVdyMGVNeTBEbHJFUUp3NjVuR3pUV0ExbXNxTEtRYkxEREVpRW9oLVB6c00tZ2tzMHFqYTRwN1V1Q3FIdWdvZVJMZzMwcmYyeXlsTXdyNk5TMjFNSF9FU0o3TlBzdnd3LWRDT0xIZnVaR0JTcVdxLVFGOFJSTnlOcERjUlBkZ0JIbTNxYzliVElVWHRsTDZR?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOc0xMYUdIcWd1dFMzbEVFcEd0TEJ0QXZ0TFF1YjZtNXBBUXZ3VFdrdU5hZlV6UDlrSV9vR3ZDMVVIekNKamI2YkJ5Q3Y3emRWMFRfeDk5eGRsY3R0bXRUcFhiX2ZtN0IyTlhlRlVIOXl6aTlMZUFIbW5GdHRaT3A3YWtsdTVKWXlLd1B3Mk1ocTlHak5GdTVwcXpFcEhEZnI4T29Gb0pfUnVKWlZydElMaUpGanE1S2FMV0RtdVFjWTdDaHowdnlhVzJkSHdSSHZaZ1VCYW01ZDNVblpHTWdz0gHmAUFVX3lxTE1DNjNXMzE4YW9xN2I4dWZrYjQ1c3d0b3NhM3NGQ0VnUEtvdkdLYWZIZ24yeFJXUUQ3TktGM3o5LXFYVE9wd095TTN6MGllWjZRcEpKSDMyeVdyMGVNeTBEbHJFUUp3NjVuR3pUV0ExbXNxTEtRYkxEREVpRW9oLVB6c00tZ2tzMHFqYTRwN1V1Q3FIdWdvZVJMZzMwcmYyeXlsTXdyNk5TMjFNSF9FU0o3TlBzdnd3LWRDT0xIZnVaR0JTcVdxLVFGOFJSTnlOcERjUlBkZ0JIbTNxYzliVElVWHRsTDZR?oc=5",
+      "source": "The Financial Express",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-14T10:59:59Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (indian).",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "33d548fd74e3ba1e",
       "title": "New-Age Tech Stocks Continue Rally; E2E Network, Turtlemint Lead Gains",
       "url": "https://inc42.com/buzz/new-age-tech-stocks-continue-rally-e2e-network-turtlemint-lead-gains/",
@@ -831,6 +946,66 @@
       "analysis": {
         "status": "failed",
         "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "5bdab1c81e5aa32d",
+      "title": "United Lets Search Engines Index Its Site, Makes AI Agents Ask First via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/united-ai-agents-permission-search-indexing/597418/",
+      "canonical_url": "https://searchenginejournal.com/united-ai-agents-permission-search-indexing/597418",
+      "source": "Search Engine Journal",
+      "source_id": "search-engine-journal",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-14T10:00:14Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "An airline's updated terms let search engines index public pages but require written permission for AI agents and bar AI grounding on its data. The post United Lets Search Engines Index Its Site, Makes AI Agents Ask First appeared first on Search Engine Journal .",
+      "companies": [],
+      "topics": [
+        "ai agents"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "d16bfc28a2e3ca74",
+      "title": "'Do you even deserve to be an engineer?': Techie's cold email gets shocking response, internet reacts",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMnBuWnVCcnA3bVhYVFZsbXpSQzFwVEtTQW1PSTJ2SUNxX1hTdWh2QzRVNE5IRmVoT2d0azU1b0VuYjRwX0RPYVdSMzJzLTMxcWpXV3J2elFmR3hpZ2VBVC1Tc181YzRsSWttMEN4a2wzQU1MNk1IM2dRcHVOSnBYc0tHamNNS3V2VkNsVzFpQWxTRWRaR28wSXN6ZEZoSk5KUUlHME1rSXoxdGgzcGV5ZVRxbHNna2F5RTBMbklsV19ycVBqanMzenJ4VHA5UXBPRnhsVmNjWkNVZUJISEcxOUh5VDJOd9IB6wFBVV95cUxQa200SnprUG9ldHFsa28tT1loOXQ4alduVGtCbThwYU9GNjY0ZTZQeVNRZlByb05wVWtzQndoa2tfM0ZHS0RqamtKeDdWUnkxN09iTzNPM0lJMGhWTy1UVVl2MmZGODdxaVV6dldEWUFYdEYtelctTTgyX3ZNZzN1V25OT1Z0ckNkS0ExVlY5RklGWFhPTVNtSGJyQk1BQlhmcEtlQUw2cVAyX0lGSDVNRk51bkhmSW1idjMybGgyZjJhM2w4Nzlvdk52NWRXUW92aVhpdHFPSVNfQVNXbDVUa0ZZNVAxSGxzUG4w?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMnBuWnVCcnA3bVhYVFZsbXpSQzFwVEtTQW1PSTJ2SUNxX1hTdWh2QzRVNE5IRmVoT2d0azU1b0VuYjRwX0RPYVdSMzJzLTMxcWpXV3J2elFmR3hpZ2VBVC1Tc181YzRsSWttMEN4a2wzQU1MNk1IM2dRcHVOSnBYc0tHamNNS3V2VkNsVzFpQWxTRWRaR28wSXN6ZEZoSk5KUUlHME1rSXoxdGgzcGV5ZVRxbHNna2F5RTBMbklsV19ycVBqanMzenJ4VHA5UXBPRnhsVmNjWkNVZUJISEcxOUh5VDJOd9IB6wFBVV95cUxQa200SnprUG9ldHFsa28tT1loOXQ4alduVGtCbThwYU9GNjY0ZTZQeVNRZlByb05wVWtzQndoa2tfM0ZHS0RqamtKeDdWUnkxN09iTzNPM0lJMGhWTy1UVVl2MmZGODdxaVV6dldEWUFYdEYtelctTTgyX3ZNZzN1V25OT1Z0ckNkS0ExVlY5RklGWFhPTVNtSGJyQk1BQlhmcEtlQUw2cVAyX0lGSDVNRk51bkhmSW1idjMybGgyZjJhM2w4Nzlvdk52NWRXUW92aVhpdHFPSVNfQVNXbDVUa0ZZNVAxSGxzUG4w?oc=5",
+      "source": "Moneycontrol.com",
+      "source_id": "gnews-email",
+      "via": "Google News: Email deliverability",
+      "credibility": "aggregator",
+      "published_at": "2026-11-14T09:53:51Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "email",
+      "category_label": "Email Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "cold email"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -897,6 +1072,66 @@
       }
     },
     {
+      "id": "254570f0f764387d",
+      "title": "HubSpot's Brian Halligan returns as CEO for AI reset",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PR0Vqa3YwUkZaQm5BNU51a18wd3VpUjZTZVFSdVJIVmo4WUxqMFlXaU01U0tQMmR3Mm9sdFN2NHFGQmoxZDZfMFpBX2NPclJBdXlPUl92UEpDdU01N0JUbDdTUVk5OGx2X1FqVG1MLWJXT1dR?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PR0Vqa3YwUkZaQm5BNU51a18wd3VpUjZTZVFSdVJIVmo4WUxqMFlXaU01U0tQMmR3Mm9sdFN2NHFGQmoxZDZfMFpBX2NPclJBdXlPUl92UEpDdU01N0JUbDdTUVk5OGx2X1FqVG1MLWJXT1dR?oc=5",
+      "source": "ContentGrip",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-14T06:19:56Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "fe0566fd9d093c69",
+      "title": "AI: Nvidia’s Mega-Blip, Anthropic’s IPO Range, Google’s TPUs & More. AI-RTZ #1270",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZDJObUFCRHZSZHJFeU1QTmFHbWhtSC03YXo2UVR2cUNmUFpILUlkeEdTZGExSVA4WFhwelY1d21oTzN1c0xNdmdCaHQxRnNzdVZlN3pIWkxpLVJJZ0xPdENhdVhqajNLd1BtR3pHXy1pQmNzVFFrdWFlSFBwQ3FxTldfSVg?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZDJObUFCRHZSZHJFeU1QTmFHbWhtSC03YXo2UVR2cUNmUFpILUlkeEdTZGExSVA4WFhwelY1d21oTzN1c0xNdmdCaHQxRnNzdVZlN3pIWkxpLVJJZ0xPdENhdVhqajNLd1BtR3pHXy1pQmNzVFFrdWFlSFBwQ3FxTldfSVg?oc=5",
+      "source": "AI: Reset to Zero",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-14T06:02:30Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "a6a64e1a7c3b0653",
       "title": "Microsoft outage shows the risks of relying on a single technology provider for essential services",
       "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-outage-shows-the-risks-of-relying-on-a-single-technology-provider-for-essential-services/articleshow/135821607.cms",
@@ -929,6 +1164,129 @@
       }
     },
     {
+      "id": "4f376ecebb3c9cdf",
+      "title": "From Greenjoules To mistEO — Indian Startups Raised Over $25 Mn This Week",
+      "url": "https://inc42.com/buzz/from-greenjoules-to-misteo-indian-startups-raised-over-25-mn-this-week/",
+      "canonical_url": "https://inc42.com/buzz/from-greenjoules-to-misteo-indian-startups-raised-over-25-mn-this-week",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-14T03:30:14Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (indian).",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "The post-festive cheer appears to have done little to lift India’s startup ecosystem as funding activity lost steam this week. Following signs of a recovery in the preceding weeks, the funding landscape witnessed a sharp pullback between November 9 and November 13 as both deal activity and capital…",
+      "companies": [],
+      "topics": [
+        "acquisition",
+        "acquired",
+        "funding round",
+        "series b"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1e2c04e5b9e4b465",
+      "title": "Investors flock to Anthropic IPO but question durability of AI lead",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/investors-flock-to-anthropic-ipo-but-question-durability-of-ai-lead/articleshow/135820893.cms",
+      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/investors-flock-to-anthropic-ipo-but-question-durability-of-ai-lead/articleshow/135820893.cms",
+      "source": "Economic Times Tech",
+      "source_id": "et-tech",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-14T02:43:41Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "The Anthropic roadshow is scheduled to run through next Wednesday, when the AI company is expected to price the $64 billion deal. Anthropic and its investment banks are meeting prospective investors in New York, Boston and San Francisco to gauge demand for the offering, one of the people and a…",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "418001fa02f3d8a4",
+      "title": "Former Anthropic researcher says an IPO roadshow slide helped push him out",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZVdDTnZ4Ri1ERVdKN3lHT1VxS25vQkVRaE04a3Z1QVc3T20xMWhOd2p3eTIxbmhTU1VRbXdvV2pYTG1ENDlVYjRHUzZQYnRmSW5aTHpCRk9EM3ZfUWxnX25ldldSdmJoRVJsNjZZcWxOdUdPTUV1ajA2amp3TmZHcg?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZVdDTnZ4Ri1ERVdKN3lHT1VxS25vQkVRaE04a3Z1QVc3T20xMWhOd2p3eTIxbmhTU1VRbXdvV2pYTG1ENDlVYjRHUzZQYnRmSW5aTHpCRk9EM3ZfUWxnX25ldldSdmJoRVJsNjZZcWxOdUdPTUV1ajA2amp3TmZHcg?oc=5",
+      "source": "Crypto Briefing",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-14T00:11:35Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "881c78fa24e1aa68",
+      "title": "Google Explains How To Find Search Traffic In Analytics & Logs via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-search-traffic-analytics-logs/597382/",
+      "canonical_url": "https://searchenginejournal.com/google-search-traffic-analytics-logs/597382",
+      "source": "Search Engine Journal",
+      "source_id": "search-engine-journal",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-14T00:02:10Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "A Google Search help page lists the referrer values Search traffic sends, why some visits arrive with none, and why counts differ from Search Console. The post Google Explains How To Find Search Traffic In Analytics & Logs appeared first on Search Engine Journal .",
+      "companies": [],
+      "topics": [
+        "analytics"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "3c2edad06aad3cc0",
       "title": "PATENT NEWS: Anthropic’s artificial intelligence systems accused of infringing neural network patents",
       "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQa09ZQllGRFA4eTctdzhDMFk4VmkxeGhZcTNpcWQ5SXhSVU83akhfT3lTMDZoMG00U3NTNHl4amhsTjBTYjhmbi1hZGtVZF8xSTFqZ29aZE02WEZvcXpzbW9Zb2s0azROS25sZHpCUlNGbFQ5WHhBRlpja3ZwcktkREZmMDNFbGVDcnlvdHdkeTNFRVV6N21rc3hlQTJUSUk1WFFiM1FidlRfT2RpWVByR2ZYN2lUVU1EUXB1R0JGQkdWaWRzQXFhaERnaTljZDN3QUN0V05WOWtnbkl2ZElqYTAtcVE5TU5NaGItcEctQ0x0SnhBUnBuU2tUdUw?oc=5",
@@ -958,6 +1316,159 @@
       "analysis": {
         "status": "failed",
         "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "2af9bb6ca66252cb",
+      "title": "Anthropic CEO Dario Amodei: Can AI Cure Cancer by 2036?",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS1NsWlNibFVnSmE5Yk05ZTBqbk5KVmZOcWlEa2pwRTl0UjBSVTdQeEZCcGFxRFhJM3NpaVZ4MkpuM2tZdHRiWUlEMEF0cGpvbDVkeGVkTFlKNGJmdU5LanZuRjNaMVdwUHhCVTN2a0FYaUJQSWc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS1NsWlNibFVnSmE5Yk05ZTBqbk5KVmZOcWlEa2pwRTl0UjBSVTdQeEZCcGFxRFhJM3NpaVZ4MkpuM2tZdHRiWUlEMEF0cGpvbDVkeGVkTFlKNGJmdU5LanZuRjNaMVdwUHhCVTN2a0FYaUJQSWc?oc=5",
+      "source": "Oncodaily",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T21:42:15Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "96a2376465a9c490",
+      "title": "Osaic in talks with Anthropic as AI reshapes advisor workforce",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPU1ZFcUttMWY2T2lXRXg1UlpWelNqZUtGY1V3YnNTZ0dwbnVuQVY3bkFzaDI1T3k5VVl5UUlRU0dSQUVJcUFETW5abGY1dTNaYm5zazBxaVNJcTUzUzhJSXZubExZaU9PVmZxNzE1dWVhcWIwczFmRFo3R0s5U0I4WVlWQnh3MnVmUTBCRHpjOVNVNWFiOHRqbGl3S3dMMUU1UEthSFZZbkt2R2p5VFFQNmtvSGx5MlNzZlR1RVdlZEh0em8?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPU1ZFcUttMWY2T2lXRXg1UlpWelNqZUtGY1V3YnNTZ0dwbnVuQVY3bkFzaDI1T3k5VVl5UUlRU0dSQUVJcUFETW5abGY1dTNaYm5zazBxaVNJcTUzUzhJSXZubExZaU9PVmZxNzE1dWVhcWIwczFmRFo3R0s5U0I4WVlWQnh3MnVmUTBCRHpjOVNVNWFiOHRqbGl3S3dMMUU1UEthSFZZbkt2R2p5VFFQNmtvSGx5MlNzZlR1RVdlZEh0em8?oc=5",
+      "source": "InvestmentNews",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T20:02:41Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "730de12c0035e732",
+      "title": "[Update] Razorpay Gets SEBI Nod For ₹6,000 Cr IPO",
+      "url": "https://inc42.com/buzz/razorpay-gets-sebi-nod-for-%e2%82%b96000-cr-ipo/",
+      "canonical_url": "https://inc42.com/buzz/razorpay-gets-sebi-nod-for-%e2%82%b96000-cr-ipo",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T19:55:13Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (₹, sebi).",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "Update | November 14, 2026; 01:25 AM IST Fintech major Razorpay has received Securities and Exchange Board of India’s (SEBI) nod to float its proposed initial public offering (IPO). According to SEBI’s latest processing status update, the regulator issued its observations on Razorpay’s draft IPO…",
+      "companies": [],
+      "topics": [
+        "openai",
+        "chatgpt",
+        "ai agents",
+        "foundation model"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "8969f398642ac368",
+      "title": "HubSpot brings co-founder Brian Halligan back as CEO",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFpNLThZRFB0MlJHS0VIc0h3OHJXX1k3M2YwSUJjS1E4Yno4UEFnNlZmYW1LVkhzNmpIMFNqR0lVSDlkTHlaYzhHZE1vMm9ERGJNNDRsMWEzY2hQZ3VkcW44VkZkb1l0UHNmc1IxUk81QXk0QkJpVE1NVl91bDNOSw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFpNLThZRFB0MlJHS0VIc0h3OHJXX1k3M2YwSUJjS1E4Yno4UEFnNlZmYW1LVkhzNmpIMFNqR0lVSDlkTHlaYzhHZE1vMm9ERGJNNDRsMWEzY2hQZ3VkcW44VkZkb1l0UHNmc1IxUk81QXk0QkJpVE1NVl91bDNOSw?oc=5",
+      "source": "Diya TV",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T19:45:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "38741df50e34ad24",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "canonical_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation",
+      "source": "TechCrunch",
+      "source_id": "techcrunch-ai",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T19:37:57Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "companies": [],
+      "topics": [
+        "ai agent"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -1148,6 +1659,67 @@
       }
     },
     {
+      "id": "b3297a497038b917",
+      "title": "Once more, HubSpot swaps CEOs",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBlMHdpTEhaWlJIMHlxMWk5eEpzd1hxb05nRWRIZjluc0tGTlpUVlR5UHdRVlVKdVRZTEZSQXFrdzFtY1dzbjZDQ0hiNzg5YVEtWDEycWFNMGNqNjlEZWkwdHdORmtHMkFaOWFqMWZMX1NmYjJIRndB?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBlMHdpTEhaWlJIMHlxMWk5eEpzd1hxb05nRWRIZjluc0tGTlpUVlR5UHdRVlVKdVRZTEZSQXFrdzFtY1dzbjZDQ0hiNzg5YVEtWDEycWFNMGNqNjlEZWkwdHdORmtHMkFaOWFqMWZMX1NmYjJIRndB?oc=5",
+      "source": "TechTarget",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T14:36:35Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "84c3538116c72f2c",
+      "title": "Meet your new teammate: Building marketing workflows around AI agents",
+      "url": "https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/",
+      "canonical_url": "https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents",
+      "source": "MarTech",
+      "source_id": "martech-org",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T14:24:28Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "The pressure to deliver higher output with leaner teams is a constant hurdle in modern marketing operations. While AI agents can take on research, reporting, and first drafts, delegating the strategic context behind that work is far more complex. An agent cannot recover the reason your brand avoids…",
+      "companies": [],
+      "topics": [
+        "ai agents",
+        "ai model"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "2e73d61b746fa6bc",
       "title": "Microsoft outage disrupts Claude AI for thousands",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMkUwOHQ1QnNlSmJBdm1YRXZTcTRTQXVDTGdTMU1HanZ2STZPVzJQSlRIeUVJNmZUTHJLWGY1WjVDV1JaaTBvR1VHRm1WbTRESXV5VkRHX09nZ2s1aUVQbUs1V0dhYU5mTDFyb3hwbmc0Qngzb0I5MHZNV0pLb2p5bnJB?oc=5",
@@ -1271,6 +1843,68 @@
       }
     },
     {
+      "id": "96838b83a12b91df",
+      "title": "AI opens up new revenue streams for Info Edge’s Naukri",
+      "url": "https://www.medianama.com/2026/11/223-info-edge-q2-fy27-ai-revenue-naukri/",
+      "canonical_url": "https://medianama.com/2026/11/223-info-edge-q2-fy27-ai-revenue-naukri",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T13:09:05Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "Article body references Indian market context (crore, lakh).",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "AI has begun driving meaningful revenue in Info Edge’s recruitment business. In the second quarter ended September 2026 (Q2 FY27), Naukri’s AI offerings generated revenue of Rs 60 crore, translating into an annualised revenue run rate of Rs 240 crore, said Hitesh Oberoi, managing director and CEO…",
+      "companies": [],
+      "topics": [
+        "agentic",
+        "agentic ai",
+        "ai-powered"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "85d936173eec9353",
+      "title": "Relevance has an expiration date",
+      "url": "https://martech.org/relevance-has-an-expiration-date/",
+      "canonical_url": "https://martech.org/relevance-has-an-expiration-date",
+      "source": "MarTech",
+      "source_id": "martech-org",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T13:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "A well-crafted marketing message can still miss the mark, even when it reaches the right audience. We spend a lot of time refining creative, personalizing messages, segmenting audiences, and testing CTAs. But what happens when a message ignores a conversation the customer already had with our…",
+      "companies": [],
+      "topics": [
+        "martech"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "b9a03a0bb4781703",
       "title": "Anthropic’s Tighter China Rules for Claude Take Effect",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcEZ5eFZMZ1hBT19kbjdTa01fYlVCX1Z0NXNsRnlpanZaMDZVWElZTjdZSkNQUlFVUm8xUWxoNEhsVmI1dFI1OGEyS1dJdlhxNmZEdjlnUUdFSTBUZkRUSkZtN2ZyQ1FCWk9paUVLaDkxWmVSRXdqbVJucTZtcmVXaThLMFFXVXQ0MVp1VnZVYk9tRlFKSmVzVjMyLThRZkJUYV9yNXp3UXRxZw?oc=5",
@@ -1323,6 +1957,68 @@
       "topics": [
         "whatsapp",
         "whatsapp business"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1878d3d5ca13080e",
+      "title": "Brands that turned Microsoft Outlook outage into marketing gold",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRDJ3Nk5KWEdYdFF2T3M0OGJ5M0lFaG5qeHFEZk9PclN5b0kyUlRwbjMzSk5jeU1yWlpxY3R3V1paU1lNb19OUjhtaG1GekVET2NQNzMwMGZXQ3lDREs0WkRLNzVUMC12VE9ZWS1Fb1JuNi1oUzRKajdyalBUSDFlV0VYMVBwT3JTNzdSVllXY1lGc3lZbGhTVl9tYlV0QXpsM3RKVTRxTlBQLTFGcU5POXhQSUo1bmFDN01ZbzZB?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRDJ3Nk5KWEdYdFF2T3M0OGJ5M0lFaG5qeHFEZk9PclN5b0kyUlRwbjMzSk5jeU1yWlpxY3R3V1paU1lNb19OUjhtaG1GekVET2NQNzMwMGZXQ3lDREs0WkRLNzVUMC12VE9ZWS1Fb1JuNi1oUzRKajdyalBUSDFlV0VYMVBwT3JTNzdSVllXY1lGc3lZbGhTVl9tYlV0QXpsM3RKVTRxTlBQLTFGcU5POXhQSUo1bmFDN01ZbzZB?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T12:05:29Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "email",
+      "category_label": "Email Marketing",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "microsoft outlook"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "c141d20e6ef1d6f0",
+      "title": "What to Measure When Your Best Buyers Never Click",
+      "url": "https://www.demandgenreport.com/demanding-views/what-to-measure-when-your-best-buyers-never-click/55264/",
+      "canonical_url": "https://demandgenreport.com/demanding-views/what-to-measure-when-your-best-buyers-never-click/55264",
+      "source": "Demand Gen Report",
+      "source_id": "demand-gen-report",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-13T12:00:50Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "Over the past decade, marketers got their hands on more data about audience behavior than ever before, and somewhere along the way it scared us off some of the foundational measures we used to rely on. The impression was one of them. We traded it for the click, not because the click told the whole…",
+      "companies": [],
+      "topics": [
+        "b2b",
+        "linkedin",
+        "content marketing"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -1791,6 +2487,701 @@
         "gemini",
         "agentic",
         "artificial intelligence"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "b95788cc950ffd8d",
+      "title": "OpenAI, Google, Anthropic, Meta and SpaceX sued over frontier AI development",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLWxxNHRRbUhsTC1OM0c2aFA0T2dkek1ZcnQ2VFpyM2VRem9WNHM3a3JnTWNMNXcwSzE0M2RTZkkzTTA1aV9TQUQxUnVTSHppXzlUOENzRkhabnpTcktSWWwteVZReW9CUmJsYTdBMHRTZGc2ampjbjBlM0VZeGZOeXhmSlg5bVVRWERxYndySFltSjc5dUxXTFFnQ3Z3STNfQzFaN2t0NTRGUmp6VXR5NVJyeDVTZGNrTy0xVkhCZmJKMWhGTnUtTA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLWxxNHRRbUhsTC1OM0c2aFA0T2dkek1ZcnQ2VFpyM2VRem9WNHM3a3JnTWNMNXcwSzE0M2RTZkkzTTA1aV9TQUQxUnVTSHppXzlUOENzRkhabnpTcktSWWwteVZReW9CUmJsYTdBMHRTZGc2ampjbjBlM0VZeGZOeXhmSlg5bVVRWERxYndySFltSjc5dUxXTFFnQ3Z3STNfQzFaN2t0NTRGUmp6VXR5NVJyeDVTZGNrTy0xVkhCZmJKMWhGTnUtTA?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-13T03:59:55Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "openai",
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "e61b0a4e671103c8",
+      "title": "Salesforce: AI Sales Agents Are Improving CRM Data Accuracy, Freeing Reps to Sell",
+      "url": "https://www.demandgenreport.com/industry-news/news-brief/salesforce-ai-sales-agents-are-improving-crm-data-accuracy-freeing-reps-to-sell/55360/",
+      "canonical_url": "https://demandgenreport.com/industry-news/news-brief/salesforce-ai-sales-agents-are-improving-crm-data-accuracy-freeing-reps-to-sell/55360",
+      "source": "Demand Gen Report",
+      "source_id": "demand-gen-report",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T20:00:26Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "Key Takeaways Salesforce customers using AI sales agents report saving sellers an average of six hours per week, with 63% citing more accurate and complete CRM data. Sales leaders say agents help drive growth without new hires, with 75% holding hiring plans flat while increasing total sales output…",
+      "companies": [],
+      "topics": [
+        "salesforce",
+        "crm"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "5b0f73df89a6e310",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "canonical_url": "https://openai.com/business/customer-stories/amplitude",
+      "source": "OpenAI News",
+      "source_id": "openai-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-12T20:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "companies": [],
+      "topics": [
+        "openai"
+      ],
+      "also_covered_by": [],
+      "url_check": "restricted",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "ad614f81e42f72e5",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "canonical_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+      "source": "Google AI Blog",
+      "source_id": "google-ai-blog",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-12T18:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "companies": [],
+      "topics": [
+        "gemini"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "9d06313cdb5125ad",
+      "title": "New Data: Holiday Shoppers Will Rely on Agents. Retailers Must Be Ready.",
+      "url": "https://www.salesforce.com/news/stories/ai-first-holiday/",
+      "canonical_url": "https://salesforce.com/news/stories/ai-first-holiday",
+      "source": "Salesforce",
+      "source_id": "salesforce-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-12T18:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "Somewhere on Cyber Monday, a shopper will ask AI to find the best price on a stand mixer for their sister-in-law, check whether the reviews recommend it, and flag anything that won’t arrive before December 20. Then they’ll close the app and buy it themselves. For millions of people in 2026, holiday…",
+      "companies": [],
+      "topics": [
+        "ai agent",
+        "ai agents",
+        "agentic",
+        "ai assistant"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1642a7600f69e23a",
+      "title": "Handing Reps Claude Isn’t A Sales AI Strategy. Here’s What To Do Instead",
+      "url": "https://www.demandgenreport.com/demanding-views/handing-reps-claude-isnt-a-sales-ai-strategy-heres-what-to-do-instead/55250/",
+      "canonical_url": "https://demandgenreport.com/demanding-views/handing-reps-claude-isnt-a-sales-ai-strategy-heres-what-to-do-instead/55250",
+      "source": "Demand Gen Report",
+      "source_id": "demand-gen-report",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T17:00:55Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "Ask me which product is doing the most to reshape sales technology right now, and I won’t point to a sales technology company. I’ll point to Claude. Anthropic built it as a general-purpose model for knowledge work and coding, and the company keeps pushing it deeper into the enterprise . Sales teams…",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude",
+        "foundation model"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "6343212a54f99ab7",
+      "title": "From AI ambition to business impact",
+      "url": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact",
+      "source": "Official Microsoft Blog",
+      "source_id": "microsoft-ai-blog",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-12T17:00:03Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 8,
+      "excerpt": "Most business leaders I meet no longer need to be convinced that AI works. They’ve seen the pilots, the demos and the copilots. The question I hear in boardrooms now is different: How do we move from AI that impresses to AI that changes how the business actually runs? That is the question Microsoft…",
+      "companies": [],
+      "topics": [
+        "copilot",
+        "ai agent",
+        "agentic",
+        "ai-powered"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "6dc8deba4508fd99",
+      "title": "For AI Advice to Be Any Good, It Has to Actually Change the Outcome",
+      "url": "https://www.salesforce.com/news/stories/visual-ai-assistants-ivg-lessons/",
+      "canonical_url": "https://salesforce.com/news/stories/visual-ai-assistants-ivg-lessons",
+      "source": "Salesforce",
+      "source_id": "salesforce-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-12T16:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "A technician kneels beside a commercial water heater, phone propped against a pipe, an AI assistant watching through the camera. She reaches for the wrong valve and the assistant says, “Stop, that’s the supply line.” Whether that counts as useful guidance depends entirely on what happens next. Did…",
+      "companies": [],
+      "topics": [
+        "gemini",
+        "ai models",
+        "ai assistant"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "c18ff48d78fdba8a",
+      "title": "IAB unveils framework for measuring AI’s part in conversions",
+      "url": "https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions/",
+      "canonical_url": "https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions",
+      "source": "MarTech",
+      "source_id": "martech-org",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T14:06:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "The IAB today introduced “The AI-Era Attribution Blueprint,” a new framework for measuring AI’s role in conversions. Its goal is to provide advertisers, agencies, publishers, and AI platforms with a common way to determine who can claim credit for a sale influenced or completed by AI. The blueprint…",
+      "companies": [],
+      "topics": [
+        "martech"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "dfa8e0f9c98dabf6",
+      "title": "Attain Scaled CTV Acquisition, Beating Its CPA Goal",
+      "url": "https://www.demandgenreport.com/case-studies/attain-scaled-ctv-acquisition-beating-its-cpa-goal/55305/",
+      "canonical_url": "https://demandgenreport.com/case-studies/attain-scaled-ctv-acquisition-beating-its-cpa-goal/55305",
+      "source": "Demand Gen Report",
+      "source_id": "demand-gen-report",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T12:00:29Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 8,
+      "excerpt": "Key Takeaways Attain beat its internal cost-per-acquisition goal by 16.7% after it activated lookalike segments on tvScientific by Pinterest’s CTV platform. Phased budget increases, paired with continuous shifts toward top-performing audiences, let Attain raise CTV spend and install volume without…",
+      "companies": [],
+      "topics": [
+        "b2b",
+        "customer acquisition"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "90d79223706ea3ab",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "canonical_url": "https://openai.com/business/customer-stories/gondola",
+      "source": "OpenAI News",
+      "source_id": "openai-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-12T12:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+      "companies": [],
+      "topics": [
+        "chatgpt"
+      ],
+      "also_covered_by": [],
+      "url_check": "restricted",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1fe223b20c4f21d2",
+      "title": "Meta fined by UK regulator over repeated inaccuracies in WhatsApp Business data",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOG9jOW1aUnh1M2dsSDZXTzJMWmNyazdnU2RnNVZrTHhuU0RjR3dCUzdsYnJ3X2NMYnNaX3VibUxvdm4tQkxQUGxaOUh6SkFKNy1COXJteWw1Ykp6MEoxYm9mUUFkT2RvbDRjSnZSSGZka0NzOUcxbVllZGxHU0Q4WXVTOHpzNUF0Rk93VjEtVWpHR1VycmstaXE2STY5WDV3MGpUcDZfQ1Bfakpmc0h4bUNHeHVGcUswT0psOTFIdlhJaEU?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOG9jOW1aUnh1M2dsSDZXTzJMWmNyazdnU2RnNVZrTHhuU0RjR3dCUzdsYnJ3X2NMYnNaX3VibUxvdm4tQkxQUGxaOUh6SkFKNy1COXJteWw1Ykp6MEoxYm9mUUFkT2RvbDRjSnZSSGZka0NzOUcxbVllZGxHU0Q4WXVTOHpzNUF0Rk93VjEtVWpHR1VycmstaXE2STY5WDV3MGpUcDZfQ1Bfakpmc0h4bUNHeHVGcUswT0psOTFIdlhJaEU?oc=5",
+      "source": "CNA",
+      "source_id": "gnews-whatsapp-global",
+      "via": "Google News: WhatsApp Business",
+      "credibility": "aggregator",
+      "published_at": "2026-11-12T11:15:33Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "whatsapp",
+      "category_label": "WhatsApp Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 11,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "whatsapp",
+        "whatsapp business"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "ff62c4b9f599337f",
+      "title": "India Becomes ChatGPT's Biggest Market | OpenAI's India Chief | Corner Office Conversation",
+      "url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135763467.cms",
+      "canonical_url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135763467.cms",
+      "source": "Economic Times Tech",
+      "source_id": "et-tech",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-12T09:26:16Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (india).",
+      "priority": "Medium",
+      "priority_score": 8,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "openai",
+        "chatgpt"
+      ],
+      "also_covered_by": [
+        {
+          "source": "Economic Times Tech",
+          "url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135764546.cms",
+          "title": "India Becomes ChatGPT's Biggest Market | OpenAI's India Chief | Corner Office Conversation"
+        },
+        {
+          "source": "Economic Times Tech",
+          "url": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135764629.cms",
+          "title": "India Becomes ChatGPT's Biggest Market | OpenAI's India Chief | Corner Office Conversation"
+        }
+      ],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "b06379671ede1f62",
+      "title": "Supporting research on AI and children’s safety",
+      "url": "https://openai.com/index/children-first-declaration",
+      "canonical_url": "https://openai.com/index/children-first-declaration",
+      "source": "OpenAI News",
+      "source_id": "openai-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-12T00:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+      "companies": [],
+      "topics": [
+        "openai"
+      ],
+      "also_covered_by": [],
+      "url_check": "restricted",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "628516bca1ef053d",
+      "title": "Demand Spring Launches Four New Tools for CMOs",
+      "url": "https://www.demandgenreport.com/industry-news/news-brief/demand-spring-launches-four-new-tools-for-cmos/55307/",
+      "canonical_url": "https://demandgenreport.com/industry-news/news-brief/demand-spring-launches-four-new-tools-for-cmos/55307",
+      "source": "Demand Gen Report",
+      "source_id": "demand-gen-report",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-11T20:00:36Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "Key Takeaways Demand Spring launched four transformation offers to help CMOs improve growth strategy, martech performance, AI adoption and revenue marketing execution. The services combine strategy and implementation to help marketing leaders connect AI and martech investments more directly to…",
+      "companies": [],
+      "topics": [
+        "b2b",
+        "personalization",
+        "buying committee"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "cce714811b519a82",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+      "source": "Google AI Blog",
+      "source_id": "google-ai-blog",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-11T18:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 11,
+      "excerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "companies": [],
+      "topics": [
+        "gemini",
+        "multimodal"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "7bdc832209fdf7ca",
+      "title": "Madison Logic CEO Keith Turco Reads the B2B Market and Calls What’s Ahead in 2027",
+      "url": "https://www.demandgenreport.com/blog/madison-logic-ceo-keith-turco-reads-the-b2b-market-and-calls-whats-ahead-in-2027/55238/",
+      "canonical_url": "https://demandgenreport.com/blog/madison-logic-ceo-keith-turco-reads-the-b2b-market-and-calls-whats-ahead-in-2027/55238",
+      "source": "Demand Gen Report",
+      "source_id": "demand-gen-report",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-11T17:00:31Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "Key Takeaways Madison Logic CEO Keith Turco will join James Hickey of B2BMX Insights on Nov. 18, 2026, at 2 p.m. ET for a free Demand Gen Report webinar on how AI and performance-driven strategies will shape B2B marketing in 2027. A Madison Logic/Harris Poll found that 90% of marketers say anyone…",
+      "companies": [],
+      "topics": [
+        "b2b",
+        "demand gen",
+        "go-to-market"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "711ef9a7e6d6f4d6",
+      "title": "Salesforce Releases R&D Agents That Improve Its AI Models",
+      "url": "https://www.salesforce.com/news/stories/agents-that-improve-ai-models/",
+      "canonical_url": "https://salesforce.com/news/stories/agents-that-improve-ai-models",
+      "source": "Salesforce",
+      "source_id": "salesforce-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-11T16:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "Salesforce AI Research recently published SFR-AutoR&D , a set of agents built to run the research loop end-to-end, autonomously improving codebases and training AI models. Given one goal, a system to work on, and a compute budget, SFR-AutoR&D agents formulate hypotheses, implement methods, and run…",
+      "companies": [],
+      "topics": [
+        "salesforce",
+        "data cloud",
+        "agentforce"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "80b38ea7da372c49",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "canonical_url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "source": "OpenAI News",
+      "source_id": "openai-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-11T08:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+      "companies": [],
+      "topics": [
+        "chatgpt"
+      ],
+      "also_covered_by": [],
+      "url_check": "restricted",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "3c0c9ce60bfb756b",
+      "title": "TSMC to invest up to USD 1 billion in Anthropic, OpenAI",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/tsmc-to-invest-up-to-usd-1-billion-in-anthropic-openai/articleshow/135726655.cms",
+      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/tsmc-to-invest-up-to-usd-1-billion-in-anthropic-openai/articleshow/135726655.cms",
+      "source": "Economic Times Tech",
+      "source_id": "et-tech",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-11T05:13:09Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "Taiwan Semiconductor Manufacturing Company (TSMC) has approved investments of up to USD 1 billion in two major Artificial Intelligence companies, Anthropic and OpenAI, as the world's largest dedicated semiconductor foundry expands its strategic presence in the technology ecosystem.",
+      "companies": [],
+      "topics": [
+        "openai",
+        "anthropic",
+        "artificial intelligence"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "86618a52e5010f1a",
+      "title": "Expanding Gemini in Gmail to more Google Workspace users",
+      "url": "http://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html",
+      "canonical_url": "https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html",
+      "source": "Google Workspace Updates",
+      "source_id": "google-workspace-updates",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-10T21:45:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "email",
+      "category_label": "Email Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 8,
+      "excerpt": "We’re expanding the availability of some Gemini in Gmail features to more Google Workspace users aged 18 and older. Previously available to consumer accounts and specific Workspace editions, these tools are now being brought to the core Workspace experience by expanding availability to all…",
+      "companies": [],
+      "topics": [
+        "gmail"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "b73105fe4ec5f060",
+      "title": "Gemini Intelligence: New features, on more devices",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "canonical_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
+      "source": "Google AI Blog",
+      "source_id": "google-ai-blog",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-10T19:00:00Z",
+      "collected_at": "2026-11-16T02:29:24Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "companies": [],
+      "topics": [
+        "gemini"
       ],
       "also_covered_by": [],
       "url_check": "valid",
