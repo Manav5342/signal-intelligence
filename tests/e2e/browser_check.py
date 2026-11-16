@@ -189,10 +189,10 @@ def main():
         page.click('#section-nav a[href="#/"]')
 
         page.click("#refresh-btn")
-        check(page.get_attribute("#run-workflow-link", "href") == "https://github.com/example/signal-intelligence/actions/workflows/refresh-news.yml", "run-collection link points to workflow")
-        page.click("#reload-data-btn")
         page.wait_for_timeout(500)
-        check(page.is_visible("#toast"), "reload data shows toast")
+        check(page.is_visible("#toast"), "refresh reloads data and shows toast")
+        html = page.content()
+        check(all(w not in html for w in ("workflow", "GEMINI_API_KEY", "OPENAI_API_KEY", "github.com/")), "no owner/admin details on the public page")
 
         page.wait_for_selector("#desk-grid .desk")
         page.locator('#desk-grid a[href="#/category/ai"]').click()

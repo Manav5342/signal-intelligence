@@ -1,4 +1,4 @@
-/* Signal — newspaper front end. Static, no secrets: reads data/news.json published by GitHub Actions. */
+/* Signal — newspaper front end. Static and read-only: it only reads the published data/news.json. */
 (function () {
   "use strict";
   var L = window.SignalLib;
@@ -17,7 +17,7 @@
 
   var state = {
     meta: null, articles: [], byId: {}, saved: loadSaved(), view: "front",
-    filters: Object.assign({}, BLANK_FILTERS), sort: "newest", visible: PAGE_SIZE, loadError: null, polling: null
+    filters: Object.assign({}, BLANK_FILTERS), sort: "newest", visible: PAGE_SIZE, loadError: null
   };
 
   var $ = function (id) { return document.getElementById(id); };
@@ -75,7 +75,7 @@
     }).catch(function (err) {
       state.loadError = err.message || String(err);
       render();
-      if (opts.announce) toast("Couldn’t load the news: " + state.loadError);
+      if (opts.announce) toast("Couldn’t load the latest edition. Please try again.");
     }).finally(function () { setLoading(false); });
   }
 
@@ -184,19 +184,19 @@
     $("m-last").textContent = m.lastUpdate ? L.relativeTime(m.lastUpdate) : "not yet";
     $("m-last").title = m.lastUpdate ? L.formatDateTime(m.lastUpdate) : "";
     $("m-next").textContent = m.nextUpdate ? L.formatTime(m.nextUpdate) : "–";
-    $("m-next").title = "GitHub can start scheduled runs a few minutes late";
+    $("m-next").title = "Editions can arrive a few minutes after the scheduled time";
     $("metrics").hidden = state.view === "saved";
   }
 
   function renderNotice() {
     var n = $("notice"), meta = state.meta || {}, run = meta.last_run || {};
     var msgs = [];
-    if (state.loadError) msgs.push("The news couldn’t be loaded because " + esc(state.loadError) + ". If you opened index.html straight from your computer, open the GitHub Pages address instead, or run a local server.");
+    if (state.loadError) msgs.push("The latest edition couldn’t be loaded. Please try again in a moment.");
     else {
       if (run.status === "failed") msgs.push("The last collection couldn’t reach any source, so this is the previous edition.");
       else if (run.status === "partial" && run.sources_failed) msgs.push(run.sources_failed + " of " + run.sources_total + " sources didn’t answer during the last collection. Everything else was updated.");
-      if (meta.last_successful_update && meta.ai_enabled === false) msgs.push("AI analysis is off because no AI key is set up. Add the free <code>GEMINI_API_KEY</code> secret on GitHub (see the README). Until then, stories show the publisher’s excerpt and rule-based sections.");
-      if (run.ai_rate_limited) msgs.push("The free AI quota ran out during the last collection. Stories still waiting for analysis will be analysed at the next one.");
+      if (meta.last_successful_update && meta.ai_enabled === false) msgs.push("AI analysis wasn’t available for the latest edition, so new stories show the publisher’s excerpt for now.");
+      if (run.ai_rate_limited) msgs.push("Some stories are still waiting for analysis. It will be added in the next edition.");
     }
     n.hidden = !msgs.length;
     n.innerHTML = msgs.map(function (m) { return "<p>" + m + "</p>"; }).join("");
@@ -282,11 +282,11 @@
     $("latest-title").textContent = title;
 
     if (state.loadError) {
-      list.innerHTML = emptyState("This edition didn’t arrive", "Signal couldn’t load the news because " + esc(state.loadError) + ".", '<button class="btn btn-outline" data-action="reload">Try again</button>');
+      list.innerHTML = emptyState("This edition didn’t arrive", "The latest edition couldn’t be loaded. Please try again in a moment.", '<button class="btn btn-outline" data-action="reload">Try again</button>');
     } else if (!pool.length) {
       list.innerHTML = isSaved
         ? emptyState("Nothing saved yet", "Choose Save under any story to keep it here. Saved stories stay in this browser, even after they leave the archive.")
-        : emptyState("The first edition hasn’t been printed", "Signal fills up after its first collection, which runs automatically at 6 am and 2 pm IST. To start one now, choose <strong>Refresh</strong> and then <strong>Open the workflow on GitHub</strong>.");
+        : emptyState("The first edition hasn’t been printed", "Signal fills up after its first collection. New editions arrive at 6 am and 2 pm IST.");
     } else if (!filtered.length) {
       list.innerHTML = emptyState("No stories match", "Try a different word, or clear the filters to see everything.", '<button class="btn btn-outline" data-action="clear">Clear filters</button>');
     } else {
@@ -377,40 +377,6 @@
   }
 
   /* ---------- Refresh ---------- */
-  function setupWorkflowLink() {
-    var repo = L.deriveRepo(window.location, state.meta);
-    var link = $("run-workflow-link"), note = $("run-workflow-note");
-    if (repo) {
-      link.href = "https://github.com/" + repo + "/actions/workflows/refresh-news.yml";
-      link.removeAttribute("aria-disabled");
-      note.textContent = "Only people with write access to " + repo + " can start it. This page stores no token.";
-    } else {
-      link.removeAttribute("href");
-      link.setAttribute("aria-disabled", "true");
-      note.textContent = "Open Signal from its GitHub Pages address to use this.";
-    }
-  }
-
-  function startPolling() {
-    if (state.polling) clearInterval(state.polling);
-    var startedFrom = state.meta && state.meta.last_successful_update, tries = 0;
-    toast("Watching for the new edition. This page updates when it’s ready.");
-    state.polling = setInterval(function () {
-      tries++;
-      load({ silent: true }).then(function (ts) {
-        if (ts && ts !== startedFrom) { clearInterval(state.polling); state.polling = null; toast("The new edition is here"); }
-        else if (tries >= 15) { clearInterval(state.polling); state.polling = null; toast("No new edition yet. Check the workflow on GitHub."); }
-      });
-    }, 60000);
-  }
-
-  function togglePanel(force) {
-    var panel = $("refresh-panel"), btn = $("refresh-btn");
-    var open = force !== undefined ? force : panel.hidden;
-    panel.hidden = !open;
-    btn.setAttribute("aria-expanded", String(open));
-  }
-
   var toastTimer;
   function toast(msg) {
     var t = $("toast");
@@ -469,15 +435,7 @@
       var b = e.target.closest("button[data-region]");
       if (b) setFilter("region", b.dataset.region);
     });
-    $("refresh-btn").addEventListener("click", function (e) { e.stopPropagation(); togglePanel(); });
-    $("refresh-panel").addEventListener("click", function (e) { e.stopPropagation(); });
-    document.addEventListener("click", function () { togglePanel(false); });
-    $("reload-data-btn").addEventListener("click", function () { togglePanel(false); load({ announce: true }); loadHealth(); });
-    $("run-workflow-link").addEventListener("click", function (e) {
-      if (this.getAttribute("aria-disabled") === "true") { e.preventDefault(); return; }
-      togglePanel(false);
-      startPolling();
-    });
+    $("refresh-btn").addEventListener("click", function () { load({ announce: true }); loadHealth(); });
     $("clear-filters").addEventListener("click", clearFilters);
     $("show-more").addEventListener("click", function () { state.visible += PAGE_SIZE; renderLatest(); });
 
@@ -496,7 +454,6 @@
     dlg.addEventListener("click", function (e) { if (e.target === dlg) closeModal(); });
     dlg.addEventListener("close", function () { document.body.classList.remove("modal-open"); });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") togglePanel(false);
       if (e.key === "/" && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName) && !dlg.open) { e.preventDefault(); $("search").focus(); }
     });
     window.addEventListener("hashchange", route);
@@ -508,8 +465,7 @@
     buildSelectOptions();
     bind();
     route();
-    load().then(setupWorkflowLink);
-    setupWorkflowLink();
+    load();
     loadHealth();
   }
 
