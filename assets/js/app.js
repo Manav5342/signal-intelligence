@@ -7,7 +7,6 @@
   var DATA_URL = "data/news.json";
   var HEALTH_URL = "data/source_health.json";
   var SAVED_KEY = "signal.saved.v1";
-  var DATELINE_CITY = "Mumbai";          // change to your city
   var PAGE_SIZE = 16;
   var CATEGORY_ORDER = ["ai", "b2b", "email", "whatsapp", "analytics", "martech"];
   var DEFAULT_CATEGORIES = { ai: "AI & Technology", b2b: "B2B Marketing", email: "Email Marketing",
@@ -104,9 +103,12 @@
   }
 
   function byline(a) {
-    return '<p class="byline"><span class="pub">' + esc(a.source) + "</span>" + (a.via ? ' <span>via ' + esc(a.via.replace(/^Google News:?\s*/, "Google News")) + "</span>" : "") +
+    return '<p class="byline"><span class="pub">' + esc(a.source) + "</span>" + (a.via ? " <span>via " + esc(viaName(a.via)) + "</span>" : "") +
       ', <time datetime="' + esc(a.published_at) + '" title="Original publication date">' + esc(L.formatDate(a.published_at)) + "</time></p>";
   }
+
+  // "Google News: Anthropic & Claude" -> "Google News"
+  function viaName(via) { return String(via).split(":")[0].trim(); }
 
   function headline(a) {
     return '<button data-action="open" data-id="' + esc(a.id) + '">' + esc(a.title) + "</button>";
@@ -151,7 +153,7 @@
     var now = new Date();
     var longDate = new Intl.DateTimeFormat("en-GB", { timeZone: L.TZ, weekday: "long", day: "numeric", month: "long", year: "numeric" }).format(now);
     var shortDate = new Intl.DateTimeFormat("en-GB", { timeZone: L.TZ, weekday: "short", day: "numeric", month: "short" }).format(now);
-    $("dateline").innerHTML = '<span class="d-long">' + esc(DATELINE_CITY + ", " + longDate) + '</span><span class="d-short">' + esc(DATELINE_CITY + ", " + shortDate) + "</span>";
+    $("dateline").innerHTML = '<span class="d-long">' + esc(longDate) + '</span><span class="d-short">' + esc(shortDate) + "</span>";
     var last = state.meta && state.meta.last_successful_update;
     var ear = $("edition-ear");
     $("edition-name").textContent = L.editionName(last) || "First edition pending";
@@ -238,7 +240,7 @@
     var show = state.view === "front" && !filtersActive() && !state.loadError && state.articles.length > 0;
     front.hidden = !show;
     if (!show) return;
-    var t = L.topDevelopments(state.articles, new Date(), 5);
+    var t = L.topDevelopments(state.articles, new Date(), 7);
     if (!t.items.length) { front.hidden = true; return; }
     var lead = t.items[0], an = lead.analysis || {};
     var body = "";
@@ -246,13 +248,18 @@
       body = '<div class="lead-body"><p><span class="label">Why it matters</span>' + esc(an.why_it_matters) + "</p>" +
         ((an.recommendations || [])[0] ? '<p><span class="label">What to do next</span>' + esc(an.recommendations[0]) + "</p>" : "") + "</div>";
     }
+    // Two supporting stories under the lead keep both front-page columns filled.
+    var seconds = t.items.slice(1, 3);
+    var secondHtml = seconds.length ? '<div class="lead-secondary">' + seconds.map(function (a) {
+      return '<article class="second" data-id="' + esc(a.id) + '">' + kicker(a) + '<h3 class="hl">' + headline(a) + "</h3>" + dek(a, 170) + byline(a) + "</article>";
+    }).join("") + "</div>" : "";
     $("lead-story").innerHTML = '<article data-id="' + esc(lead.id) + '">' + kicker(lead) +
-      '<h2 class="hl">' + headline(lead) + "</h2>" + dek(lead, 360) + byline(lead) + body + actions(lead) + "</article>";
+      '<h2 class="hl">' + headline(lead) + "</h2>" + dek(lead, 360) + byline(lead) + body + actions(lead) + "</article>" + secondHtml;
     $("top-title").textContent = t.windowDays <= 2 ? "Today’s top developments" : "This week’s top developments";
-    var rest = t.items.slice(1);
+    var rest = t.items.slice(3);
     $("top-list").innerHTML = rest.length ? rest.map(function (a) {
       return '<article class="rail-story" data-id="' + esc(a.id) + '">' + kicker(a) + '<h3 class="hl">' + headline(a) + "</h3>" + dek(a, 150) + byline(a) + "</article>";
-    }).join("") : '<p class="dek muted">Only one major development so far. See the latest stories below.</p>';
+    }).join("") : '<p class="dek muted">See the latest stories below.</p>';
   }
 
   function renderDesks() {
@@ -321,7 +328,7 @@
     if (!a) return;
     var an = a.analysis || {}, url = L.safeUrl(a.url), saved = !!state.saved[a.id];
     var html = kicker(a) + '<h2 class="hl" id="modal-title">' + esc(a.title) + "</h2>" +
-      '<div class="byline"><span><span class="pub">' + esc(a.source) + "</span>" + (a.via ? " via " + esc(a.via) : "") + "</span>" +
+      '<div class="byline"><span><span class="pub">' + esc(a.source) + "</span>" + (a.via ? " via " + esc(viaName(a.via)) : "") + "</span>" +
       '<span>Published <time datetime="' + esc(a.published_at) + '">' + esc(L.formatDateTime(a.published_at)) + "</time></span></div>";
 
     if (an.status === "complete") {

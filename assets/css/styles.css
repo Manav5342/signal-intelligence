@@ -177,6 +177,11 @@ main { outline: none; }
 .lead-body p { margin: 0 0 0.8em; }
 .lead-body .label { display: block; font-family: var(--sans); font-size: 12.5px; font-weight: 700; text-align: left; margin-bottom: 2px; }
 .lead .story-actions { margin-top: 14px; }
+.lead-secondary { display: grid; grid-template-columns: 1fr 1fr; margin-top: 24px; border-top: 1px solid var(--rule); }
+.second { padding: 16px var(--gutter) 0 0; min-width: 0; }
+.second + .second { border-left: 1px solid var(--hair); padding: 16px 0 0 var(--gutter); }
+.second .hl { font-size: 21px; line-height: 1.2; }
+.second .dek { font-size: 15.5px; line-height: 1.5; }
 .top-stories { border-left: 1px solid var(--rule); padding-left: var(--gutter); }
 .rail-title { margin: 0 0 4px; font-family: var(--serif); font-size: 21px; font-style: italic; font-weight: 600; padding-bottom: 8px; border-bottom: 3px double var(--rule); }
 .rail-story { padding: 16px 0; border-bottom: 1px solid var(--hair); }
@@ -333,6 +338,9 @@ dialog::backdrop { background: rgba(30, 20, 14, 0.55); }
   .select select { width: 100%; max-width: none; }
   .lead .dek { font-size: 18.5px; }
   .lead-body { columns: 1; hyphens: manual; }
+  .lead-secondary { grid-template-columns: 1fr; }
+  .second, .second + .second { padding: 16px 0 0; border-left: 0; }
+  .second + .second { border-top: 1px solid var(--hair); margin-top: 16px; }
   .columns { grid-template-columns: 1fr; }
   .story { padding: 16px 0 18px; border-left: 0; }
   .columns { margin-left: 0; }

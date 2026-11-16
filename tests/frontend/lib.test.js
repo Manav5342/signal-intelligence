@@ -86,3 +86,10 @@ test("search matches word prefixes and phrases, not stray letters", () => {
   assert.deepStrictEqual(L.filterArticles(A, { query: "whatsapp pricing" }, NOW).map(a => a.id), ["2"]);
   assert.deepStrictEqual(L.filterArticles(A, { query: "  GOOGLE " }, NOW).map(a => a.id), ["1"]);
 });
+
+test("front page never leads with a bare headline when a richer story exists", () => {
+  const bare = { id: "b", category: "ai", priority: "Medium", priority_score: 20, published_at: "2026-11-16T05:00:00Z" };
+  const rich = { id: "r", category: "email", priority: "Medium", priority_score: 5, published_at: "2026-11-16T01:00:00Z", excerpt: "Text", analysis: { status: "complete", summary: "S" } };
+  assert.deepStrictEqual(L.topDevelopments([bare, rich], NOW, 2).items.map(a => a.id), ["r", "b"]);
+  assert.ok(L.richness(rich) > L.richness(bare));
+});

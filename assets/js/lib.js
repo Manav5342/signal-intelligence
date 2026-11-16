@@ -130,6 +130,13 @@
     return out;
   }
 
+  function richness(a) {
+    var an = a.analysis || {};
+    if (an.status === "complete" && !an.needs_validation) return 3;
+    if (an.status === "complete") return 2;
+    return a.excerpt ? 1 : 0;
+  }
+
   /* Most important recent developments across categories: newest 48h by priority,
      at most 2 per category so one topic can't crowd out the rest. */
   function topDevelopments(list, now, n) {
@@ -138,7 +145,12 @@
     var windows = [2, 7];
     for (var w = 0; w < windows.length; w++) {
       var recent = list.filter(function (a) { return now - time(a) <= windows[w] * DAY; });
-      var ranked = sortArticles(recent, "priority");
+      // Within a priority level, prefer stories with real substance (analysis, then
+      // publisher text) so the front page never leads with a bare headline.
+      var ranked = recent.slice().sort(function (a, b) {
+        return (PRIORITY_WEIGHT[b.priority] || 0) - (PRIORITY_WEIGHT[a.priority] || 0) ||
+          richness(b) - richness(a) || (b.priority_score || 0) - (a.priority_score || 0) || time(b) - time(a);
+      });
       var perCat = {}, picks = [];
       ranked.forEach(function (a) {
         if (picks.length >= n) return;
@@ -206,7 +218,7 @@
 
   return {
     editionName: editionName, sectionFronts: sectionFronts, formatTime: formatTime,
-    TZ: TZ, escapeHtml: escapeHtml, safeUrl: safeUrl, parseDate: parseDate, isTodayIST: isTodayIST,
+    richness: richness, TZ: TZ, escapeHtml: escapeHtml, safeUrl: safeUrl, parseDate: parseDate, isTodayIST: isTodayIST,
     formatDate: formatDate, formatDateTime: formatDateTime, relativeTime: relativeTime,
     nextScheduledRun: nextScheduledRun, filterArticles: filterArticles, sortArticles: sortArticles,
     topDevelopments: topDevelopments, shortSummary: shortSummary, hasAnalysis: hasAnalysis,
