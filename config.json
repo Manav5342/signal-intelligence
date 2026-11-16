@@ -7,7 +7,7 @@
   },
   "settings": {
     "archive_limit": 100,
-    "freshness_days": 3,
+    "freshness_days": 7,
     "max_new_articles_per_run": 60,
     "max_ai_articles_per_run": 30,
     "max_ai_attempts": 3,
@@ -17,7 +17,9 @@
     "validate_article_urls": true,
     "duplicate_title_similarity": 0.6,
     "duplicate_window_hours": 72,
-    "user_agent": "SignalIntelligenceBot/1.0 (+personal RSS reader; respects robots and feed terms)"
+    "user_agent": "SignalIntelligenceBot/1.0 (+personal RSS reader; respects robots and feed terms)",
+    "max_items_per_source": 6,
+    "max_consecutive_ai_failures": 3
   },
   "ai": {
     "provider": "auto",
@@ -39,7 +41,11 @@
           "openai/gpt-4o-mini"
         ],
         "token_param": "max_tokens",
-        "seconds_between_calls": 5
+        "seconds_between_calls": 5,
+        "extra_headers": {
+          "Accept": "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28"
+        }
       },
       "gemini": {
         "label": "Google Gemini API (free tier with a free key from Google AI Studio)",
@@ -385,14 +391,15 @@
     },
     {
       "id": "microsoft-ai-blog",
-      "name": "Microsoft AI Blog",
+      "name": "Official Microsoft Blog",
       "type": "rss",
-      "url": "https://blogs.microsoft.com/ai/feed/",
+      "url": "https://blogs.microsoft.com/feed/",
       "category_hint": "ai",
       "region_hint": "Global",
       "credibility": "official",
-      "focused": true,
-      "enabled": true
+      "focused": false,
+      "enabled": true,
+      "notes": "The Microsoft AI blog feed returned 410 Gone (Nov 2026); the main Microsoft blog covers Copilot and AI announcements."
     },
     {
       "id": "mit-tech-review-ai",
@@ -453,14 +460,16 @@
     },
     {
       "id": "marketing-brew",
-      "name": "Marketing Brew",
-      "type": "rss",
-      "url": "https://www.marketingbrew.com/feed",
+      "name": "Google News: Marketing Brew",
+      "type": "google_news",
       "category_hint": "b2b",
       "region_hint": "Global",
-      "credibility": "publication",
+      "credibility": "aggregator",
       "focused": false,
-      "enabled": true
+      "enabled": true,
+      "query": "site:marketingbrew.com",
+      "locale": "en-US",
+      "notes": "Direct feed returned 404 (Nov 2026)."
     },
     {
       "id": "search-engine-journal",
@@ -565,14 +574,16 @@
     },
     {
       "id": "wati-blog",
-      "name": "Wati Blog",
-      "type": "rss",
-      "url": "https://www.wati.io/blog/feed/",
+      "name": "Google News: Wati",
+      "type": "google_news",
       "category_hint": "whatsapp",
       "region_hint": "Global",
-      "credibility": "publication",
+      "credibility": "aggregator",
       "focused": true,
-      "enabled": true
+      "enabled": true,
+      "query": "Wati WhatsApp",
+      "locale": "en-IN",
+      "notes": "wati.io feed was malformed (Nov 2026)."
     },
     {
       "id": "gnews-whatsapp-global",
@@ -663,7 +674,8 @@
       "region_hint": "Global",
       "credibility": "publication",
       "focused": false,
-      "enabled": true
+      "enabled": false,
+      "notes": "Blocks automated feed readers from GitHub's servers (HTTP 403, Nov 2026)."
     },
     {
       "id": "inc42",

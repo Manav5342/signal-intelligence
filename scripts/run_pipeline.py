@@ -98,8 +98,12 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
     # 2-4. Freshness, relevance, classification
     candidates = []
     stale = irrelevant = 0
+    per_source_cap = settings.get("max_items_per_source", 6)
     for r in results:
-        for item in r.items:
+        kept_from_source = 0
+        for item in sorted(r.items, key=lambda i: i["published_at"], reverse=True):
+            if kept_from_source >= per_source_cap:
+                break
             if canonical_url(item["url"]) in known_urls:
                 continue
             if not within_freshness(item, settings.get("freshness_days", 3), now):
@@ -112,6 +116,7 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
             item["topics"] = cat_terms[:4]
             item["companies"] = []
             candidates.append(item)
+            kept_from_source += 1
     candidates.sort(key=lambda a: (PRIORITY_WEIGHT[a["priority"]], a["priority_score"], _sort_key(a)), reverse=True)
     candidates = candidates[: settings.get("max_new_articles_per_run", 60)]
 
@@ -168,7 +173,13 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
     else:
         LOG.info("AI provider: %s (model %s), %d article(s) queued", provider["name"], provider["model"], len(queue))
         gap = float(provider.get("seconds_between_calls", 0) or 0)
+        max_consecutive = settings.get("max_consecutive_ai_failures", 3)
+        consecutive = 0
         for i, a in enumerate(queue):
+            if consecutive >= max_consecutive:
+                errors.append(f"ai: stopped after {consecutive} consecutive failures; remaining articles stay queued")
+                LOG.error("Stopping AI after %d consecutive failures. Remaining articles stay queued.", consecutive)
+                break
             if i and gap:
                 time.sleep(gap)  # stay inside free-tier requests-per-minute limits
             a["content"] = content_by_id.get(a["id"]) or a.get("content") or a.get("excerpt") or ""
@@ -176,6 +187,7 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
                 analysis = analyse_news.analyse_article(a, config, provider=provider)
                 analyse_news.apply_analysis(a, analysis, config)
                 ai_done += 1
+                consecutive = 0
             except analyse_news.RateLimited as exc:
                 ai_rate_limited = True
                 errors.append(f"ai: {provider['name']} quota reached; remaining articles wait for the next run ({str(exc)[:120]})")
@@ -187,6 +199,7 @@ def run(config: dict[str, Any], news_path: Path = NEWS_PATH, health_path: Path =
                 break
             except Exception as exc:
                 ai_failed += 1
+                consecutive += 1
                 a["ai_attempts"] = a.get("ai_attempts", 0) + 1
                 a["analysis"] = {"status": "failed", "error": f"{type(exc).__name__}: {str(exc)[:200]}"}
                 errors.append(f"ai:{a['id']}: {type(exc).__name__}: {str(exc)[:200]}")

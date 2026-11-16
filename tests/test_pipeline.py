@@ -355,3 +355,48 @@ def test_pipeline_free_github_rate_limit_keeps_articles_queued(tmp_path, config,
     assert seen == ["github"]  # stopped after the first 429
     assert all(a["analysis"]["status"] == "pending" and a["ai_attempts"] == 0 for a in db["articles"])
     assert db["meta"]["last_run"]["ai_rate_limited"] is True and db["meta"]["ai_provider"] == "github"
+
+
+class TextResp(FakeResp):
+    def __init__(self, status, text, headers=None):
+        super().__init__(status, {}, headers)
+        self.text = text
+
+    def json(self):
+        raise ValueError("Expecting value: line 1 column 1 (char 0)")
+
+
+def test_non_json_200_gives_a_clear_error(config):
+    sess = _session([TextResp(200, "<html>Sign in</html>", {"content-type": "text/html"})])
+    with pytest.raises(RuntimeError, match="non-JSON response: HTTP 200, content-type text/html"):
+        analyse_news.call_model([], gh_provider(config), config, sess)
+
+
+def test_github_provider_sends_api_headers(config):
+    class Capture(FakeAISession):
+        def post(self, url, **kw):
+            self.headers = kw["headers"]
+            self.redirects = kw.get("allow_redirects")
+            return super().post(url, **kw)
+    sess = Capture([OK])
+    analyse_news.call_model([], gh_provider(config), config, sess)
+    assert sess.headers["X-GitHub-Api-Version"] == "2022-11-28" and sess.redirects is False
+
+
+def test_pipeline_stops_after_consecutive_ai_failures(tmp_path, config, feed_bytes, now, monkeypatch):
+    monkeypatch.setattr(run_pipeline, "fetch_all", _fake_fetch(feed_bytes))
+    monkeypatch.setenv("GITHUB_TOKEN", "ghs_test")
+    monkeypatch.setattr(run_pipeline.time, "sleep", lambda s: None)
+    cfg = json.loads(json.dumps(config))
+    cfg["settings"]["max_consecutive_ai_failures"] = 1
+    calls = []
+
+    def boom(article, config, provider=None, session=None):
+        calls.append(article["id"])
+        raise RuntimeError("broken")
+
+    monkeypatch.setattr(analyse_news, "analyse_article", boom)
+    db = run_pipeline.run(cfg, tmp_path / "n.json", tmp_path / "h.json", check_urls=False, now=now)
+    assert len(calls) == 1
+    statuses = sorted(a["analysis"]["status"] for a in db["articles"])
+    assert statuses == ["failed", "pending"]

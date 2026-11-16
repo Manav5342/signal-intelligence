@@ -157,6 +157,25 @@ def parse_ai_response(content: str, config: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
+def _describe(resp: Any) -> str:
+    ctype = (getattr(resp, "headers", None) or {}).get("content-type", "unknown")
+    return f"HTTP {resp.status_code}, content-type {ctype}, body starts {resp.text[:200]!r}"
+
+
+def _extract_content(resp: Any, model: str) -> tuple[str, str]:
+    try:
+        body = resp.json()
+    except ValueError:
+        raise RuntimeError("Provider returned a non-JSON response: " + _describe(resp)) from None
+    try:
+        content = body["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError):
+        raise RuntimeError("Provider response has no message content: " + _describe(resp)) from None
+    if not content or not str(content).strip():
+        raise RuntimeError("Provider returned an empty message: " + _describe(resp))
+    return content, body.get("model", model)
+
+
 def call_model(messages: list[dict[str, str]], provider: dict[str, Any], config: dict[str, Any],
                session: requests.Session | None = None) -> tuple[str, str]:
     """Return (content, model_used). Tries the provider's model, then its fallbacks.
@@ -176,19 +195,24 @@ def call_model(messages: list[dict[str, str]], provider: dict[str, Any], config:
         while attempt < ai.get("max_retries", 3):
             attempt += 1
             try:
+                headers = {"Authorization": f"Bearer {provider['key']}", "Content-Type": "application/json"}
+                headers.update(provider.get("extra_headers") or {})
                 resp = session.post(
                     provider["url"],
-                    headers={"Authorization": f"Bearer {provider['key']}", "Content-Type": "application/json"},
+                    headers=headers,
                     json=payload,
                     timeout=ai.get("request_timeout_seconds", 90),
+                    allow_redirects=False,
                 )
             except requests.RequestException as exc:
                 last_error = f"network error: {exc}"
                 time.sleep(2 ** attempt)
                 continue
             if resp.status_code == 200:
-                body = resp.json()
-                return body["choices"][0]["message"]["content"], body.get("model", model)
+                return _extract_content(resp, model)
+            if 300 <= resp.status_code < 400:
+                raise RuntimeError(f"{provider['name']} redirected the request (HTTP {resp.status_code} to "
+                                   f"{getattr(resp, 'headers', {}).get('location')}). Check the provider URL in config.json.")
             snippet = resp.text[:300]
             last_error = f"HTTP {resp.status_code}: {snippet}"
             if resp.status_code == 429:

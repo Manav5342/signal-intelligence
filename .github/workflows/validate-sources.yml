@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: read
+  models: read
 
 jobs:
   validate:
@@ -26,4 +27,19 @@ jobs:
           set -o pipefail
           echo '```' >> "$GITHUB_STEP_SUMMARY"
           python -m scripts.validate_sources --no-write | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Check AI provider
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+        run: |
+          set -o pipefail
+          echo '### AI provider check' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          python -m scripts.check_ai | tee -a "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
