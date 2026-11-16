@@ -3,7 +3,7 @@ name: Refresh news
 # GitHub Actions cron uses UTC.
 #   00:30 UTC = 06:00 IST
 #   08:30 UTC = 14:00 IST
-# Scheduled runs can start a few minutes late when GitHub is busy.
+# Scheduled runs can start a few minutes late when GitHub is busy. Schedule active.
 on:
   schedule:
     - cron: '30 0 * * *'
