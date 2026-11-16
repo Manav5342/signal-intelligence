@@ -113,6 +113,8 @@ def main():
         check(page.locator("#desk-grid .desk").count() == 6, "six section desks rendered")
         check("edition" in page.inner_text("#edition-name").lower(), "edition name in masthead")
         check(not page.is_hidden("#notice"), "partial-run notice shown")
+        check(page.evaluate("document.querySelector('.signature').naturalWidth > 0"), "signature image loads")
+        check(page.get_attribute(".signoff-link", "href") == "https://meetmanav.com", "signature link points to meetmanav.com")
         if shots:
             page.screenshot(path=str(shots / "desktop.png"), full_page=True)
             page.screenshot(path=str(shots / "desktop-fold.png"))
