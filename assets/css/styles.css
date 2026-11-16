@@ -318,7 +318,7 @@ dialog::backdrop { background: rgba(30, 20, 14, 0.55); }
 @media (max-width: 600px) {
   body { font-size: 16.5px; }
   .colophon-inner { grid-template-columns: 1fr; }
-  .signoff { align-items: flex-start; border-left: 0; border-top: 1px solid var(--hair); padding: 16px 0 0; }
+  .signoff { align-items: flex-end; border-left: 0; border-top: 1px solid var(--hair); padding: 16px 0 0; }
   .utility-inner { min-height: 38px; }
   .dateline { font-size: 12.5px; }
   .d-long, .u-long { display: none; }
