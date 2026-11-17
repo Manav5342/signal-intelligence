@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-17T08:17:00Z",
+  "checked_at": "2026-11-17T17:44:31Z",
   "total": 32,
-  "ok": 31,
-  "failed": 1,
+  "ok": 32,
+  "failed": 0,
   "sources": [
     {
       "id": "openai-news",
@@ -10,8 +10,8 @@
       "url": "https://openai.com/news/rss.xml",
       "ok": true,
       "status_code": 200,
-      "entries": 1400,
-      "usable_items": 1400,
+      "entries": 1403,
+      "usable_items": 1403,
       "error": null
     },
     {
@@ -90,8 +90,8 @@
       "url": "https://news.google.com/rss/search?q=site%3Amarketingbrew.com&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 65,
-      "usable_items": 65,
+      "entries": 68,
+      "usable_items": 68,
       "error": null
     },
     {
@@ -110,8 +110,8 @@
       "url": "https://news.google.com/rss/search?q=%22B2B+marketing%22+OR+%22account-based+marketing%22+OR+%22demand+generation%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 48,
-      "usable_items": 48,
+      "entries": 45,
+      "usable_items": 45,
       "error": null
     },
     {
@@ -168,11 +168,11 @@
       "id": "gnews-email",
       "name": "Google News: Email deliverability",
       "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
-      "ok": false,
-      "status_code": 429,
-      "entries": 0,
-      "usable_items": 0,
-      "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en"
+      "ok": true,
+      "status_code": 200,
+      "entries": 56,
+      "usable_items": 56,
+      "error": null
     },
     {
       "id": "meta-newsroom",
@@ -190,8 +190,8 @@
       "url": "https://news.google.com/rss/search?q=Wati+WhatsApp&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 18,
-      "usable_items": 18,
+      "entries": 19,
+      "usable_items": 19,
       "error": null
     },
     {
@@ -320,8 +320,8 @@
       "url": "https://news.google.com/rss/search?q=India+SaaS+OR+martech+OR+%22B2B+marketing%22+OR+%22marketing+technology%22&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 42,
-      "usable_items": 42,
+      "entries": 43,
+      "usable_items": 43,
       "error": null
     }
   ]
