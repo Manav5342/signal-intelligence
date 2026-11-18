@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-18T07:49:32Z",
+  "checked_at": "2026-11-18T08:30:34Z",
   "total": 32,
   "ok": 31,
   "failed": 1,
@@ -170,8 +170,8 @@
       "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 54,
-      "usable_items": 54,
+      "entries": 55,
+      "usable_items": 55,
       "error": null
     },
     {
@@ -250,8 +250,8 @@
       "url": "https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 88,
-      "usable_items": 88,
+      "entries": 89,
+      "usable_items": 89,
       "error": null
     },
     {
@@ -320,8 +320,8 @@
       "url": "https://news.google.com/rss/search?q=India+SaaS+OR+martech+OR+%22B2B+marketing%22+OR+%22marketing+technology%22&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 42,
-      "usable_items": 42,
+      "entries": 44,
+      "usable_items": 44,
       "error": null
     }
   ]
