@@ -7,6 +7,8 @@
   var DATA_URL = "data/news.json";
   var HEALTH_URL = "data/source_health.json";
   var SAVED_KEY = "signal.saved.v1";
+  // Cloudflare Worker that starts a fresh edition on demand (rate-limited there).
+  var REFRESH_API = "https://signal-api.meetmanav.com/refresh";
   var PAGE_SIZE = 16;
   var CATEGORY_ORDER = ["ai", "b2b", "email", "whatsapp", "analytics", "martech"];
   var DEFAULT_CATEGORIES = { ai: "AI & Technology", b2b: "B2B Marketing", email: "Email Marketing",
@@ -383,7 +385,66 @@
     document.body.classList.remove("modal-open");
   }
 
-  /* ---------- Refresh ---------- */
+  /* ---------- Refresh: ask for a fresh edition, then wait for it ---------- */
+  var printing = null;
+
+  function setRefreshBusy(label) {
+    var btn = $("refresh-btn");
+    btn.setAttribute("aria-busy", label ? "true" : "false");
+    btn.disabled = !!label;
+    $("refresh-label").textContent = label || "Refresh";
+  }
+
+  function minutesAgo(iso) {
+    var m = Math.max(1, Math.round((Date.now() - new Date(iso).getTime()) / 60000));
+    return m + (m === 1 ? " minute" : " minutes");
+  }
+
+  function requestEdition() {
+    if (printing) return;
+    setRefreshBusy("Checking…");
+    fetch(REFRESH_API, { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" })
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status)); })
+      .then(function (res) {
+        if (res.state === "started") { toast("Printing a fresh edition. It takes about 5 minutes, and this page updates by itself."); waitForEdition(); }
+        else if (res.state === "running") { toast("A fresh edition is already being printed. This page updates by itself when it’s ready."); waitForEdition(); }
+        else if (res.state === "recent") {
+          setRefreshBusy(null);
+          load({ silent: true });
+          toast("A fresh edition was started " + minutesAgo(res.started_at) + " ago. You can request another in " + res.retry_in_minutes + " min.");
+        } else throw new Error(res.state || "unknown");
+      })
+      .catch(function () {
+        setRefreshBusy(null);
+        load({ silent: true });
+        toast("A fresh edition can’t be started right now, so you’re seeing the latest published one.");
+      });
+  }
+
+  // Poll the published data until the new edition lands (up to ~12 minutes).
+  function waitForEdition() {
+    var from = state.meta && state.meta.last_successful_update;
+    var started = Date.now();
+    setRefreshBusy("Printing…");
+    printing = setInterval(function () {
+      var mins = Math.floor((Date.now() - started) / 60000);
+      $("refresh-label").textContent = "Printing… " + mins + ":" + String(Math.floor((Date.now() - started) / 1000) % 60).padStart(2, "0");
+    }, 1000);
+    var tries = 0;
+    var poll = setInterval(function () {
+      tries++;
+      load({ silent: true }).then(function (ts) {
+        var done = ts && ts !== from;
+        if (done || tries >= 24) {
+          clearInterval(poll); clearInterval(printing); printing = null;
+          setRefreshBusy(null);
+          loadHealth();
+          toast(done ? "The fresh edition is in." : "The edition is taking longer than usual. Try Refresh again in a few minutes.");
+        }
+      });
+    }, 30000);
+  }
+
   var toastTimer;
   function toast(msg) {
     var t = $("toast");
@@ -442,7 +503,7 @@
       var b = e.target.closest("button[data-region]");
       if (b) setFilter("region", b.dataset.region);
     });
-    $("refresh-btn").addEventListener("click", function () { load({ announce: true }); loadHealth(); });
+    $("refresh-btn").addEventListener("click", requestEdition);
     $("clear-filters").addEventListener("click", clearFilters);
     $("show-more").addEventListener("click", function () { state.visible += PAGE_SIZE; renderLatest(); });
 
