@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-18T07:37:46Z",
+  "checked_at": "2026-11-18T07:49:32Z",
   "total": 32,
   "ok": 31,
   "failed": 1,
@@ -170,8 +170,8 @@
       "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 55,
-      "usable_items": 55,
+      "entries": 54,
+      "usable_items": 54,
       "error": null
     },
     {
