@@ -76,7 +76,9 @@ button, input, select { font: inherit; color: inherit; }
 .u-button { background: none; border: 0; padding: 6px 0; cursor: pointer; }
 .u-link.is-active { text-decoration: underline; text-decoration-thickness: 2px; }
 .saved-count { font-weight: 700; font-variant-numeric: tabular-nums; border: 1px solid var(--ink); padding: 0 6px; line-height: 18px; font-size: 12px; }
-.is-loading #refresh-btn svg { animation: spin 1s linear infinite; }
+.is-loading #refresh-btn svg, #refresh-btn[aria-busy="true"] svg { animation: spin 1s linear infinite; }
+#refresh-btn:disabled { cursor: progress; color: var(--ink-2); }
+#refresh-label { font-variant-numeric: tabular-nums; }
 @keyframes spin { to { transform: rotate(360deg); } }
 /* ---------- Masthead: the one loud moment ---------- */
 .masthead { padding: 22px 0 0; }
