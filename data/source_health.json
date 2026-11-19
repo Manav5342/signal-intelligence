@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-19T00:30:33Z",
+  "checked_at": "2026-11-19T07:45:30Z",
   "total": 32,
   "ok": 31,
   "failed": 1,
@@ -90,8 +90,8 @@
       "url": "https://news.google.com/rss/search?q=site%3Amarketingbrew.com&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 64,
-      "usable_items": 64,
+      "entries": 68,
+      "usable_items": 68,
       "error": null
     },
     {
@@ -110,8 +110,8 @@
       "url": "https://news.google.com/rss/search?q=%22B2B+marketing%22+OR+%22account-based+marketing%22+OR+%22demand+generation%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 47,
-      "usable_items": 47,
+      "entries": 48,
+      "usable_items": 48,
       "error": null
     },
     {
@@ -190,8 +190,8 @@
       "url": "https://news.google.com/rss/search?q=Wati+WhatsApp&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 20,
-      "usable_items": 20,
+      "entries": 21,
+      "usable_items": 21,
       "error": null
     },
     {
@@ -200,8 +200,8 @@
       "url": "https://news.google.com/rss/search?q=%22WhatsApp+Business%22+OR+%22WhatsApp+Business+Platform%22+OR+%22Click-to-WhatsApp%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 53,
-      "usable_items": 53,
+      "entries": 50,
+      "usable_items": 50,
       "error": null
     },
     {
