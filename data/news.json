@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-19T07:49:37Z",
-    "last_successful_update": "2026-11-19T07:49:37Z",
+    "generated_at": "2026-11-19T08:35:59Z",
+    "last_successful_update": "2026-11-19T08:35:59Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,16 +18,16 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-19T07:45:28Z",
-      "finished_at": "2026-11-19T07:49:37Z",
+      "started_at": "2026-11-19T08:30:31Z",
+      "finished_at": "2026-11-19T08:35:59Z",
       "status": "partial",
-      "trigger": "schedule",
+      "trigger": "workflow_dispatch",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
       "new_articles": 60,
-      "skipped_stale": 474,
-      "skipped_irrelevant": 125,
+      "skipped_stale": 476,
+      "skipped_irrelevant": 203,
       "invalid_urls": 0,
       "duplicates_merged": 0,
       "ai_processed": 20,
@@ -43,6 +43,127 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "b4e31afb0263056f",
+      "title": "Six Indian startups selected for Hub71's Immersion Programme in Abu Dhabi",
+      "url": "https://yourstory.com/2026/11/six-indian-startups-selected-for-hub71s-immersion-programme-in-abu-dhabi",
+      "canonical_url": "https://yourstory.com/2026/11/six-indian-startups-selected-for-hub71s-immersion-programme-in-abu-dhabi",
+      "source": "YourStory",
+      "source_id": "yourstory",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-19T08:10:30Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "India",
+      "region_reason": "The development focuses on Indian startups expanding internationally through a bilateral UAE-India initiative.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "Six Indian startups have been selected for Hub71's Immersion Programme in Abu Dhabi, following the UAE-India Start-Up Series 2.0 finale in Bengaluru. Hub71, Abu Dhabi's global tech ecosystem, is the cross-border partner which will connect the startups with investors, corporate and government…",
+      "companies": [
+        "Hub71",
+        "CYRAN AI Solutions",
+        "Nawgati",
+        "KoinX",
+        "Onsite",
+        "Forthcode",
+        "Flo Mobility",
+        "Pointo"
+      ],
+      "topics": [
+        "Startups",
+        "Cross-border expansion",
+        "UAE-India trade",
+        "B2B SaaS",
+        "Venture Capital"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-19T08:31:19Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "YourStory reports that six Indian startups have been selected for Hub71's Immersion Programme in Abu Dhabi following the UAE-India Start-Up Series 2.0 finale in Bengaluru. The winning startups—CYRAN AI Solutions, Nawgati, KoinX, Onsite, Forthcode, and Flo Mobility (among others mentioned as finalists)—will participate in a two-week hybrid programme starting December 7 to explore Middle Eastern expansion. Hub71 is Abu Dhabi's global tech ecosystem connecting participants with investors, corporate partners, and regulators, with additional funding opportunities such as the Access Programme providing AED 250,000 in cash and AED 250,000 in in-kind incentives.",
+        "summary": "Six Indian startups have secured spots in Hub71's Immersion Programme in Abu Dhabi through the UAE-India Start-Up Series 2.0. Selected from ten finalists, these companies gain access to investors, corporate partners, and regulators to facilitate international expansion into the Middle East. Among the winners are B2B and deeptech companies such as KoinX, Nawgati, and CYRAN AI Solutions, highlighting cross-border technology scaling. This initiative aligns with broader bilateral goals to significantly increase trade between India and the UAE by 2032.",
+        "why_it_matters": "For B2B marketers operating in India's startup ecosystem, this development signals increasing institutional support for cross-border expansion into the Middle East. B2B SaaS, AI, and fintech companies expanding into regions like the UAE will need to adapt their go-to-market strategies, compliance messaging, and regional account-based marketing (ABM) approaches to target international enterprise buyers.",
+        "applications": [
+          "Refining B2B value propositions for Middle Eastern enterprise buyers during international expansion",
+          "Targeting regional investors, government partners, and corporate buyers via localized LinkedIn and email campaigns",
+          "Adapting CRM data segmentation to separate domestic Indian leads from international Middle Eastern expansion targets",
+          "Aligning sales enablement content with regional regulatory frameworks in UAE markets"
+        ],
+        "recommendations": [],
+        "priority_reason": "It offers useful context on cross-border startup expansion and funding trends relevant to B2B tech marketers targeting scaling companies.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "a670984ed34ea641",
+      "title": "Dreamteam Raises $53 Million as DMS Health Replaces Salesforce With Its AI-Powered CRM",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOby1wZ1ZYNzc5LUU3NE9pVGZydWhHMlhoeEdSekE3NGFmUlBwVjJ3VGlqY0F5WnFRUDQyZldSMVFUa05GNHpsSmgyUExDY0NaZ0VnLXBLRHpId2J5YkE4RVd4VGJRQ1BZOTRfSVZ3dlk5eTVEcnVDVHRLY2VrcXpIZl9RRVdBam4wUm1QRjhwSQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOby1wZ1ZYNzc5LUU3NE9pVGZydWhHMlhoeEdSekE3NGFmUlBwVjJ3VGlqY0F5WnFRUDQyZldSMVFUa05GNHpsSmgyUExDY0NaZ0VnLXBLRHpId2J5YkE4RVd4VGJRQ1BZOTRfSVZ3dlk5eTVEcnVDVHRLY2VrcXpIZl9RRVdBam4wUm1QRjhwSQ?oc=5",
+      "source": "https://ascendants.in/",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-19T08:07:44Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "salesforce",
+        "crm"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "685069601a4d984b",
+      "title": "ANT: Anthropic Prices $81 Billion IPO at $83, Sets Stage for Largest-Ever Trading Debut",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPQTJkVWRWRzNaRl84SWNEVlMwYUlHZDNWNnVPTHU1U013UmZKYjV3QnRVcFp4UHNQRG5LTnYyT3Y2bHZseER5RVZ4VTl2QmxpRjF2eEc0LXRGU2lEQzlNQUVKZGl1dlZucEZXWmVBVDVYaHFPZVBRTmQ0X1NraFltSkUxZVJCRkJSdUh1cTBDZEgzY1RGN3hWUE9kQUxveGpvWkltZDh0bmdDa3ZmVzVVcFdUeEhfZnZaQjkyUnJySFVYTFNWQVlTem5DcVJLWlV5REJnNk5oWlVWd0VVcHc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPQTJkVWRWRzNaRl84SWNEVlMwYUlHZDNWNnVPTHU1U013UmZKYjV3QnRVcFp4UHNQRG5LTnYyT3Y2bHZseER5RVZ4VTl2QmxpRjF2eEc0LXRGU2lEQzlNQUVKZGl1dlZucEZXWmVBVDVYaHFPZVBRTmQ0X1NraFltSkUxZVJCRkJSdUh1cTBDZEgzY1RGN3hWUE9kQUxveGpvWkltZDh0bmdDa3ZmVzVVcFdUeEhfZnZaQjkyUnJySFVYTFNWQVlTem5DcVJLWlV5REJnNk5oWlVWd0VVcHc?oc=5",
+      "source": "TradingView",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-19T07:56:00Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
     {
       "id": "fbbed3c9c6420014",
       "title": "Charting the world’s biggest IPOs as Anthropic overtakes SpaceX",
@@ -231,6 +352,70 @@
       }
     },
     {
+      "id": "56de1218e3455f64",
+      "title": "August AI Raises $12 Mn To Expand AI Healthcare Assistant In The US",
+      "url": "https://inc42.com/buzz/august-ai-raises-12-mn-to-expand-ai-healthcare-assistant-in-the-us/",
+      "canonical_url": "https://inc42.com/buzz/august-ai-raises-12-mn-to-expand-ai-healthcare-assistant-in-the-us",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-19T07:13:39Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Although the startup was founded in India, the product expansion, funding focus, and market deployment described in the text target the US healthcare system.",
+      "priority": "Medium",
+      "priority_score": 8,
+      "excerpt": "AI healthtech startup August AI has raised $12 Mn from Accel, Peak XV Partners, and Claypond Capital to expand its healthcare assistant’s ability to book appointments, find medicines, and follow up on insurance claims for users in the US. Founder and CEO Anuruddh Mishra announced the fundraise on…",
+      "companies": [
+        "August AI",
+        "Accel",
+        "Peak XV Partners",
+        "Claypond Capital",
+        "Manipal Group",
+        "Prodoc AI",
+        "Confido Health",
+        "Z47"
+      ],
+      "topics": [
+        "Agentic AI",
+        "Venture Capital",
+        "Healthtech",
+        "Workflow Automation"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-19T08:31:39Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that AI healthtech startup August AI has raised $12 Mn from Accel, Peak XV Partners, and Claypond Capital. Founder and CEO Anuruddh Mishra announced the funding alongside new capabilities for the startup's healthcare assistant, which aims to book appointments, find medicines, and follow up on insurance claims in the US. The startup previously raised $3 Mn in seed funding in October 2025 and launched a $39-a-month membership called August Care in September. The new administrative assistant features are currently available in beta in the US via a waitlist.",
+        "summary": "Inc42 reports that AI healthtech startup August AI has secured $12 Mn in funding from Accel, Peak XV Partners, and Claypond Capital to scale its US-focused healthcare assistant. The platform's newly rolled-out beta capabilities include autonomous calling to doctors' offices for bookings, pharmacy availability and price checks, bill auditing, and insurance claim follow-ups. Originally founded in India in 2022, the company is targeting the administrative complexities of the US healthcare market, building upon its existing symptom analysis and August Care telehealth subscription. The development reflects a broader market trend of venture capital flowing into agentic AI solutions designed to handle complex scheduling and administrative workflows.",
+        "why_it_matters": "While August AI focuses on patient-facing healthcare administration, the underlying technology highlights how agentic AI is rapidly evolving to execute multi-step business processes that require phone calls, real-time coordination, and external system checks. For B2B marketers and operations teams, the success of voice and task-oriented AI agents demonstrates increasing consumer readiness to interact with autonomous systems for scheduling and customer service. As similar agentic workflows penetrate the B2B SaaS and service sectors, marketing and sales operations must prepare CRM and conversational systems to interface efficiently with incoming buyer-side AI agents.",
+        "applications": [
+          "Monitor agentic AI developments to evaluate how autonomous booking and voice agents might interact with B2B lead generation funnels.",
+          "Assess readiness for inbound lead handling when prospective buyers deploy AI assistants to vet services and schedule sales calls.",
+          "Explore how automated workflow tools can handle complex administrative follow-ups similar to the claims and scheduling tasks demonstrated by August AI.",
+          "Benchmark conversational AI capabilities against emerging standards for multi-step task execution rather than simple chat prompts."
+        ],
+        "recommendations": [
+          "Explore voice-capable AI agent platforms to understand current API limitations for inbound scheduling and qualification.",
+          "Test conversational AI bots on website booking flows to ensure they handle complex scheduling edge cases smoothly.",
+          "Review CRM data structures to ensure clear availability and pricing data can be easily parsed by potential buyer-side AI agents.",
+          "Monitor competitive funding and product updates in the agentic workflow space to identify automation patterns applicable to B2B sales pipelines."
+        ],
+        "priority_reason": "It signals broader commercial progress in agentic AI capabilities that will eventually impact B2B customer engagement and operations, though it is not an immediate platform policy change.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
       "id": "5d1618bac264cfda",
       "title": "Dreamteam Raises $53M to Challenge Salesforce and HubSpot With AI-Native CRM",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWFc2ZVdHbF9UVEViWG5sdEZXaEdoRXFwd3BZWmFHdGtCeGlxa3dHLVRMVXpOck5QM19wOVRaMm9IdmxRLXd5XzQzZXAzdHZOZjQ0Z1BrejlZUTBnSXo3S0Z6TU14aHd4aEFvU1RHREJCcGRqbVVxZE1LaElWam9pZjJsX2JOcUZFTHFpcXlJUHlCMElDd0EwTEJoaEgybGEzTWRHMEN4TkJmOXJvOVFhX28wZw?oc=5",
@@ -413,6 +598,36 @@
       }
     },
     {
+      "id": "1931e8107f5e3062",
+      "title": "Asian stocks fail to get a lift from Anthropic's IPO pricing",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcWh5RHQ1bW5IMHBlbVU4WVhSWDN1YXNoc1VXY0ktM1d5OTE5bG11T2lkZzhPUEhNNmVWVW11b1pfWkMyRmRzYks0NmgtZkRZTVNVc3dEc3dlZ3k2S1V1Q1kwTmV0LWNFS0M3VXFxVU1DZFdTRzA0VU5MdzNHV3N2OThKQVBQYVlQRTZGcnhYcWgydjRZckRsV0dBSTRkcW8?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcWh5RHQ1bW5IMHBlbVU4WVhSWDN1YXNoc1VXY0ktM1d5OTE5bG11T2lkZzhPUEhNNmVWVW11b1pfWkMyRmRzYks0NmgtZkRZTVNVc3dEc3dlZ3k2S1V1Q1kwTmV0LWNFS0M3VXFxVU1DZFdTRzA0VU5MdzNHV3N2OThKQVBQYVlQRTZGcnhYcWgydjRZckRsV0dBSTRkcW8?oc=5",
+      "source": "Yahoo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-19T06:39:00Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "f46f276164865dad",
       "title": "Anthropic shares indicate about 20% higher on gray market trading",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOOEpiQ0lOMjJsbmMxbVROanB3ejBaMTVvNWU0U1BGUW13UWRJU1hhM2FrcVJ6dENPWnBPaC1xRnJCeGJBdmJhTnRXSXRWVS1UUGctR0p3MUEyLTF4QlU4a3k4dmhkSlB0VkxIWVVjTGdKdGdOZEVBOUtGd2VTWFp2ODZxRUdsS0VxX1BhQlBKdlQyZXAxMDZhX1NKT0t5TVY5azRkSXBSaGlMbjRKdnNYOWRrblNaRjlBR0N0TzJScWJPSTJwdmFHN9IBzgFBVV95cUxNYVY1a2ZEbDUxbVJFNk5CZ0I5TkpMa0dQNUFycXJCOXg1SmdsbFh4UWRVQW9uLVM3TjUwMXRVamp4VzdKcnc5SFRiWXBHcXBrRjdpbUkwSENScG5nbHo3SjBzRVU3ZXh6VkRfOFVOZ3pnQ0QwMUtSLTAwYVNnNVAxdVc4Uk56UUxvbk5iMndCdlhFMnRYd1dXYk42NWYyanFRWEFHeG5VM180MlBNazgxaGNhWlItMUNZbHBzN2YtOGZuYVJVVTVoT1VLTi1jUQ?oc=5",
@@ -533,6 +748,66 @@
       }
     },
     {
+      "id": "945d193fddb0a1ba",
+      "title": "Anthropic’s stock market debut marks many firsts. Will it boost a struggling AI sector?",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZUJOdlNZVjE3VzBlNDNmMU1iZ1I4QjVuV2h6MmhjUXRldUtnOUhmakxBVXRiQmRnaU9obERmM1RDTGZGYW5IVjNqaHJIM1pTSzJhdVJ1b0twMHhUM1NSNl9EQk5raHdma1l3VXVpclY2eElGTkhMU2twdTRHT0M5V1hUcUZHa1RreVM5OXN2YXdvZHUzX3FHcy1uTjlkdS1heXdfeHlURkt0RDlwSVVhbVNEWWVqdHJiX3ZNMNIBwwFBVV95cUxOLTVtMUhZdkZZOERSZ2wtN2tNWWh3NGJWY0hNdWQ5RUNXS0dsVDNWNkVJaGFpUnh4X0wwNHhaZjJWZEhuWUVOTkdBZDV6QmJOU21CN2FhUThFNlpvTk84ZHF5c05pc1pZY2huNGhKMHdKTWlqZkxDTUM1QnNJMVNwMmo0NVhoZFdZZXVyV0p0ZjJJUWdIMGY3Y0djeEVmekRlWFFRWHZKei1Jc3NsQlZiaTY0QTZwU3cyYWZ3UUxrbnF1b0U?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZUJOdlNZVjE3VzBlNDNmMU1iZ1I4QjVuV2h6MmhjUXRldUtnOUhmakxBVXRiQmRnaU9obERmM1RDTGZGYW5IVjNqaHJIM1pTSzJhdVJ1b0twMHhUM1NSNl9EQk5raHdma1l3VXVpclY2eElGTkhMU2twdTRHT0M5V1hUcUZHa1RreVM5OXN2YXdvZHUzX3FHcy1uTjlkdS1heXdfeHlURkt0RDlwSVVhbVNEWWVqdHJiX3ZNMNIBwwFBVV95cUxOLTVtMUhZdkZZOERSZ2wtN2tNWWh3NGJWY0hNdWQ5RUNXS0dsVDNWNkVJaGFpUnh4X0wwNHhaZjJWZEhuWUVOTkdBZDV6QmJOU21CN2FhUThFNlpvTk84ZHF5c05pc1pZY2huNGhKMHdKTWlqZkxDTUM1QnNJMVNwMmo0NVhoZFdZZXVyV0p0ZjJJUWdIMGY3Y0djeEVmekRlWFFRWHZKei1Jc3NsQlZiaTY0QTZwU3cyYWZ3UUxrbnF1b0U?oc=5",
+      "source": "The Indian Express",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-19T06:05:51Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "78e231163f837dc8",
+      "title": "Anthropic Sets Record With $81 Billion IPO",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcktDa1JaMTNqSzAzaXdXQWhnZU1zWmdDLThKVnVxMmxIUjVSc0RDMkEwNzVZSkpJUy1Cc0NiQmFZaHNCUGtvcUd5bnNhM0dPT09lbHY1cWdJU0p4N2RVMTlKN3Q4U005UzVoVDZtQmE5M18wTXl4R0NCZUNZVkFPODZKNGRKdnV3VTNjTTZ3?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcktDa1JaMTNqSzAzaXdXQWhnZU1zWmdDLThKVnVxMmxIUjVSc0RDMkEwNzVZSkpJUy1Cc0NiQmFZaHNCUGtvcUd5bnNhM0dPT09lbHY1cWdJU0p4N2RVMTlKN3Q4U005UzVoVDZtQmE5M18wTXl4R0NCZUNZVkFPODZKNGRKdnV3VTNjTTZ3?oc=5",
+      "source": "KFBK",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-19T05:58:00Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "090515bfeab6084d",
       "title": "Style Union raises Rs 485 Cr to expand beyond southern India",
       "url": "https://yourstory.com/2026/11/style-union-raises-rs-485-cr-to-expand-beyond-southern-india",
@@ -595,6 +870,36 @@
         "priority_reason": "It offers useful macro-market context and highlights retail expansion trends in India, though it does not directly alter day-to-day B2B marketing operations.",
         "needs_validation": false,
         "validation_note": ""
+      }
+    },
+    {
+      "id": "613ad1a081eff4ab",
+      "title": "Scholars Condemn Anthropic's Safety Pledge Contradiction Ahead of IPO",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOV1RNbFhHOFg1bU9hVi1xbGhkelp4RldBdldZTDc4TEk0Nm5KU3ZlQmNId1F4VWpzLWNDU1ZWUUwydDJfUGJQQXYzNTFkamRZRGdxR2tFTVRuTGxyQ1JBM0VXMms0enhHMUhmQjA5dmRDQjNVNzBWd0JyMXM2TTJ6STd0V1RGbWtX?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOV1RNbFhHOFg1bU9hVi1xbGhkelp4RldBdldZTDc4TEk0Nm5KU3ZlQmNId1F4VWpzLWNDU1ZWUUwydDJfUGJQQXYzNTFkamRZRGdxR2tFTVRuTGxyQ1JBM0VXMms0enhHMUhmQjA5dmRDQjNVNzBWd0JyMXM2TTJ6STd0V1RGbWtX?oc=5",
+      "source": "조선일보",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-19T05:28:28Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -897,6 +1202,71 @@
       }
     },
     {
+      "id": "f543eab23a3093c7",
+      "title": "Debate brews over Sarvam hosting Chinese AI models; Grand Theft Auto VI is finally here",
+      "url": "https://yourstory.com/2026/11/debate-brews-over-sarvam-hosting-chinese-ai-modelsgrand-theft-auto-vi-is-finally-here",
+      "canonical_url": "https://yourstory.com/2026/11/debate-brews-over-sarvam-hosting-chinese-ai-modelsgrand-theft-auto-vi-is-finally-here",
+      "source": "YourStory",
+      "source_id": "yourstory",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-19T02:00:00Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "The development centres on Bengaluru-based Sarvam AI hosting models on Indian infrastructure and the associated debate over Indian AI sovereignty.",
+      "priority": "Medium",
+      "priority_score": 9,
+      "excerpt": "Dear Reader, Sarvam hosts Chinese AI models on Indian infrastructure. The move has sparked debate over AI sovereignty. More on this later in the edition. Speaking of AI, Nvidia’s board has no intention of reinstating Jensen Huang as chief executive, chair Harvey Jones said on the chipmaker’s…",
+      "companies": [
+        "Sarvam AI",
+        "DeepSeek",
+        "Moonshot AI",
+        "Z.ai",
+        "Google",
+        "Nvidia",
+        "Apollo Hospitals",
+        "Microsoft"
+      ],
+      "topics": [
+        "AI sovereignty",
+        "Inference platforms",
+        "Sarvam AI",
+        "LLM hosting",
+        "Martech infrastructure"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-19T08:31:53Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "YourStory reports that Bengaluru-based Sarvam AI has launched Token Factory, an inference platform offering access to models from DeepSeek, Moonshot AI and Z.ai alongside its own models and Google's Gemma. The move has sparked a debate regarding AI sovereignty, with critics arguing that a company backed by public resources should prioritise original Indian research, while investors defend the move by noting that international inference providers already host foreign models in India. Additionally, the text reports on various other business developments, including Nvidia's earnings, Apollo Hospitals using an AI agent, investments in Groww, and the release of Grand Theft Auto VI.",
+        "summary": "YourStory covers Sarvam AI's launch of its Token Factory inference platform, which provides access to Chinese AI models alongside domestic and international options on Indian infrastructure. This development has triggered industry debates concerning AI sovereignty and whether Indian AI companies should focus exclusively on indigenous research or facilitate foreign models. For B2B marketers, the expansion of local inference infrastructure highlights the growing accessibility of diverse AI models within the region. However, the debate signals emerging scrutiny around data pathways and infrastructure choices in the Indian market.",
+        "why_it_matters": "The availability of diverse AI models via local inference providers like Sarvam AI's Token Factory affects how B2B marketers deploy generative AI tools for campaign generation, localization, and customer data processing in India. Marketers evaluating local AI infrastructure must navigate debates around data sovereignty and local versus foreign model reliance. Understanding where and how AI models are hosted can impact compliance, latency, and operational trust with enterprise clients.",
+        "applications": [
+          "Test regional inference platforms like Sarvam AI's Token Factory to power local language chatbots and WhatsApp automation workflows with lower latency.",
+          "Evaluate the data privacy and residency implications of utilizing domestic versus international AI models hosted on Indian infrastructure.",
+          "Benchmark the performance of models available through Token Factory against proprietary global LLMs for B2B content creation and Indian language translation.",
+          "Monitor enterprise client preferences regarding AI data sovereignty when designing automated lead nurturing campaigns."
+        ],
+        "recommendations": [
+          "Explore local AI inference providers to test cost and latency advantages for regional WhatsApp marketing campaigns.",
+          "Consult legal and compliance teams regarding data handling policies when routing customer data through multi-model inference platforms.",
+          "Test different open-weights models for multilingual B2B copywriting to determine output quality versus using global APIs.",
+          "Monitor ongoing industry discussions regarding Indian AI sovereignty to anticipate potential shifts in local regulatory frameworks."
+        ],
+        "priority_reason": "The launch of a local inference platform providing access to multiple models is relevant for marketers exploring regional AI tools, though the piece is a general newsletter roundup.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
       "id": "8f364743f3d80759",
       "title": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
       "url": "https://economictimes.indiatimes.com/tech/technology/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion/articleshow/135975275.cms",
@@ -1011,6 +1381,68 @@
       "ai_attempts": 0,
       "analysis": {
         "status": "pending"
+      }
+    },
+    {
+      "id": "d9a5102df5a30e16",
+      "title": "Quick service restaurant chain Boba Bhai raises $18M in Series B round",
+      "url": "https://yourstory.com/2026/11/boba-bhai-raises-18-million-in-series-b-round",
+      "canonical_url": "https://yourstory.com/2026/11/boba-bhai-raises-18-million-in-series-b-round",
+      "source": "YourStory",
+      "source_id": "yourstory",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-19T00:35:00Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "India",
+      "region_reason": "The funding and operations are based in India, targeting Indian consumers and expanding domestic retail footprints.",
+      "priority": "Low",
+      "priority_score": 11,
+      "excerpt": "Boba Bhai, an Indian bubble tea and Korean street food brand, has raised $18 million in a Series B funding round with participation from Left Lane Capital and BIG Capital, alongside existing investors including Titan Capital. According to a statement, the round brings US-based Left Lane Capital on…",
+      "companies": [
+        "Boba Bhai",
+        "Left Lane Capital",
+        "BIG Capital",
+        "Titan Capital",
+        "8i Ventures",
+        "Global Growth Capital"
+      ],
+      "topics": [
+        "Funding",
+        "Omnichannel Marketing",
+        "Quick Commerce",
+        "Consumer Brands",
+        "India Retail"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-19T08:32:05Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "YourStory reports that Indian quick service restaurant chain Boba Bhai has raised $18 million in a Series B funding round. The round was led by new US-based investor Left Lane Capital and BIG Capital, with continued participation from existing investors like Titan Capital. Founded in 2023, the company operates 120 stores across India, fulfills over 300,000 monthly orders across physical and digital channels, and plans to use the capital for store expansion and scaling new brands.",
+        "summary": "Quick service restaurant chain Boba Bhai secured $18 million in Series B funding to accelerate its physical and digital expansion across India. The investment, featuring Left Lane Capital and BIG Capital, highlights rising investor confidence in tech-enabled consumer brands that combine physical retail with quick commerce and digital delivery platforms. Founder Dhruv Kohli emphasized that scaling requires maintaining consistent product quality alongside rapid experimentation with global food formats. The company intends to leverage its established supply chain and digital distribution infrastructure to launch new F&B brands efficiently. This development demonstrates how modern consumer brands in India utilize omnichannel strategies and rapid digital execution to capture shifting youth demographics.",
+        "why_it_matters": "While Boba Bhai operates in the food and beverage sector, its aggressive expansion across digital channels, food-delivery platforms, and quick commerce serves as a benchmark for multi-channel B2B and D2C marketing operations in India. B2B marketers selling software, logistics, or martech solutions to high-growth retail brands can study Boba Bhai's playbook on scaling digital distribution and unifying online-to-offline customer experiences. Furthermore, increased funding in consumer tech often triggers heightened competition for digital ad spend, pushing customer acquisition costs higher across social and search channels.",
+        "applications": [
+          "Analyze Boba Bhai's omnichannel presence across food-delivery apps and quick commerce to benchmark multi-channel attribution models.",
+          "Target scaling QSR and retail brands in India with B2B supply chain, CRM, or local marketing automation platforms.",
+          "Evaluate how rapid store expansion impacts local SEO, geo-targeted digital advertising, and hyper-local WhatsApp customer engagement.",
+          "Study the brand's digital distribution strategy to refine multi-brand parent-company marketing architectures."
+        ],
+        "recommendations": [
+          "Explore hyper-local marketing automation tools to manage multi-location promotional campaigns effectively. Benefit: Ensures localized relevance at scale. Implementation consideration: Ensure CRM data cleanly maps to individual store footprints.",
+          "Test quick-commerce advertising networks if targeting high-intent consumers in urban Indian markets. Benefit: Captures immediate buyer intent. Implementation consideration: Monitor ROI closely against traditional search and social channels.",
+          "Review regional customer data analytics setups to track performance across physical versus digital ordering channels. Benefit: Identifies high-performing acquisition channels. Implementation consideration: Unify siloed data sources from delivery aggregators into a central CRM."
+        ],
+        "priority_reason": "The funding event is specific to the consumer food and beverage sector and does not directly change B2B marketing operations or martech tooling.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -1785,6 +2217,66 @@
       "ai_attempts": 0,
       "analysis": {
         "status": "pending"
+      }
+    },
+    {
+      "id": "feb579d43b95ef58",
+      "title": "Power BI November 2026 Feature Summary",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-November-2026-Feature-Summary/ba-p/5414287",
+      "canonical_url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-November-2026-Feature-Summary/ba-p/5414287",
+      "source": "Microsoft Power BI Blog",
+      "source_id": "power-bi-blog",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-18T19:12:54Z",
+      "collected_at": "2026-11-19T08:30:31Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "The feature summary applies globally to all users of Microsoft Power BI and Microsoft Fabric.",
+      "priority": "Medium",
+      "priority_score": 12,
+      "excerpt": "If you haven’t already, read Arun Ulag’s Ignite blog post to learn how Microsoft is bringing together databases, analytics, and intelligent applications across Azure and Microsoft Fabric. ________________________________ Welcome to the November 2026 Power BI feature summary! We're sharing this…",
+      "companies": [
+        "Microsoft",
+        "Zebra BI",
+        "ZoomCharts"
+      ],
+      "topics": [
+        "Power BI",
+        "Microsoft Fabric",
+        "Marketing Analytics",
+        "AI",
+        "Reporting"
+      ],
+      "also_covered_by": [],
+      "url_check": "restricted",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-19T08:30:49Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "The Microsoft Power BI Blog reports its November 2026 feature summary, detailing updates across reporting, modeling, data connectivity, and AI integration. Key highlights include the transition from standalone Power BI Copilot experiences to Microsoft Copilot, general availability for OneDrive and SharePoint integration for reporting, and new preview features such as Semantic Views and M parameter support for Direct Lake. The text also highlights upcoming events such as FabCon + SQLCon in Atlanta and Sydney.",
+        "summary": "The Microsoft Power BI Blog outlines the November 2026 updates, which focus on improving build, customize, management, and sharing capabilities across Power BI and Microsoft Fabric. Notably, Microsoft is retiring standalone Power BI Copilot experiences in favour of Microsoft Copilot, expanding AI access to users without a Copilot Premium license. Reporting updates include general availability for OneDrive and SharePoint integration, card visual trend charts, and default date picker slicers. Additionally, modelling features like Semantic Views and updates to organizational apps aim to streamline data management and reporting workflows for B2B analytics teams.",
+        "why_it_matters": "For B2B marketing operations and analytics teams, these updates streamline collaboration by deeply integrating Power BI reports with OneDrive and SharePoint. The expansion of Microsoft Copilot to non-premium license holders broadens access to AI-driven reporting capabilities, allowing more team members to query marketing data. Enhanced organizational app navigation and audience targeting also improve how lead generation and campaign performance dashboards are distributed internally.",
+        "applications": [
+          "Embed and share Power BI marketing dashboards directly within SharePoint Online and OneDrive for cross-functional sales and marketing alignment.",
+          "Utilise expanded Microsoft Copilot capabilities to allow non-technical marketing analysts to query lead generation and pipeline metrics using natural language.",
+          "Apply card visual trend charts and updated list slicers to build clearer, more accessible campaign performance reports.",
+          "Organise and distribute departmental dashboards using improved drag-and-drop navigation and audience targeting in organizational apps."
+        ],
+        "recommendations": [
+          "Explore the new Microsoft Copilot preview integration to test natural language reporting for campaign analytics; benefit is faster ad-hoc reporting; consider licence entitlements and user permissions.",
+          "Test OneDrive and SharePoint report integration; benefit is streamlined stakeholder access; implementation requires reviewing current internal sharing protocols.",
+          "Review upcoming deprecation timelines for standalone Power BI Copilot ending in January 2027; benefit is avoiding workflow disruption; consideration is migrating existing chat workflows to the new Microsoft Copilot experience.",
+          "Evaluate Semantic Views in preview for data modelling; benefit is cleaner semantic layer management; implementation requires assessing current Direct Lake and OneLake setups."
+        ],
+        "priority_reason": "Platform updates and the deprecation of standalone Copilot require operational awareness, though they do not demand immediate emergency changes to active B2B campaigns.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -4140,477 +4632,6 @@
       "companies": [],
       "topics": [
         "martech"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "091c8d58a82d7414",
-      "title": "OpenAI launches GPT-6.2 Astra, Sol with focus on professional work and cost efficiency",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-launches-gpt-6-2-astra-sol-with-focus-on-professional-work-and-cost-efficiency/articleshow/135947489.cms",
-      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-launches-gpt-6-2-astra-sol-with-focus-on-professional-work-and-cost-efficiency/articleshow/135947489.cms",
-      "source": "Economic Times Tech",
-      "source_id": "et-tech",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-18T03:36:57Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The launch of OpenAI models is a global technology release impacting international developers and businesses.",
-      "priority": "High",
-      "priority_score": 14,
-      "excerpt": "OpenAI has launched two new artificial intelligence models, GPT-6.2 Astra and GPT-6.2 Sol, with improved capabilities for professional and everyday tasks, while aiming to reduce the cost of using advanced AI tools for businesses and developers.",
-      "companies": [
-        "OpenAI"
-      ],
-      "topics": [
-        "OpenAI",
-        "LLM",
-        "Cost Efficiency",
-        "B2B Tech"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-18T07:37:53Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Economic Times Tech reports that OpenAI has launched two new artificial intelligence models, GPT-6.2 Astra and GPT-6.2 Sol. The publisher states these models feature improved capabilities for professional and everyday tasks. They also aim to reduce the cost of using advanced AI tools for businesses and developers.",
-        "summary": "OpenAI has released GPT-6.2 Astra and GPT-6.2 Sol, targeting professional workloads with a specific focus on cost efficiency for businesses and developers. The reported emphasis on reduced operational costs suggests lower API usage overhead for companies integrating these large language models. While the excerpt is brief, the deployment of these models directly impacts how organizations budget and scale their AI-driven workflows. Further details are needed to confirm specific performance benchmarks, pricing tiers, and context windows.",
-        "why_it_matters": "For B2B marketing operations and lead generation, lower API costs and enhanced professional capabilities can significantly reduce the overhead of running automated content generation, lead enrichment, and conversational agents. Improved efficiency in advanced AI models allows marketing teams to deploy more sophisticated segmentation and personalisation at scale without inflating tech stack budgets. This development could accelerate the adoption of complex LLM-driven workflows within CRM and email marketing pipelines.",
-        "applications": [
-          "Integrating the new models into automated lead scoring and enrichment scripts to reduce API processing costs.",
-          "Upgrading existing B2B content generation pipelines for email campaigns and landing pages to leverage improved professional capabilities.",
-          "Deploying more cost-effective conversational AI assistants for qualification and WhatsApp automation workflows.",
-          "Analysing large volumes of customer interaction data and CRM notes more economically using the new cost-efficient architecture."
-        ],
-        "recommendations": [
-          "Explore OpenAI's official documentation and updated pricing tiers for GPT-6.2 Astra and Sol to calculate potential cost savings for high-volume marketing automation.",
-          "Test the new models in a staging environment comparing response quality and latency against current production setups.",
-          "Review existing LLM-powered lead generation workflows to identify bottlenecks where cheaper, professional-grade models can be substituted.",
-          "Monitor token consumption metrics closely after migration to ensure expected cost reductions are realized in practice."
-        ],
-        "priority_reason": "Changes to foundational model pricing and professional capabilities directly affect operational costs and technical strategies for B2B marketers using AI.",
-        "needs_validation": true,
-        "validation_note": "Verify the exact pricing changes, architectural improvements, and availability details for GPT-6.2 Astra and Sol from the full article or OpenAI release notes."
-      }
-    },
-    {
-      "id": "a1e600c78049ff29",
-      "title": "Anthropic forges ahead with its IPO even as AI fears mount and markets wobble",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-forges-ahead-with-its-ipo-even-as-ai-fears-mount-and-markets-wobble/articleshow/135946525.cms",
-      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-forges-ahead-with-its-ipo-even-as-ai-fears-mount-and-markets-wobble/articleshow/135946525.cms",
-      "source": "Economic Times Tech",
-      "source_id": "et-tech",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-18T02:50:41Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The article discusses a global technology company's international IPO without specific focus on the Indian market.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "No ordinary sale, the Claude chatbot maker's IPO could raise more than $60 billion on Thursday, a massive haul that, depending on the ultimate pricing and other issues, could rival SpaceX's in June.",
-      "companies": [
-        "Anthropic",
-        "SpaceX"
-      ],
-      "topics": [
-        "IPO",
-        "Artificial Intelligence",
-        "Claude",
-        "Market Trends"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-18T07:39:29Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Economic Times Tech reports that Anthropic is proceeding with an initial public offering (IPO) despite market volatility and fears surrounding artificial intelligence. The maker of the Claude chatbot could potentially raise over $60 billion on Thursday. The publication notes this haul could rival SpaceX's June offering, depending on final pricing and other variables.",
-        "summary": "AI company Anthropic is advancing toward a major public market debut, aiming to raise upwards of $60 billion through its upcoming IPO. This anticipated offering occurs amid market wobble and broader anxieties regarding the artificial intelligence sector. According to Economic Times Tech, the scale of this capital raise positions it alongside massive offerings like SpaceX's recent float. For B2B marketers, such a high-profile public listing highlights the continued massive capitalisation and market presence of core AI vendors.",
-        "why_it_matters": "A successful $60+ billion public debut by Anthropic will likely inject further institutional capital and mainstream validation into the generative AI sector. For B2B marketing teams heavily reliant on Claude or similar LLMs for content generation, workflow automation, and customer interaction, this financial backing ensures continued R&D and platform stability. However, market volatility and growing AI fears also signal that enterprise buyers may scrutinise ROI, security, and vendor sustainability more intensely.",
-        "applications": [
-          "Audit existing dependencies on Claude and Anthropic API models within lead generation and customer support workflows.",
-          "Monitor enterprise client sentiment regarding AI-driven interactions in light of broader market fears.",
-          "Prepare contingency workflows using alternative LLM providers to mitigate vendor concentration risk.",
-          "Assess upcoming feature roadmaps from Anthropic that could enhance automated B2B nurturing campaigns."
-        ],
-        "recommendations": [
-          "Explore multi-model architectures; tool types: LLM orchestration platforms; benefit: reduces single-vendor dependency; consideration: token cost variances.",
-          "Review enterprise data privacy agreements with AI vendors; tool types: compliance and legal review tools; benefit: ensures client data security amid market shifts; consideration: jurisdiction-specific regulations.",
-          "Test advanced reasoning capabilities of Claude for complex lead-scoring logic; tool types: CRM AI extensions; benefit: more accurate lead qualification; consideration: latency and API rate limits.",
-          "Track financial stability and enterprise adoption metrics of core marketing technology vendors; tool types: market intelligence platforms; benefit: anticipates platform pricing or roadmap changes; consideration: public market data lag."
-        ],
-        "priority_reason": "While a major financial event for a key AI vendor, it does not immediately alter day-to-day B2B marketing execution.",
-        "needs_validation": true,
-        "validation_note": "Verify the exact timing, final valuation metrics, and formal regulatory filings mentioned in the original Economic Times Tech article."
-      }
-    },
-    {
-      "id": "cbc1020ed0b9ee73",
-      "title": "Shoppers in India Can Now Pay With Razorpay Links in WhatsApp Business Chats",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ZT0VhMnFxTEVxRVV2MW1XRmhEMTl4UHE1UGFqXzhTTkN6N1FyUnVYZXN1bGdxZEp2SURWY3drNzlUbkNNY2FmRkozQnJ5ZmhIVHBUU1NCUmtxdVE3b2pZbmtxeDRfVlpUQTlDeWVlOTFHUlR4?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ZT0VhMnFxTEVxRVV2MW1XRmhEMTl4UHE1UGFqXzhTTkN6N1FyUnVYZXN1bGdxZEp2SURWY3drNzlUbkNNY2FmRkozQnJ5ZmhIVHBUU1NCUmtxdVE3b2pZbmtxeDRfVlpUQTlDeWVlOTFHUlR4?oc=5",
-      "source": "Fintech Singapore",
-      "source_id": "gnews-whatsapp-global",
-      "via": "Google News: WhatsApp Business",
-      "credibility": "aggregator",
-      "published_at": "2026-11-18T02:34:20Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "India",
-      "region_reason": "Headline references India-specific context (india).",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "whatsapp",
-        "whatsapp business"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "f67da9654c4ba219",
-      "title": "Sarvam’s AI Inference Play, Perplexity’s IPO Soon & More",
-      "url": "https://inc42.com/buzz/sarvams-ai-inference-play-perplexitys-ipo-soon-more/",
-      "canonical_url": "https://inc42.com/buzz/sarvams-ai-inference-play-perplexitys-ipo-soon-more",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-18T02:30:55Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "The developments focus on Sarvam AI's India-based inference infrastructure, the Indian app market dynamics for Anthropic and OpenAI, and Urban Company's funding allocation in India.",
-      "priority": "High",
-      "priority_score": 9,
-      "excerpt": "Sarvam AI Fires Up Its Inference Engine Sarvam’s Token Factory is finally live. The new offering will let enterprises access Indian and global AI models through a single API while running workloads on GPUs in India. With the unicorn making a bold play for the local AI inference market, can it…",
-      "companies": [
-        "Sarvam AI",
-        "Google",
-        "DeepSeek",
-        "Anthropic",
-        "OpenAI",
-        "Perplexity",
-        "Urban Company",
-        "Bessemer Venture Partners"
-      ],
-      "topics": [
-        "AI Inference",
-        "Sovereign AI",
-        "Data Residency",
-        "Mobile Apps",
-        "Marketing Investment"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-18T07:39:39Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that Sarvam AI has launched its Token Factory, allowing enterprises to access Indian and global AI models through a single API while running workloads on GPUs in India. Token Factory hosts Sarvam's 105B model alongside overseas open-weight models from Google, DeepSeek, GLM, and Kimi, utilizing a three-tier caching architecture for speed and throughput. Additionally, Anthropic's Claude recorded over a 15X YoY increase in downloads in India in Q3 2026, while ChatGPT downloads fell 21% though its in-app purchase revenue grew 70% YoY. Perplexity is planning to file draft IPO papers by Q1 2027 after hitting an annual recurring revenue of $1 Bn, and Urban Company has opened a ₹2,500 Cr QIP, setting aside ₹540 Cr for marketing.",
-        "summary": "Sarvam AI has launched Token Factory to provide enterprises with unified API access to Indian and global AI models hosted on domestic GPU clusters, appealing to data residency mandates especially in BFSI. Simultaneously, the Indian AI app landscape is shifting, with Anthropic's Claude surging 15X in Q3 2026 downloads while OpenAI's ChatGPT saw downloads drop 21% despite a 70% increase in in-app purchase revenue. Globally, Perplexity has accelerated its IPO timeline to Q1 2027 following $1 Bn in annual recurring revenue. Domestically, Urban Company opened a ₹2,500 Cr QIP, allocating ₹540 Cr for marketing and ₹200 Cr for tech development, and boAt cofounder Aman Gupta launched a men's grooming brand called H.I.M. B2B marketers should note these domestic cloud AI inference options and shifting consumer AI preferences in India.",
-        "why_it_matters": "For B2B marketers and operations teams in India, the availability of local AI inference via Sarvam's Token Factory and competitive offerings from Krutrim, OpenAI, and Amazon Bedrock means data residency mandates can be met without sacrificing processing speed. This allows local enterprises, particularly in regulated sectors like BFSI, to safely deploy generative AI for customer segmentation, lead generation, and WhatsApp automation using local infrastructure. Furthermore, the rapid growth of Claude alongside ChatGPT's revenue resilience indicates that Indian buyers and professionals are actively diversifying their AI tool usage, impacting how marketing teams build workflows and evaluate tech stacks.",
-        "applications": [
-          "Deploying generative AI workflows for customer segmentation and lead scoring using local Indian APIs to comply with data residency mandates.",
-          "Testing multi-model setups via Token Factory to compare response quality and latency for customer-facing chatbots and WhatsApp automation.",
-          "Evaluating Claude alongside ChatGPT for content generation, copywriting, and marketing analytics tasks as enterprise adoption widens in India.",
-          "Aligning B2B outreach strategies with sectors receiving fresh capital injection, such as Urban Company's upcoming technology and marketing investments."
-        ],
-        "recommendations": [
-          "Explore local inference APIs from providers like Sarvam AI or Krutrim to test performance and data compliance for sensitive CRM data.",
-          "Test multi-model orchestration platforms to route customer queries cost-effectively between global open-weight models and local models.",
-          "Audit current generative AI tool stacks for content operations to incorporate both Claude and ChatGPT based on task performance.",
-          "Monitor enterprise cloud infrastructure budgets in India to identify alignment opportunities for B2B SaaS marketing campaigns."
-        ],
-        "priority_reason": "The commercial launch of local sovereign AI inference options and rapidly shifting enterprise AI adoption patterns directly impact B2B marketing operations and tech stack deployment in India.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "fe1c3511c5a79385",
-      "title": "Malaysia seeks details from Anthropic over AI influence campaign",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZEk2eXh1aDZ3QXlic3o5bmlYZUdKV0dNRXBhZGJYMW05WExFY3Q4eEw5amF2TnhvUWR1YTMzV1ZrRzZJMXhfRFlxNkNjb3c4R3JlU0cwczRtcV9mNEg4UHFFNTVEVlo3ajhxeDd3TTFJbmFRNEtaSUE4bEFOckdWUk5KbThpNGVTV0RqcVViYjVKdUZmSlkwVWUxUUdvMlliVlR0YXRJWUM?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZEk2eXh1aDZ3QXlic3o5bmlYZUdKV0dNRXBhZGJYMW05WExFY3Q4eEw5amF2TnhvUWR1YTMzV1ZrRzZJMXhfRFlxNkNjb3c4R3JlU0cwczRtcV9mNEg4UHFFNTVEVlo3ajhxeDd3TTFJbmFRNEtaSUE4bEFOckdWUk5KbThpNGVTV0RqcVViYjVKdUZmSlkwVWUxUUdvMlliVlR0YXRJWUM?oc=5",
-      "source": "Yahoo News Singapore",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-18T02:25:00Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "7fcfb79e30de0a30",
-      "title": "Karnataka aims to become a global hub for frontier tech; Fadnavis’ vision for a new Maharashtra",
-      "url": "https://yourstory.com/2026/11/karnataka-aim-global-hub-frontier-tech-fadnavi-vision-new-maharashtra",
-      "canonical_url": "https://yourstory.com/2026/11/karnataka-aim-global-hub-frontier-tech-fadnavi-vision-new-maharashtra",
-      "source": "YourStory",
-      "source_id": "yourstory",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-18T02:00:00Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "The developments directly concern executive leadership roles, tech hub strategies, and startup ecosystems within India.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "Dear Reader, The best of AI is yet to come. The potential of artificial intelligence still remains unexplored, and it can help create solutions with population-scale impact, said panellists during a discussion at Bengaluru Tech Summit 2026. Karnataka Home and IT Minister Priyank Kharge, Infosys…",
-      "companies": [
-        "YourStory",
-        "Infosys",
-        "Biocon",
-        "Accel India",
-        "Amazon",
-        "OpenAI",
-        "Google",
-        "Meta Platforms"
-      ],
-      "topics": [
-        "Artificial Intelligence",
-        "Business Development",
-        "Startup Ecosystem",
-        "Enterprise Partnerships"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-18T07:39:50Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "YourStory reports that Pragya Misra, OpenAI's head of strategy and global affairs in India, is taking on a new role to lead the firm's business development for India and South Asia, focusing on partnerships for business AI transformation. Additionally, Karnataka aims to become a global hub for frontier technologies like AI, deeptech, semiconductors, robotics, and biotech, backed by strong software exports and startup metrics highlighted at the Bengaluru Tech Summit 2026. Union Minister Jayant Chaudhary stated at TIECON 2026 in Singapore that India has around 300,000 registered startups and growing technology adoption among farmers.",
-        "summary": "YourStory covers several regional and executive updates across the Indian technology sector, including OpenAI appointing Pragya Misra to lead business development and partnerships for India and South Asia. Meanwhile, government leaders at recent summits outlined ambitious strategies to position states like Karnataka and Maharashtra as global hubs for artificial intelligence, deeptech, and broader innovation. Other highlights include Amazon's renewable energy investment plans in India and startup ecosystem milestones presented at international forums. These developments point to an expanding enterprise AI and deeptech landscape within the region, offering fresh avenues for commercial partnerships.",
-        "why_it_matters": "OpenAI strengthening its dedicated regional business development leadership signals a more structured approach to enterprise AI adoption and local partnerships in India and South Asia. For B2B marketers and tech providers, this points to an accelerating market readiness for generative AI tools, localized deployment models, and ecosystem integrations. B2B operations in the region should track how emerging partnership frameworks can unlock new channels for AI-driven customer engagement and workflow automation.",
-        "applications": [
-          "Explore upcoming enterprise partnership and co-selling opportunities via OpenAI's expanded regional business development initiatives in South Asia",
-          "Incorporate localized AI adoption trends from Indian tech hubs into account-based marketing and regional messaging strategies",
-          "Evaluate deeptech and AI ecosystem initiatives across Karnataka and Maharashtra for potential regional pilot programs or tech stack integrations",
-          "Align demand generation campaigns with the growing enterprise appetite for operational AI transformation in South Asian markets"
-        ],
-        "recommendations": [
-          "Explore OpenAI's emerging enterprise partner ecosystem in India; relevant tool types include generative AI APIs and workflow automation software; likely benefit is early access to localized deployment models; implementation consideration involves monitoring compliance and regional data regulations.",
-          "Test AI-powered lead qualification and content localization for B2B campaigns targeting the Indian market; relevant tool types include conversational AI and CRM extensions; likely benefit is higher engagement rates among regional buyers; implementation consideration is ensuring robust translation and cultural nuance.",
-          "Monitor state-backed deeptech and innovation grants in Karnataka and Maharashtra; relevant tool types include government tender and startup directory databases; likely benefit is uncovering co-innovation or co-marketing opportunities; implementation consideration is eligibility criteria and compliance tracking."
-        ],
-        "priority_reason": "OpenAI's leadership shift for business development in India and South Asia is a notable development for regional B2B tech ecosystems, though operational impacts will unfold over time.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "b70afa6f632bfcf6",
-      "title": "OpenAI launches ChatGPT for Sales with Salesforce, HubSpot",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMjdIZjJtVDR0WDZJM3JVOHo4ak5RT1VjcW5PVUVxeXozR1c2SUhvU0R1TmM2WV9hRzZCQ3BXNXFWa3N5VFdVeEswTXdZZGVyX09vUWNTUWVBOEJsUFo5UkpjTEFwQ3lrRDFmLXBQMUkwd2JTbmoxeVdrNkJjekpqNHptakZUbU0?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMjdIZjJtVDR0WDZJM3JVOHo4ak5RT1VjcW5PVUVxeXozR1c2SUhvU0R1TmM2WV9hRzZCQ3BXNXFWa3N5VFdVeEswTXdZZGVyX09vUWNTUWVBOEJsUFo5UkpjTEFwQ3lrRDFmLXBQMUkwd2JTbmoxeVdrNkJjekpqNHptakZUbU0?oc=5",
-      "source": "Tech in Asia",
-      "source_id": "gnews-hubspot",
-      "via": "Google News: HubSpot",
-      "credibility": "aggregator",
-      "published_at": "2026-11-18T01:36:00Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "High",
-      "priority_score": 13,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "hubspot",
-        "salesforce"
-      ],
-      "also_covered_by": [
-        {
-          "source": "BigGo Finance",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5OY0h0UE9OT2Y0UTlDOWw3YlF0bldYY2Nqb1d4VV9PSldfd3RBNFI0bHg1UmR4Wm9SNThnc3hSTTAyUWs5MW1FUzJLcE1FcWZpbzdSX1BsQVYtYVNDSGw1VjkzWFkzcFJRQjlCNTZ4UjdiTXpsNkE?oc=5",
-          "title": "OpenAI Launches ChatGPT for Sales, Teams Up with Salesforce and HubSpot to Target Sales Workflows"
-        },
-        {
-          "source": "Dataconomy",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLVV2cmhOcnVWdWUtR0d2SUtxZUE5aU5iQ2VyM2YxWUN4eVQ5anFjeXdaWGVDb0lpeHlJN0RjZ3l2dGF6WFRSRWlXMENrRmNhUVZjN1Q2Q0lnQXRPTm9BUnBNRUxpSmVLX0tIRzVmYkpRVXJvcHJxVXlvbUt5a2dfWUVHdjFHWk94Z1dheS1JU29Ha0NiN1Fr?oc=5",
-          "title": "OpenAI Launches ChatGPT For Sales With Salesforce, HubSpot Integration"
-        }
-      ],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "0872b512abe551dd",
-      "title": "Should You Buy Anthropic Stock on Day 1 or Wait?",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQzdkaEJOM2tOR2N2czZwbEVWVDNWX3F2eEZLUVZJR2NPVWgyZEFQbzdLVDRPUjZhTVJkeXlZNUoxMkltc0UwQnh3MnBPY2Qtc1NVR3NvZ1JaMmxaNFhRTi1ocGFtbWJhdkd0LW5mZUc5cFBoQXdwTVlHbFZjUS0zejFsYkhjYXpPNWZfUUg1d2xHRmZl?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQzdkaEJOM2tOR2N2czZwbEVWVDNWX3F2eEZLUVZJR2NPVWgyZEFQbzdLVDRPUjZhTVJkeXlZNUoxMkltc0UwQnh3MnBPY2Qtc1NVR3NvZ1JaMmxaNFhRTi1ocGFtbWJhdkd0LW5mZUc5cFBoQXdwTVlHbFZjUS0zejFsYkhjYXpPNWZfUUg1d2xHRmZl?oc=5",
-      "source": "Yahoo Finance",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-18T01:33:20Z",
-      "collected_at": "2026-11-18T07:49:30Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "f2a6597a060938da",
-      "title": "OpenAI Surprise-Launches GPT-6.2 Astra & Sol on Anthropic’s IPO Date: Competitive Strike With Task Cost Only 5% of Claude to Reshape the Generative AI Market",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhb0NGRlVQT2l5a0pCYjZGZG90aVZiTjB4MjRqelZyd3pPUDlpSmQteHZLSnl0aVZxcFJhUDg0bnYwRFJsRnFHTE03SmxHcHVxLWRz?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhb0NGRlVQT2l5a0pCYjZGZG90aVZiTjB4MjRqelZyd3pPUDlpSmQteHZLSnl0aVZxcFJhUDg0bnYwRFJsRnFHTE03SmxHcHVxLWRz?oc=5",
-      "source": "eu.36kr.com",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-18T01:22:16Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "High",
-      "priority_score": 13,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "openai",
-        "gpt",
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "5856e3a4783e50e7",
-      "title": "Dario Amodei's Most Anticipated AI Mission: A Deep Dive Review of Anthropic's Cutting-Edge Biomedical AI Layout",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YcmF6UWd1bU9fR0xsTXFOaWJWd21LdEI5aWp6ejN0VEhYa2NxV0ZORFl1OHNwOXVrN24tdFluOGtPdTF2VVRYalNEU0YtdmduaTFR?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YcmF6UWd1bU9fR0xsTXFOaWJWd21LdEI5aWp6ejN0VEhYa2NxV0ZORFl1OHNwOXVrN24tdFluOGtPdTF2VVRYalNEU0YtdmduaTFR?oc=5",
-      "source": "eu.36kr.com",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-18T01:22:16Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "262c8edf4e6dd75b",
-      "title": "Microsoft aims to challenge OpenAI, Anthropic with cheaper, specialized AI models",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWnpSWUhVX2NkMm9wR1R1dE92a2VBYVM5TUpKc19Ia3NsSlVmUmZfTjNfYVVuTnU4ZjJPMHJJWHNrclcxT3dSZGZ5ckdDYlM3M3BvcGVNNGtkb1ZKZk5KM2ZvOGJKdVhtLU5fQ3JtSDZsMW5rbGwwczhEX2R4TTY5Nm9n?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWnpSWUhVX2NkMm9wR1R1dE92a2VBYVM5TUpKc19Ia3NsSlVmUmZfTjNfYVVuTnU4ZjJPMHJJWHNrclcxT3dSZGZ5ckdDYlM3M3BvcGVNNGtkb1ZKZk5KM2ZvOGJKdVhtLU5fQ3JtSDZsMW5rbGwwczhEX2R4TTY5Nm9n?oc=5",
-      "source": "Axios",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-18T01:21:27Z",
-      "collected_at": "2026-11-18T07:37:44Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "openai",
-        "anthropic",
-        "ai models"
       ],
       "also_covered_by": [],
       "url_check": "valid",
