@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-22T07:19:17Z",
-    "last_successful_update": "2026-11-22T07:19:17Z",
+    "generated_at": "2026-11-22T08:35:03Z",
+    "last_successful_update": "2026-11-22T08:35:03Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-22T07:14:15Z",
-      "finished_at": "2026-11-22T07:19:17Z",
+      "started_at": "2026-11-22T08:30:34Z",
+      "finished_at": "2026-11-22T08:35:03Z",
       "status": "partial",
-      "trigger": "schedule",
+      "trigger": "workflow_dispatch",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 59,
-      "skipped_stale": 551,
-      "skipped_irrelevant": 235,
+      "new_articles": 60,
+      "skipped_stale": 466,
+      "skipped_irrelevant": 239,
       "invalid_urls": 0,
-      "duplicates_merged": 1,
+      "duplicates_merged": 0,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 59,
+      "archived_out": 60,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -43,6 +43,67 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "195dc27b255ac1fd",
+      "title": "The Claude payday: How Anthropic’s IPO could make thousands of staff millionaires",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNaHhBWHBNUW00OXBvRGt4NUsyRjRxam5tcGlVR0hRV2Jaa1R1bmZpbnFiVjE3aWk0aE1na0Fmd0xpWXpqemx5UTRGN2VpWHFzc2NVSnpGVHRNRXRwcXdZajZSVnpoLWVYelB6b0VHZEc3ak1XR0E1a3JfYU9RSFFETGpfWjdXdW82VS1aU3pjeVQ2QVRidlpVbG1tSXpRVVdKUzdKUXp2X1RGYVJWVU5zVDVOb0hIemxuUDNoUDRhUjBueGFVZXJiWTdET1RkWWpmS25IZXh2OHRrbDRteF9RTUx5UVIxYjltZGcwREZPc0VwZGQw0gH6AUFVX3lxTFBYbjdwcVZwYnR1aTY4ZUhQTVZRX1ZDSDd5ejVwTjNNRERncF9IT2NRMGxHZ0tXUm1kUWZaRXcxM2pNeTFNeUJQMUdHeFpyUW00TS0taWNyTHZvZ2VVQVhFMGdnSnBXbTNBMGMzTW1xOVhKeVhIY0JvbWx5SnNrdlVudWRuaThTNEw2Q3I2dklNOHJpNENCWmdBZWlJVmZxMTZ3RGkxQnJnOHVrdjlpTFlqS3dTMGZtM1hKYXBNX1BXTXJJOTBvWl91VU51MHVubmVpYmpvbVdxYVpmX0NaYlFLLTNuM3FyWTRIZmpQSEtYM2ZWOUdkLW5Xc1E?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNaHhBWHBNUW00OXBvRGt4NUsyRjRxam5tcGlVR0hRV2Jaa1R1bmZpbnFiVjE3aWk0aE1na0Fmd0xpWXpqemx5UTRGN2VpWHFzc2NVSnpGVHRNRXRwcXdZajZSVnpoLWVYelB6b0VHZEc3ak1XR0E1a3JfYU9RSFFETGpfWjdXdW82VS1aU3pjeVQ2QVRidlpVbG1tSXpRVVdKUzdKUXp2X1RGYVJWVU5zVDVOb0hIemxuUDNoUDRhUjBueGFVZXJiWTdET1RkWWpmS25IZXh2OHRrbDRteF9RTUx5UVIxYjltZGcwREZPc0VwZGQw0gH6AUFVX3lxTFBYbjdwcVZwYnR1aTY4ZUhQTVZRX1ZDSDd5ejVwTjNNRERncF9IT2NRMGxHZ0tXUm1kUWZaRXcxM2pNeTFNeUJQMUdHeFpyUW00TS0taWNyTHZvZ2VVQVhFMGdnSnBXbTNBMGMzTW1xOVhKeVhIY0JvbWx5SnNrdlVudWRuaThTNEw2Q3I2dklNOHJpNENCWmdBZWlJVmZxMTZ3RGkxQnJnOHVrdjlpTFlqS3dTMGZtM1hKYXBNX1BXTXJJOTBvWl91VU51MHVubmVpYmpvbVdxYVpmX0NaYlFLLTNuM3FyWTRIZmpQSEtYM2ZWOUdkLW5Xc1E?oc=5",
+      "source": "The Times of India",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T07:45:00Z",
+      "collected_at": "2026-11-22T08:30:34Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "033c25f907d0b4aa",
+      "title": "\"I would not be surprised if Anthropic's market cap reached $5 trillion in the not-too-distant future\"",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55YjU4NWNqRl9xMlk5bVYxaVpjRHdWeVhPT2lfejBQNzI0Z25McV95QWxqa2pFZFRXVWc5UHR6UTlXaFhCcXlCSzZIX2NQeWZGRUxtSHR2WmJPWGNVUEVXcU5qUG5abnc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55YjU4NWNqRl9xMlk5bVYxaVpjRHdWeVhPT2lfejBQNzI0Z25McV95QWxqa2pFZFRXVWc5UHR6UTlXaFhCcXlCSzZIX2NQeWZGRUxtSHR2WmJPWGNVUEVXcU5qUG5abnc?oc=5",
+      "source": "CTech",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T07:10:00Z",
+      "collected_at": "2026-11-22T08:30:34Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
     {
       "id": "7ad5836144c8f2cc",
       "title": "Anthropic's second-day share drop sparks debate over IPO decisions",
@@ -223,6 +284,34 @@
       "topics": [
         "anthropic"
       ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "98627672b0a43bf9",
+      "title": "Riemann hypothesis breakthrough claimed via AI, 167 years on",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1zZFA4T05qRkxDa0FaMWdYOFQtUmtteVVLR2JCdFBGUHRyanNVeHNiLUwzcjRmVkFZbVNfR3RXVU5JeDM2bkxvRkYwQnAzY201czlYSzlGLVZyQV9EcmlCYUQxejB3aXM4cDhuM2dYUWNzTEll?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1zZFA4T05qRkxDa0FaMWdYOFQtUmtteVVLR2JCdFBGUHRyanNVeHNiLUwzcjRmVkFZbVNfR3RXVU5JeDM2bkxvRkYwQnAzY201czlYSzlGLVZyQV9EcmlCYUQxejB3aXM4cDhuM2dYUWNzTEll?oc=5",
+      "source": "DNE Africa",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-21T23:05:00Z",
+      "collected_at": "2026-11-22T08:30:34Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "",
+      "companies": [],
+      "topics": [],
       "also_covered_by": [],
       "url_check": "valid",
       "classification": "rules",
@@ -449,6 +538,67 @@
       }
     },
     {
+      "id": "f9879b90e4d28bd1",
+      "title": "250,000-Page Math Slop: Why Anthropic Didn’t Solve the Riemann Hypothesis",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmVi1paHdkZ0p0US1LNDM0UFlQb3gzVC1MaUtxTi1iQkFfUWVqajlKVVEyemk0OGtlNGJKVGZwWVdhSDNfTjJRMFVuRG12R2s?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmVi1paHdkZ0p0US1LNDM0UFlQb3gzVC1MaUtxTi1iQkFfUWVqajlKVVEyemk0OGtlNGJKVGZwWVdhSDNfTjJRMFVuRG12R2s?oc=5",
+      "source": "Emerald Book",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-21T17:57:06Z",
+      "collected_at": "2026-11-22T08:30:34Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "8bda38614e571d33",
+      "title": "Anthropic Mathematician Says Claude Helped Him Prove the Riemann Hypothesis",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaDg2RE9UUUZqZ3hvYXFpZ3RrZWEyT3cwUTZ3X0ZSMTN3VXA3Mkxha3g4Z0p5OVRmT25fSXdhUUFIQTgtZHhGaXljLXJuMy1lbVhjZzlTQWMtSzRDSUFlY3dfdHJDYmxycm1pSWI4RnRWT1ZNd0h3QnJxWk00QjdkSlc4ZXQ3MUE5YjVhYlBhZGV1Y2JVTFFDTy1MZmpQVGtrVVFLX0VKTUpxR1dLWm53?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaDg2RE9UUUZqZ3hvYXFpZ3RrZWEyT3cwUTZ3X0ZSMTN3VXA3Mkxha3g4Z0p5OVRmT25fSXdhUUFIQTgtZHhGaXljLXJuMy1lbVhjZzlTQWMtSzRDSUFlY3dfdHJDYmxycm1pSWI4RnRWT1ZNd0h3QnJxWk00QjdkSlc4ZXQ3MUE5YjVhYlBhZGV1Y2JVTFFDTy1MZmpQVGtrVVFLX0VKTUpxR1dLWm53?oc=5",
+      "source": "Around Prague",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-21T17:01:57Z",
+      "collected_at": "2026-11-22T08:30:34Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "6ccebafcdf30c270",
       "title": "Here are the top AI agents that can live in your text messages",
       "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
@@ -503,6 +653,36 @@
         "priority_reason": "The feed text is only a short excerpt listing general categories of AI agents without actionable platform specifics for B2B marketers.",
         "needs_validation": true,
         "validation_note": "Verify the full article on TechCrunch to identify the specific AI agents listed, their supported platforms, and any enterprise or business use cases mentioned."
+      }
+    },
+    {
+      "id": "3534d2195ee431a4",
+      "title": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZjl5ODZTYXRNU2pfRmhEdnR0ckVzdE9iVVhrX3ZmZzZTMl9acTJENHAyUUFJazdRNGw1a2pES2pjWEpuTG1qTmtfNjBCd1NTQkxXb0c0X2pwSzZtNDJpWS1HbUR6aU5PUC1Gc1N0cXNEZEV5cTd2ZnYtWk9oWU95d3lERkRUOHdSQXRFSTY2OUllVktJenpTODQzU2g?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZjl5ODZTYXRNU2pfRmhEdnR0ckVzdE9iVVhrX3ZmZzZTMl9acTJENHAyUUFJazdRNGw1a2pES2pjWEpuTG1qTmtfNjBCd1NTQkxXb0c0X2pwSzZtNDJpWS1HbUR6aU5PUC1Gc1N0cXNEZEV5cTd2ZnYtWk9oWU95d3lERkRUOHdSQXRFSTY2OUllVktJenpTODQzU2g?oc=5",
+      "source": "The Guardian",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-21T16:39:00Z",
+      "collected_at": "2026-11-22T08:30:34Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -4145,268 +4325,6 @@
         "priority_reason": "It improves daily productivity and workflow efficiency for B2B professionals managing calendar invites and meeting follow-ups.",
         "needs_validation": false,
         "validation_note": ""
-      }
-    },
-    {
-      "id": "b00f82b6db94c2e5",
-      "title": "Introducing Tool Retrieval in the Gemini API",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
-      "source": "Google AI Blog",
-      "source_id": "google-ai-blog",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-19T18:00:00Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The announcement concerns a global developer update for the Gemini API.",
-      "priority": "Medium",
-      "priority_score": 11,
-      "excerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
-      "companies": [
-        "Google"
-      ],
-      "topics": [
-        "Gemini API",
-        "AI agents",
-        "Tool Retrieval",
-        "token optimization"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T00:31:53Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Google AI Blog reports the introduction of Tool Retrieval in the Gemini API, currently available in preview. The feature allows developers to give agents access to hundreds of tools while using fewer tokens.",
-        "summary": "Google AI Blog announces the launch of Tool Retrieval for the Gemini API in preview. This capability is designed to let AI agents interface with hundreds of tools efficiently by consuming fewer tokens. While the text is a short excerpt, it highlights a technical optimisation for managing large sets of tools within LLM workflows.",
-        "why_it_matters": "For B2B marketers building complex AI agents for lead routing, CRM enrichment, or automated customer support, managing token limits and costs is a persistent hurdle. Tool Retrieval allows developers to scale the number of accessible utilities, such as external databases or marketing APIs, without blowing token budgets. This makes sophisticated, multi-tool agent architectures more economically viable for everyday marketing operations.",
-        "applications": [
-          "Scale customer support agents to query multiple internal databases and CRM systems simultaneously.",
-          "Build lead qualification agents that can pull data from hundreds of niche marketing analytics endpoints.",
-          "Optimise marketing automation workflows that rely on diverse API calls for real-time personalisation."
-        ],
-        "recommendations": [
-          "Explore the Gemini API documentation to understand implementation requirements for Tool Retrieval.",
-          "Test current agent setups against the new preview feature to measure token reduction and latency impacts.",
-          "Evaluate potential cost savings when scaling the number of integrated tools in production marketing agents.",
-          "Review system reliability and response accuracy when agents dynamically select from hundreds of tools."
-        ],
-        "priority_reason": "Token optimisation for AI agents is operationally useful, but the feed excerpt lacks specific implementation details or pricing impacts.",
-        "needs_validation": true,
-        "validation_note": "Check the original article for technical documentation links, pricing details, and specific guidelines on how Tool Retrieval selects tools."
-      }
-    },
-    {
-      "id": "d9d2fba47fd34f0c",
-      "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
-      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-      "canonical_url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-19T17:38:40Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The development concerns Meta's global AI product release and general conversational AI safety.",
-      "priority": "High",
-      "priority_score": 8,
-      "excerpt": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
-      "companies": [
-        "Meta",
-        "TechCrunch"
-      ],
-      "topics": [
-        "ai agents",
-        "data privacy",
-        "conversational ai",
-        "security"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T00:32:03Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that Meta's AI agent Muse is mixing up conversations and potentially exposing private data. According to employee accounts cited in the report, the AI surfaced messages regarding childcare requests, career advice, product orders, and bank account balances that did not belong to the users.",
-        "summary": "TechCrunch reports that Meta's AI agent Muse has experienced severe functional errors, mixing up user conversations and surfacing sensitive private data to the wrong individuals. Employees observed instances where the tool displayed unrelated childcare requests, career queries, product orders, and foreign bank account balances. This points to critical data leakage risks within conversational AI systems handling sensitive personal and professional information. While the text is an excerpt, it highlights foundational security and context-retrieval flaws in conversational agents.",
-        "why_it_matters": "For B2B marketers deploying AI agents, chatbots, and automated messaging assistants on platforms like WhatsApp or CRM interfaces, this incident underscores the severe brand and compliance risks of context bleeding. If enterprise AI agents misroute sensitive lead data, customer records, or financial information between chat threads, organisations face immediate data privacy breaches, loss of customer trust, and regulatory penalties. It reinforces the need for strict data segregation and rigorous testing before deploying generative AI in customer-facing or internal workflows.",
-        "applications": [
-          "Audit existing conversational AI workflows and WhatsApp automation tools to ensure strict user session isolation and prevent cross-thread data leakage.",
-          "Review internal compliance protocols regarding the types of sensitive financial or personal data processed by AI agents integrated into CRM systems.",
-          "Implement automated guardrails and secondary verification steps before an AI agent surfaces customer account details or order histories.",
-          "Draft clear communication contingencies to address data privacy concerns if deploying customer-facing generative AI tools."
-        ],
-        "recommendations": [
-          "Explore session isolation testing with your AI vendor; relevant tool types include conversational AI middleware and LLM security scanners, likely benefit is preventing data cross-contamination, implementation consideration requires engineering audit of session state management.",
-          "Review data retention and context window policies in current chatbot deployments; relevant tool types include enterprise chatbot platforms, likely benefit is minimising the historical data exposed during hallucinations, implementation consideration involves balancing context utility against privacy risks.",
-          "Conduct a risk assessment on CRM-integrated messaging tools handling PII; relevant tool types include data governance platforms, likely benefit is identifying vulnerability to data mixing, implementation consideration needs cross-functional alignment between marketing operations and IT security."
-        ],
-        "priority_reason": "Data exposure and cross-conversation errors in major AI agents present critical security and compliance risks for any marketer deploying conversational tools.",
-        "needs_validation": true,
-        "validation_note": "Verify the full scope of Muse's deployment, whether it affects enterprise or consumer tools, and Meta's official response to the reported data mixing issues."
-      }
-    },
-    {
-      "id": "5e4f59f02b42a187",
-      "title": "Brighton Anthropic founder to become billionaire",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BUGNCMzZ0MWhXZndWTDhIeUxyX3Q5eWNWQWo5UHZPVjlJQjh2TFMzbnNFa1RhZmg2bzFFSFlacUlsUnh0VEoyaTExQjV2cDRmaVpGdVV3clRITHc?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BUGNCMzZ0MWhXZndWTDhIeUxyX3Q5eWNWQWo5UHZPVjlJQjh2TFMzbnNFa1RhZmg2bzFFSFlacUlsUnh0VEoyaTExQjV2cDRmaVpGdVV3clRITHc?oc=5",
-      "source": "BBC",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T17:25:06Z",
-      "collected_at": "2026-11-19T17:31:51Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "754b9e64340023a6",
-      "title": "Anthropic shares rise over 30% in market debut, valuing Claude maker at about $2T",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRHR2LW5hM095VHZ0ZzFzTW9xUlVkMTByVUpkOTMwbG54N1ZuLUg3dnZiZzQ0MmxBQTNEcmhfN0dxUUVEVGU2MWVIeW9CNTJ1SVJoeldrbDVidEtIYjRaSFBIU2U2eXJMbTBzUEtUUGs2bk1qZHpLOGYwRGRuaFBQVGFDUlZ6SjhMRGtpLUc2VXVGZUY1M2FvZlNBZGdJaFRSXy15T2FuODFVZTFUN19NNlpoajNJMlhNbXpDUQ?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRHR2LW5hM095VHZ0ZzFzTW9xUlVkMTByVUpkOTMwbG54N1ZuLUg3dnZiZzQ0MmxBQTNEcmhfN0dxUUVEVGU2MWVIeW9CNTJ1SVJoeldrbDVidEtIYjRaSFBIU2U2eXJMbTBzUEtUUGs2bk1qZHpLOGYwRGRuaFBQVGFDUlZ6SjhMRGtpLUc2VXVGZUY1M2FvZlNBZGdJaFRSXy15T2FuODFVZTFUN19NNlpoajNJMlhNbXpDUQ?oc=5",
-      "source": "Anadolu Ajansı",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T17:16:16Z",
-      "collected_at": "2026-11-19T17:31:51Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "eda0949195b2113e",
-      "title": "Anthropic Opens at $111.5 in Debut, Up 34% From IPO Price, Market Cap at $1.45 Trillion",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbW1pQ282TmlUeHBFRlpoTnl4QTdLLWxBRzdlclJaeUJwcG5rOGFfc2NNVkE1ZTlnYUN2eE1YaWZqdTVMOUVKUDVWM1d0bjc1ZXBKLUx0NEhLQlRHRVIwTXB3anQxQnF3R3RzOTlDUlZqbmpDZ2lTTXVVejRsbTJCemhWcTVWeUxYR2lXYzBGU1ktYkhCa25tYndLS3JGM19YMng3ZU1qMi11Q1MyTmM4dVU5bDh2Q0JWYkVPQ0xNS25CRm0xUzZ6eQ?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbW1pQ282TmlUeHBFRlpoTnl4QTdLLWxBRzdlclJaeUJwcG5rOGFfc2NNVkE1ZTlnYUN2eE1YaWZqdTVMOUVKUDVWM1d0bjc1ZXBKLUx0NEhLQlRHRVIwTXB3anQxQnF3R3RzOTlDUlZqbmpDZ2lTTXVVejRsbTJCemhWcTVWeUxYR2lXYzBGU1ktYkhCa25tYndLS3JGM19YMng3ZU1qMi11Q1MyTmM4dVU5bDh2Q0JWYkVPQ0xNS25CRm0xUzZ6eQ?oc=5",
-      "source": "TradingKey",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T17:03:37Z",
-      "collected_at": "2026-11-19T17:31:51Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "88ae40f036329419",
-      "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
-      "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-      "canonical_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-19T17:00:00Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "Global",
-      "region_reason": "The platform connects global retailers with Chinese manufacturing facilities rather than focusing exclusively on the Indian domestic market.",
-      "priority": "Low",
-      "priority_score": 6,
-      "excerpt": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
-      "companies": [
-        "Everful",
-        "Alibaba"
-      ],
-      "topics": [
-        "Funding",
-        "Supply Chain",
-        "B2B Marketplace",
-        "Manufacturing"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T00:32:13Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that Everful, founded by a former Alibaba executive, has raised $48.5 million. The funding will be used to expand its factory-direct sourcing platform, which helps retailers source products directly from overseas manufacturers, specifically Chinese factories.",
-        "summary": "Everful secured $48.5 million in funding to grow its factory-direct sourcing platform designed to link retailers with overseas manufacturers in China. While the text is brief, the platform appears to streamline supply chain procurement and cross-border manufacturing connections for retail businesses. For B2B organizations operating in the supply chain, retail technology, or manufacturing sectors, this development highlights ongoing venture capital interest in digitising global trade infrastructure. Marketers at similar supply chain platforms may need to monitor how competitor funding impacts enterprise acquisition strategies and market positioning.",
-        "why_it_matters": "Significant capital injection into B2B sourcing platforms often signals heightened competition and increased digital ad spend within the supply chain and manufacturing tech sectors. B2B marketers targeting retailers or manufacturers must adapt their positioning to address shifting procurement behaviors, vendor transparency, and cross-border logistics capabilities. Understanding how well-funded platforms capture market share can inform competitive differentiation strategies for other B2B marketplaces.",
-        "applications": [
-          "Audit current B2B campaign messaging to ensure alignment with modern cross-border sourcing and supply chain trends.",
-          "Analyze competitor keyword strategies in the manufacturing and retail tech sector following this funding announcement.",
-          "Evaluate target account lists to identify retailers or brands actively expanding their direct-from-factory sourcing operations.",
-          "Develop case studies or thought leadership content addressing the digitization of global supply chains and vendor management."
-        ],
-        "recommendations": [
-          "Explore competitor tracking tools to monitor Everful's marketing spend, channel mix, and positioning strategy; potential benefit is early identification of shifting B2B buyer expectations; consideration must be given to platform access limitations.",
-          "Test LinkedIn lead generation campaigns targeting supply chain and procurement decision-makers at mid-market retailers; potential benefit is capturing high-intent B2B traffic; implementation requires tailored messaging around supply chain efficiency.",
-          "Review CRM segmentation rules for manufacturing and retail clients to ensure sales teams can rapidly target accounts interested in cross-border sourcing; potential benefit is improved sales-marketing alignment; consideration needed for data freshness.",
-          "Conduct a content gap analysis around international manufacturing partnerships and factory-direct procurement; potential benefit is improved organic search visibility for high-intent supply chain queries; implementation involves SEO keyword mapping."
-        ],
-        "priority_reason": "It is a standard funding announcement for a niche vertical platform, offering limited immediate operational changes for general B2B marketers.",
-        "needs_validation": true,
-        "validation_note": "Verify the full list of participating investors and specific target markets mentioned in the original TechCrunch article beyond the funding amount."
       }
     }
   ]
