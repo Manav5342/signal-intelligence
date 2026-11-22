@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-22T08:30:37Z",
+  "checked_at": "2026-11-22T16:31:27Z",
   "total": 32,
-  "ok": 31,
-  "failed": 1,
+  "ok": 30,
+  "failed": 2,
   "sources": [
     {
       "id": "openai-news",
@@ -110,8 +110,8 @@
       "url": "https://news.google.com/rss/search?q=%22B2B+marketing%22+OR+%22account-based+marketing%22+OR+%22demand+generation%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 48,
-      "usable_items": 48,
+      "entries": 46,
+      "usable_items": 46,
       "error": null
     },
     {
@@ -170,8 +170,8 @@
       "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 51,
-      "usable_items": 51,
+      "entries": 52,
+      "usable_items": 52,
       "error": null
     },
     {
@@ -248,11 +248,11 @@
       "id": "gnews-hubspot",
       "name": "Google News: HubSpot",
       "url": "https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en",
-      "ok": true,
-      "status_code": 200,
-      "entries": 89,
-      "usable_items": 89,
-      "error": null
+      "ok": false,
+      "status_code": 429,
+      "entries": 0,
+      "usable_items": 0,
+      "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "id": "martech-org",

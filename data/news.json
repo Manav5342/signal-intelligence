@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-22T08:35:03Z",
-    "last_successful_update": "2026-11-22T08:35:03Z",
+    "generated_at": "2026-11-22T16:37:39Z",
+    "last_successful_update": "2026-11-22T16:37:39Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,24 +18,25 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-22T08:30:34Z",
-      "finished_at": "2026-11-22T08:35:03Z",
+      "started_at": "2026-11-22T16:31:25Z",
+      "finished_at": "2026-11-22T16:37:39Z",
       "status": "partial",
-      "trigger": "workflow_dispatch",
+      "trigger": "schedule",
       "sources_total": 32,
-      "sources_ok": 31,
-      "sources_failed": 1,
-      "new_articles": 60,
-      "skipped_stale": 466,
-      "skipped_irrelevant": 239,
+      "sources_ok": 30,
+      "sources_failed": 2,
+      "new_articles": 59,
+      "skipped_stale": 467,
+      "skipped_irrelevant": 241,
       "invalid_urls": 0,
-      "duplicates_merged": 0,
+      "duplicates_merged": 2,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 60,
+      "archived_out": 58,
       "errors": [
-        "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
+        "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/",
+        "source:gnews-hubspot: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en"
       ]
     },
     "ai_enabled": true,
@@ -43,6 +44,129 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "3d3427e5827ebbfd",
+      "title": "Anthropic Mathematician's Claude-Assisted Proof of 167-Year-Old Problem Verified - POLITIS",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbHFBWVh1QnNpY2dNRnJNSDN1UGYySzJlMnU3YV9PdklVamxRV3VBWXpXaEZaaUZrX1NjcHFNZkNzM2NDeWZ5SDBhNmJQTmRQcEM1OEtCWk1TR3F3RWdmZHdxdmd0ZGhGWEdnSXIxeTQ5RDZGMlNIUS1ZdXlETC1neFVKRkNpU2NUcWo4eUlDTVFtOXdDR05BaF9GQUx4VVNCTkVoS0tidDA2YUtrR1RVbVUxWnJaTEZqNHc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbHFBWVh1QnNpY2dNRnJNSDN1UGYySzJlMnU3YV9PdklVamxRV3VBWXpXaEZaaUZrX1NjcHFNZkNzM2NDeWZ5SDBhNmJQTmRQcEM1OEtCWk1TR3F3RWdmZHdxdmd0ZGhGWEdnSXIxeTQ5RDZGMlNIUS1ZdXlETC1neFVKRkNpU2NUcWo4eUlDTVFtOXdDR05BaF9GQUx4VVNCTkVoS0tidDA2YUtrR1RVbVUxWnJaTEZqNHc?oc=5",
+      "source": "POLITIS - To the point",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T14:38:27Z",
+      "collected_at": "2026-11-22T16:31:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "6acec047b75af608",
+      "title": "Verification loops in Claude Code, how Anthropic checks agent code",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbTNqVHZRancwV2p4X0pFdWpHWUpYWWlad29BSV9lbFVhZFdnbUpiM1E5THdNc1BBMWJwaDUzZS1qNl9reWR6TDR1dGFLUWpNWi1WM3FITF9XRzVFY29PZExhMmlNV3NXSVFGbl9JSFJFYjBxNW5qVzBMZG9vTGRDTXhUSWRPOEdoendEMnNpOUwxTEJuTUgwbkhTNGx3TklTYXZJWTlVbw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbTNqVHZRancwV2p4X0pFdWpHWUpYWWlad29BSV9lbFVhZFdnbUpiM1E5THdNc1BBMWJwaDUzZS1qNl9reWR6TDR1dGFLUWpNWi1WM3FITF9XRzVFY29PZExhMmlNV3NXSVFGbl9JSFJFYjBxNW5qVzBMZG9vTGRDTXhUSWRPOEdoendEMnNpOUwxTEJuTUgwbkhTNGx3TklTYXZJWTlVbw?oc=5",
+      "source": "Pasquale Pillitteri",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T14:10:44Z",
+      "collected_at": "2026-11-22T16:31:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "a5371fd7ee22d1f7",
+      "title": "How Anthropic pirated my book, by HAMISH MCRAE",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNOGprSENQTjY2bXdhaUVrY1o0VGZTbjY0Y1FDQ01fdmJidnVySzQ5UDd6czJQX29XSXhtYll2d1FJOUVlSUJaRDdkckFTWjgydTlSUGRNeUpwRzc5U1piTExuTVBra3NuTWd0SklHS2xjNWpnRXl0YmxscE9veExUUE5VdVZFNGFwN2ctbVpqUFY1SG9uTHVZZHNDU25vRy1FTTVFV21OWTl4NlZseXhKX0pVR1ZtTUw4Y21adXV0d0ZMbG9QZHYyOWZvY0hrb3BhT29GZDFjS2MzZ3pUdzMxNHlRTlR1U0k4UTBNZmtmU0RsdXdy?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNOGprSENQTjY2bXdhaUVrY1o0VGZTbjY0Y1FDQ01fdmJidnVySzQ5UDd6czJQX29XSXhtYll2d1FJOUVlSUJaRDdkckFTWjgydTlSUGRNeUpwRzc5U1piTExuTVBra3NuTWd0SklHS2xjNWpnRXl0YmxscE9veExUUE5VdVZFNGFwN2ctbVpqUFY1SG9uTHVZZHNDU25vRy1FTTVFV21OWTl4NlZseXhKX0pVR1ZtTUw4Y21adXV0d0ZMbG9QZHYyOWZvY0hrb3BhT29GZDFjS2MzZ3pUdzMxNHlRTlR1U0k4UTBNZmtmU0RsdXdy?oc=5",
+      "source": "This is Money",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T11:19:49Z",
+      "collected_at": "2026-11-22T16:31:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "f1b32328f0880166",
+      "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNallnWWJZMV9QbmJHelJ2anp6MmdiUVNQZnJiNExZQnNmN2YwT3VyYVBYcENKX183bUxjQXlOdzdUelpjdzBrLXB4ZzFkbDJ6RWNRek9vbWdpSGNJU1JOOUlDaERIbUpRSnRkOHVxY2JjSl82WFlfX014ZHM1VDN1MFlTalcxd3pNU0p5QzZXQnFGZDdmNmxHZXFYbVA1RE8ySjNlc2dUQ2dmX1MtYUtYazM0eEk?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNallnWWJZMV9QbmJHelJ2anp6MmdiUVNQZnJiNExZQnNmN2YwT3VyYVBYcENKX183bUxjQXlOdzdUelpjdzBrLXB4ZzFkbDJ6RWNRek9vbWdpSGNJU1JOOUlDaERIbUpRSnRkOHVxY2JjSl82WFlfX014ZHM1VDN1MFlTalcxd3pNU0p5QzZXQnFGZDdmNmxHZXFYbVA1RE8ySjNlc2dUQ2dmX1MtYUtYazM0eEk?oc=5",
+      "source": "The Decoder",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T09:41:37Z",
+      "collected_at": "2026-11-22T16:31:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "gpt",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
     {
       "id": "195dc27b255ac1fd",
       "title": "The Claude payday: How Anthropic’s IPO could make thousands of staff millionaires",
@@ -476,16 +600,16 @@
       }
     },
     {
-      "id": "4e88bcc9c79cf7f8",
+      "id": "d96f79c069ffeaa8",
       "title": "Anthropic Mathematician Claims Claude Helped Prove 167-Year-Old Riemann Hypothesis",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMDJiblV0T3E4akoxeHkySEl6OXZPMXgtRF8wRFotXzMyTldoNHdKekMtaHYxOFA1Rzl4eFJCY3hibnp1VDRIS0xZX1N1eF9OZkx6YjVZU2t1VnVvVTBjUW1lYzFrd29GR0lneEtSLWVCSk5oYXMyQmNOY0RnMkJlQml6b0tLRE9qUlhNc2xWTHlWVmFVZHFuMGtDTVlOVGZxVDBLSHBPd3MtYWtGcUNkcm1HaHBxeWs?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMDJiblV0T3E4akoxeHkySEl6OXZPMXgtRF8wRFotXzMyTldoNHdKekMtaHYxOFA1Rzl4eFJCY3hibnp1VDRIS0xZX1N1eF9OZkx6YjVZU2t1VnVvVTBjUW1lYzFrd29GR0lneEtSLWVCSk5oYXMyQmNOY0RnMkJlQml6b0tLRE9qUlhNc2xWTHlWVmFVZHFuMGtDTVlOVGZxVDBLSHBPd3MtYWtGcUNkcm1HaHBxeWs?oc=5",
-      "source": "Dallas Express",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN05uaG5QU21lUTRNNEZMWW9tX1YwQ2Yxb1BMaUoxb2wxWXhMS3RkbXU4b3FwMF9sZjdqblZ4MU5pU01CX1JRWmVNbS14SEFLcllRZVpoUjZjMmlxWUNKaS01aU5Ibkc4NWhxMF9Xb3Y5LU9JWDRfd2dUNE5oaE5sOE9TTkhZV3hUa1ZLTGlpNGpnbXpzQWttVHVZNWpCalZJeW5nQk13?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN05uaG5QU21lUTRNNEZMWW9tX1YwQ2Yxb1BMaUoxb2wxWXhMS3RkbXU4b3FwMF9sZjdqblZ4MU5pU01CX1JRWmVNbS14SEFLcllRZVpoUjZjMmlxWUNKaS01aU5Ibkc4NWhxMF9Xb3Y5LU9JWDRfd2dUNE5oaE5sOE9TTkhZV3hUa1ZLTGlpNGpnbXpzQWttVHVZNWpCalZJeW5nQk13?oc=5",
+      "source": "Yahoo",
       "source_id": "gnews-anthropic",
       "via": "Google News: Anthropic & Claude",
       "credibility": "aggregator",
-      "published_at": "2026-11-21T19:01:10Z",
-      "collected_at": "2026-11-22T07:14:15Z",
+      "published_at": "2026-11-21T19:00:54Z",
+      "collected_at": "2026-11-22T16:31:25Z",
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
@@ -498,7 +622,18 @@
         "anthropic",
         "claude"
       ],
-      "also_covered_by": [],
+      "also_covered_by": [
+        {
+          "source": "The Independent",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTnliTkVvRWFBQ3NScjZ6bUlDT1plNFM3d3hDcWFsLVF2dnhnQW05QWZEc2tuaU5Ha2Y1b3g1bFdlSUd1eXF2b2VvT3hrNHN2dTJrRmZhN2QyWkhtY053UTlZN3dfQlpkMVBEclkxU0ZnMDFZanI4YTRWQ1F2YXhBd2Z3RVR5MXptR0poX3hYN0lMUQ?oc=5",
+          "title": "Anthropic mathematician claims to have proved Riemann hypothesis with help of Claude"
+        },
+        {
+          "source": "Dallas Express",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMDJiblV0T3E4akoxeHkySEl6OXZPMXgtRF8wRFotXzMyTldoNHdKekMtaHYxOFA1Rzl4eFJCY3hibnp1VDRIS0xZX1N1eF9OZkx6YjVZU2t1VnVvVTBjUW1lYzFrd29GR0lneEtSLWVCSk5oYXMyQmNOY0RnMkJlQml6b0tLRE9qUlhNc2xWTHlWVmFVZHFuMGtDTVlOVGZxVDBLSHBPd3MtYWtGcUNkcm1HaHBxeWs?oc=5",
+          "title": "Anthropic Mathematician Claims Claude Helped Prove 167-Year-Old Riemann Hypothesis"
+        }
+      ],
       "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
@@ -4125,206 +4260,6 @@
       "ai_attempts": 0,
       "analysis": {
         "status": "pending"
-      }
-    },
-    {
-      "id": "2ec772be2ecc735a",
-      "title": "Legora Appoints Former HubSpot, Atlassian Lawyer as Inaugural Chief Legal Officer",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWU9WSjJGR1BRbFgyRDZvRjJ1THkzbFFIaWdoNlNTS2EzX1diYmp5YlhBdU9FVHNFVUE2TjAxNWtrMldhaGhfWHlFM0dtSDZGOXNPamhjMzZ0QkhIZi1sVTZUR3Q2VnI2SHhXMThIMVM5NXZKYXA1d280djQ5MGczNDhSOTBTVngyRVREcm1IUThSNURMZXhoRXlVWTZkMnRqUndRZnpfRGp2ejdDUlRnVFMzZjNyVmlDUzZLdDhPLW1Cbllj?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWU9WSjJGR1BRbFgyRDZvRjJ1THkzbFFIaWdoNlNTS2EzX1diYmp5YlhBdU9FVHNFVUE2TjAxNWtrMldhaGhfWHlFM0dtSDZGOXNPamhjMzZ0QkhIZi1sVTZUR3Q2VnI2SHhXMThIMVM5NXZKYXA1d280djQ5MGczNDhSOTBTVngyRVREcm1IUThSNURMZXhoRXlVWTZkMnRqUndRZnpfRGp2ejdDUlRnVFMzZjNyVmlDUzZLdDhPLW1Cbllj?oc=5",
-      "source": "Law.com",
-      "source_id": "gnews-hubspot",
-      "via": "Google News: HubSpot",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T20:13:47Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "hubspot"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "e22812a5ccc93667",
-      "title": "Anthropic’s IPO could deliver $156B to charity",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
-      "canonical_url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-19T19:10:45Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "Anthropic is a global AI lab and the financial metrics relate to international market valuations.",
-      "priority": "Low",
-      "priority_score": 9,
-      "excerpt": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
-      "companies": [
-        "Anthropic",
-        "TechCrunch"
-      ],
-      "topics": [
-        "Anthropic",
-        "IPO",
-        "AI Lab",
-        "Corporate Governance"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T00:31:24Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that at a hypothetical stock price of $95, Anthropic's Public Benefit Foundation, employee donations, and company matches could total $156 billion through an IPO. The feed excerpt provides no further operational details about the public offering timeline or corporate structure.",
-        "summary": "TechCrunch reports that Anthropic's potential IPO could generate up to $156 billion for charity based on a projected stock price of $95, combining holdings from its Public Benefit Foundation, employee donations, and corporate matching. While this highlights the unique corporate governance and public benefit structure of a major AI lab, the text is limited to a brief excerpt. B2B marketers should view this primarily as background financial news regarding a key AI infrastructure provider rather than an operational platform update.",
-        "why_it_matters": "Major capital events and structural shifts at foundational AI labs like Anthropic influence market sentiment, enterprise pricing stability, and feature availability for marketing automation tools built on their models. Understanding the financial backing and corporate governance of core AI vendors helps marketing operations teams assess vendor longevity and long-term partnership risks.",
-        "applications": [
-          "Monitor vendor stability and roadmap commitments from AI providers used in marketing operations",
-          "Assess how public benefit structures might influence future enterprise pricing tiers for AI APIs",
-          "Incorporate vendor financial health into broader risk assessments for mission-critical AI integrations"
-        ],
-        "recommendations": [
-          "Explore the long-term roadmap of Anthropic's enterprise offerings; tool types: LLM API monitoring; benefit: anticipate capacity or pricing shifts; consideration: dependent on official IPO filings rather than speculative valuations.",
-          "Review current dependency on specific foundational models across content generation and lead scoring workflows; tool types: LLM orchestration platforms; benefit: ensure multi-model redundancy; consideration: check model parity before switching.",
-          "Track future financial disclosures and S-1 filings for concrete data on enterprise adoption rates; tool types: financial news aggregators; benefit: gauge market penetration in B2B tech stacks; consideration: filings will provide verified metrics."
-        ],
-        "priority_reason": "The text discusses a speculative financial projection based on an excerpt rather than a direct platform or policy change affecting daily marketing operations.",
-        "needs_validation": true,
-        "validation_note": "Verify the full context of the Anthropic IPO report, actual valuation metrics, and structural details in the original TechCrunch article."
-      }
-    },
-    {
-      "id": "6d6821f501bbce2e",
-      "title": "Google gives Gemini the ability to use your Mac for you",
-      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-      "canonical_url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-19T18:09:11Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The development concerns a global software update by Google for Mac users.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
-      "companies": [
-        "Google"
-      ],
-      "topics": [
-        "AI Agents",
-        "Workflow Automation",
-        "Mac",
-        "Productivity"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T00:31:34Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that Google has updated Gemini with a new AI agent for the Mac. According to the excerpt, this agent is capable of organizing files, filling out forms, and handling multistep workflows.",
-        "summary": "Google has rolled out a software update enabling Gemini to act as an AI agent on macOS. Based on the provided text, the tool can perform administrative desktop tasks such as file organisation, form filling, and executing multistep workflows. This represents a functional expansion of desktop AI capabilities for Mac users.",
-        "why_it_matters": "For B2B marketing operations professionals, the introduction of desktop-level AI agents capable of multistep workflows hints at future possibilities for automating repetitive CRM data entry, file management, and multi-platform campaign setups. While the excerpt is brief, desktop automation tools could eventually change how operators handle routine administrative tasks across local marketing software stacks.",
-        "applications": [
-          "Exploring local desktop automation for organising marketing asset files and campaign briefs",
-          "Testing AI assistance for repetitive form-filling tasks during internal operations",
-          "Evaluating how desktop agents might interact with local marketing applications and offline analytics sheets"
-        ],
-        "recommendations": [
-          "Explore desktop AI agent capabilities to understand potential workflow efficiencies, focusing on time saved in manual file management and data entry.",
-          "Test Gemini on macOS for handling structured, repetitive multi-step administrative tasks to measure accuracy and reliability.",
-          "Review internal data security policies regarding the use of AI agents that have access to local file systems and form inputs.",
-          "Monitor official Google documentation for updates on enterprise controls and CRM integrations for the Mac agent."
-        ],
-        "priority_reason": "While workflow automation is relevant to operations, the excerpt lacks specific details on enterprise deployment or direct marketing platform integrations.",
-        "needs_validation": true,
-        "validation_note": "Verify the full TechCrunch article to check if this feature is available to all users or requires specific enterprise/developer tiers, and whether it supports third-party marketing applications."
-      }
-    },
-    {
-      "id": "da3b85ab4016e199",
-      "title": "Email meeting guests from Google Calendar with the full capabilities of Gmail",
-      "url": "http://workspaceupdates.googleblog.com/2026/11/email-meeting-guests-from-google-Calendar-with-the-full-capabilities-of-Gmail.html",
-      "canonical_url": "https://workspaceupdates.googleblog.com/2026/11/email-meeting-guests-from-google-Calendar-with-the-full-capabilities-of-Gmail.html",
-      "source": "Google Workspace Updates",
-      "source_id": "google-workspace-updates",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-19T18:00:50Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "email",
-      "category_label": "Email Marketing",
-      "region": "Global",
-      "region_reason": "The update applies globally to all Google Workspace customers and personal account users.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "To make it easier to send well-formatted meeting updates, share agendas, and verify Google Drive file access before sending, we’re updating the Email guests flow in Google Calendar on the web to open a native Gmail compose window directly from Calendar. This provides the feature set of Gmail…",
-      "companies": [
-        "Google"
-      ],
-      "topics": [
-        "Google Workspace",
-        "Gmail",
-        "Google Calendar",
-        "Email Productivity",
-        "B2B Communication"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T00:31:44Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Google Workspace Updates reports that the 'Email guests' flow in Google Calendar on the web is being updated to open a native Gmail compose window directly from Calendar. The new functionality replaces a basic plain-text dialog with full Gmail capabilities, including recipient filtering by RSVP status, automatic replacement of leaders with designated calendar delegates, rich text formatting, 'Help me write' AI features, and file permission checks. The update rolls out to Rapid Release domains starting November 19, 2026, and Scheduled Release domains starting December 18, 2026.",
-        "summary": "Google Calendar on the web is integrating a native Gmail compose window for the 'Email guests' feature, abandoning the previous plain-text limitation. When communicating with meeting attendees, users can now leverage full Gmail tooling such as rich text formatting, attachments, signatures, scheduling, and AI-powered writing assistance. The update also streamlines targeted follow-ups by allowing marketers and professionals to filter recipients based on their RSVP status or route messages directly to calendar delegates. This integration bridges calendar scheduling and email communication smoothly for everyday business workflows.",
-        "why_it_matters": "For B2B marketers and sales professionals who heavily rely on webinars, demo calls, and client workshops, this integration simplifies pre- and post-meeting communication. The ability to filter recipients by RSVP status allows for tailored messaging, such as sending prep materials exclusively to confirmed attendees or nudging those who have not responded. Additionally, accessing rich formatting, file permission checks, and scheduling directly from a calendar event reduces friction in outbound meeting workflows and follow-up sequences.",
-        "applications": [
-          "Segmenting post-meeting follow-up emails based on RSVP status (e.g., sending presentation decks only to those who attended or answered 'Yes').",
-          "Targeting calendar delegates and executive assistants instead of busy decision-makers when coordinating meeting logistics or sharing collateral.",
-          "Using rich text formatting and inline images to send structured meeting agendas and pre-reads directly from calendar entries.",
-          "Scheduling follow-up emails immediately after a calendar invite is created without switching to a separate Gmail tab."
-        ],
-        "recommendations": [
-          "Explore configuring assistant and delegate relationships in the Google Workspace Directory to streamline executive outreach.",
-          "Test the RSVP filtering capability for upcoming webinar or demonstration follow-ups to ensure tailored messaging reaches the right attendee groups.",
-          "Incorporate Gmail templates and signatures into calendar-driven email workflows to maintain brand consistency during client scheduling.",
-          "Review internal processes for verifying Google Drive file access before sending calendar-triggered email updates to meeting guests."
-        ],
-        "priority_reason": "It improves daily productivity and workflow efficiency for B2B professionals managing calendar invites and meeting follow-ups.",
-        "needs_validation": false,
-        "validation_note": ""
       }
     }
   ]
