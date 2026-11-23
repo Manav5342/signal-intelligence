@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-22T16:37:39Z",
-    "last_successful_update": "2026-11-22T16:37:39Z",
+    "generated_at": "2026-11-23T00:33:43Z",
+    "last_successful_update": "2026-11-23T00:33:43Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,16 +18,16 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-22T16:31:25Z",
-      "finished_at": "2026-11-22T16:37:39Z",
+      "started_at": "2026-11-23T00:30:25Z",
+      "finished_at": "2026-11-23T00:33:43Z",
       "status": "partial",
-      "trigger": "schedule",
+      "trigger": "workflow_dispatch",
       "sources_total": 32,
-      "sources_ok": 30,
-      "sources_failed": 2,
+      "sources_ok": 31,
+      "sources_failed": 1,
       "new_articles": 59,
-      "skipped_stale": 467,
-      "skipped_irrelevant": 241,
+      "skipped_stale": 458,
+      "skipped_irrelevant": 243,
       "invalid_urls": 0,
       "duplicates_merged": 2,
       "ai_processed": 20,
@@ -35,8 +35,7 @@
       "ai_rate_limited": false,
       "archived_out": 58,
       "errors": [
-        "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/",
-        "source:gnews-hubspot: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en"
+        "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
     },
     "ai_enabled": true,
@@ -44,6 +43,246 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "c72706f144051f0e",
+      "title": "What Does Anthropic (ANT) Saying The Singularity Started Mean For Investors?",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcHlHVHROTEVEbjNLYUx2bDVscDJQYVNCbDZ1ZEdvVW9EaFlMcHJXem9VeS00MUJab3h6UTBKdmhCZmxLUlBmYTExNG1mWXNtZ3lyYmlGZ0hnVHBwemFxel9iazU1bGhfZzlGUGwyVTV1QkFUYnV1SG1kZjRIMExUU183QnlMcWVtMlJlQkFIREEyUUhPR2dKbk96UnFfbVVodkhyMUI4dGlMZms4UTE5c1daY3IyaGZCOFMxSm5PS1pWNUtQT3ZFMWZB0gHPAUFVX3lxTE9nSEVFcVpSNndsTWkxaU5YVWd2azdvQ0RrYzc2M3N1ak9tT3VteFJ5VFNOV19JVU10SUdnVUpUWmlQZ21JaXJFNnVXS19ZYjB3akpvdmRuRk1XaEgyTU00NlZzbllJSDNhdVhCbzJEcWMzNnJDQ2ItVVlOZ1NsZXlVMTQ0YU00VGFOVndyNkJMd1lUbUV0Y01Yc1N2QUc4QU94eTQxcmlmRWxxOE9RODRERGtQTWdqQS12MEtmYTd4ZkpLd2xmZWs5WEpHczJYRQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcHlHVHROTEVEbjNLYUx2bDVscDJQYVNCbDZ1ZEdvVW9EaFlMcHJXem9VeS00MUJab3h6UTBKdmhCZmxLUlBmYTExNG1mWXNtZ3lyYmlGZ0hnVHBwemFxel9iazU1bGhfZzlGUGwyVTV1QkFUYnV1SG1kZjRIMExUU183QnlMcWVtMlJlQkFIREEyUUhPR2dKbk96UnFfbVVodkhyMUI4dGlMZms4UTE5c1daY3IyaGZCOFMxSm5PS1pWNUtQT3ZFMWZB0gHPAUFVX3lxTE9nSEVFcVpSNndsTWkxaU5YVWd2azdvQ0RrYzc2M3N1ak9tT3VteFJ5VFNOV19JVU10SUdnVUpUWmlQZ21JaXJFNnVXS19ZYjB3akpvdmRuRk1XaEgyTU00NlZzbllJSDNhdVhCbzJEcWMzNnJDQ2ItVVlOZ1NsZXlVMTQ0YU00VGFOVndyNkJMd1lUbUV0Y01Yc1N2QUc4QU94eTQxcmlmRWxxOE9RODRERGtQTWdqQS12MEtmYTd4ZkpLd2xmZWs5WEpHczJYRQ?oc=5",
+      "source": "Simply Wall St",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T23:13:52Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "f5a9a8648036b639",
+      "title": "From Carnegie to Claude: AI wealth could reshape philanthropy",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUlBIaHQzM2RZbmY5NXdNNHhBX1hSeTY1Mm9LSTg0OGZwemZLWGhJZFlqME05TkJaQ20yVXN2VlY4RTVmb3dNc04zYk9fbVZnUThoZ0ExcHRwbFBjZEFsUkZRN3BEX1NHSXhWNGxHUFdpckVxZUlWdy1lY0txdFVtQ01GNC1RNGU0R19rXzdPeU1XOU5vVTIxUjRfQ1lWMmJwb1RSLUc0MkdremxZQ1QxQg?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUlBIaHQzM2RZbmY5NXdNNHhBX1hSeTY1Mm9LSTg0OGZwemZLWGhJZFlqME05TkJaQ20yVXN2VlY4RTVmb3dNc04zYk9fbVZnUThoZ0ExcHRwbFBjZEFsUkZRN3BEX1NHSXhWNGxHUFdpckVxZUlWdy1lY0txdFVtQ01GNC1RNGU0R19rXzdPeU1XOU5vVTIxUjRfQ1lWMmJwb1RSLUc0MkdremxZQ1QxQg?oc=5",
+      "source": "Japan Today",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T21:32:27Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "05744626c0d61baf",
+      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "canonical_url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development",
+      "source": "TechCrunch",
+      "source_id": "techcrunch-ai",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-22T21:14:07Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "The development concerns OpenAI and global AI governance discussions rather than a specific market in India.",
+      "priority": "Low",
+      "priority_score": 9,
+      "excerpt": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
+      "companies": [
+        "OpenAI",
+        "TechCrunch"
+      ],
+      "topics": [
+        "AI Development",
+        "Artificial Intelligence",
+        "Regulation",
+        "OpenAI"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-23T00:30:50Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "TechCrunch reports that OpenAI's chief scientist has shared thoughts on how to limit AI development. Specifically, the publication notes that establishing a speed limit on AI development requires agreeing on how to measure speed.",
+        "summary": "TechCrunch reports comments from OpenAI's chief scientist regarding the potential to limit AI development speed. The commentary highlights a foundational challenge in governance: establishing a speed limit requires a universally accepted method for measuring AI development velocity. While the text is brief, it points to ongoing industry discussions around the regulation and pacing of artificial intelligence advancement. B2B marketers must monitor how these potential governance frameworks might eventually impact enterprise AI tools and automation capabilities.",
+        "why_it_matters": "Discussions around limiting or regulating the speed of AI development can directly influence the roadmap of enterprise martech vendors. If future policies slow down or standardise AI releases, B2B marketers may see shifts in how quickly new generative AI features, automation capabilities, and predictive analytics tools become available in their CRM and email platforms.",
+        "applications": [
+          "Audit current dependency on generative AI tools within the marketing tech stack to prepare for potential regulatory shifts",
+          "Monitor enterprise vendor roadmaps for compliance and feature stability adjustments",
+          "Diversify AI use cases across multiple foundational model providers to mitigate platform-specific risks",
+          "Document current AI-driven lead generation and scoring workflows to track future performance changes"
+        ],
+        "recommendations": [
+          "Explore vendor diversification strategies to avoid over-reliance on a single AI ecosystem; relevant tool types include multi-model LLM gateways; likely benefit is operational resilience; implementation consideration involves integration complexity.",
+          "Review internal AI usage policies and governance frameworks; relevant tool types include compliance tracking tools; likely benefit is alignment with emerging industry standards; implementation consideration requires cross-functional legal and marketing sign-off.",
+          "Track regulatory updates regarding AI development speed limits; relevant tool types include industry news aggregators and policy intelligence feeds; likely benefit is proactive planning; implementation consideration requires dedicated monitoring time."
+        ],
+        "priority_reason": "The feed text is a high-level excerpt without actionable details, platform changes, or immediate operational deadlines for B2B marketers.",
+        "needs_validation": true,
+        "validation_note": "The provided text is only a short headline and excerpt. Read the full TechCrunch article to verify specific proposals, metrics, or frameworks mentioned by OpenAI's chief scientist."
+      }
+    },
+    {
+      "id": "877108e4308b682e",
+      "title": "Anthropic launches Claude for Manufacturing to automate administrative and engineering workflows",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOY3lXYWhjdlk4eFo5OEllXzdkTDhnYWowOUFSZlNLakdEdXoxeG8xZTZjcWVMYWxxVTJCdEUycHZBdjhyMy1UUU9tcU9lMlFIb0t3cG85X1hNSWJLaGxnNEtSbVkyak0xLTJQVmNjSmwtQW80NVdGWU9sUmh0TGJhdWFLOTFRM1BONnZSOFE2YXpDREpxN2RIdnU0WXBGOTNtZ1dwNUVnTHpCOHdfU3VfVlRSVklsZ096TzBLNFlzUnFQVjJ3c0lJNHl3U0d0cGNPWkFYQTdfV01tRlZqYUJ2aHFGNXQwVlhX?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOY3lXYWhjdlk4eFo5OEllXzdkTDhnYWowOUFSZlNLakdEdXoxeG8xZTZjcWVMYWxxVTJCdEUycHZBdjhyMy1UUU9tcU9lMlFIb0t3cG85X1hNSWJLaGxnNEtSbVkyak0xLTJQVmNjSmwtQW80NVdGWU9sUmh0TGJhdWFLOTFRM1BONnZSOFE2YXpDREpxN2RIdnU0WXBGOTNtZ1dwNUVnTHpCOHdfU3VfVlRSVklsZ096TzBLNFlzUnFQVjJ3c0lJNHl3U0d0cGNPWkFYQTdfV01tRlZqYUJ2aHFGNXQwVlhX?oc=5",
+      "source": "Robotics & Automation News",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T21:07:47Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "High",
+      "priority_score": 13,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "a09dd0b6eb256b30",
+      "title": "Levent Alpöge has solved the Riemann Hypothesis with help of Claude! What does it mean? - Marcus on AI",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5JR1c5X2dZenJPXzBPcWhjYmxTRk1mMmtQZ0h0elM2UWpDdkxPSFd0aUs2WmpKbG83OVhYUGlBWjJ1Ul9waEl1WlExWmZaZmZ6dmlEUEdDdkZiN2FPTm5TRXI4VVpJYmk2U2xTdkdWSWJpczUwdks1clV3?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5JR1c5X2dZenJPXzBPcWhjYmxTRk1mMmtQZ0h0elM2UWpDdkxPSFd0aUs2WmpKbG83OVhYUGlBWjJ1Ul9waEl1WlExWmZaZmZ6dmlEUEdDdkZiN2FPTm5TRXI4VVpJYmk2U2xTdkdWSWJpczUwdks1clV3?oc=5",
+      "source": "Marcus on AI | Substack",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T18:37:02Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "01f2c80612a263a2",
+      "title": "Anthropic (ANT) Puts Claude Into Enterprise Security As Its AI Builds Successors",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcG00NjY3R0Z5aTZDYkNMa2R3Q1F0blZvSHN5N1lGckwxa0R3LWdjc3ZIMFphcUxDdC1rWUVpVVNfN2VvOWJ3V09ELUNQQms1SzBBRWM2R0wxRGpFejc2b2k5MGNvb1lYT0xOcFE5S3ZiN0dFdEpSQkswWjlnMnZyU1BCQ095NG53U3RHMkJDZFowU28tcW9aS3RSMUcyeVlVc0E?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcG00NjY3R0Z5aTZDYkNMa2R3Q1F0blZvSHN5N1lGckwxa0R3LWdjc3ZIMFphcUxDdC1rWUVpVVNfN2VvOWJ3V09ELUNQQms1SzBBRWM2R0wxRGpFejc2b2k5MGNvb1lYT0xOcFE5S3ZiN0dFdEpSQkswWjlnMnZyU1BCQ095NG53U3RHMkJDZFowU28tcW9aS3RSMUcyeVlVc0E?oc=5",
+      "source": "Yahoo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T18:07:02Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "3ca78f28a6b24c3c",
+      "title": "Anthropic's Levent Alpöge and NYU's Tristan Buckmaster post a claimed Claude-aided proof that the Navier-Stokes equations can blow up",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUnZzQWZhTXdqbG5GNTRfbnpPSTZjbVE5Z1dKWDJXRFB1Y3BUTkE0TDYzaXAxRUZubEhCMC1YUXE2b0tyaGJqWnhwWEl4Mk1xWF9YVUdlamxvLXhxRzRiTHVudFJZX3I3cGhmaHQtdWRPVG9pMlBVM29rWE9TN3R1WmlYRmNTMngxdE1lUS1laWNSdDdwVE9qY1V1V3poc0lxU0R0UlRrQy0zYW9jMVZFS1JfSFBhUk5IbkNjSExwRjZtRmdoU1Q3R3o3OUktUXFqUVQtWjJPYktYU2Y4Y1BsNXhiX21TNXM?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUnZzQWZhTXdqbG5GNTRfbnpPSTZjbVE5Z1dKWDJXRFB1Y3BUTkE0TDYzaXAxRUZubEhCMC1YUXE2b0tyaGJqWnhwWEl4Mk1xWF9YVUdlamxvLXhxRzRiTHVudFJZX3I3cGhmaHQtdWRPVG9pMlBVM29rWE9TN3R1WmlYRmNTMngxdE1lUS1laWNSdDdwVE9qY1V1V3poc0lxU0R0UlRrQy0zYW9jMVZFS1JfSFBhUk5IbkNjSExwRjZtRmdoU1Q3R3o3OUktUXFqUVQtWjJPYktYU2Y4Y1BsNXhiX21TNXM?oc=5",
+      "source": "MLQ.ai",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T18:02:35Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
     {
       "id": "3d3427e5827ebbfd",
       "title": "Anthropic Mathematician's Claude-Assisted Proof of 167-Year-Old Problem Verified - POLITIS",
@@ -414,6 +653,61 @@
       "ai_attempts": 0,
       "analysis": {
         "status": "pending"
+      }
+    },
+    {
+      "id": "de5cd1a6d51dc917",
+      "title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "canonical_url": "https://openai.com/index/perplexity-and-intelligence",
+      "source": "OpenAI News",
+      "source_id": "openai-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-22T00:00:00Z",
+      "collected_at": "2026-11-23T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "The development discusses general artificial intelligence evaluation metrics applicable worldwide without specific regional focus.",
+      "priority": "Low",
+      "priority_score": 6,
+      "excerpt": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "companies": [
+        "OpenAI"
+      ],
+      "topics": [
+        "AI Models",
+        "Perplexity",
+        "Model Evaluation",
+        "Artificial Intelligence"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-23T00:30:59Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "OpenAI News reports on how perplexity measures progress in artificial intelligence models. The publisher discusses why this metric could help developers establish a shared approach to evaluating emerging capabilities. The provided text is only a brief excerpt and contains no further specific details.",
+        "summary": "OpenAI News discusses the concept of perplexity as a measure of progress for AI models. The article suggests that this metric can provide developers with a common methodology for evaluating new technological capabilities. Based on the excerpt, the text focuses purely on the theoretical and developmental measurement of AI rather than specific commercial releases. No further details are provided in the source text regarding practical marketing implementations.",
+        "why_it_matters": "Understanding how AI models are evaluated using metrics like perplexity helps marketing operations professionals gauge the reliability and underlying capability of generative AI tools. As marketing teams increasingly rely on custom LLMs for content generation, lead scoring, and automated customer interactions, knowing how model progress is measured prevents reliance on hype. This ensures that B2B teams select robust tools for their campaign automation and analytics stacks.",
+        "applications": [
+          "Assess the evaluation methodologies of vendors providing AI-driven content generation tools.",
+          "Better understand the reliability limits of large language models used in customer-facing WhatsApp and email automation workflows.",
+          "Inform internal data science teams on how to benchmark custom AI models used for lead qualification."
+        ],
+        "recommendations": [
+          "Explore technical documentation of LLM vendors to understand their model evaluation metrics; relevant tool types include AI benchmarking suites; likely benefit is improved vendor selection; consideration is that perplexity alone does not measure business utility.",
+          "Test the factual accuracy of AI-generated email copy against model capability metrics; relevant tool types include generative AI assistants; likely benefit is reduced hallucination rates; consideration is the need for human-in-the-loop review.",
+          "Review internal guidelines for deploying AI in marketing operations; relevant tool types include governance frameworks; likely benefit is aligned expectations on AI output quality; consideration is ongoing updates as models evolve."
+        ],
+        "priority_reason": "The text is a high-level excerpt without immediate operational or platform changes for B2B marketers.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article to check if specific new evaluation frameworks, tools, or APIs were announced for developers."
       }
     },
     {
@@ -3060,37 +3354,6 @@
       }
     },
     {
-      "id": "dae1be9347da21b9",
-      "title": "Vi Business launches WhatsApp Business solutions for enterprises and MSMEs",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZFNHUnVVeDFjXzlJWTdGSFdGdXN1RnU5R2I3dURxdzdVM1UzaXhfZ2hzX21fLXNSNklrTTNrbm9MMjZfNGN3U0Z5LVhiYkphVzZRTEc5YjU0aTJzcnZxSHBMQm40Y01mZGwxNTl1eldONU1JY2M3ZERGZllrR1lEbDRIdHgzS1FnLUIzbWRQaUxGVXphc3BvbUNfSVJzcEIwOFhsT21CM0lpeGVReWs3UmJiM21mMnht?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZFNHUnVVeDFjXzlJWTdGSFdGdXN1RnU5R2I3dURxdzdVM1UzaXhfZ2hzX21fLXNSNklrTTNrbm9MMjZfNGN3U0Z5LVhiYkphVzZRTEc5YjU0aTJzcnZxSHBMQm40Y01mZGwxNTl1eldONU1JY2M3ZERGZllrR1lEbDRIdHgzS1FnLUIzbWRQaUxGVXphc3BvbUNfSVJzcEIwOFhsT21CM0lpeGVReWs3UmJiM21mMnht?oc=5",
-      "source": "tele.net",
-      "source_id": "gnews-whatsapp-global",
-      "via": "Google News: WhatsApp Business",
-      "credibility": "aggregator",
-      "published_at": "2026-11-20T05:34:43Z",
-      "collected_at": "2026-11-22T07:14:15Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 11,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "whatsapp",
-        "whatsapp business"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
       "id": "a8a6658d257ca4c4",
       "title": "Meet the innovators exhibiting at Bengaluru Tech Summit 2026",
       "url": "https://yourstory.com/2026/11/bengaluru-tech-summit-innovation-entrepreneur-photography",
@@ -3996,270 +4259,6 @@
         "priority_reason": "It signals ongoing advancements in LLM capabilities for research tasks, which may influence future B2B marketing analysis tools.",
         "needs_validation": true,
         "validation_note": "Verify the full case study for specific benchmarks, methodology details, and whether GPT-6 Astra is publicly available or still in limited preview."
-      }
-    },
-    {
-      "id": "f4784c30400364a2",
-      "title": "Can AI help scientists identify promising drug candidates?",
-      "url": "https://openai.com/index/introducing-medchembench",
-      "canonical_url": "https://openai.com/index/introducing-medchembench",
-      "source": "OpenAI News",
-      "source_id": "openai-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-20T00:00:00Z",
-      "collected_at": "2026-11-21T00:30:28Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The announcement originates from OpenAI without any specific geographic restriction or focus on the Indian market.",
-      "priority": "Low",
-      "priority_score": 6,
-      "excerpt": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
-      "companies": [
-        "OpenAI"
-      ],
-      "topics": [
-        "AI evaluation",
-        "benchmarking",
-        "drug discovery",
-        "molecular structures"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-21T00:31:57Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "OpenAI News reports the introduction of MedChemBench, an evaluation tool for AI models. MedChemBench tests how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery. The provided text is a short excerpt detailing only the function of MedChemBench.",
-        "summary": "OpenAI News has introduced MedChemBench, a benchmark designed to assess the capability of artificial intelligence models in early drug discovery tasks. Specifically, the tool evaluates how effectively these models can interpret complex molecular structures, draw logical conclusions from experimental data, and select promising chemical compounds. Based on the limited feed text provided, the development centers entirely on this new evaluation framework for AI in scientific research. No specific platform changes, pricing details, or commercial marketing implications are mentioned in the text.",
-        "why_it_matters": "While this development is situated in life sciences rather than traditional B2B marketing, the underlying trend of domain-specific evaluation benchmarks highlights how AI reliability is being tested in specialized fields. For B2B marketers, the emergence of rigorous evaluation frameworks for complex reasoning mirrors the need to test specialized AI agents before deploying them in lead generation or CRM workflows. However, this specific tool holds no direct application for B2B acquisition, email campaigns, or WhatsApp automation.",
-        "applications": [
-          "Monitor how domain-specific AI evaluation benchmarks evolve to understand best practices for testing complex enterprise AI models.",
-          "Apply similar rigorous evaluation and benchmarking principles when deploying specialized AI agents for B2B marketing analytics or lead scoring.",
-          "Review internal testing protocols for AI-driven tools to ensure they can accurately reason from experimental or historical campaign data."
-        ],
-        "recommendations": [
-          "Explore domain-specific benchmarking methodologies to understand how specialized AI models are validated.",
-          "Test enterprise AI use cases against strict domain benchmarks before rolling them out to sales or marketing teams.",
-          "Consult the original OpenAI source to verify if MedChemBench has any broader enterprise or general reasoning applications relevant to marketing technology."
-        ],
-        "priority_reason": "The development is focused on scientific drug discovery rather than B2B marketing operations or martech.",
-        "needs_validation": true,
-        "validation_note": "Verify in the original OpenAI article whether MedChemBench has any implications or extensions for general enterprise AI or reasoning models outside of drug discovery."
-      }
-    },
-    {
-      "id": "dcdb2007659431a7",
-      "title": "Anthropic's meteoric rise from AI startup to $2 trillion market debut",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYWNjcDRJVTN5eWFvblRPYjBMYnoya3diRGpCWkoxbXJKVEt6dWdNN3I2VThZTllPTGRTaWxvUkxmUjZlVzZMVUI3OTVHeWN4MGpRUGY2M0gtdDJNWnpOclktZkhzcWpkUW5pVmR4aDhwRFhPYVNEWV9FVzd4bUxSTTFJLVRZNG1UQ1dKSnltd2ZELTV1LXdqdzF2aw?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYWNjcDRJVTN5eWFvblRPYjBMYnoya3diRGpCWkoxbXJKVEt6dWdNN3I2VThZTllPTGRTaWxvUkxmUjZlVzZMVUI3OTVHeWN4MGpRUGY2M0gtdDJNWnpOclktZkhzcWpkUW5pVmR4aDhwRFhPYVNEWV9FVzd4bUxSTTFJLVRZNG1UQ1dKSnltd2ZELTV1LXdqdzF2aw?oc=5",
-      "source": "Reuters",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T23:56:23Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "05d97ce7afba0088",
-      "title": "Anthropic IPO details: Price, valuation, stock ticker, more",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPckx2b2tGYjRHR01ZSjFVN1dzNlFsTHlST1Fidjh2V1ZsVzFwWGl1R3pZUl9Zc2JKOTFvTjA4OGNaQ3VXNFNNZ0JKNXJIWHM4Zk5wcHJQckpzQWtmTVEtUWxjclZ1S0tUSGhJTmZVQkN1ZVRGWGRuVmxLbUpjd1A3RXl3?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPckx2b2tGYjRHR01ZSjFVN1dzNlFsTHlST1Fidjh2V1ZsVzFwWGl1R3pZUl9Zc2JKOTFvTjA4OGNaQ3VXNFNNZ0JKNXJIWHM4Zk5wcHJQckpzQWtmTVEtUWxjclZ1S0tUSGhJTmZVQkN1ZVRGWGRuVmxLbUpjd1A3RXl3?oc=5",
-      "source": "Mashable",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T23:24:51Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "0bd86e0ad68cd959",
-      "title": "What is Anthropic? The company behind Claude, whose stock closed up 17% on its first day",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUktONjA5QVoxTnFzb2t0UGV5cmZNejBoN1dNQ091SUhMZDdPYk1sb3dWTHhNYkJEcDUxR2x1MEFMWGR4eFV2MExGck1LTjZ3ajgtSjk1X2RkbEFJQ2x6RzJUZ196LW5nMndNcEtnMzdtUndSckFmdUg2RXNEd3FHV2dMZ0hmV214QUNqVEwzOS1zb0dzU0hqLWF4ZHNNRzZwR05MUzF3?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUktONjA5QVoxTnFzb2t0UGV5cmZNejBoN1dNQ091SUhMZDdPYk1sb3dWTHhNYkJEcDUxR2x1MEFMWGR4eFV2MExGck1LTjZ3ajgtSjk1X2RkbEFJQ2x6RzJUZ196LW5nMndNcEtnMzdtUndSckFmdUg2RXNEd3FHV2dMZ0hmV214QUNqVEwzOS1zb0dzU0hqLWF4ZHNNRzZwR05MUzF3?oc=5",
-      "source": "Nacionale",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T22:57:53Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "1cf56b0890f47868",
-      "title": "Anthropic IPO breaks records on Nasdaq debut: Claude AI service valued near $1.8T",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNmxDQ3djbV91aHBTN3l6R01zSUxINEJpV3YwQXpFanhmY2tuZ2k2LXFzbldqN21ILXV1UGhrVkhCUFBvZGdSUG9nNEJBMHAzb3k4S044T2JnVHpTbXZHTjFYTUF4RFRqVU1qZDV0X0lHOXhTSFl6MUdyM2NBRVo3dEF5NDk1VFF6RVdWdw?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNmxDQ3djbV91aHBTN3l6R01zSUxINEJpV3YwQXpFanhmY2tuZ2k2LXFzbldqN21ILXV1UGhrVkhCUFBvZGdSUG9nNEJBMHAzb3k4S044T2JnVHpTbXZHTjFYTUF4RFRqVU1qZDV0X0lHOXhTSFl6MUdyM2NBRVo3dEF5NDk1VFF6RVdWdw?oc=5",
-      "source": "Yahoo",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T22:14:24Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "52653ae3ad736466",
-      "title": "These tech outages are giving Y2K, AI agent style",
-      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
-      "canonical_url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-19T21:42:31Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The report addresses broad technological infrastructure outages impacting global sectors like airlines and banking without localising to India.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
-      "companies": [
-        "TechCrunch"
-      ],
-      "topics": [
-        "AI agents",
-        "cybersecurity",
-        "tech outages",
-        "infrastructure"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T00:31:15Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that recent outages in airline booking systems, banking platforms, and productivity platforms are drawing comparisons to Y2K in an AI agent style. Cybersecurity experts suggest there is likely something deeper occurring behind these coordinated disruptions.",
-        "summary": "TechCrunch reports that recent system outages impacting airlines, banking, and productivity platforms may be connected rather than coincidental, with cybersecurity experts pointing to deeper underlying issues resembling an AI agent style Y2K event. Because the feed text is only a short excerpt, specific technical root causes, affected vendors, and operational impacts are not detailed in the source text. B2B marketers should monitor this emerging situation as technical vulnerabilities in core platforms could disrupt enterprise operations.",
-        "why_it_matters": "Widespread outages across banking, productivity, and booking platforms can severely disrupt B2B sales pipelines, automated workflows, and client communication channels. When foundational software infrastructure experiences instability, lead generation campaigns, CRM synchronization, and messaging deliveries are at risk of failure.",
-        "applications": [
-          "Audit current CRM, email, and WhatsApp automation dependencies to identify single points of failure",
-          "Establish robust fallback communication channels for critical B2B client touchpoints during unexpected platform downtime",
-          "Review internal continuity plans for marketing operations teams relying on third-party productivity and banking infrastructure",
-          "Monitor enterprise vendor status pages proactively to minimize campaign disruption risks"
-        ],
-        "recommendations": [
-          "Explore multi-channel backup strategies for outbound campaigns, using relevant tool types such as alternative messaging gateways and resilient CRM connectors to prevent complete lead-nurturing blackouts.",
-          "Test current disaster recovery workflows and failover mechanisms with tool types like automated workflow monitors, aiming to secure campaign continuity and minimize data loss during outages.",
-          "Evaluate vendor Service Level Agreements (SLAs) regarding infrastructure resilience, engaging legal and IT teams to assess financial and operational risk mitigation.",
-          "Review authentication and integration security protocols across all marketing automation stacks to protect against systemic AI-driven disruptions."
-        ],
-        "priority_reason": "While intriguing and potentially critical, the excerpt lacks specific technical details or immediate action items for B2B marketers.",
-        "needs_validation": true,
-        "validation_note": "Verify the full article to identify the specific cybersecurity experts cited, the exact nature of the AI agent involvement, and which software vendors or platforms are affected."
-      }
-    },
-    {
-      "id": "f24dd77fe40f6ad1",
-      "title": "20VC x SaaStr: Jensen Out at Nvidia, Anthropic’s $1.4 Trillion IPO, and HubSpot Brings Back Brian Halligan",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVFp5NEdUWTJNU0NHSFFJVm5UMzVfRW1MYTNvazNRdFM3MzNES3prMVNSaEp1YUl5c1Q2MFp3cHExbjUxcTlSVjBIc2ZKNHRrNTlxRG5RSHg1WmNNRllYMEFydHdaWklnTVBEWjlmRjdOdEs3SWhzTEhCQmdPd21feWNDMTNwNnV2SnJIcksycktZcUZZN2VFbDFLeXQ0ZDVkSW93Y2tqNlZ1d05jcU45cnd4SkpDMHNTUjJQcFpaQ1JlUkE?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVFp5NEdUWTJNU0NHSFFJVm5UMzVfRW1MYTNvazNRdFM3MzNES3prMVNSaEp1YUl5c1Q2MFp3cHExbjUxcTlSVjBIc2ZKNHRrNTlxRG5RSHg1WmNNRllYMEFydHdaWklnTVBEWjlmRjdOdEs3SWhzTEhCQmdPd21feWNDMTNwNnV2SnJIcksycktZcUZZN2VFbDFLeXQ0ZDVkSW93Y2tqNlZ1d05jcU45cnd4SkpDMHNTUjJQcFpaQ1JlUkE?oc=5",
-      "source": "saastr.com",
-      "source_id": "gnews-hubspot",
-      "via": "Google News: HubSpot",
-      "credibility": "aggregator",
-      "published_at": "2026-11-19T21:13:11Z",
-      "collected_at": "2026-11-20T00:30:26Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "hubspot"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
       }
     }
   ]
