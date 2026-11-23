@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-23T08:02:17Z",
-    "last_successful_update": "2026-11-23T08:02:17Z",
+    "generated_at": "2026-11-23T08:33:56Z",
+    "last_successful_update": "2026-11-23T08:33:56Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-23T07:58:59Z",
-      "finished_at": "2026-11-23T08:02:17Z",
+      "started_at": "2026-11-23T08:30:31Z",
+      "finished_at": "2026-11-23T08:33:56Z",
       "status": "partial",
-      "trigger": "schedule",
+      "trigger": "workflow_dispatch",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 59,
-      "skipped_stale": 410,
-      "skipped_irrelevant": 244,
+      "new_articles": 58,
+      "skipped_stale": 460,
+      "skipped_irrelevant": 243,
       "invalid_urls": 0,
-      "duplicates_merged": 1,
+      "duplicates_merged": 2,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 59,
+      "archived_out": 58,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -620,6 +620,67 @@
       }
     },
     {
+      "id": "38c3f3fc260565a1",
+      "title": "Anthropic’s Claude nears 350 million weekly website visits ahead of IPO",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhMm83WEZ4cjkwTlZGZzZwNlZHcWdQMUdoSzdmQ3ExbERxQ2FHSUZlUXRVTDNYbGUyVTZMdDN1M192RmRCcGhGSkIzTExDVXE2V016OXFmVEVvU2tyT2syN2ZlLXg4UHlTMV9mR3pfY1lGeUZkN2NKajdwY3pfUHM?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhMm83WEZ4cjkwTlZGZzZwNlZHcWdQMUdoSzdmQ3ExbERxQ2FHSUZlUXRVTDNYbGUyVTZMdDN1M192RmRCcGhGSkIzTExDVXE2V016OXFmVEVvU2tyT2syN2ZlLXg4UHlTMV9mR3pfY1lGeUZkN2NKajdwY3pfUHM?oc=5",
+      "source": "Crypto Briefing",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-23T00:34:52Z",
+      "collected_at": "2026-11-23T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "734741cc78c6760b",
+      "title": "Anthropic’s business model is creating a new kind of debt — comprehension debt",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNHJReVVubi02Q2RndEN6bkdHU0pvNVNSZVdLQ1NSNmgzZnE4LWphU3ByODZrNTRFNlBfT19vUFdLRzdXal9Nc19tZFhqbTRnLWZhN3dUSksyazhDZ2JMX05OVFROVXZLRGpfZTlfWGRYQzhtQzVKUVRYcWZVRDBwNUpGZ0M1dUtaQ3VzUnoxbGRaUzdGZTJHY0dFTnlHWkdBZUNCVlBMczZwT2dkQU5xSm9B?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNHJReVVubi02Q2RndEN6bkdHU0pvNVNSZVdLQ1NSNmgzZnE4LWphU3ByODZrNTRFNlBfT19vUFdLRzdXal9Nc19tZFhqbTRnLWZhN3dUSksyazhDZ2JMX05OVFROVXZLRGpfZTlfWGRYQzhtQzVKUVRYcWZVRDBwNUpGZ0M1dUtaQ3VzUnoxbGRaUzdGZTJHY0dFTnlHWkdBZUNCVlBMczZwT2dkQU5xSm9B?oc=5",
+      "source": "American Banker",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-23T00:30:00Z",
+      "collected_at": "2026-11-23T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "c72706f144051f0e",
       "title": "What Does Anthropic (ANT) Saying The Singularity Started Mean For Investors?",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcHlHVHROTEVEbjNLYUx2bDVscDJQYVNCbDZ1ZEdvVW9EaFlMcHJXem9VeS00MUJab3h6UTBKdmhCZmxLUlBmYTExNG1mWXNtZ3lyYmlGZ0hnVHBwemFxel9iazU1bGhfZzlGUGwyVTV1QkFUYnV1SG1kZjRIMExUU183QnlMcWVtMlJlQkFIREEyUUhPR2dKbk96UnFfbVVodkhyMUI4dGlMZms4UTE5c1daY3IyaGZCOFMxSm5PS1pWNUtQT3ZFMWZB0gHPAUFVX3lxTE9nSEVFcVpSNndsTWkxaU5YVWd2azdvQ0RrYzc2M3N1ak9tT3VteFJ5VFNOV19JVU10SUdnVUpUWmlQZ21JaXJFNnVXS19ZYjB3akpvdmRuRk1XaEgyTU00NlZzbllJSDNhdVhCbzJEcWMzNnJDQ2ItVVlOZ1NsZXlVMTQ0YU00VGFOVndyNkJMd1lUbUV0Y01Yc1N2QUc4QU94eTQxcmlmRWxxOE9RODRERGtQTWdqQS12MEtmYTd4ZkpLd2xmZWs5WEpHczJYRQ?oc=5",
@@ -640,6 +701,36 @@
       "companies": [],
       "topics": [
         "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "b7b8badad652e8b3",
+      "title": "Claude helps topple Riemann problem",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQWlrb1BVcndvaEt1UEhQTWU5aWZaUjNiM08tNFFuckJRYWJseTFEdUp3RTZ3bkFxRm9XWDlFbVNOM1JDQzQwdXJQZFd0STNjTlIyaXJBSzFITlFFY1VabWh5c3pTOFllaU5XTjY5bXdGODZPSGxGeXVnOUNONTVjdmpoaG4?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQWlrb1BVcndvaEt1UEhQTWU5aWZaUjNiM08tNFFuckJRYWJseTFEdUp3RTZ3bkFxRm9XWDlFbVNOM1JDQzQwdXJQZFd0STNjTlIyaXJBSzFITlFFY1VabWh5c3pTOFllaU5XTjY5bXdGODZPSGxGeXVnOUNONTVjdmpoaG4?oc=5",
+      "source": "Semafor",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T22:23:00Z",
+      "collected_at": "2026-11-23T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -911,6 +1002,36 @@
       "companies": [],
       "topics": [
         "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "ef1673da9d286232",
+      "title": "Did Claude just prove the Riemann Hypothesis?",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbTVtdVVVMkZfNXUzcHJKUGxnMUk5OGp6dHZ6RTd2emlsMV9SS0stVWZKV3BTODZobkJqQ2laZW9XNHVrekVKYThWU3JJT0hKNGl5eDlUU21hdkprU2V4UmVLZnh2OE1XTG9fZlJRTHFINF85Tk8zTHBrSS1BMl9rdzZHOGhFZG1NaHc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbTVtdVVVMkZfNXUzcHJKUGxnMUk5OGp6dHZ6RTd2emlsMV9SS0stVWZKV3BTODZobkJqQ2laZW9XNHVrekVKYThWU3JJT0hKNGl5eDlUU21hdkprU2V4UmVLZnh2OE1XTG9fZlJRTHFINF85Tk8zTHBrSS1BMl9rdzZHOGhFZG1NaHc?oc=5",
+      "source": "Seeking Alpha",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T13:30:42Z",
+      "collected_at": "2026-11-23T08:30:31Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
         "claude"
       ],
       "also_covered_by": [],
@@ -1368,7 +1489,13 @@
         "anthropic",
         "claude"
       ],
-      "also_covered_by": [],
+      "also_covered_by": [
+        {
+          "source": "Dataconomy",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQR2dFZ2VUVTZpVF9jdnRXTTRwUzQ0V1ktOFUzQWpGRVc2U2JKalRLVW5KRkQxSDRUdEptQUJCa1cyMzZFRHlsMGF4S0oxOFlGV0ZrZzlMUnNtc2F2ak52VmNsaHIwYjQ5SG9fUzVsWjFENk1ZLXFtSndOdnZPQXlwZlBoemo0V1EyeDZ3VTRxSXBRVUhXX2FFQXd1RQ?oc=5",
+          "title": "Anthropic Mathematician Claims Claude-assisted Riemann Proof"
+        }
+      ],
       "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
@@ -1936,7 +2063,13 @@
         "Data Analysis",
         "Advanced Reasoning"
       ],
-      "also_covered_by": [],
+      "also_covered_by": [
+        {
+          "source": "KETV",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdlpUN1VDYUNLVnNCS2dpOC1tYWdOb05Jd3U5aHlQX04wOFlYenZQZURqeVpwNVA3dEFSZlJxZTNrbERVbzZ3dW1KUUo3eXNVWTFaOGQtcnRPTWktXzljaThrcGhQVExKV3RaYmlaY0dBUzFfVUFVNU5oU3JOYWx3N0lLZndvdw?oc=5",
+          "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI"
+        }
+      ],
       "url_check": "valid",
       "classification": "ai",
       "ai_attempts": 1,
@@ -3102,6 +3235,36 @@
       }
     },
     {
+      "id": "6df5b425622bbdba",
+      "title": "The ‘re-founding’ of HubSpot - a work in very visible progress, complete with mis-steps",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQby04OGtDYTRlc3FGdVhHZldpSkZGWXN3SUtfb2JxdjBzOXlBOGw4M2c3T1ZQdnprUDZLdGN4eml0YzVlbHQwZW9wXzRUa2h6aWxVVkdac2IwSnprU1FzYVVOM0NsMl9ZWlFrUnhBeGlrQTEzLVdVR211ekd3Tl9CN09pVWJVamF5UWJqYi1aT2Iydw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQby04OGtDYTRlc3FGdVhHZldpSkZGWXN3SUtfb2JxdjBzOXlBOGw4M2c3T1ZQdnprUDZLdGN4eml0YzVlbHQwZW9wXzRUa2h6aWxVVkdac2IwSnprU1FzYVVOM0NsMl9ZWlFrUnhBeGlrQTEzLVdVR211ekd3Tl9CN09pVWJVamF5UWJqYi1aT2Iydw?oc=5",
+      "source": "Diginomica",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-20T12:05:02Z",
+      "collected_at": "2026-11-23T08:30:31Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "ccd97c6cfbf19269",
       "title": "Spacetech firm SatSure raises Rs 60 Cr from Antariksh fund",
       "url": "https://yourstory.com/2026/11/spacetech-firm-satsure-raises-rs-60-cr-from-antariksh-fund",
@@ -4016,228 +4179,6 @@
       ],
       "also_covered_by": [],
       "url_check": "restricted",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "b0657be895290cc7",
-      "title": "Vi Business launches WhatsApp Business Solutions for businesses of all sizes",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBGdnBVNzF2Q3FfVGlFYkhTR1drSEk1UmRndkRhT01EMG4zWmp2d1V0TDZMOW9Ia1NWUEpid09DSDdxdU4zWTVqYzBwNkJwYlRQcExiTTJicXJNblE5TzRpSUhoNVBXaHhVMTk4MmlQaTg5WVE5WHVJREhST1k?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBGdnBVNzF2Q3FfVGlFYkhTR1drSEk1UmRndkRhT01EMG4zWmp2d1V0TDZMOW9Ia1NWUEpid09DSDdxdU4zWTVqYzBwNkJwYlRQcExiTTJicXJNblE5TzRpSUhoNVBXaHhVMTk4MmlQaTg5WVE5WHVJREhST1k?oc=5",
-      "source": "MediaBrief",
-      "source_id": "gnews-whatsapp-global",
-      "via": "Google News: WhatsApp Business",
-      "credibility": "aggregator",
-      "published_at": "2026-11-20T04:45:46Z",
-      "collected_at": "2026-11-20T07:37:28Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "High",
-      "priority_score": 13,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "whatsapp",
-        "whatsapp business"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "2b237acc4083b290",
-      "title": "Urban Company Raises ₹2,500 Cr Via QIP, Draws Bids Worth Over ₹15,000 Cr",
-      "url": "https://inc42.com/buzz/urban-company-raises-%e2%82%b92500-cr-via-qip-draws-bids-worth-over-%e2%82%b915000-cr/",
-      "canonical_url": "https://inc42.com/buzz/urban-company-raises-%e2%82%b92500-cr-via-qip-draws-bids-worth-over-%e2%82%b915000-cr",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-20T04:43:19Z",
-      "collected_at": "2026-11-20T07:37:28Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The development focuses on an Indian home services marketplace, local institutional investors, and operations in India.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "Home services marketplace Urban Company has raised ₹2,500 Cr through a qualified institutional placement (QIP), attracting bids worth over ₹15,000 Cr, more than 6X the issue size. The issue opened on November 16 (Monday) and closed yesterday. More than 60 investors submitted bids, with shares…",
-      "companies": [
-        "Urban Company",
-        "SBI Mutual Fund",
-        "ICICI Prudential Mutual Fund",
-        "Mirae Asset Mutual Fund",
-        "Invesco Mutual Fund",
-        "Motilal Oswal Mutual Fund",
-        "Kotak Mutual Fund",
-        "Nippon India Mutual Fund"
-      ],
-      "topics": [
-        "Funding",
-        "Marketplace",
-        "Marketing Budget",
-        "Expansion",
-        "Martech"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T07:38:17Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that home services marketplace Urban Company has raised ₹2,500 Cr through a qualified institutional placement (QIP), drawing bids worth over ₹15,000 Cr. The company allotted 16.02 Cr equity shares at ₹156 apiece to 33 investors, backed by major mutual funds, domestic insurers, and global institutional investors. Urban Company plans to deploy the capital towards expanding InstaHelp, marketing (₹540 Cr), technology and cloud infrastructure (₹200 Cr), R&D for Native products (₹50 Cr), potential acquisitions, and general corporate purposes.",
-        "summary": "Urban Company successfully completed a ₹2,500 Cr QIP with significant oversubscription, bringing in institutional backing from major domestic mutual funds and global investors. The fresh capital will fund aggressive expansion plans, notably for its InstaHelp service professional ecosystem and its Native hardware product line, including residential air conditioners. Despite a recent widening of its consolidated net loss to ₹182.5 Cr in Q2 FY27 alongside a 41.4% rise in operating revenue, the company is committing substantial capital to marketing, tech infrastructure, and ecosystem incentives. This long-term investment cycle signals aggressive customer acquisition and marketplace scaling efforts in the Indian market.",
-        "why_it_matters": "A massive ₹540 Cr allocation toward marketing alongside technology and cloud infrastructure investments indicates that Urban Company will significantly scale its acquisition campaigns and ad spend. B2B marketers, agency partners, and martech vendors catering to the Indian market should anticipate increased demand for digital media, performance marketing, CRM infrastructure, and partner ecosystem management. Furthermore, the expansion of the Native product line and InstaHelp will open up new avenues for B2B supply chain, logistics, and consumer tech partnerships.",
-        "applications": [
-          "Pitching enterprise marketing software, cloud infrastructure upgrades, and customer data platforms to handle Urban Company's scaling technology needs.",
-          "Proposing performance marketing campaigns, programmatic media buying, and localized acquisition strategies utilising the ₹540 Cr marketing budget.",
-          "Designing B2B partnership and vendor acquisition frameworks for the expanded Native product ecosystem, including water purifiers, smart locks, and new residential air conditioners.",
-          "Developing partner enablement, training, and referral automation workflows to support the scaling of the InstaHelp service professional network."
-        ],
-        "recommendations": [
-          "Explore pitching cloud infrastructure and scalable data analytics tools to capture Urban Company's increased tech and R&D spend.",
-          "Test targeted performance marketing frameworks suited for high-growth marketplace expansion in the Indian consumer sector.",
-          "Monitor Urban Company's procurement and partnership announcements related to the Native hardware product line expansion.",
-          "Review current digital campaign capabilities to ensure readiness for potential agency RFPs stemming from the ₹540 Cr marketing allocation."
-        ],
-        "priority_reason": "The substantial capital raise and dedicated marketing and technology budgets signal upcoming vendor opportunities and heightened market activity in India.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "7a7be95a6a6bff60",
-      "title": "QUICK TAKE | Anthropic Hits $2 Trillion, Then Retreats: Seven Things to Know About Claude Maker’s IPO",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaFpmaW9zOEVjcEpFcURVQ2lvZFgxZzNnN3NxNHRnVGNZa1ppZ2E5UjgxN1hJMDRESFBlaFcwZ2RYcnN4SW03NGIxOWFObHZNV28teU9EZlhEczliZHFSQzlTUTZCakJNMzVGTXNNR2VBdFBDX0hIcFhJanJTZ0FSQ1BGZC10Q3owT3FMVzZ6ejZYRWlTc1N1SUlSTDhvSlVrTWZQQi11ekNlSVFyTy1jUXdWSnhIOTFIT2FnSjV5WVloQk5NVFM0VkdTOW5Hems?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaFpmaW9zOEVjcEpFcURVQ2lvZFgxZzNnN3NxNHRnVGNZa1ppZ2E5UjgxN1hJMDRESFBlaFcwZ2RYcnN4SW03NGIxOWFObHZNV28teU9EZlhEczliZHFSQzlTUTZCakJNMzVGTXNNR2VBdFBDX0hIcFhJanJTZ0FSQ1BGZC10Q3owT3FMVzZ6ejZYRWlTc1N1SUlSTDhvSlVrTWZQQi11ekNlSVFyTy1jUXdWSnhIOTFIT2FnSjV5WVloQk5NVFM0VkdTOW5Hems?oc=5",
-      "source": "Open Magazine",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-20T04:07:05Z",
-      "collected_at": "2026-11-20T08:30:32Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "0e19e33a73e051b7",
-      "title": "Intuit finds a buyer for Mailchimp in Bending Spoons",
-      "url": "https://martech.org/intuit-finds-a-buyer-for-mailchimp-in-bending-spoons/",
-      "canonical_url": "https://martech.org/intuit-finds-a-buyer-for-mailchimp-in-bending-spoons",
-      "source": "MarTech",
-      "source_id": "martech-org",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-20T03:46:55Z",
-      "collected_at": "2026-11-20T07:37:28Z",
-      "category": "email",
-      "category_label": "Email Marketing",
-      "region": "Global",
-      "region_reason": "The transaction involves US-based Intuit and Italy-based Bending Spoons acquiring a globally used marketing platform, with no specific India-only market focus reported.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "Italian holding company Bending Spoons is acquiring marketing automation platform Mailchimp from Intuit, the companies announced Thursday. As MarTech reported in the spring when layoffs at Mailchimp were announced, Intuit was essentially running the business for the cash flow but had no plans to…",
-      "companies": [
-        "MarTech",
-        "Bending Spoons",
-        "Intuit",
-        "Mailchimp",
-        "Airtable",
-        "AOL",
-        "Brightcove",
-        "Eventbrite"
-      ],
-      "topics": [
-        "Mailchimp",
-        "Acquisition",
-        "MarTech",
-        "Email Marketing",
-        "Marketing Automation"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-20T07:38:27Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "MarTech reports that Italian holding company Bending Spoons is acquiring marketing automation platform Mailchimp from Intuit for $3.68 billion in an all-cash transaction. Intuit originally purchased Mailchimp in 2021 for $12 billion, and as part of the new deal, Intuit will invest $368 million of the proceeds into newly issued Bending Spoons equity. Bending Spoons' portfolio already includes Airtable, AOL, Brightcove, Eventbrite, Evernote, Miro, Tractive, Vimeo, and WeTransfer.",
-        "summary": "MarTech reports that Bending Spoons is acquiring Mailchimp from Intuit for $3.68 billion, representing a significant discount from the $12 billion Intuit paid in 2021. Intuit previously ran Mailchimp primarily for cash flow without expansion plans, while Bending Spoons specializes in acquiring distressed software assets. As part of the transaction, subject to regulatory approvals, Intuit will reinvest $368 million into Bending Spoons equity. This transition places Mailchimp alongside other portfolio acquisitions like Airtable and Evernote.",
-        "why_it_matters": "A change in ownership for a core email and marketing automation platform like Mailchimp introduces potential shifts in product development priorities, pricing models, and support structures for B2B marketers. Given Bending Spoons' business model of acquiring distressed tech assets, users should monitor whether the platform receives renewed growth investment or faces operational streamlining. Marketers relying heavily on Mailchimp for lead nurturing and CRM workflows must stay alert to roadmap updates following the change of control.",
-        "applications": [
-          "Audit current Mailchimp dependencies, integrations, and email templates in preparation for potential platform roadmap shifts.",
-          "Evaluate alternative marketing automation vendors as a contingency plan in case of future pricing or feature changes.",
-          "Monitor communication from Bending Spoons regarding product investment and feature deprecation timelines for Mailchimp.",
-          "Review data export protocols and CRM synchronization links to ensure data portability remains unhindered during the transition."
-        ],
-        "recommendations": [
-          "Explore platform continuity and vendor stability; review recent release notes and support responsiveness to gauge service levels.",
-          "Utilize CRM and ESP integration audit tools to map all touchpoints connected to Mailchimp.",
-          "Identify potential cost and feature impacts by benchmarking Mailchimp against competing email marketing automation tools.",
-          "Monitor regulatory approval milestones to anticipate when the acquisition will officially close and management will transition."
-        ],
-        "priority_reason": "The acquisition of a major email marketing platform by a private holding company is a significant martech industry event, though immediate operational disruptions are not yet confirmed.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "82ecc5bb11189291",
-      "title": "Dario Amodei Takes Anthropic to Wall Street in Record $81 Billion IPO",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOM3o1NFFBeXBqWXBxajhfNktsQ00zdy01a2FSUWpfVGxhcEIwYVZJbEpmaVlnRUlpRkVtdXZyRGVYWXRjQVB5WWxhOHNJYWs2WElvZWdDSEpnbFgxZjdJZVI4eVkwU0drdTdKSHU2YXhXN0lmTGJ6TTlaTEhmYkdKMTJicUwyWTNxVk85Wm1pRnplVnJETENCd3I3TjFCLXc?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOM3o1NFFBeXBqWXBxajhfNktsQ00zdy01a2FSUWpfVGxhcEIwYVZJbEpmaVlnRUlpRkVtdXZyRGVYWXRjQVB5WWxhOHNJYWs2WElvZWdDSEpnbFgxZjdJZVI4eVkwU0drdTdKSHU2YXhXN0lmTGJ6TTlaTEhmYkdKMTJicUwyWTNxVk85Wm1pRnplVnJETENCd3I3TjFCLXc?oc=5",
-      "source": "Observer",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-20T03:26:21Z",
-      "collected_at": "2026-11-20T08:30:32Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
       "analysis": {
