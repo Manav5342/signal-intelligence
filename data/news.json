@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-24T08:35:32Z",
-    "last_successful_update": "2026-11-24T08:35:32Z",
+    "generated_at": "2026-11-24T10:19:32Z",
+    "last_successful_update": "2026-11-24T10:19:32Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-24T08:30:31Z",
-      "finished_at": "2026-11-24T08:35:32Z",
+      "started_at": "2026-11-24T10:14:22Z",
+      "finished_at": "2026-11-24T10:19:32Z",
       "status": "partial",
-      "trigger": "workflow_dispatch",
+      "trigger": "schedule",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 58,
-      "skipped_stale": 560,
-      "skipped_irrelevant": 207,
+      "new_articles": 55,
+      "skipped_stale": 419,
+      "skipped_irrelevant": 198,
       "invalid_urls": 0,
-      "duplicates_merged": 2,
+      "duplicates_merged": 5,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 58,
+      "archived_out": 55,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -43,6 +43,281 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "53ff68ff3bdc2fa1",
+      "title": "Sana Shaikh joins OpenAI as Global Ads Solutions (India)",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSEZLQWtOR0NSQ2taWHl1VTQyOXczOXZpUnB1SjNyZ0JIbjZwVFU4R2VCZ0hTRTViNHVGSWFDLTZtR01ndjJJSWQ0VUlndUIxSmhFRXpHYk5MeEJTd1MtZVJFN0JlNmdkX0k5d0VIcVJGa2hiYTdLWUwwYUhKc0pyNjluQnIxQ3doeFZQRVl2a2hPVldiNm1sR2NTcGJlcHZBWk9aWVpJeW1oS2VELTVkREhXaGlQQy1VbXc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSEZLQWtOR0NSQ2taWHl1VTQyOXczOXZpUnB1SjNyZ0JIbjZwVFU4R2VCZ0hTRTViNHVGSWFDLTZtR01ndjJJSWQ0VUlndUIxSmhFRXpHYk5MeEJTd1MtZVJFN0JlNmdkX0k5d0VIcVJGa2hiYTdLWUwwYUhKc0pyNjluQnIxQ3doeFZQRVl2a2hPVldiNm1sR2NTcGJlcHZBWk9aWVpJeW1oS2VELTVkREhXaGlQQy1VbXc?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T10:03:41Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (india).",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "openai"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2104d086d30a8cfd",
+      "title": "Prime Minister asks for “data and analytics system” for children over 3: The risks of the APAAR ID",
+      "url": "https://www.medianama.com/2026/11/223-prime-minister-data-analytics-children-apaar-id/",
+      "canonical_url": "https://medianama.com/2026/11/223-prime-minister-data-analytics-children-apaar-id",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-24T09:59:20Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "India",
+      "region_reason": "The article discusses Indian government policies, Prime Minister Narendra Modi, the APAAR ID system, Indian courts, and the Digital Personal Data Protection Act, 2023.",
+      "priority": "Low",
+      "priority_score": 7,
+      "excerpt": "On November 21, 2026, Prime Minister Narendra Modi proposed developing a data and analytics platform to track children’s activities from age three , which could help identify their aptitudes and guide their career choices. Interacting with students at the Indian Institute of Technology (IIT)…",
+      "companies": [
+        "MediaNama"
+      ],
+      "topics": [
+        "APAAR ID",
+        "Data Privacy",
+        "DPDP Act",
+        "Analytics",
+        "Surveillance"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-24T10:14:47Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "MediaNama reports that on November 21, 2026, Prime Minister Narendra Modi proposed a data and analytics platform to track children's activities from age three to guide career choices, potentially utilising the APAAR ID system. The publication notes that the Supreme Court directed authorities to amend the APAAR ID consent form to allow parents to refuse enrolment and comply with the Digital Personal Data Protection Act, 2023. Additionally, MediaNama highlights privacy and surveillance risks associated with centralised student databases aggregating sensitive personal information.",
+        "summary": "Prime Minister Narendra Modi recently proposed a centralised data and analytics system to track children's activities starting from the age of three to help determine their aptitudes and career paths, likely leveraging the Automated Permanent Academic Account Registry (APAAR) ID. MediaNama discusses the associated privacy risks, noting that such a continuous tracking mechanism could aggregate extensive personal, academic, and behavioural data from early childhood through adulthood. While proponents argue it eliminates the need for expensive external career counselling, legal analysts and recent Supreme Court interventions highlight severe surveillance risks, potential profiling of dissent, and mandatory consent safeguards under the Digital Personal Data Protection Act, 2023.",
+        "why_it_matters": "For B2B marketers operating in India, this development highlights the intensifying regulatory scrutiny around large-scale data collection, consent mechanisms, and database linkages under the Digital Personal Data Protection (DPDP) Act, 2023. While this specific initiative focuses on the public education sector, it reinforces the strict legal boundaries regarding child data, third-party data sharing, and explicit consent that impact any enterprise data-handling practices.",
+        "applications": [
+          "Reviewing enterprise data collection mechanisms to ensure strict compliance with the Digital Personal Data Protection Act, 2023.",
+          "Auditing consent management platforms to guarantee that user opt-ins and opt-outs are explicit, granular, and properly documented.",
+          "Assessing third-party data enrichment practices to ensure customer data is never unlawfully linked across restricted databases.",
+          "Evaluating risk mitigation strategies when targeting younger demographics or educational institutions in marketing campaigns."
+        ],
+        "recommendations": [
+          "Explore automated Consent Management Platforms (CMPs) to handle granular opt-in and opt-out preferences securely, ensuring compliance with the DPDP Act.",
+          "Test current CRM data storage and access permissions to restrict third-party sharing of sensitive demographic or behavioural information.",
+          "Conduct a legal audit of all lead generation forms targeting education or youth sectors to verify that parental or user consent clauses are legally explicit.",
+          "Monitor ongoing regulatory guidelines regarding digital identification frameworks and data localization mandates in India."
+        ],
+        "priority_reason": "While it concerns national data systems and privacy laws in India, it directly impacts public education infrastructure rather than B2B marketing operations or campaign execution.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "fed97f5558ba1a36",
+      "title": "Anthropic’s Claude Ship goes beyond AI coding to let agents approve, push code: How it works",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR3E3R2xNa1NyajRYRXVoZXNFRG5ZVWtLeUJOelJxT1o2amo4djlyekRJLXJud1dUUXd3RXZ5TGE0Y1d3bDdFeHAzOHNiRV8tanBlVlo1S0N0Q0haWmxQQXk0c29LaFd1MVBTVGRrS0R0ckhPZ29XNDItY0RxWmM2UThkWWZ5X085Z2h2c1VFV3g1M29WZHNzNmw5NUhtOGo4dDdEM2lxb1MxWHNpbTE3RTNPZ1d6eVJncmNiNFZNdHpRUdIByAFBVV95cUxNZDlBMDhkZGN2M2ZhRUZOc19ad2ZGN3BYRFRXeEJLU0czb1lwd0pBaU9jc2xwR1c0N1dNT0g1Ti1KVTJVT01UWDdnQ2xGSXpBdV9rUDBtTF84YkVQblNzcE9WUTA1Z0NwNEUwakFHMllOZ2kwdi1BcFBPOF9KV3h6YzQzaHVjUmpPc0hQM1FBQk9SbGZ2SDZ4cjBNSFhpanpGVUFGU0NKY2NpNHN1N1hOb0hlSnF3NnBMdnFWdDhfOUoxLVhsVVFjdA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR3E3R2xNa1NyajRYRXVoZXNFRG5ZVWtLeUJOelJxT1o2amo4djlyekRJLXJud1dUUXd3RXZ5TGE0Y1d3bDdFeHAzOHNiRV8tanBlVlo1S0N0Q0haWmxQQXk0c29LaFd1MVBTVGRrS0R0ckhPZ29XNDItY0RxWmM2UThkWWZ5X085Z2h2c1VFV3g1M29WZHNzNmw5NUhtOGo4dDdEM2lxb1MxWHNpbTE3RTNPZ1d6eVJncmNiNFZNdHpRUdIByAFBVV95cUxNZDlBMDhkZGN2M2ZhRUZOc19ad2ZGN3BYRFRXeEJLU0czb1lwd0pBaU9jc2xwR1c0N1dNT0g1Ti1KVTJVT01UWDdnQ2xGSXpBdV9rUDBtTF84YkVQblNzcE9WUTA1Z0NwNEUwakFHMllOZ2kwdi1BcFBPOF9KV3h6YzQzaHVjUmpPc0hQM1FBQk9SbGZ2SDZ4cjBNSFhpanpGVUFGU0NKY2NpNHN1N1hOb0hlSnF3NnBMdnFWdDhfOUoxLVhsVVFjdA?oc=5",
+      "source": "The Indian Express",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T09:54:40Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2f36cc2df93fa141",
+      "title": "Anthropic Unveils Claude Ship as Autonomous AI Agents Take Over Code Review, Remediation, and Approval Pipelines + Video",
+      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5vNUVqWTRlTmp6UGtzUS14YVhfelh5a3JSdXlETXNBQjh1aGFFZ0NZWjhPam5fZmlaYk0w?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5vNUVqWTRlTmp6UGtzUS14YVhfelh5a3JSdXlETXNBQjh1aGFFZ0NZWjhPam5fZmlaYk0w?oc=5",
+      "source": "Howl.Link",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T09:40:12Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "High",
+      "priority_score": 13,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude",
+        "ai agents"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "b859d230cc50fe6f",
+      "title": "HubSpot For Startups Global Pitch Competition ($10K)",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE93SmV4aWxyYlNuTkpsYkFFME5UaGFiay1yd1FxcnRYb1NDU20wYW9ydUluVXRRSHdYdUpKdFN3OXBPa2NlU25VOHA5d3BoY0JaTnBBc210Nk5jSVo0eXdCbTlNaDJYUU5EQ1h1NXdVbEVnWDh5b0huVkhSOA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE93SmV4aWxyYlNuTkpsYkFFME5UaGFiay1yd1FxcnRYb1NDU20wYW9ydUluVXRRSHdYdUpKdFN3OXBPa2NlU25VOHA5d3BoY0JaTnBBc210Nk5jSVo0eXdCbTlNaDJYUU5EQ1h1NXdVbEVnWDh5b0huVkhSOA?oc=5",
+      "source": "Tech Build Africa",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T09:34:34Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "16383ab39da1bab8",
+      "title": "Anthropic launches Claude Ship to automate code review and validation",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMjBXX3NMQWdtZk5ZU2UyWUJFdHlwbW54YkIzSGlURjJ1OU5qM1lRMDMzMGpzSzVjZTVfT0pNRU5vXzB1alY3LXJYNnhhdXRHVlJuYmhJcnlQQ0xPUVVYVWNkNmt0ZzlWa3Zma2gtakRib09BczBPUURNVUVUYnZob3UwdzVkXzBSY3Z6SHdpQzUyQjcyc0xtcEZJSURnRDAxYTgxUkZOYTJ5RTY3QTlaV2t1WmNJRjFrT3p1d2dTdw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMjBXX3NMQWdtZk5ZU2UyWUJFdHlwbW54YkIzSGlURjJ1OU5qM1lRMDMzMGpzSzVjZTVfT0pNRU5vXzB1alY3LXJYNnhhdXRHVlJuYmhJcnlQQ0xPUVVYVWNkNmt0ZzlWa3Zma2gtakRib09BczBPUURNVUVUYnZob3UwdzVkXzBSY3Z6SHdpQzUyQjcyc0xtcEZJSURnRDAxYTgxUkZOYTJ5RTY3QTlaV2t1WmNJRjFrT3p1d2dTdw?oc=5",
+      "source": "marketscreener.com",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T08:29:39Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "High",
+      "priority_score": 13,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "a29a97ec124478e7",
+      "title": "Ex-Sequoia Investor Sudhanshu Mishra Launches Agentic AI Startup Demi AI",
+      "url": "https://inc42.com/buzz/ex-sequoia-investor-sudhanshu-mishra-launches-agentic-ai-startup-demi-ai/",
+      "canonical_url": "https://inc42.com/buzz/ex-sequoia-investor-sudhanshu-mishra-launches-agentic-ai-startup-demi-ai",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-24T08:26:07Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Although the founder has ties to India, the startup Demi AI is launched in the US and the product addresses global enterprise workflows.",
+      "priority": "Medium",
+      "priority_score": 14,
+      "excerpt": "Former Sequoia Capital India investor Sudhanshu Mishra has launched an agentic AI startup called Demi.AI in the US, seeking to build an AI assistant that can anticipate users’ requirements and complete work before being explicitly instructed. Mishra announced the launch of Demi’s invite-only beta…",
+      "companies": [
+        "Demi AI",
+        "Sequoia Capital",
+        "Paradigm",
+        "Sol Foundry",
+        "General Catalyst",
+        "Nexus Venture Partners"
+      ],
+      "topics": [
+        "Agentic AI",
+        "Marketing Operations",
+        "CRM Automation",
+        "Productivity Tools",
+        "Martech"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-24T10:14:37Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that former Sequoia Capital India investor Sudhanshu Mishra and cofounder Logan Ford have launched an agentic AI startup named Demi AI in the US. Demi AI is designed as a Mac-based assistant that learns work patterns from meetings, connected apps, and screens to proactively execute tasks—such as updating CRM systems, drafting emails, and tracking commitments—before being explicitly instructed. The startup currently employs about 10 people, launched an invite-only beta, and prices its individual paid plan starting at $25 per month.",
+        "summary": "Inc42 reports on the launch of Demi AI, an agentic AI startup founded by former Sequoia Capital investor Sudhanshu Mishra and Logan Ford, which aims to move beyond prompt-based tools by anticipating user needs and proactively completing workflows. The AI assistant integrates with Mac computers, meetings, and connected applications to track commitments, draft responses, capture notes, and update CRMs with human approval steps built in. While the company operates in the US, this development signals a broader enterprise shift toward zero-prompt, autonomous productivity tools that could soon impact marketing operations. Our interpretation is that tools like Demi AI represent an evolution from reactive chatbots to proactive agents capable of drastically reducing administrative friction in go-to-market teams.",
+        "why_it_matters": "Proactive agentic AI assistants have the potential to transform marketing operations and sales-marketing alignment by automating tedious administrative burdens like updating CRM records, drafting follow-up emails, and preparing meeting briefs. By reducing the manual effort required to configure workflows or prompt traditional LLMs, B2B marketers can reclaim significant time for strategic campaign planning and analysis. However, organizations will need to carefully evaluate data privacy and security implications given that these tools continuously monitor screens, meetings, and connected applications.",
+        "applications": [
+          "Automating routine CRM hygiene tasks and deal-stage updates directly from meeting context",
+          "Proactively drafting follow-up emails and sharing requested documents with prospects immediately after sales or marketing alignment calls",
+          "Aggregating meeting notes and preparing internal alignment briefs across distributed marketing teams without manual note-taking",
+          "Tracking recurring marketing campaign milestones, commitments, and deadlines across connected desktop applications"
+        ],
+        "recommendations": [
+          "Explore and test agentic AI assistants that offer zero-prompt context gathering to measure time saved on daily administrative workflows",
+          "Evaluate internal data security and privacy policies before permitting desktop-monitoring AI tools to access sensitive CRM and email data",
+          "Audit current sales and marketing handoff processes to identify repetitive administrative bottlenecks that proactive AI agents could handle safely",
+          "Monitor the enterprise pricing models and team-tier features of emerging agentic platforms for potential department-wide deployment"
+        ],
+        "priority_reason": "It represents an interesting development in agentic AI and productivity tooling, but is currently in an invite-only beta phase without immediate deployment impact for most B2B marketers.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
     {
       "id": "7462f8da15399c91",
       "title": "Claude Ship reviews, fixes, and approves pull requests",
@@ -131,7 +406,13 @@
         "Code Review",
         "Automation"
       ],
-      "also_covered_by": [],
+      "also_covered_by": [
+        {
+          "source": "Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTmdhM3ZSQ0hMZm01NW1mNGdWUk9NZUtFMC1hNnN6NEFsZnFMRDRrU2xvOV9MTFdfdzk0STJQbWc5YXU2b2lNeS1CNVZkUEFsOUp1ZERiWU5DcWpUTG1SaURFTy1rTXNxb3RNMnNURk5FUVBJMXlUYkhISVFLRS0xaE1ibTJJUC1TR2cwZ21wYmJtR3NwM1Vhb3ltV05JUGttLW4tNnY1SEo0WWYtRVRyV01DeUpVaEo4T2Y1MkdLZjA?oc=5",
+          "title": "Anthropic launches Claude Ship to help developers ship code faster By Reuters"
+        }
+      ],
       "url_check": "valid",
       "classification": "ai",
       "ai_attempts": 1,
@@ -681,6 +962,97 @@
       }
     },
     {
+      "id": "da47424a12f6aacf",
+      "title": "Anthropic Posts Claude-Authored VP ≠ VNP Proof With Lean Formalization, Not Yet Human-Verified",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWmNlVGxoSFBYd2RtVVpPVXRlWDdhN0xBcVc2QVBKaDZ4Y1RMNy1iZGx5am4yeENsOVR3RnduNDZZSWlxYlVQLWFxTWpyN3BydGRNRF9MTEtRdFlzOFJNalRiUU9NVEMtQm1icWFubUJpaVZ5ZEM4empvTXhLYzRVaVJrb040SF9QUnVJ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWmNlVGxoSFBYd2RtVVpPVXRlWDdhN0xBcVc2QVBKaDZ4Y1RMNy1iZGx5am4yeENsOVR3RnduNDZZSWlxYlVQLWFxTWpyN3BydGRNRF9MTEtRdFlzOFJNalRiUU9NVEMtQm1icWFubUJpaVZ5ZEM4empvTXhLYzRVaVJrb040SF9QUnVJ?oc=5",
+      "source": "CASRAI",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T04:11:49Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1fa5d43946a1e294",
+      "title": "Ionic Wealth Funding Round News, Insights & Timeline",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOM2g2VVRLNV9iZ21NS1dOMXl0ZlZnS2FVSUN6dnpzRFppc0JJNGhBdmd5OTlBUVhwRHV1VUNVSEo1TXFKamdHZGpYYlFkc2FqMjQzWEZobmEwQng4LVVmVXVjNzZSYXRmWFhnQ2I2aEw2OWs5WDZZLXB6TEhhT0o2NC0zVjhjMzA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOM2g2VVRLNV9iZ21NS1dOMXl0ZlZnS2FVSUN6dnpzRFppc0JJNGhBdmd5OTlBUVhwRHV1VUNVSEo1TXFKamdHZGpYYlFkc2FqMjQzWEZobmEwQng4LVVmVXVjNzZSYXRmWFhnQ2I2aEw2OWs5WDZZLXB6TEhhT0o2NC0zVjhjMzA?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T03:17:26Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "funding round"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "b608c904709abf2d",
+      "title": "Ionic Wealth raises Rs 177 crore in strategic funding",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbGRpYXYxOXp6c3YxTXlaSDFTY2tlMlN4OHI0aWswRFIxd1B0emo2cVhPU2ozaXJYaDFBbVlsdVZpdnR5S1gtTlNKbFRUeXVscU1mTW9FVmUydmIyb0plZWJ3LUx1djFNUkM1ek1aWjVlQV85SExvWUxsOFZhUEg4RE9LbWFMRlVJSElYQ0FGY2NYdEE0ZGVDS3RoNlFqZ1NvNFdJNWw5LU1ZbWdKVjllUA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbGRpYXYxOXp6c3YxTXlaSDFTY2tlMlN4OHI0aWswRFIxd1B0emo2cVhPU2ozaXJYaDFBbVlsdVZpdnR5S1gtTlNKbFRUeXVscU1mTW9FVmUydmIyb0plZWJ3LUx1djFNUkM1ek1aWjVlQV85SExvWUxsOFZhUEg4RE9LbWFMRlVJSElYQ0FGY2NYdEE0ZGVDS3RoNlFqZ1NvNFdJNWw5LU1ZbWdKVjllUA?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T03:17:26Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (crore).",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "raises"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "b3ad16cfdb778824",
       "title": "NVIDIA reinstates Jensen Huang as CEO; Sarvam unveils upgraded model amid Token Factory row",
       "url": "https://yourstory.com/2026/11/nvidia-reinstates-jensen-huang-as-ceo-sarvam-unveils-upgraded-model",
@@ -827,7 +1199,13 @@
         "anthropic",
         "claude"
       ],
-      "also_covered_by": [],
+      "also_covered_by": [
+        {
+          "source": "India Today",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQU3ZOV3pXSG1DYUhvVUNGSV91ejJOS090MGRHZWpzaks5UktCTTA3MzEzSjRCR3h1c2VDbW9tamR3dFc1MXZyNHpuQXBRcVVPOUQ2d3lSd2dHMWN3Nkdtd1JIQWJKSDY5TGhjU09HbGVwZmtXdHJVNlo0MEJsdVJFLVBzMHhQdGdRelM1QWVjWkx4R3RJMl82MzdGN194a1V5d3RBLVdxRDlCWjlEUDRZREF2dC05Qm5fTnk4eGFscVNPV1ZWNlh2SUZjVVZfY011amfSAdcBQVVfeXFMT21NS2I4UjdLS3ZiWlJTdHJpZF9uMVU2bWdoalpCQUUwTHVIWVF2NlZlcDUtSS1BLWE1TW43ejU4eFo4LWZvdXR2TzZMNkpXUzRNZlU1a2M4TG85SktqWUI3Z2k4OXRmQm1qOTJ5Zm8xQmJPbkhVNXBpWXJ3aDdrZzRTRkZTenhJLVM1NHdSS05fdWVvOXlSdTFsQkM5WkV6dGxaUHRRZnhOVGRKamRtNnM0SzBRRjJVZGw1ay1Lb2hjUzNzREdYRFhGSnprNzRseE5RWmdZYTQ?oc=5",
+          "title": "Anthropic launches Claude Ship to review, fix and approve code changes"
+        }
+      ],
       "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
@@ -3469,6 +3847,37 @@
       }
     },
     {
+      "id": "e047a08993a67292",
+      "title": "What Makes a Winning B2B Marketing Campaign? Lessons from the 2026 Awards",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGFTNFhraFcwczJZMjBoUWNFbUFLM2lZV1hvaFJMLV9aMDlCRi1qbndTU2lUMGhTRWpqLWFncUcyR2g3UXFRTkNVZlFwcTRUZUIwYWVRcnJkMWJRcG83OWpMU2dkbzJieWpVLVl2bXN5blM3?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGFTNFhraFcwczJZMjBoUWNFbUFLM2lZV1hvaFJMLV9aMDlCRi1qbndTU2lUMGhTRWpqLWFncUcyR2g3UXFRTkNVZlFwcTRUZUIwYWVRcnJkMWJRcG83OWpMU2dkbzJieWpVLVl2bXN5blM3?oc=5",
+      "source": "B2B Marketing",
+      "source_id": "gnews-b2b",
+      "via": "Google News: B2B marketing",
+      "credibility": "aggregator",
+      "published_at": "2026-11-22T22:12:27Z",
+      "collected_at": "2026-11-24T10:14:22Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 8,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "b2b",
+        "marketing campaign"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "f5a9a8648036b639",
       "title": "From Carnegie to Claude: AI wealth could reshape philanthropy",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUlBIaHQzM2RZbmY5NXdNNHhBX1hSeTY1Mm9LSTg0OGZwemZLWGhJZFlqME05TkJaQ20yVXN2VlY4RTVmb3dNc04zYk9fbVZnUThoZ0ExcHRwbFBjZEFsUkZRN3BEX1NHSXhWNGxHUFdpckVxZUlWdy1lY0txdFVtQ01GNC1RNGU0R19rXzdPeU1XOU5vVTIxUjRfQ1lWMmJwb1RSLUc0MkdremxZQ1QxQg?oc=5",
@@ -3945,420 +4354,6 @@
         "dmarc"
       ],
       "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "cc98ae3896459601",
-      "title": "DMARC prepares Thanksgiving food boxes for families",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONFQyWnhPb081UXFBSTl5TzZOTEJDNEVYRkdzSWlBeTIzWEN0S0FiM2RDdjBGb2Jtc2ZBX3lnNVFGMHR6ZXN5dUo3TldsdXNhcFJpNm93U2g0WkRZM2pVYUtuUkdZUC1VSEYwZWpwN1I1b2p0c0FGazhDTHNWUDdWMndPczBZWTYtSUNUOUV5ZFQ1NlROZldBbWdKN1RTejN0OUtWa3VMeTF5V2U4M196bTJkRTlGNTVZaGZRLU1tNVlxMmF5STJKUERJUldoZU40WU9pOWVR?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONFQyWnhPb081UXFBSTl5TzZOTEJDNEVYRkdzSWlBeTIzWEN0S0FiM2RDdjBGb2Jtc2ZBX3lnNVFGMHR6ZXN5dUo3TldsdXNhcFJpNm93U2g0WkRZM2pVYUtuUkdZUC1VSEYwZWpwN1I1b2p0c0FGazhDTHNWUDdWMndPczBZWTYtSUNUOUV5ZFQ1NlROZldBbWdKN1RTejN0OUtWa3VMeTF5V2U4M196bTJkRTlGNTVZaGZRLU1tNVlxMmF5STJKUERJUldoZU40WU9pOWVR?oc=5",
-      "source": "weareiowa.com",
-      "source_id": "gnews-email",
-      "via": "Google News: Email deliverability",
-      "credibility": "aggregator",
-      "published_at": "2026-11-22T04:35:00Z",
-      "collected_at": "2026-11-22T07:14:15Z",
-      "category": "email",
-      "category_label": "Email Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "dmarc"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "9ec6095a4a70cc1c",
-      "title": "How Illumine cracked the US SaaS market from India: AI, GTM, Growth playbook",
-      "url": "https://yourstory.com/2026/11/how-illumine-cracked-the-us-saas-market-india-ai-gtm-growth-playbook",
-      "canonical_url": "https://yourstory.com/2026/11/how-illumine-cracked-the-us-saas-market-india-ai-gtm-growth-playbook",
-      "source": "YourStory",
-      "source_id": "yourstory",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-22T02:20:00Z",
-      "collected_at": "2026-11-22T07:14:15Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "Global",
-      "region_reason": "While Illumine is an Indian startup, the core development, market entry strategy, and GTM playbook discussed focus on cracking the US SaaS market.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "Three months of advertising on Meta had produced disappointing results for Illumine, an Indian SaaS startup trying to establish itself in the competitive US childcare software market. The founders were close to abandoning the channel when they decided to run one final experiment. Instead of asking…",
-      "companies": [
-        "Illumine",
-        "Meta",
-        "Prime Venture Partners",
-        "Procare",
-        "Google"
-      ],
-      "topics": [
-        "GTM strategy",
-        "paid acquisition",
-        "lead generation",
-        "SaaS marketing",
-        "international expansion"
-      ],
-      "also_covered_by": [
-        {
-          "source": "YourStory.com",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTE1tY1NrSkpWVHJLZ0VrbEJETnlqem9ZcjZWc2o2WEREWUhKanN3d3ZSeXhvVDFncDhrQm1GSk1PbTZ1VG42ekRtWHlxWnVsSGo2em9TSzVQZDhsWWlIc0FmOHdabXlBUGxyaURyV2hpYlJ6ajk3R1h6UXhDNXRITWxqZzROZjlGZ3FUVUl1T0J3YlZEY29nb0haRDVLQmM?oc=5",
-          "title": "How Illumine cracked the US SaaS market from India: AI, GTM, Growth playbook"
-        }
-      ],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-22T07:14:41Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "YourStory reports that Indian SaaS startup Illumine initially experienced disappointing results from three months of Meta advertising in the US childcare software market, leading them to shift campaign focus from immediate sign-ups to brand awareness. This strategy change increased their monthly lead generation from approximately 20 to 400-500, with Meta eventually contributing 60-70% of leads. Co-founder Navneet Rastogi and Sourabh Agarwal discussed their international expansion and GTM playbook in a conversation with Gaurav Ranjan of Prime Venture Partners.",
-        "summary": "Illumine transitioned from an India-centric bootstrapped startup serving preschools to a global vertical SaaS platform operating in over 50 countries, with the US becoming a major focus. Initially hindered by COVID-19 closures in India, the company expanded internationally through organic demand in the Middle East and Southeast Asia before tackling the US market. By targeting states like Texas and Florida instead of California and shifting Meta ads from direct conversion to top-of-funnel awareness, they significantly scaled lead generation. The founders also learned to balance advanced AI capabilities with core operational requirements to convert established childcare centres rather than small home daycares.",
-        "why_it_matters": "For B2B marketers targeting international markets, this case study demonstrates the critical necessity of adjusting paid acquisition funnels from direct conversion to awareness when entering unfamiliar geographies. It highlights how deep on-the-ground customer research can uncover specific product gaps—such as Spanish language support—that drive competitive differentiation against entrenched incumbents. Furthermore, it underlines the importance of aligning ad positioning with the actual purchasing power and profile of high-value accounts rather than broad, vanity metrics.",
-        "applications": [
-          "Revising paid social media ad campaigns in foreign markets to focus on brand awareness rather than immediate conversion if initial intent-driven approaches fail",
-          "Conducting offline, localized customer research and field visits to uncover overlooked feature requirements that resonate with regional buyer segments",
-          "Refining target account profiles (TAM) to filter out low-value prospects who generate high inquiry volume but low conversion rates",
-          "Balancing messaging around advanced AI features with foundational operational reliability to appeal to risk-averse enterprise buyers"
-        ],
-        "recommendations": [
-          "Explore multi-stage funnel experiments on paid social channels for foreign market entry, using brand awareness before hard-sell lead generation; likely benefit is a higher volume of qualified top-of-funnel prospects; implementation consideration requires longer attribution windows.",
-          "Utilise customer research tool types and on-the-ground qualitative interviews to validate buyer pain points; likely benefit is avoiding costly positioning mistakes; implementation consideration requires direct field engagement.",
-          "Review current CRM lead scoring parameters to ensure small, low-intent inquiries do not distort acquisition cost metrics; likely benefit is better alignment of sales efforts with high-value accounts; implementation consideration involves adjusting MQL definitions.",
-          "Audit marketing copy to balance innovative product capabilities against core functional expectations; likely benefit is improved sales-call conversion rates; implementation consideration requires collaboration between product marketing and sales teams."
-        ],
-        "priority_reason": "It offers valuable strategic insights for B2B marketers expanding internationally, though it does not represent an immediate platform policy or tooling change.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "f598fefaa93193c7",
-      "title": "Anthropic's $2 Trillion IPO Sparks Debate: Can AI Deliver Returns?",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZk5DTlk1MG9TUTMyOThsVVFKNFc3SG56QS1WMm5mdDZJWk1pTWRJWk1sVnlqSzREdDByVFVXd3JDdkxUR3FFWjNFZFMzNGJqZlZ3UlVsZ1JienhzTVdCVVVLZEFTd05hNGxzbGhidHhvLTRDWFFXSGpNUmVHd0tTQV9DUEJ2NFVuNmJ5d3d3?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZk5DTlk1MG9TUTMyOThsVVFKNFc3SG56QS1WMm5mdDZJWk1pTWRJWk1sVnlqSzREdDByVFVXd3JDdkxUR3FFWjNFZFMzNGJqZlZ3UlVsZ1JienhzTVdCVVVLZEFTd05hNGxzbGhidHhvLTRDWFFXSGpNUmVHd0tTQV9DUEJ2NFVuNmJ5d3d3?oc=5",
-      "source": "조선일보",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-22T00:07:29Z",
-      "collected_at": "2026-11-22T00:30:36Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "de5cd1a6d51dc917",
-      "title": "Perplexity and Intelligence",
-      "url": "https://openai.com/index/perplexity-and-intelligence",
-      "canonical_url": "https://openai.com/index/perplexity-and-intelligence",
-      "source": "OpenAI News",
-      "source_id": "openai-news",
-      "via": null,
-      "credibility": "official",
-      "published_at": "2026-11-22T00:00:00Z",
-      "collected_at": "2026-11-23T00:30:25Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The development discusses general artificial intelligence evaluation metrics applicable worldwide without specific regional focus.",
-      "priority": "Low",
-      "priority_score": 6,
-      "excerpt": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
-      "companies": [
-        "OpenAI"
-      ],
-      "topics": [
-        "AI Models",
-        "Perplexity",
-        "Model Evaluation",
-        "Artificial Intelligence"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-23T00:30:59Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "OpenAI News reports on how perplexity measures progress in artificial intelligence models. The publisher discusses why this metric could help developers establish a shared approach to evaluating emerging capabilities. The provided text is only a brief excerpt and contains no further specific details.",
-        "summary": "OpenAI News discusses the concept of perplexity as a measure of progress for AI models. The article suggests that this metric can provide developers with a common methodology for evaluating new technological capabilities. Based on the excerpt, the text focuses purely on the theoretical and developmental measurement of AI rather than specific commercial releases. No further details are provided in the source text regarding practical marketing implementations.",
-        "why_it_matters": "Understanding how AI models are evaluated using metrics like perplexity helps marketing operations professionals gauge the reliability and underlying capability of generative AI tools. As marketing teams increasingly rely on custom LLMs for content generation, lead scoring, and automated customer interactions, knowing how model progress is measured prevents reliance on hype. This ensures that B2B teams select robust tools for their campaign automation and analytics stacks.",
-        "applications": [
-          "Assess the evaluation methodologies of vendors providing AI-driven content generation tools.",
-          "Better understand the reliability limits of large language models used in customer-facing WhatsApp and email automation workflows.",
-          "Inform internal data science teams on how to benchmark custom AI models used for lead qualification."
-        ],
-        "recommendations": [
-          "Explore technical documentation of LLM vendors to understand their model evaluation metrics; relevant tool types include AI benchmarking suites; likely benefit is improved vendor selection; consideration is that perplexity alone does not measure business utility.",
-          "Test the factual accuracy of AI-generated email copy against model capability metrics; relevant tool types include generative AI assistants; likely benefit is reduced hallucination rates; consideration is the need for human-in-the-loop review.",
-          "Review internal guidelines for deploying AI in marketing operations; relevant tool types include governance frameworks; likely benefit is aligned expectations on AI output quality; consideration is ongoing updates as models evolve."
-        ],
-        "priority_reason": "The text is a high-level excerpt without immediate operational or platform changes for B2B marketers.",
-        "needs_validation": true,
-        "validation_note": "Verify the full article to check if specific new evaluation frameworks, tools, or APIs were announced for developers."
-      }
-    },
-    {
-      "id": "98627672b0a43bf9",
-      "title": "Riemann hypothesis breakthrough claimed via AI, 167 years on",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1zZFA4T05qRkxDa0FaMWdYOFQtUmtteVVLR2JCdFBGUHRyanNVeHNiLUwzcjRmVkFZbVNfR3RXVU5JeDM2bkxvRkYwQnAzY201czlYSzlGLVZyQV9EcmlCYUQxejB3aXM4cDhuM2dYUWNzTEll?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1zZFA4T05qRkxDa0FaMWdYOFQtUmtteVVLR2JCdFBGUHRyanNVeHNiLUwzcjRmVkFZbVNfR3RXVU5JeDM2bkxvRkYwQnAzY201czlYSzlGLVZyQV9EcmlCYUQxejB3aXM4cDhuM2dYUWNzTEll?oc=5",
-      "source": "DNE Africa",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-21T23:05:00Z",
-      "collected_at": "2026-11-22T08:30:34Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Low",
-      "priority_score": 4,
-      "excerpt": "",
-      "companies": [],
-      "topics": [],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "036c3debea8ab1d9",
-      "title": "Lean groups certify Claude-assisted Riemann hypothesis proof from Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONlA3YmE1SENKMHdqY2MwSEVFRFQ3eW9URjRhTW83QjNCN0U3SUhweC1vTGhfYml6SG9Sc19wVHVhY1VobG9NLVM4V29Ca2QzMnByUjh0clFFOGhFSE9XcVVfNUxlVTdnRTE3ak5oYzd0alQ4QkV3NUYydFIxYXBOWEhtblhQM25NRDY4czBDMHE5VUQxc1B6N3Q3eXNoazk0TE9PbG13?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONlA3YmE1SENKMHdqY2MwSEVFRFQ3eW9URjRhTW83QjNCN0U3SUhweC1vTGhfYml6SG9Sc19wVHVhY1VobG9NLVM4V29Ca2QzMnByUjh0clFFOGhFSE9XcVVfNUxlVTdnRTE3ak5oYzd0alQ4QkV3NUYydFIxYXBOWEhtblhQM25NRDY4czBDMHE5VUQxc1B6N3Q3eXNoazk0TE9PbG13?oc=5",
-      "source": "Startup Fortune",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-21T22:23:08Z",
-      "collected_at": "2026-11-22T00:30:36Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "204f20d1975dfbef",
-      "title": "Anthropic’s Levent Alpöge claims a Claude-assisted proof of the Riemann hypothesis",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAtanMyOVRpbzZVaVYwVVJJbnVmMjRDT0tGX1hSbUE2QXlQTDB6Sm05UUNXSXdRbHE0TFdUeGdXbXdLS3R0Y1poSA?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAtanMyOVRpbzZVaVYwVVJJbnVmMjRDT0tGX1hSbUE2QXlQTDB6Sm05UUNXSXdRbHE0TFdUeGdXbXdLS3R0Y1poSA?oc=5",
-      "source": "Digg",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-21T22:04:38Z",
-      "collected_at": "2026-11-22T07:14:15Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [
-        {
-          "source": "Dataconomy",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQR2dFZ2VUVTZpVF9jdnRXTTRwUzQ0V1ktOFUzQWpGRVc2U2JKalRLVW5KRkQxSDRUdEptQUJCa1cyMzZFRHlsMGF4S0oxOFlGV0ZrZzlMUnNtc2F2ak52VmNsaHIwYjQ5SG9fUzVsWjFENk1ZLXFtSndOdnZPQXlwZlBoemo0V1EyeDZ3VTRxSXBRVUhXX2FFQXd1RQ?oc=5",
-          "title": "Anthropic Mathematician Claims Claude-assisted Riemann Proof"
-        }
-      ],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "4e2c67dcaa9f67e3",
-      "title": "Anthropic's Claude AI Credited With Cracking A 166-Year-Old Mathematical Prize Problem Worth $1 Million",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTDZXVE1hdldnRUl0S0RvWjlCZXdCby1GRlRoZjhLTU9ucDBXSnVTMl9jdVJqRG9kUVoyX3FjaGJFQW9XQ3IwTFUxZUxQSDFJNDNvSXFkN010NHZTU0Y1VjZNbWZ1aWRhWmJiOVo1LUk3aDRGUTFDY2pHVTA5QWV5aE15OTk2ek9Lb3lVbHVJc1U3bGRzUHdiWGJqOHlOLS01aUdwcjcwdG5GYTIzY3hmSzAwOWJEbDNmMC1YRDJrUmctMWFsTlJaajFkamRxY2RNeGg0MkVhLXhKMDR5RmM0OTBhUU4?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTDZXVE1hdldnRUl0S0RvWjlCZXdCby1GRlRoZjhLTU9ucDBXSnVTMl9jdVJqRG9kUVoyX3FjaGJFQW9XQ3IwTFUxZUxQSDFJNDNvSXFkN010NHZTU0Y1VjZNbWZ1aWRhWmJiOVo1LUk3aDRGUTFDY2pHVTA5QWV5aE15OTk2ek9Lb3lVbHVJc1U3bGRzUHdiWGJqOHlOLS01aUdwcjcwdG5GYTIzY3hmSzAwOWJEbDNmMC1YRDJrUmctMWFsTlJaajFkamRxY2RNeGg0MkVhLXhKMDR5RmM0OTBhUU4?oc=5",
-      "source": "www.foreignpolicyjournal.com",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-21T19:50:00Z",
-      "collected_at": "2026-11-22T00:30:36Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "d4a025fe3f25baff",
-      "title": "Anthropic mathematician says Claude helped solve a 165-year-old mathematical mystery",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNYVJCOWRkZnRsenJPQmJPQTlnNVNWQ0N5NG9hdzN6NWMyalJmUHVGVzcxajZPWU9McjJ3enVIbjhFTGQ0OFpZY3VBUHlIckIyQnFLWEJzZ2hxT1VHWmotamtoZG1CVDg?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNYVJCOWRkZnRsenJPQmJPQTlnNVNWQ0N5NG9hdzN6NWMyalJmUHVGVzcxajZPWU9McjJ3enVIbjhFTGQ0OFpZY3VBUHlIckIyQnFLWEJzZ2hxT1VHWmotamtoZG1CVDg?oc=5",
-      "source": "CTech",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-21T19:49:00Z",
-      "collected_at": "2026-11-22T00:30:36Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "eb30319e78e2e7db",
-      "title": "Anthropic Employee Claims To Have Proven The Most Famous Math Problem Using Claude",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTXFLcEJlYk15RHFGY1dhY041ZlBCdU5nRGhDVzNGdXdRYXQ5amFRa3FBYVNxZ25ETi10MkRWZGFaTVNvaWJuSDluTE14SzhRUUxFZHhjSVliRDdzdTBLWkxzUkRaRkVoVG5HTGZLdVhLYkhpb2ZBUG01Z1J1TnJvc1FEN2tFYzA4WjBOeW1jbjJvT29uTFJhVUsxUTkxVl9kT3pEUDdZYXo1VHE1VFNKQnpzXzdWWEU?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTXFLcEJlYk15RHFGY1dhY041ZlBCdU5nRGhDVzNGdXdRYXQ5amFRa3FBYVNxZ25ETi10MkRWZGFaTVNvaWJuSDluTE14SzhRUUxFZHhjSVliRDdzdTBLWkxzUkRaRkVoVG5HTGZLdVhLYkhpb2ZBUG01Z1J1TnJvc1FEN2tFYzA4WjBOeW1jbjJvT29uTFJhVUsxUTkxVl9kT3pEUDdZYXo1VHE1VFNKQnpzXzdWWEU?oc=5",
-      "source": "Engadget",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-21T19:45:01Z",
-      "collected_at": "2026-11-22T07:14:15Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "d96f79c069ffeaa8",
-      "title": "Anthropic Mathematician Claims Claude Helped Prove 167-Year-Old Riemann Hypothesis",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN05uaG5QU21lUTRNNEZMWW9tX1YwQ2Yxb1BMaUoxb2wxWXhMS3RkbXU4b3FwMF9sZjdqblZ4MU5pU01CX1JRWmVNbS14SEFLcllRZVpoUjZjMmlxWUNKaS01aU5Ibkc4NWhxMF9Xb3Y5LU9JWDRfd2dUNE5oaE5sOE9TTkhZV3hUa1ZLTGlpNGpnbXpzQWttVHVZNWpCalZJeW5nQk13?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN05uaG5QU21lUTRNNEZMWW9tX1YwQ2Yxb1BMaUoxb2wxWXhMS3RkbXU4b3FwMF9sZjdqblZ4MU5pU01CX1JRWmVNbS14SEFLcllRZVpoUjZjMmlxWUNKaS01aU5Ibkc4NWhxMF9Xb3Y5LU9JWDRfd2dUNE5oaE5sOE9TTkhZV3hUa1ZLTGlpNGpnbXpzQWttVHVZNWpCalZJeW5nQk13?oc=5",
-      "source": "Yahoo",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-21T19:00:54Z",
-      "collected_at": "2026-11-22T16:31:25Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [
-        {
-          "source": "The Independent",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTnliTkVvRWFBQ3NScjZ6bUlDT1plNFM3d3hDcWFsLVF2dnhnQW05QWZEc2tuaU5Ha2Y1b3g1bFdlSUd1eXF2b2VvT3hrNHN2dTJrRmZhN2QyWkhtY053UTlZN3dfQlpkMVBEclkxU0ZnMDFZanI4YTRWQ1F2YXhBd2Z3RVR5MXptR0poX3hYN0lMUQ?oc=5",
-          "title": "Anthropic mathematician claims to have proved Riemann hypothesis with help of Claude"
-        },
-        {
-          "source": "Dallas Express",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMDJiblV0T3E4akoxeHkySEl6OXZPMXgtRF8wRFotXzMyTldoNHdKekMtaHYxOFA1Rzl4eFJCY3hibnp1VDRIS0xZX1N1eF9OZkx6YjVZU2t1VnVvVTBjUW1lYzFrd29GR0lneEtSLWVCSk5oYXMyQmNOY0RnMkJlQml6b0tLRE9qUlhNc2xWTHlWVmFVZHFuMGtDTVlOVGZxVDBLSHBPd3MtYWtGcUNkcm1HaHBxeWs?oc=5",
-          "title": "Anthropic Mathematician Claims Claude Helped Prove 167-Year-Old Riemann Hypothesis"
-        }
-      ],
       "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
