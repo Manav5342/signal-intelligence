@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T00:30:37Z",
+  "checked_at": "2026-11-24T08:30:34Z",
   "total": 32,
   "ok": 31,
   "failed": 1,
@@ -60,8 +60,8 @@
       "url": "https://news.google.com/rss/search?q=Anthropic+Claude&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 102,
-      "usable_items": 102,
+      "entries": 100,
+      "usable_items": 100,
       "error": null
     },
     {
@@ -110,8 +110,8 @@
       "url": "https://news.google.com/rss/search?q=%22B2B+marketing%22+OR+%22account-based+marketing%22+OR+%22demand+generation%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 46,
-      "usable_items": 46,
+      "entries": 45,
+      "usable_items": 45,
       "error": null
     },
     {
@@ -190,8 +190,8 @@
       "url": "https://news.google.com/rss/search?q=Wati+WhatsApp&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 15,
-      "usable_items": 15,
+      "entries": 57,
+      "usable_items": 57,
       "error": null
     },
     {
@@ -250,8 +250,8 @@
       "url": "https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 81,
-      "usable_items": 81,
+      "entries": 100,
+      "usable_items": 100,
       "error": null
     },
     {
