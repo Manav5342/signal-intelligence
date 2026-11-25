@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T00:47:18Z",
+  "checked_at": "2026-11-25T18:44:54Z",
   "total": 32,
   "ok": 31,
   "failed": 1,
@@ -60,8 +60,8 @@
       "url": "https://news.google.com/rss/search?q=Anthropic+Claude&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 100,
-      "usable_items": 100,
+      "entries": 102,
+      "usable_items": 102,
       "error": null
     },
     {
@@ -90,8 +90,8 @@
       "url": "https://news.google.com/rss/search?q=site%3Amarketingbrew.com&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 100,
-      "usable_items": 100,
+      "entries": 75,
+      "usable_items": 75,
       "error": null
     },
     {
@@ -170,8 +170,8 @@
       "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 50,
-      "usable_items": 50,
+      "entries": 49,
+      "usable_items": 49,
       "error": null
     },
     {
@@ -190,8 +190,8 @@
       "url": "https://news.google.com/rss/search?q=Wati+WhatsApp&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 14,
-      "usable_items": 14,
+      "entries": 55,
+      "usable_items": 55,
       "error": null
     },
     {
@@ -200,8 +200,8 @@
       "url": "https://news.google.com/rss/search?q=%22WhatsApp+Business%22+OR+%22WhatsApp+Business+Platform%22+OR+%22Click-to-WhatsApp%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 55,
-      "usable_items": 55,
+      "entries": 53,
+      "usable_items": 53,
       "error": null
     },
     {
@@ -210,8 +210,8 @@
       "url": "https://news.google.com/rss/search?q=%22WhatsApp+Business%22+OR+%22WhatsApp+marketing%22+India&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 53,
-      "usable_items": 53,
+      "entries": 100,
+      "usable_items": 100,
       "error": null
     },
     {
@@ -250,8 +250,8 @@
       "url": "https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 100,
-      "usable_items": 100,
+      "entries": 75,
+      "usable_items": 75,
       "error": null
     },
     {
