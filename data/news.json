@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-25T00:33:58Z",
-    "last_successful_update": "2026-11-25T00:33:58Z",
+    "generated_at": "2026-11-25T00:50:56Z",
+    "last_successful_update": "2026-11-25T00:50:56Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-25T00:30:26Z",
-      "finished_at": "2026-11-25T00:33:58Z",
+      "started_at": "2026-11-25T00:47:14Z",
+      "finished_at": "2026-11-25T00:50:56Z",
       "status": "partial",
-      "trigger": "workflow_dispatch",
+      "trigger": "schedule",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 57,
-      "skipped_stale": 506,
-      "skipped_irrelevant": 211,
+      "new_articles": 56,
+      "skipped_stale": 516,
+      "skipped_irrelevant": 203,
       "invalid_urls": 0,
-      "duplicates_merged": 3,
+      "duplicates_merged": 4,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 57,
+      "archived_out": 56,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -168,6 +168,64 @@
       }
     },
     {
+      "id": "71286cc67f671ccb",
+      "title": "New AI watermarks blur the line on who wrote what",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd2p0VzNmWUxOUVNnaDN4NUI2U2tBQTlFbDk3T29zR29iRjBqUE5TUlJwYy10UUFYamJpbzAxZ2dONFA2ZTBnNk1tUTctbHpxaVJlU1dQMkJEQlplRHQ1YnZWZUxGT2dNY2RycWttaU1qZTRXVDhFRU15YVhVbWd1ckhyRmZsclhITmlEeXBUeDA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd2p0VzNmWUxOUVNnaDN4NUI2U2tBQTlFbDk3T29zR29iRjBqUE5TUlJwYy10UUFYamJpbzAxZ2dONFA2ZTBnNk1tUTctbHpxaVJlU1dQMkJEQlplRHQ1YnZWZUxGT2dNY2RycWttaU1qZTRXVDhFRU15YVhVbWd1ckhyRmZsclhITmlEeXBUeDA?oc=5",
+      "source": "New University",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T22:12:51Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "",
+      "companies": [],
+      "topics": [],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "85e0bc72685ef452",
+      "title": "Anthropic plunges below IPO price in renewed tech sell-off",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOTBDZ1RTajVERWdSaEtQOEpVbkdHSmpsaXJ2UU9pQTFGVUFPa09PLUVhdHhudmd2OGs3TVRzakE4X25aN3JXLUsxSnVTVmd0MThNWnJubms1NzRQSkJVRHlpSkpEZHAzVkx1TTV5NFk0Wi1oSkFXZFJXeUE0RDVhT2VIZ243dnpxdlBTUFJGSW5mblR2X3JVektn?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOTBDZ1RTajVERWdSaEtQOEpVbkdHSmpsaXJ2UU9pQTFGVUFPa09PLUVhdHhudmd2OGs3TVRzakE4X25aN3JXLUsxSnVTVmd0MThNWnJubms1NzRQSkJVRHlpSkpEZHAzVkx1TTV5NFk0Wi1oSkFXZFJXeUE0RDVhT2VIZ243dnpxdlBTUFJGSW5mblR2X3JVektn?oc=5",
+      "source": "Sky News",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T21:52:25Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "c81cfef05c36747c",
       "title": "Anthropic launches Claude Ship for AI-driven code management with GitHub integration",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNWh4MGxXOWNSZWJXaTBSa0NUXzBMbWMwY2ZGT1d2NG5rWV9mc29xOFRXN2tFb0k3eDJJTldWYzFaRTh4WVpaZXNQNFJOeU5yOGhKNzNiWFFtdUs2Mm9qMm92YlVCQWdINVFHdERfc05TNHpDZGR4R05XVEJ2UUlwR1VGaGk3WEZMV0t4VnhHa2YxcGJhdWtrRU54cnhCTXZwUmc?oc=5",
@@ -189,6 +247,73 @@
       "topics": [
         "anthropic",
         "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "3a27433fabd08813",
+      "title": "Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQnJkYjV3SVM2d3J1VEtRcFpxbkQtUzZybjhiLVhnQW9qMm14YklTTGNFbnhfRnJ4dWJjN0lqTXFNNFAtZXhPcmFCSDd5MURmWlFUeHRtWVpSZHJWZWY3RloxZ2c5al9VckhJSU95dUc4Ykh3OVBYRDVaMjNJWG5pSVMwQ0I4d2c?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQnJkYjV3SVM2d3J1VEtRcFpxbkQtUzZybjhiLVhnQW9qMm14YklTTGNFbnhfRnJ4dWJjN0lqTXFNNFAtZXhPcmFCSDd5MURmWlFUeHRtWVpSZHJWZWY3RloxZ2c5al9VckhJSU95dUc4Ykh3OVBYRDVaMjNJWG5pSVMwQ0I4d2c?oc=5",
+      "source": "Decrypt",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T21:46:02Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [
+        {
+          "source": "Yahoo Tech",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0JoOHZpSlQyRXpoVFFXRU95WHBjU0lWNUxQbUlIYy1zXzdlMEpqVHNMUGJuMVZKNXNxUTRSYVlFY3hCb191LUE1c2FQNXZhV1pCS1BzQXczYWNWelN3QURpY2Z4Zy0xMXhNRUNJel9GNWdlQnBZMkVCYzZ3bGo2cTVLaXVXX091bDlrb01QYw?oc=5",
+          "title": "Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code"
+        }
+      ],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "db55f544b8b8a20e",
+      "title": "Anthropic IPO: Here's What a $5,000 Investment Could Look Like in 5 Years",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNREM4N3dOV0pVYXROMG5VMHFTWmZoSHZLaTVjNlo0ckpweGRRQVhWa2lHRTNWVmZuUXctUTUzaGdUMFZjR1RRclhsUGJLYl9FUWdkb2Npc05yZWpYaEpKUWFCaE9EbWNuS3U1MHFJU1FTUThEc3BUT0VKRG0tc2F1bEpZVVVaS0F0OHRiZ3NSUmRhb1RQa19ZR2F6MnBqeVZ4NDVQVkNPbkI0d1Q0ZHZjQUVQUkpRUjZyOFpTcWVVY2NFc29sZmgxLVFQV3oyTUg5SzNBR0RxNzBScWJ2TGN2MlljLXJabVI2bXdDd0Vn?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNREM4N3dOV0pVYXROMG5VMHFTWmZoSHZLaTVjNlo0ckpweGRRQVhWa2lHRTNWVmZuUXctUTUzaGdUMFZjR1RRclhsUGJLYl9FUWdkb2Npc05yZWpYaEpKUWFCaE9EbWNuS3U1MHFJU1FTUThEc3BUT0VKRG0tc2F1bEpZVVVaS0F0OHRiZ3NSUmRhb1RQa19ZR2F6MnBqeVZ4NDVQVkNPbkI0d1Q0ZHZjQUVQUkpRUjZyOFpTcWVVY2NFc29sZmgxLVFQV3oyTUg5SzNBR0RxNzBScWJ2TGN2MlljLXJabVI2bXdDd0Vn?oc=5",
+      "source": "The Globe and Mail",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T21:37:45Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -307,6 +432,36 @@
         "priority_reason": "It signals a broader industry trend toward AI agent commerce that will eventually impact B2B discovery and transactional models.",
         "needs_validation": true,
         "validation_note": "Verify the full scope of the Walmart and Meta Muse partnership, including whether transactional capabilities are fully automated within the chat or require handoffs, and check for any B2B applicability."
+      }
+    },
+    {
+      "id": "c783404331fa2077",
+      "title": "Claude can now turn artifacts into semi-independent Mac apps",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT2VaSUlmV0VvY0JWMURIb2JUQlpqRUw3bkhvVTZxSTlQdWlmWmhrNWpnU1dRMC1xZ1NsS2g0bmgwSTlvcEYzcUE5b0xoMlRWTnFrc2lnai00aXdUM0NvcXZmeFJad2lXWkFNMkRVclpFZnFjd0tmTEtYb09PRmd3TVJuSHlFMWVHVjlPZWFDNmJkT0pKTEJtbEJwYnU3WHdLZXhBWmln?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT2VaSUlmV0VvY0JWMURIb2JUQlpqRUw3bkhvVTZxSTlQdWlmWmhrNWpnU1dRMC1xZ1NsS2g0bmgwSTlvcEYzcUE5b0xoMlRWTnFrc2lnai00aXdUM0NvcXZmeFJad2lXWkFNMkRVclpFZnFjd0tmTEtYb09PRmd3TVJuSHlFMWVHVjlPZWFDNmJkT0pKTEJtbEJwYnU3WHdLZXhBWmln?oc=5",
+      "source": "AppleInsider",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T21:27:00Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -1500,14 +1655,76 @@
       "category": "martech",
       "category_label": "Marketing Technology",
       "region": "India",
-      "region_reason": "Article body references Indian market context (crore, india, indian).",
-      "priority": "Medium",
+      "region_reason": "The development focuses on an Indian digital lending platform raising funds for operations in the Indian market.",
+      "priority": "Low",
       "priority_score": 11,
       "excerpt": "Vegapay, the Mumbai-headquartered digital lending and card management platform, will be raising Rs 38.4 crore in a Series A round of funding led by Prosus. The regulatory filings of Vegapay reveal that this round will also see participation from existing investors, Elevation Capital, Vertex…",
+      "companies": [
+        "Vegapay",
+        "Prosus",
+        "Elevation Capital",
+        "Vertex Ventures",
+        "Eximius Ventures",
+        "Navi",
+        "Bachatt"
+      ],
+      "topics": [
+        "Funding",
+        "Fintech",
+        "Digital Lending",
+        "Card Management"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-25T00:47:25Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "YourStory reports that Mumbai-headquartered digital lending and card management platform Vegapay is raising Rs 38.4 crore in a Series A funding round led by Prosus, with participation from existing investors Elevation Capital, Vertex Ventures, and Eximius Ventures. Regulatory filings show the funding involves issuing 18,090 compulsory convertible preference shares at Rs 21,221.92 each, with Prosus investing Rs 28.80 crore. Founded in 2022, the company builds lending technology stacks and card management systems for regulated entities and fintech firms in India.",
+        "summary": "Vegapay, a digital lending and card management platform based in Mumbai, has secured a Series A funding round of Rs 38.4 crore led by Prosus, alongside continuing support from Elevation Capital, Vertex Ventures, and Eximius Ventures. The capital will be issued via compulsory convertible preference shares, with Prosus contributing the majority share of Rs 28.80 crore. Founded in 2022, Vegapay provides a lending tech stack and card management system targeted at helping regulated entities and fintechs issue and expand card and lending products across India. This funding indicates continued investor interest in India's fintech infrastructure and enablement sector.",
+        "why_it_matters": "For B2B marketers operating in the Indian fintech and financial services sector, well-funded infrastructure providers like Vegapay often signal expanding partnership and co-marketing opportunities. As digital lending and card issuance platforms scale their operations following fresh capital injections, B2B vendors servicing this ecosystem—such as marketing automation, CRM, and analytics providers—may find increased demand for specialized acquisition and retention tools. Tracking the growth of such enablement platforms helps identify emerging clients and ecosystem collaborators within the regional market.",
+        "applications": [
+          "Identify Vegapay and its institutional backers as potential targets for B2B marketing tech or data analytics software sales.",
+          "Monitor partnership opportunities with digital lending infrastructure providers to co-market financial technology solutions.",
+          "Analyze the expansion strategies of Indian fintech enablers to tailor account-based marketing campaigns for financial services clients.",
+          "Evaluate integration partnerships with card management platforms if offering complementary marketing automation or customer engagement tools."
+        ],
+        "recommendations": [
+          "Explore account-based marketing campaigns targeting high-growth Indian fintech infrastructure providers",
+          "Use B2B intelligence tools to track executive movements and partnership announcements from Vegapay and Prosus portfolio companies",
+          "Assess sales pipeline alignment for targeting recently funded fintech enablers needing advanced analytics or CRM capabilities",
+          "Monitor regulatory and market updates in the Indian digital lending space to time marketing outreach effectively"
+        ],
+        "priority_reason": "While significant for the company's growth, a funding round is a corporate milestone rather than an immediate change to marketing operations or platforms.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "68222318bbc620bf",
+      "title": "Matters.AI Funding Round News, Insights & Timeline",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdndFN1o0OGZEQ2VESUZleXU2QV8xcVEza2R1dGg5UGw5LWFYVHB2eFljRUsyeHN5UC13MDBVZFU2eXd0U1lPNGU3WTZBMk5GR1lPcHBPUmVRaW5JcXdweDFQSzN1Y09LSy1UTnN3blRlVjRpWU5IUHU5cVlpcFZPdElJOA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdndFN1o0OGZEQ2VESUZleXU2QV8xcVEza2R1dGg5UGw5LWFYVHB2eFljRUsyeHN5UC13MDBVZFU2eXd0U1lPNGU3WTZBMk5GR1lPcHBPUmVRaW5JcXdweDFQSzN1Y09LSy1UTnN3blRlVjRpWU5IUHU5cVlpcFZPdElJOA?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T11:52:38Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
       "companies": [],
       "topics": [
-        "funding round",
-        "series a"
+        "funding round"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -1528,25 +1745,55 @@
       "credibility": "publication",
       "published_at": "2026-11-24T11:39:51Z",
       "collected_at": "2026-11-25T00:30:26Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
       "region": "India",
-      "region_reason": "Article body references Indian market context (bengaluru, india, indian).",
-      "priority": "Medium",
+      "region_reason": "The developments involve Indian startups (GalaxEye, Bellatrix, Pixxel) operating within the Indian space and tech ecosystem.",
+      "priority": "Low",
       "priority_score": 7,
       "excerpt": "Bengaluru-based spacetech startup GalaxEye has awarded Bellatrix Aerospace a multi-year contract to supply propulsion systems for its next 30 Drishti Gen-II satellites, part of an OptoSAR constellation it aims to deploy by 2030. Under the phased delivery schedule, Bellatrix will design, build…",
-      "companies": [],
+      "companies": [
+        "GalaxEye",
+        "Bellatrix Aerospace",
+        "Pixxel",
+        "Centum Electronics",
+        "CS TECH Ai",
+        "Cactus Partners",
+        "StarOps"
+      ],
       "topics": [
-        "acquired",
-        "funding round",
-        "series b"
+        "Spacetech",
+        "B2B Partnerships",
+        "Indian Startups",
+        "Manufacturing Supply Chain"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
+      "classification": "ai",
+      "ai_attempts": 1,
       "analysis": {
-        "status": "pending"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-25T00:47:35Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that Bengaluru-based spacetech startup GalaxEye has awarded Bellatrix Aerospace a multi-year contract to supply Arka Hall-effect electric propulsion systems for its next 30 Drishti Gen-II satellites. The companies did not disclose the contract value, but the agreement was announced at the fifth India International Space Conclave as India's largest order between private space companies by satellite count. GalaxEye also noted ongoing discussions with other domestic companies for subsystems, while fellow Earth observation startup Pixxel signed MoUs with Centum Electronics and CS TECH Ai.",
+        "summary": "GalaxEye has awarded Bellatrix Aerospace a multi-year contract to supply propulsion systems for 30 Drishti Gen-II satellites as part of its upcoming OptoSAR constellation. The collaboration highlights a growing trend of private B2B partnerships within the Indian spacetech ecosystem, moving away from sole reliance on government manufacturing. Additionally, Earth observation startup Pixxel announced parallel partnerships with Centum Electronics and CS TECH Ai to advance its satellite hardware and geospatial applications. While this development is firmly rooted in the aerospace manufacturing sector, it illustrates robust supply chain scaling and local B2B vendor ecosystems in India.",
+        "why_it_matters": "For B2B marketers operating outside the aerospace sector, this news has minimal direct operational impact on marketing automation, CRM management, or lead generation campaigns. However, it signals an expanding industrial B2B vendor network within India's high-tech manufacturing economy, which may influence local B2B buying committees and industrial tech marketing strategies. B2B marketers targeting Indian manufacturing or deep-tech sectors can observe how these startups position capability, scale, and local partnerships in public announcements.",
+        "applications": [
+          "Monitor enterprise relationship trends in the expanding Indian deep-tech and spacetech sectors for potential account-based marketing (ABM) targets.",
+          "Study how specialized manufacturing startups structure press releases and announce major multi-year vendor contracts for PR benchmarking.",
+          "Evaluate local industrial supply chains if marketing B2B products or services tailored to high-tech hardware manufacturers in India."
+        ],
+        "recommendations": [
+          "What to explore/test: Assess whether deep-tech or industrial engineering startups fit your B2B ideal customer profile (ICP) before allocating ad spend.",
+          "Relevant tool types: Account-based intelligence platforms to track funding, partnerships, and executive changes in emerging Indian tech sectors.",
+          "Likely benefit: Better alignment of niche B2B targeting with emerging regional industry clusters.",
+          "Implementation considerations: Ensure your sales and marketing teams understand the long sales cycles typical of aerospace and deep-tech B2B contracts."
+        ],
+        "priority_reason": "While significant for the Indian spacetech industry, it has no direct operational impact on B2B marketing tactics, campaign execution, or martech stacks.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -1563,20 +1810,50 @@
       "category": "whatsapp",
       "category_label": "WhatsApp Marketing",
       "region": "India",
-      "region_reason": "Headline references India-specific context (sebi).",
-      "priority": "Medium",
+      "region_reason": "The development directly involves the Securities and Exchange Board of India (SEBI) issuing warnings and regulations regarding financial fraud within the Indian market.",
+      "priority": "High",
       "priority_score": 7,
       "excerpt": "Download the press release here. The Securities and Exchange Board of India (SEBI) has warned investors about fraudsters impersonating SEBI-registered intermediaries in closed social media groups , including WhatsApp and Telegram, to solicit investments through unauthorised trading platforms. In a…",
-      "companies": [],
+      "companies": [
+        "SEBI",
+        "MediaNama",
+        "Association of Portfolio Managers in India"
+      ],
       "topics": [
-        "whatsapp"
+        "WhatsApp marketing",
+        "regulatory compliance",
+        "fraud prevention",
+        "lead generation",
+        "India"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
+      "classification": "ai",
+      "ai_attempts": 1,
       "analysis": {
-        "status": "pending"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-25T00:48:01Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "MediaNama reports that the Securities and Exchange Board of India (SEBI) has warned investors about fraudsters impersonating SEBI-registered intermediaries on WhatsApp, Telegram, and other closed social media groups. According to the press release, fraudsters are using unauthorised trading platforms, fake SEBI credentials, and third-party bank accounts to solicit investments and display false portfolio balances. SEBI outlined 11 warning signs, including suspicious international admin numbers, unverified investment apps, and promises of assured returns or foreign trading opportunities.",
+        "summary": "SEBI has issued a public warning regarding widespread impersonation scams operating within closed messaging groups on platforms like WhatsApp and Telegram. Fraudsters are reportedly using fake credentials, forged SEBI letterheads, and fraudulent trading apps to trick investors into transferring funds to unregistered entities. The advisory highlights the regulatory scrutiny facing closed-group communications, which directly impacts how financial services and investment ideas are marketed via messaging apps. B2B marketers operating in the fintech and financial advisory space must note the heightened compliance environment surrounding closed-group lead generation in India.",
+        "why_it_matters": "For B2B marketers running lead generation or community-building campaigns on WhatsApp and Telegram in the financial sector, this regulatory crackdown increases compliance risks and scrutiny. Stricter oversight of closed user groups means campaigns must prominently display registration details and avoid aggressive or guaranteed-return pitches. Marketers must ensure their outreach strategies do not mirror the tactics flagged by SEBI, such as unverified links or third-party bank transfers, to maintain brand trust and avoid regulatory penalties.",
+        "applications": [
+          "Audit existing WhatsApp and Telegram community-building campaigns to ensure all administrator profiles clearly display valid SEBI registration numbers and verified brand names.",
+          "Review lead generation workflows to eliminate any reliance on unverified third-party payment links or direct bank transfers into unregistered accounts.",
+          "Update compliance training for sales and marketing teams engaging prospects in closed messaging groups to prevent the use of high-pressure tactics or unregulated investment claims.",
+          "Implement clear disclaimers and verification links in all social media and messaging outreach to reassure prospective clients of institutional legitimacy."
+        ],
+        "recommendations": [
+          "Explore compliant messaging automation tools that integrate explicit brand verification and disclosure features for closed-group marketing.",
+          "Test transparent educational content formats over direct promotional pitches within messaging apps to build trust without triggering regulatory red flags.",
+          "Consult legal and compliance teams to review all WhatsApp marketing templates against current SEBI disclosure mandates for financial services.",
+          "Monitor official SEBI portals and circulars regularly to adapt marketing operations immediately as new restrictions on social media channels emerge."
+        ],
+        "priority_reason": "Increased regulatory scrutiny and compliance requirements for marketing and lead generation via WhatsApp and closed groups directly impact financial sector B2B marketers in India.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -1623,20 +1900,48 @@
       "category": "martech",
       "category_label": "Marketing Technology",
       "region": "India",
-      "region_reason": "Article body references Indian market context (india, indian, meity).",
+      "region_reason": "The development directly involves an Indian home service platform, Indian labour markets, and regulatory scrutiny by the Indian government (MeitY).",
       "priority": "Medium",
       "priority_score": 8,
       "excerpt": "Provision Labs, a physical AI startup, is in the process of acquiring on-demand domestic help platform Pronto, Moneycontrol reported . This is being done to position Provision as a larger platform that can leverage real-world data to train physical AI systems. Pronto’s existing investors will…",
-      "companies": [],
+      "companies": [
+        "Provision Labs",
+        "Pronto",
+        "Glade Brook Capital",
+        "Snabbit"
+      ],
       "topics": [
-        "acquired"
+        "Data Privacy",
+        "Regulatory Compliance",
+        "Alternative Data",
+        "MeitY"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
+      "classification": "ai",
+      "ai_attempts": 1,
       "analysis": {
-        "status": "pending"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-25T00:48:11Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "MediaNama reports that physical AI startup Provision Labs is in the process of acquiring on-demand domestic help platform Pronto. According to the report, Pronto workers were previously seen wearing cameras to record household tasks to generate real-world training data for robotics labs. The Ministry of Electronics and Information Technology (MeitY) subsequently took cognisance of these practices, holding meetings to question companies regarding data privacy, security, and data-sharing contracts.",
+        "summary": "Provision Labs is acquiring the domestic help platform Pronto to leverage real-world data from India's informal labour market for training physical AI systems. Pronto previously used workers wearing cameras to record in-home tasks, creating a data business model that has drawn regulatory scrutiny from India's MeitY concerning consumer privacy and data handling. While framed around robotics and physical AI training, this development highlights the intersection of alternative data collection methods and strict regulatory oversight in emerging markets.",
+        "why_it_matters": "For B2B marketers operating in India or handling alternative data collection, this case highlights growing regulatory and privacy scrutiny around unconventional data sourcing. Marketers relying on user-generated or third-party physical data capture must closely monitor compliance with local data protection laws, as government bodies like MeitY are actively questioning cross-border data flows and consent mechanisms.",
+        "applications": [
+          "Review existing data collection and sourcing vendors to ensure absolute transparency and compliance with Indian privacy regulations",
+          "Audit CRM and customer data pipelines to verify that customer consent for data capture and processing is explicitly documented",
+          "Assess data-sharing agreements with third-party vendors to evaluate exposure to regulatory inquiries regarding data retention and offshore transfers"
+        ],
+        "recommendations": [
+          "Explore compliance audit tool types to verify data provenance; expected benefit is reduced exposure to sudden regulatory penalties; implementation consideration requires legal review of all vendor data contracts.",
+          "Test transparent consent workflows in data-gathering campaigns; expected benefit is higher consumer trust and regulatory safety; implementation consideration involves updating terms of service and privacy notices.",
+          "Monitor MeitY policy updates regarding alternative data harvesting; expected benefit is early adaptation to shifting compliance rules; implementation consideration involves assigning regulatory tracking to operations teams."
+        ],
+        "priority_reason": "It highlights significant regulatory interest in data collection practices in India, which could impact data-driven marketing and operational compliance.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -1653,23 +1958,49 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "India",
-      "region_reason": "Article body references Indian market context (bharat, hyderabad, indian).",
+      "region_reason": "The company maintains a majority of its workforce in Hyderabad and the development directly references the Indian enterprise AI market context and projections.",
       "priority": "Medium",
       "priority_score": 11,
       "excerpt": "Enterprise AI startup AidenAI has raised $32 Mn (₹297.1 Cr) in a Series A funding round led by growth investment firm A91 Partners, as it looks to expand its AI platform and engineering capabilities. The fresh capital will be used to invest in its platform and engineering talent as it looks to…",
-      "companies": [],
+      "companies": [
+        "AidenAI",
+        "A91 Partners",
+        "Infosys"
+      ],
       "topics": [
-        "ai agents",
-        "agentic",
-        "agentic ai",
-        "genai"
+        "Enterprise AI",
+        "Funding",
+        "Agentic AI",
+        "Legacy Modernisation"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
+      "classification": "ai",
+      "ai_attempts": 1,
       "analysis": {
-        "status": "pending"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-25T00:48:27Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that enterprise AI startup AidenAI has raised $32 million in a Series A funding round led by A91 Partners. Founded in 2023 by former Infosys executive Srinivas Kamadi, the New Jersey-based startup with a workforce mostly in Hyderabad offers an AI Builder Platform and an AI-driven technology modernisation platform called AiDAP. The company plans to use the fresh capital to scale its platform, expand engineering capabilities, and build a team of over 1,000 frontier AI engineers through its AidenAI Builder Academy.",
+        "summary": "Inc42 reports that AidenAI secured $32 million in Series A funding led by A91 Partners to scale its enterprise AI platform and engineering teams. The startup addresses enterprise bottlenecks by integrating AI into existing workflows, legacy systems, and data infrastructure through its AI Builder Platform and AiDAP modernisation tool. Operating across six countries with over 30 enterprise clients, AidenAI intends to deploy its new capital to expand its workforce, establish the AidenAI Builder Academy, and meet growing demand for agentic AI workflows. (Interpretation: This funding indicates strong investor confidence in infrastructure that moves enterprises past isolated AI experiments into operational deployment.)",
+        "why_it_matters": "As B2B enterprises move from isolated AI experiments to integrated operational workflows, platforms that bridge legacy systems with modern AI agents will become critical infrastructure. For marketing operations and data teams, this signals a broader industry shift toward automating multi-step business processes across functions like finance, HR, and analytics. Marketers operating in markets like India can expect enterprise clients to demand tighter integration between marketing tech stacks and custom AI applications.",
+        "applications": [
+          "Explore integrating custom AI agents into existing CRM and marketing automation workflows to handle multi-step lead nurturing tasks.",
+          "Evaluate legacy data infrastructure readiness to determine if modern tech stack updates are required prior to deploying advanced AI analytics.",
+          "Assess how enterprise clients adopting agentic AI across business functions will alter B2B buying cycles and procurement requirements.",
+          "Monitor enterprise modernization trends in regional markets like India to align B2B service offerings with broader digital transformation budgets."
+        ],
+        "recommendations": [
+          "Explore enterprise AI orchestration tool types that connect legacy databases with modern LLMs; this will help automate complex campaign data operations.",
+          "Test small-scale internal agentic AI workflows for lead routing before deploying customer-facing automation to validate data security and output quality.",
+          "Audit current marketing analytics and CRM architectures to identify integration bottlenecks that could hinder future AI adoption.",
+          "Monitor enterprise funding and platform announcements in the B2B SaaS space to benchmark upcoming marketing technology capabilities."
+        ],
+        "priority_reason": "While a funding announcement, it highlights the broader scaling of enterprise AI and agentic workflow infrastructure relevant to B2B operations.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -1687,6 +2018,36 @@
       "category_label": "AI & Technology",
       "region": "India",
       "region_reason": "Headline references India-specific context (india).",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "openai"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "e2d4ae690d34abcd",
+      "title": "Sana Shaikh Joins OpenAI News, Insights & Timeline",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVTI5X2xmMTlMN05DUmFOTkk5OEZxS2dPaTA3Tl9PZ3RlamhpZ1RWdU5PZlZtOUtSemM2Vk92cFJ1ZUo1aFlMdTNuUzFOSlFSZU1mRzVNN3FNcmZCZkJPUVlMTDFKMXRLTlZBN2YzZ0k4X2ZyNTRxdjBMX1VidnBUSWgwcDY?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVTI5X2xmMTlMN05DUmFOTkk5OEZxS2dPaTA3Tl9PZ3RlamhpZ1RWdU5PZlZtOUtSemM2Vk92cFJ1ZUo1aFlMdTNuUzFOSlFSZU1mRzVNN3FNcmZCZkJPUVlMTDFKMXRLTlZBN2YzZ0k4X2ZyNTRxdjBMX1VidnBUSWgwcDY?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T10:03:41Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
       "priority": "Low",
       "priority_score": 5,
       "excerpt": "",
@@ -1864,24 +2225,55 @@
       "credibility": "publication",
       "published_at": "2026-11-24T09:16:50Z",
       "collected_at": "2026-11-25T00:30:26Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
       "region": "India",
-      "region_reason": "Headline references India-specific context (₹).",
-      "priority": "Medium",
+      "region_reason": "The development focuses on an Indian startup based in Bengaluru raising funds and scaling domestic production facilities.",
+      "priority": "Low",
       "priority_score": 6,
       "excerpt": "Bengaluru-based robotics hardware startup Cosine Robots has raised ₹22.4 Cr (about $2.4 Mn) in a funding round led by Avaana Capital, with participation from WEH Ventures and angel investors. The startup will use the fresh capital to scale its new R&D and production facility in Bengaluru, expand…",
-      "companies": [],
+      "companies": [
+        "Cosine Robots",
+        "Avaana Capital",
+        "WEH Ventures",
+        "Botsync",
+        "IvyCap Ventures",
+        "Anscer Robotics"
+      ],
       "topics": [
-        "funding round",
-        "series a"
+        "Robotics",
+        "Funding",
+        "Hardware",
+        "India Startup Ecosystem",
+        "B2B Industrial Tech"
       ],
       "also_covered_by": [],
       "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
+      "classification": "ai",
+      "ai_attempts": 1,
       "analysis": {
-        "status": "pending"
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-25T00:48:37Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that Bengaluru-based robotics hardware startup Cosine Robots has raised ₹22.4 Cr ($2.4 Mn) in a funding round led by Avaana Capital, with participation from WEH Ventures and angel investors. Founded in 2024 by Kiran Mathew Koshy and Delip Thomas, the startup develops actuators and motion systems for robotic applications. The fresh capital will be used to scale its new R&D and production facility in Bengaluru, expand its engineering team, and accelerate development of its integrated servo actuator portfolio.",
+        "summary": "Inc42 reports that Bengaluru-based robotics hardware startup Cosine Robots has secured ₹22.4 Cr in funding to scale its production facilities and engineering team. The startup builds integrated servo actuators and motion systems that combine motors, gearboxes, sensors, electronics, and proprietary control software. While primarily a hardware and robotics development story rather than a direct marketing platform update, it highlights broader growth in the Indian deep-tech and automation manufacturing sector. B2B marketers operating in the industrial technology ecosystem should note the increasing availability of locally manufactured components.",
+        "why_it_matters": "For B2B marketers in the industrial automation and hardware sectors in India, the growth of local component manufacturers like Cosine Robots signals shifting supply chains and emerging partnership opportunities. As local deep-tech startups scale, positioning domestic solutions effectively against global incumbents will require targeted account-based marketing and technical content. Campaign messaging may need to pivot towards total cost of ownership, local support, and supply chain resilience.",
+        "applications": [
+          "Develop account-based marketing (ABM) campaigns targeting robotics and industrial automation manufacturers in India.",
+          "Create technical content focused on supply chain localization and cost-efficiency for hardware components.",
+          "Identify partnership or co-marketing opportunities within the growing Indian deep-tech and robotics ecosystem.",
+          "Refine lead generation strategies for B2B industrial tech by mapping emerging hardware startups as potential clients or channel partners."
+        ],
+        "recommendations": [
+          "Explore mapping the Indian robotics and deep-tech startup landscape to identify niche B2B target accounts; tool types: B2B contact databases and CRM enrichment tools; likely benefit: sharper market segmentation; implementation considerations: ensure data fields track hardware manufacturing capabilities.",
+          "Test technical thought-leadership content highlighting supply chain advantages for local automation buyers; tool types: content management and SEO analytics; likely benefit: higher engagement from engineering decision-makers; implementation considerations: collaborate closely with product and engineering teams for accuracy.",
+          "Review existing lead scoring models to give higher priority to companies receiving venture funding in the deep-tech sector; tool types: marketing automation and CRM lead scoring; likely benefit: faster identification of well-funded prospects; implementation considerations: monitor funding news to update account tiers dynamically."
+        ],
+        "priority_reason": "While it signals growth in the Indian deep-tech ecosystem, it is a general funding announcement for a hardware startup rather than a direct change to B2B marketing operations or martech tools.",
+        "needs_validation": false,
+        "validation_note": ""
       }
     },
     {
@@ -2226,6 +2618,34 @@
         "priority_reason": "Cashfree's wallet for AI agents represents a notable technical shift towards agentic commerce in India, though mainstream adoption for marketing operations is still in early stages.",
         "needs_validation": false,
         "validation_note": ""
+      }
+    },
+    {
+      "id": "e3a9c4adac011feb",
+      "title": "Campaigns Compete for the Same Inbox. Give Them a Shared Pressure Budget.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSHU0c0ttalM2bWRUZ25ITmk4Z0VSSWZFUGF0Z3k4ZVlDQ1Q3QmdUMmxqQWRjcFBIUnhGbHV6N1NKVjBqcVRCWTZwcjJhR3BDMl8zNDhYV0dsUzZ5ci01UUs3bS1GSURYZ2R1RXA2aWZ0bnh2dVgxdVlVMFhOeGgzN2pKbTFFcTZKYjVQa2tmTW1vRlRiWUtBZDBB?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSHU0c0ttalM2bWRUZ25ITmk4Z0VSSWZFUGF0Z3k4ZVlDQ1Q3QmdUMmxqQWRjcFBIUnhGbHV6N1NKVjBqcVRCWTZwcjJhR3BDMl8zNDhYV0dsUzZ5ci01UUs3bS1GSURYZ2R1RXA2aWZ0bnh2dVgxdVlVMFhOeGgzN2pKbTFFcTZKYjVQa2tmTW1vRlRiWUtBZDBB?oc=5",
+      "source": "HackerNoon",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-24T07:21:18Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "",
+      "companies": [],
+      "topics": [],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -2880,15 +3300,70 @@
       "category": "ai",
       "category_label": "AI & Technology",
       "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "region_reason": "The announcement covers a global platform (Clay) and global AI models (OpenAI/ChatGPT) without specific regional restriction.",
       "priority": "Medium",
       "priority_score": 10,
       "excerpt": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
-      "companies": [],
-      "topics": [
-        "chatgpt",
-        "gpt"
+      "companies": [
+        "Clay",
+        "OpenAI"
       ],
+      "topics": [
+        "AI integration",
+        "Sales prospecting",
+        "Data enrichment",
+        "Go-to-market strategy"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-25T00:48:46Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "OpenAI News reports that Clay uses ChatGPT and Codex integrations to help users research deals and turn data into go-to-market plays. The text states that GPT-6 models handle the reasoning for these workflows.",
+        "summary": "OpenAI News reports that sales and go-to-market platform Clay has integrated ChatGPT, Codex, and GPT-6 models to assist users with deal research and data transformation. Specifically, these integrations allow sales teams to leverage advanced AI reasoning to convert raw data into actionable market strategies. While the text is brief, it highlights the practical application of large language models within outbound sales and data enrichment tools. B2B marketers can infer that such capabilities streamline prospecting workflows by automating data synthesis and campaign planning.",
+        "why_it_matters": "For B2B marketers and outbound sales teams, the integration of advanced reasoning models into data platforms like Clay reduces manual effort in account research and segmentation. This enables faster customisation of outreach campaigns at scale, potentially improving response rates and shortening the sales cycle. Leveraging automated data-to-play workflows bridges the gap between raw contact data and targeted marketing execution.",
+        "applications": [
+          "Automate account research and enrichment using AI reasoning models within data platforms",
+          "Transform raw prospect lists and firmographic data into targeted go-to-market campaigns",
+          "Scale personalised B2B messaging by feeding enriched data directly into automated copywriting workflows",
+          "Optimise lead scoring and prioritisation based on deeper AI-driven analysis of deal potential"
+        ],
+        "recommendations": [
+          "Explore Clay's AI integration capabilities to test automated account research; expected benefit is reduced manual prospecting time; implementation consideration involves data privacy and prompt accuracy.",
+          "Evaluate current data enrichment and CRM workflows to identify bottlenecks where AI reasoning models could be integrated; expected benefit is improved data-to-campaign speed; implementation consideration includes API limits and integration costs.",
+          "Test AI-generated go-to-market plays on a small outbound segment before full rollout; expected benefit is refined messaging without risking brand reputation; implementation consideration requires careful review of AI output for accuracy.",
+          "Assess team readiness and skills required to write effective prompts for data-to-outreach automation; expected benefit is higher quality campaign outputs; implementation consideration includes internal training."
+        ],
+        "priority_reason": "It highlights practical integration of advanced AI models in a key B2B sales and data tool, making it worth tracking for operational efficiency.",
+        "needs_validation": true,
+        "validation_note": "Verify the exact feature set, pricing tiers, and release timeline for GPT-6 integrations within Clay as mentioned in the original source."
+      }
+    },
+    {
+      "id": "7a6462e387eb267a",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "canonical_url": "https://openai.com/business/customer-stories/ifood",
+      "source": "OpenAI News",
+      "source_id": "openai-news",
+      "via": null,
+      "credibility": "official",
+      "published_at": "2026-11-24T00:00:00Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [],
       "also_covered_by": [],
       "url_check": "valid",
       "classification": "rules",
@@ -3763,6 +4238,36 @@
       }
     },
     {
+      "id": "fbc543bc06dacadd",
+      "title": "Stop Email Imposters At The Door: The Instant DMARC Checker",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPXzd0QUExcWFaWk90S2s0QmE5bmVnSEJubllPN3JjUzdGNVZScjdzZmVyRDdBVXMwTlBsWTl0a3h3bUdGVFFNd08wdURsSGplZFZxVS1fY1hOLVlkWUkyRWFjcTZ6T3RxRWN0RTQyTHFyYVpMNnhOZ0V1NHk2aGFtU1l5bGxCQ3dvSXlvMzVJRlBuN0NC?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPXzd0QUExcWFaWk90S2s0QmE5bmVnSEJubllPN3JjUzdGNVZScjdzZmVyRDdBVXMwTlBsWTl0a3h3bUdGVFFNd08wdURsSGplZFZxVS1fY1hOLVlkWUkyRWFjcTZ6T3RxRWN0RTQyTHFyYVpMNnhOZ0V1NHk2aGFtU1l5bGxCQ3dvSXlvMzVJRlBuN0NC?oc=5",
+      "source": "Nerdbot",
+      "source_id": "gnews-email",
+      "via": "Google News: Email deliverability",
+      "credibility": "aggregator",
+      "published_at": "2026-11-23T16:03:25Z",
+      "collected_at": "2026-11-25T00:47:14Z",
+      "category": "email",
+      "category_label": "Email Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "dmarc"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "275132b5abd6638a",
       "title": "Truelist Adds SPF, DKIM, DMARC and Blacklist Monitoring to Email Validation",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTllFMnBXbVYwX3ZtQzVndTY0dTl5TFl0U094Um1CUk4wRTlmT0h2NHRSZUt2eHdubGVVeVhWVnpNTmNpTjU5NXJ5NDJBel9DckVncm1RcHV2dG5Nc2ZTcWhoNUxWSW1GSzI0QnNWQmhNZi1VOUp1OFRTVm4zRGgxU3V3UWllcXB2SlVZMFN4SG5kQ3RPelhENTNWTDJyUk5HOEpPMDBqQ241V0trOFdkSDJQdEltRVN0cEowaDIzZF9ieldzbmxZdGlfckd0QVdo?oc=5",
@@ -3972,595 +4477,6 @@
           "Monitor regulatory updates from bodies like CERT-In and RBI regarding vendor risk controls; likely benefit is maintaining proactive compliance for data-handling practices in India."
         ],
         "priority_reason": "A major security breach at a widely used SaaS engagement platform impacts enterprise data security, forcing an immediate review of third-party martech risk management.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "99bd0cf495bf9ff6",
-      "title": "How to vet AI capabilities during martech RFPs",
-      "url": "https://martech.org/how-to-vet-ai-capabilities-during-martech-rfps/",
-      "canonical_url": "https://martech.org/how-to-vet-ai-capabilities-during-martech-rfps",
-      "source": "MarTech",
-      "source_id": "martech-org",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T13:19:00Z",
-      "collected_at": "2026-11-24T00:30:35Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "Global",
-      "region_reason": "The article discusses general martech RFP procurement practices applicable to global B2B marketing and technology evaluation.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "In MarTech’s “MarTechBot explains it all” feature, we pose a marketing question to our very own MarTechBot, which is trained on the MarTech website archives and has access to the broader internet. Question: What key questions should buyers ask vendor sales teams during RFPs to verify genuine AI…",
-      "companies": [
-        "MarTech",
-        "OpenAI",
-        "Anthropic",
-        "Gemini"
-      ],
-      "topics": [
-        "martech rfp",
-        "ai procurement",
-        "marketing operations",
-        "vendor evaluation",
-        "marketing technology"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T00:34:07Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MarTech reports that buyers should ask specific questions during martech RFPs to distinguish genuine AI capabilities from rebranded legacy software. The publication highlights key areas for questioning, including underlying model architecture, data privacy and governance, tech stack integration, safety guardrails, compute cost structures, and live unscripted demonstration capabilities.",
-        "summary": "MarTech outlines a framework for B2B marketers and procurement teams to vet artificial intelligence features in marketing technology platforms during the Request for Proposal (RFP) process. The advice focuses on cutting through marketing hype by interrogating whether a tool uses genuine reasoning and adaptive capabilities or simply relies on legacy rule-based workflows and templates. Key vetting pillars include technical architecture, data security, CRM/CDP integration, guardrails against hallucinations, predictable pricing models, and live testing of unscripted multi-step tasks. Ultimately, the process helps marketing operations teams understand true operational control, integration complexity, and total cost of ownership before purchasing.",
-        "why_it_matters": "B2B marketing teams face constant vendor pitches repackaging basic automation as advanced AI, risking misallocated budgets and integrated tech stack friction. A rigorous RFP vetting process prevents marketing operations from buying siloed tools that fail to connect securely with CRMs, customer data platforms, or data warehouses. Understanding pricing models (such as token usage or task volume versus per-seat billing) ensures predictable budgeting as automated workflows scale.",
-        "applications": [
-          "Design a standardized AI vendor evaluation scorecard based on underlying model architecture, data governance, and integration protocols.",
-          "Challenge martech vendor sales teams with unscripted, multi-step live demo tasks and edge cases during RFP evaluations.",
-          "Audit existing marketing technology contracts to verify data privacy terms, specifically whether proprietary marketing data is used to train shared models.",
-          "Model potential compute and token usage costs across different pricing structures before committing to high-volume AI agent deployments."
-        ],
-        "recommendations": [
-          "Explore developing a mandatory AI vetting questionnaire for upcoming software evaluations; relevant tool types include RFP management and vendor assessment templates; the likely benefit is avoiding legacy tools sold as AI; implementation consideration involves aligning procurement and IT security teams.",
-          "Test martech platforms with custom live scenarios involving mid-task instruction changes; relevant tool types include live demo scripts; the likely benefit is exposing rigid template workflows disguised as reasoning agents; implementation consideration requires pre-allocating time in vendor sales calls.",
-          "Review data retention, encryption, and sandboxing clauses with legal teams; relevant tool types include vendor security review checklists; the likely benefit is safeguarding proprietary customer data and maintaining compliance; implementation consideration involves strict adherence to regional data privacy laws."
-        ],
-        "priority_reason": "It offers a timely and practical operational framework for evaluating martech procurement, though it does not represent an immediate platform policy shift or urgent market deadline.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "429920f88e118c47",
-      "title": "India AI funding nearly doubles to $1.6B in Jan-Sept 2026: Tracxn",
-      "url": "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn",
-      "canonical_url": "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn",
-      "source": "YourStory",
-      "source_id": "yourstory",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T13:16:44Z",
-      "collected_at": "2026-11-24T08:30:31Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "The report focuses entirely on equity funding metrics, regional shifts, and market performance of Indian artificial intelligence companies.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "India AI companies raised $1.6 billion in equity funding in the first nine months of 2026, nearly double the level in the year-ago period, according to a report by Tracxn Technologies. This, in fact, is the highest funding grosser across the nine-month periods covered since 2019. \"India AI…",
-      "companies": [
-        "Tracxn Technologies",
-        "Neysa",
-        "Sarvam",
-        "Yotta",
-        "Peak XV Partners",
-        "Prosus",
-        "Khosla Ventures",
-        "Antler"
-      ],
-      "topics": [
-        "AI funding",
-        "venture capital",
-        "martech ecosystem",
-        "India tech market"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T08:33:03Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "YourStory reports that India AI companies raised $1.6 billion in equity funding between January and September 2026, which is nearly double the amount raised in the same period in 2025. According to a Tracxn Technologies report, this capital was secured across 87 rounds, indicating that the funding surge was driven by fewer but significantly larger deals, with Mumbai overtaking Bengaluru in total funding raised. Neysa raised the largest single round at $600 million, while Sarvam and Yotta also secured substantial funding rounds.",
-        "summary": "YourStory reports that equity funding for Indian AI companies reached $1.6 billion in the first nine months of 2026, representing a 96% increase compared to the previous year. This capital influx was concentrated in fewer rounds—87 compared to 149 previously—demonstrating a shift towards larger ticket sizes, led by major rounds from companies like Neysa and Sarvam. Early-stage funding saw a massive increase in average round sizes, while the total number of investing participants and first-time funded companies declined. From an analytical perspective, this indicates a maturing ecosystem where venture capital is consolidating around heavily backed infrastructure and foundational AI plays rather than scattered seed bets.",
-        "why_it_matters": "For B2B marketing professionals in India, this surge in well-capitalised AI startups signals an expanding local ecosystem of enterprise-grade AI vendors, cloud providers, and marketing technology platforms. As these companies scale operations with fresh capital, B2B marketers can expect more aggressive go-to-market motions, localized AI solutions, and partnership opportunities. However, the concentration of capital in fewer, larger deals suggests that the vendor landscape may consolidate, requiring marketers to carefully vet stability and scalability when selecting new martech vendors.",
-        "applications": [
-          "Evaluate newly well-capitalized Indian AI cloud and generative AI vendors like Neysa or Sarvam for enterprise marketing automation and infrastructure upgrades.",
-          "Target scaling Indian AI startups with specialized B2B marketing services, data services, or lead generation frameworks tailored to fast-growing tech firms.",
-          "Monitor competitive shifts as heavily funded local AI players ramp up customer acquisition and brand awareness campaigns within the domestic market.",
-          "Incorporate localized generative AI models and infrastructure capabilities into regional marketing workflows and customer data platforms."
-        ],
-        "recommendations": [
-          "Explore strategic partnerships with newly funded Indian AI vendors to test emerging marketing automation features; relevant tool types include generative AI platforms and cloud infrastructure providers.",
-          "Audit existing martech stack vendors for financial stability and long-term viability, given the broader venture market trend toward fewer, larger investments and consolidated deal volumes.",
-          "Monitor competitor displacement strategies by newly capitalized AI players to adjust defensive B2B acquisition campaigns accordingly.",
-          "Assess regional compliance and data residency benefits when evaluating Indian AI providers against global alternatives for local campaigns."
-        ],
-        "priority_reason": "While it highlights important macroeconomic shifts in the Indian AI vendor ecosystem, it does not directly change immediate day-to-day campaign execution mechanics.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "31be486bea65c5be",
-      "title": "Cloud Exit Clauses India: SaaS Contract Guide 2026",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeUxiYTJHZkQ3cXBlSUJCcFByWW1TTE91bS00UU40X1hVVjRycWRhczJUUml2dWFhTzRLdnB3Uk1PZGhEbENOTzlBQzNRLW5ZUGR3SGswVDlKb2M2dVhpNHJrNXlEUnVmV1RFcDNlN3dfVkk0X0xHUExQcUpkdEJUY2U3VGZ4RVdyalAzZ2RGcmVsTWNqOXc?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeUxiYTJHZkQ3cXBlSUJCcFByWW1TTE91bS00UU40X1hVVjRycWRhczJUUml2dWFhTzRLdnB3Uk1PZGhEbENOTzlBQzNRLW5ZUGR3SGswVDlKb2M2dVhpNHJrNXlEUnVmV1RFcDNlN3dfVkk0X0xHUExQcUpkdEJUY2U3VGZ4RVdyalAzZ2RGcmVsTWNqOXc?oc=5",
-      "source": "Global Advisory Experts",
-      "source_id": "gnews-india-martech",
-      "via": "Google News India: SaaS & martech",
-      "credibility": "aggregator",
-      "published_at": "2026-11-23T12:47:47Z",
-      "collected_at": "2026-11-24T08:30:31Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "India",
-      "region_reason": "Headline references India-specific context (india).",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "saas"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "d852abc9772063cb",
-      "title": "Log out after using WhatsApp Web to prevent account hijacking: MHA advises users",
-      "url": "https://yourstory.com/2026/11/mha-warns-whatsapp-web-users-of-account-hijacking-advises-logging-out-after-every-session",
-      "canonical_url": "https://yourstory.com/2026/11/mha-warns-whatsapp-web-users-of-account-hijacking-advises-logging-out-after-every-session",
-      "source": "YourStory",
-      "source_id": "yourstory",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T12:47:23Z",
-      "collected_at": "2026-11-24T00:30:35Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "India",
-      "region_reason": "The development involves advisories and actions issued by the Indian Ministry of Home Affairs and the Indian Cyber Crime Coordination Centre.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "The Ministry of Home Affairs (MHA) has issued a cybersecurity advisory cautioning users about the potential misuse of authenticated WhatsApp Web sessions to gain access to their accounts. The advisory, dated November 18, was issued by the National Cybercrime Threat Analytics Unit of the Indian…",
-      "companies": [
-        "YourStory",
-        "Microsoft",
-        "Quick Heal",
-        "K7 Computing",
-        "Net Protector"
-      ],
-      "topics": [
-        "WhatsApp Web",
-        "Cybersecurity",
-        "Fraud Prevention",
-        "MHA Advisory",
-        "B2B Operations"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T00:34:30Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "YourStory reports that the Ministry of Home Affairs (MHA) has issued an advisory warning users about account hijacking risks associated with leaving WhatsApp Web sessions logged in on shared devices. The advisory highlights the 'Boss Scam', where malware delivered via malicious ZIP files compromises Windows computers to hijack active WhatsApp Web sessions and impersonate executives for financial fraud. The MHA recommends manually logging out of sessions, avoiding WhatsApp Web on untrusted systems, and independently verifying urgent payment instructions.",
-        "summary": "The Indian Ministry of Home Affairs has issued a cybersecurity advisory through the I4C warning organizations and users against the security risks of leaving WhatsApp Web sessions active on shared or office computers. The advisory details how malware distributed via malicious ZIP files can hijack active browser-based WhatsApp sessions, enabling attackers to impersonate executives and execute social engineering or financial fraud known as the 'Boss Scam'. While the text focuses heavily on consumer and corporate security best practices, it highlights significant operational risks for businesses utilizing WhatsApp for communication and operations. Marketers and customer operations teams must recognize that security compromises on shared devices can severely disrupt channel reliability and brand trust. Organizations should treat browser-based communication channels with the same rigorous security protocols applied to core corporate software.",
-        "why_it_matters": "For B2B marketers and operations teams relying on WhatsApp for lead generation, customer support, or internal coordination, account takeovers represent a critical operational and reputational risk. If an account used for business automation or outreach is compromised, malicious actors can distribute phishing links or fraudulent instructions to valuable client contacts, destroying brand trust. Additionally, strict internal directives or organizational bans on WhatsApp Web in secure environments could disrupt workflows for teams managing customer chats directly from desktop interfaces.",
-        "applications": [
-          "Audit all team member devices and shared workstations to ensure active WhatsApp Web sessions are systematically terminated after use.",
-          "Implement strict internal security policies prohibiting the use of personal or shared desktop browsers for managing sensitive business or client WhatsApp accounts.",
-          "Establish multi-step verification protocols for any financial transactions, budget approvals, or sensitive data requests initiated via messaging apps.",
-          "Conduct security awareness training for marketing and sales operations staff to spot malicious file attachments like fake account statement ZIP files."
-        ],
-        "recommendations": [
-          "Explore enterprise endpoint security tools and browser management extensions to restrict unauthorized session persistence on company-issued hardware; benefit is reduced risk of credential theft.",
-          "Test migrating high-volume customer interaction workflows from personal desktop sessions to official WhatsApp Business API platforms managed via secure, role-based CRM integrations; benefit is enhanced access control and audit trails.",
-          "Review and audit the 'Linked Devices' list across all corporate and shared WhatsApp accounts on a weekly basis; benefit is early detection of unauthorized access.",
-          "Implement secondary verification channels (such as voice calls or internal ticketing systems) for all urgent financial or vendor payment requests received via chat; benefit is prevention of CEO impersonation fraud."
-        ],
-        "priority_reason": "It highlights critical security risks and operational advisories regarding WhatsApp Web usage that impact corporate communication workflows and safety in India.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "5ba4a7b0e003d839",
-      "title": "MHA issues advisory on WhatsApp Web sessions to prevent ‘unauthorized access’",
-      "url": "https://www.medianama.com/2026/11/223-mha-advisory-whatsapp-web-unauthorized-access/",
-      "canonical_url": "https://medianama.com/2026/11/223-mha-advisory-whatsapp-web-unauthorized-access",
-      "source": "MediaNama",
-      "source_id": "medianama",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T12:36:34Z",
-      "collected_at": "2026-11-24T00:30:35Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "India",
-      "region_reason": "The development focuses on advisories issued by the Indian Ministry of Home Affairs and the Indian Cyber Crime Coordination Centre.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "Access a copy of the MHA-I4C advisory here: [ PDF ] We missed this earlier: About a month before the Department of Telecommunications’ (DoT) SIM-binding mandate is scheduled to take effect, the Ministry of Home Affairs (MHA) issued an advisory on the ‘safe use of WhatsApp Web’. The National…",
-      "companies": [
-        "WhatsApp",
-        "Telegram",
-        "MediaNama",
-        "CNN-News18"
-      ],
-      "topics": [
-        "WhatsApp Web",
-        "cybersecurity",
-        "MHA advisory",
-        "SIM-binding",
-        "messaging compliance"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T00:34:41Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MediaNama reports that the Ministry of Home Affairs (MHA) and its National Cybercrime Threat Analytics Unit (NCTAU) issued an advisory on the safe use of WhatsApp Web to prevent unauthorized account access. The advisory warns that compromised web sessions can allow malicious actors to read and send messages, access contacts, and execute phishing or fraud. MediaNama also notes that this follows reports of an impending Department of Telecommunications (DoT) SIM-binding mandate and unverified social media claims regarding security breaches in defence-linked WhatsApp groups.",
-        "summary": "The Ministry of Home Affairs in India has issued a public advisory cautioning users against security risks linked to WhatsApp Web sessions on shared, public, or office computers. While the advisory arrives ahead of impending DoT SIM-binding regulations designed to curb cybercrime, web session security remains a distinct operational risk. B2B marketing teams utilizing WhatsApp Web for customer engagement or sales outreach must take note of these heightened security concerns. In addition, organizations operating in sensitive sectors face increasing scrutiny over group memberships and multi-device access protocols.",
-        "why_it_matters": "For B2B marketing and sales teams using WhatsApp Web for lead nurturing, client communication, and team collaboration, heightened MHA scrutiny and session security risks require tighter operational controls. Compromised web sessions pose severe risks to brand reputation, customer data privacy, and trust if malicious actors hijack active business channels. Additionally, upcoming SIM-binding mandates and web session security policies may alter how marketing teams manage multi-user desktop access to shared WhatsApp business accounts.",
-        "applications": [
-          "Audit all active WhatsApp Web and multi-device desktop sessions currently used by sales and marketing teams.",
-          "Enforce strict organizational policies prohibiting the use of personal or shared public computers for business WhatsApp accounts.",
-          "Implement multi-factor authentication and regular sign-out protocols for any desktop-based messaging tools.",
-          "Review and sanitize all customer-facing and internal WhatsApp broadcast or group lists to remove unverified or inactive contacts."
-        ],
-        "recommendations": [
-          "Explore enterprise-grade MDM (Mobile Device Management) solutions or official WhatsApp Business API platforms to reduce reliance on vulnerable browser-based web sessions; benefit is centralized security control; implementation requires IT coordination.",
-          "Test team-wide compliance with session logout routines at the end of each working day; benefit is minimized window for unauthorized desktop access; implementation requires internal training and checklist creation.",
-          "Audit existing CRM-to-WhatsApp integrations to ensure session authentication tokens are securely managed; benefit is prevention of third-party data leakage; implementation requires a technical review with marketing operations.",
-          "Monitor upcoming DoT SIM-binding guidelines and MHA directives to anticipate any operational impact on shared customer service numbers; benefit is avoiding sudden communication downtime; implementation requires legal and IT policy alignment."
-        ],
-        "priority_reason": "It highlights important security advisories and regulatory context regarding WhatsApp Web usage in India that impact how teams manage desktop access to business messaging channels.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "9422f9cd45e2400e",
-      "title": "Home Ministry Warns Of WhatsApp Web Misuse, Advises Against Sensitive Work",
-      "url": "https://inc42.com/buzz/home-ministry-warns-of-whatsapp-web-misuse-advises-against-sensitive-work/",
-      "canonical_url": "https://inc42.com/buzz/home-ministry-warns-of-whatsapp-web-misuse-advises-against-sensitive-work",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T12:14:13Z",
-      "collected_at": "2026-11-24T00:30:35Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "India",
-      "region_reason": "The development focuses on advisories issued by the Indian Cyber Crime Coordination Centre (I4C) targeting the Indian market.",
-      "priority": "High",
-      "priority_score": 7,
-      "excerpt": "The Indian Cyber Crime Coordination Centre (I4C), under the Ministry of Home Affairs, has advised users to avoid exchanging official, financial, confidential, or other sensitive information through WhatsApp Web, warning that active browser sessions could be misused to access their accounts. In a…",
-      "companies": [
-        "WhatsApp",
-        "Telegram"
-      ],
-      "topics": [
-        "WhatsApp Web",
-        "Cybersecurity",
-        "Fraud Prevention",
-        "B2B Communication",
-        "India"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T00:34:50Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that the Indian Cyber Crime Coordination Centre (I4C) has warned users against exchanging sensitive, financial, or official information via WhatsApp Web due to risks of active session misuse. The agency noted that attackers can hijack sessions to read messages, impersonate users, and execute phishing or fraud. I4C specifically recommended avoiding shared or public computers, manually logging out rather than just closing browser tabs, and verifying urgent fund transfers via direct voice calls.",
-        "summary": "The Indian Cyber Crime Coordination Centre (I4C) issued an advisory warning against using WhatsApp Web for official, financial, or confidential communications due to the risk of session hijacking and account takeovers. Attackers can exploit active browser sessions on shared or office computers to impersonate users, access contacts, and execute social engineering or financial fraud. B2B marketing and sales teams relying on WhatsApp for client communications must take note of these security vulnerabilities. Interpreted as a major operational risk, organisations must enforce stricter endpoint security and session management for all business messaging channels.",
-        "why_it_matters": "As businesses increasingly adopt WhatsApp for customer engagement, lead nurturing, and sales conversations, account takeovers pose severe operational, financial, and reputational risks. Security directives from national cyber agencies indicate that using shared or poorly secured desktop environments for business messaging can expose proprietary data and sensitive client interactions to malicious actors. Marketing and sales operations teams must review how team members access web-based messaging tools, particularly when handling sensitive financial approvals or client data.",
-        "applications": [
-          "Review and audit all team members' access points and active sessions for business WhatsApp accounts.",
-          "Establish clear protocols prohibiting the handling of sensitive financial or client data over personal or shared desktop browsers.",
-          "Implement mandatory training for sales and marketing teams on secure session management and manual log-out procedures for WhatsApp Web.",
-          "Institute strict secondary verification workflows, such as direct phone calls, for any financial transactions or payment detail changes discussed over messaging apps."
-        ],
-        "recommendations": [
-          "Explore enterprise-grade security tools that monitor and manage browser sessions on corporate endpoints.",
-          "Test centralized WhatsApp Business API solutions instead of personal web accounts to maintain tighter access control and audit trails.",
-          "Implement corporate policies requiring multi-factor authentication and restricting business messaging to company-managed devices.",
-          "Collaborate with internal IT and security teams to run awareness campaigns on session hijacking and malicious file downloads."
-        ],
-        "priority_reason": "Direct security warnings regarding business messaging accounts require immediate operational adjustments for teams using WhatsApp Web.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "d9aa14c3eb2ada35",
-      "title": "How to build reliable client reporting with AI by AgencyAnalytics",
-      "url": "https://martech.org/how-to-build-reliable-client-reporting-with-ai/",
-      "canonical_url": "https://martech.org/how-to-build-reliable-client-reporting-with-ai",
-      "source": "MarTech",
-      "source_id": "martech-org",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T12:00:00Z",
-      "collected_at": "2026-11-24T08:30:31Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "Global",
-      "region_reason": "The article discusses general agency operations, marketing tech standards, and global tools without specific focus on the Indian market.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "If the past year has been hard to keep up with, you’re not alone. AI has changed how agencies work and what clients expect. Many clients now use AI in their own jobs, so they assume you’re using it, too. Sooner or later, they’ll ask how. Chances are, AI is already part of your workflow. The…",
-      "companies": [
-        "AgencyAnalytics",
-        "Semrush",
-        "Google Ads",
-        "Meta Ads Manager",
-        "Hootsuite",
-        "Google Analytics",
-        "ChatGPT",
-        "Claude"
-      ],
-      "topics": [
-        "AI reporting",
-        "Model Context Protocol",
-        "Marketing analytics",
-        "Agency operations",
-        "Data integration"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T08:33:13Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MarTech reports that AgencyAnalytics uses the Model Context Protocol (MCP) to allow AI assistants like ChatGPT and Claude to connect directly to client performance data sources. The text states that MCP serves as an open standard enabling AI tools to query centralized data instead of relying on manually pasted exports. Furthermore, MarTech highlights that consolidating data from platforms like Semrush, Google Ads, Meta Ads Manager, Hootsuite, and Google Analytics into a single platform helps prevent inaccurate AI summaries caused by fragmented data.",
-        "summary": "MarTech outlines how agencies can build reliable AI-driven client reporting by connecting centralized data platforms to AI assistants using the Model Context Protocol (MCP). The article explains that manual data exports and fragmented tool stacks lead to incomplete context and inaccurate AI summaries. By implementing an MCP connection, tools like ChatGPT or Claude can securely query unified data sources directly rather than relying on copied numbers. The author recommends centralizing client data, verifying tool integrations, connecting via MCP, testing with a single client, keeping a human in the loop for strategic oversight, and documenting successful prompts. (Interpretation: This approach reduces administrative overhead for agency teams and prevents costly analytical errors caused by hallucinated or isolated data points.)",
-        "why_it_matters": "For B2B marketing agencies and internal marketing operations teams, fragmented data stacks create severe bottlenecks in reporting and analytics. Adopting an MCP approach eliminates the manual glue work of exporting and reconciling data across SEO, paid media, and web analytics tools. This ensures that AI-generated client insights and campaign performance summaries are grounded in trustworthy data, protecting client relationships and freeing strategists to focus on high-value advisory work.",
-        "applications": [
-          "Connecting centralized agency reporting platforms to AI assistants via MCP for real-time campaign data queries",
-          "Automating the drafting phase of monthly client performance reviews for SEO, paid media, and social channels",
-          "Running ad-hoc analytical queries across multiple marketing platforms without manual CSV exports",
-          "Building a shared repository of validated prompts for marketing analytics and campaign optimization"
-        ],
-        "recommendations": [
-          "Explore implementing Model Context Protocol (MCP) integrations within existing tech stacks to streamline reporting workflows; Tool type: MCP-enabled reporting platforms and AI assistants; Benefit: Eliminates manual data exports and improves insight accuracy; Consideration: Ensure proper data permissions and security controls are active.",
-          "Audit all current data integrations across analytics and ad platforms before deploying AI automation; Tool type: Data integration health checkers; Benefit: Prevents bad AI answers caused by broken or outdated connections; Consideration: Schedule routine maintenance checks for all API connections.",
-          "Test AI-driven reporting protocols on a single client account first; Tool type: AI chat assistants (e.g., ChatGPT, Claude); Benefit: Validates data accuracy and prompt reliability before scaling agency-wide; Consideration: Maintain a human strategist in the loop to review and contextualise all final outputs."
-        ],
-        "priority_reason": "It introduces a practical architectural approach (MCP) for integrating AI with marketing data, which is useful for tech-forward agencies but requires existing platform support.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "d9e76a3479a5f88e",
-      "title": "Data Security Startup Matters.AI Nets ₹115 Cr From Tanglin Venture Partners, Others",
-      "url": "https://inc42.com/buzz/data-security-startup-matters-ai-nets-%e2%82%b9115-cr-from-tanglin-venture-partners-others/",
-      "canonical_url": "https://inc42.com/buzz/data-security-startup-matters-ai-nets-%e2%82%b9115-cr-from-tanglin-venture-partners-others",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T11:11:38Z",
-      "collected_at": "2026-11-24T00:30:35Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "India",
-      "region_reason": "The development focuses on an Indian startup based in Bengaluru raising capital from India-focused venture funds.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "AI-native data security platform Matters.AI (formerly OptiQ.AI) has raised ₹115 Cr ($12.0 Mn) in a pre-Series A funding round led by Tanglin Venture Partners. IIFL Fintech Fund, Piper Serica’s Bharat Tech Fund, Foster Ventures, and Tetration Ventures also joined the startup’s cap table, while…",
-      "companies": [
-        "Matters.AI",
-        "Tanglin Venture Partners",
-        "IIFL Fintech Fund",
-        "Piper Serica",
-        "Foster Ventures",
-        "Tetration Ventures",
-        "Kalaari Capital",
-        "Endiya Partners"
-      ],
-      "topics": [
-        "Data Security",
-        "AI Agents",
-        "Funding",
-        "Martech",
-        "Data Governance"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T00:35:00Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that AI-native data security platform Matters.AI has raised ₹115 Cr ($12.0 Mn) in a pre-Series A funding round led by Tanglin Venture Partners. The Bengaluru-based startup, founded in 2023 by Keshava Murthy and Harsh Sahu, will use the funds to accelerate R&D in data lineage, autonomous investigation, and the prevention of sensitive data misuse by AI agents, while expanding North American sales operations. The round also saw participation from IIFL Fintech Fund, Piper Serica’s Bharat Tech Fund, Foster Ventures, Tetration Ventures, and existing investors Kalaari Capital and Endiya Partners.",
-        "summary": "AI-native data security startup Matters.AI has secured ₹115 Cr in pre-Series A funding led by Tanglin Venture Partners, alongside participation from several other institutional investors. The company provides a Data Detection and Response platform that acts as an autonomous 'AI Security Engineer for Data,' consolidating data security posture management, insider risk, activity monitoring, and data loss prevention. It intends to deploy the capital to enhance its research and development into data lineage, browser intelligence, and stopping sensitive data misuse by AI agents. This comes as enterprises increasingly adopt autonomous agents and face growing cyber risks, underscored by recent infrastructure breaches in the tech sector. Our interpretation is that B2B marketing and sales operations teams deploying advanced AI tools will need to closely scrutinize how their customer data and outbound pipelines are governed to meet rising enterprise security requirements.",
-        "why_it_matters": "As B2B organisations increasingly deploy AI agents and integrate third-party vendors for marketing automation and CRM data management, enterprise clients are tightening data security scrutiny. Marketing operations teams must ensure that customer data handled by AI tools and external platforms is strictly governed and monitored to prevent data leakage and maintain enterprise trust.",
-        "applications": [
-          "Audit current B2B marketing tech stacks and AI tools to map how sensitive lead and customer data flows across SaaS applications and endpoints.",
-          "Evaluate vendor security postures and data governance compliance when selecting third-party marketing automation or CRM enrichment tools.",
-          "Review internal permissions and data handling protocols for AI-driven sales and marketing agents to prevent accidental data misuse.",
-          "Align marketing operations with corporate IT and data security teams to establish clear guardrails for customer data usage in generative AI platforms."
-        ],
-        "recommendations": [
-          "Explore data discovery and classification tools to map where sensitive prospect and customer data resides across your marketing ecosystem.",
-          "Test automated monitoring capabilities within your CRM and email platforms to track how third-party integrations access subscriber databases.",
-          "Review third-party vendor agreements and security credentials for all marketing technology partners, especially those utilizing cloud infrastructure.",
-          "Implement strict access controls and data loss prevention policies for marketing team members utilizing external AI tools for content or lead generation."
-        ],
-        "priority_reason": "While it is a funding announcement for a tech vendor rather than a direct platform shift, it highlights growing enterprise data security demands that will impact how B2B marketing operations handle data governance.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "8f541d145a20d908",
-      "title": "CERT-In finds use of agentic AI for financial cyberattacks beyond the BFSI sector",
-      "url": "https://www.medianama.com/2026/11/223-cert-in-agentic-ai-financial-cyberattacks-bfsi/",
-      "canonical_url": "https://medianama.com/2026/11/223-cert-in-agentic-ai-financial-cyberattacks-bfsi",
-      "source": "MediaNama",
-      "source_id": "medianama",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T11:10:56Z",
-      "collected_at": "2026-11-24T00:30:35Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "The development centres on an advisory issued by the Indian Computer Emergency Response Team (CERT-In) regarding attacks on Indian organisations and service providers.",
-      "priority": "High",
-      "priority_score": 11,
-      "excerpt": "Download the advisory here. The Indian Computer Emergency Response Team (CERT-In) has identified the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across multiple sectors, while reporting unauthorised financial transactions involving organisations outside the banking…",
-      "companies": [
-        "CERT-In",
-        "CRAFTY FALCON"
-      ],
-      "topics": [
-        "agentic AI",
-        "cybersecurity",
-        "payment workflows",
-        "B2B security",
-        "vendor payouts"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T00:35:24Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MediaNama reports that the Indian Computer Emergency Response Team (CERT-In) issued an advisory on November 20 identifying the use of AI-driven agentic offensive frameworks (AOFs) in cyberattacks across multiple sectors, including unauthorised financial transactions outside the BFSI sector. CERT-In stated that attackers targeted technology service providers handling government-linked payments and vendor payout platforms by altering business records and payment approval relationships rather than exploiting payment APIs directly. The advisory also flagged automated reconnaissance, credential attacks, and unauthorised system access facilitated by agentic AI frameworks.",
-        "summary": "MediaNama reports that CERT-In has issued an advisory highlighting the use of AI-driven agentic offensive frameworks in cyberattacks targeting organisations outside the traditional BFSI sector, such as tech service providers handling government and vendor payouts. Instead of directly attacking payment APIs, these automated frameworks compromise business workflows by altering underlying records and approval structures, allowing unauthorised transactions to pass standard checks. CERT-In recommends strengthening independent verification, segregating client environments, restricting administrative privileges, and reconciling provider records with authoritative sources. For B2B marketing and technology operations, this development underscores the vulnerability of integrated vendor payment ecosystems and administrative workflows to autonomous, AI-enabled threats. Organisations must therefore audit their third-party payout systems and tighten access controls around any workflows that interact with financial data or partner disbursements.",
-        "why_it_matters": "B2B marketing operations frequently rely on third-party platforms, vendor payout portals, and integrations that connect CRM data to financial workflows. If agentic AI attacks can compromise business logic and payment approval relationships, B2B marketing tech stacks and partner ecosystems face severe operational and financial risks. Ensuring the security of integration layers and independent verification of vendor records is now critical for marketing operations and sales-marketing alignment teams handling partner disbursements.",
-        "applications": [
-          "Audit all third-party vendor payout platforms and marketing technology integrations that handle financial transactions or data processing.",
-          "Review and segregate administrative access privileges across marketing automation platforms and connected payment approval workflows.",
-          "Implement independent verification and reconciliation processes for any changes made to beneficiary lists, partner payout instructions, or approval arrangements.",
-          "Monitor user identities, service credentials, and application logs for suspicious automated reconnaissance or privilege discovery attempts."
-        ],
-        "recommendations": [
-          "Explore identity and access management (IAM) tool types to restrict administrative privileges; likely benefit is reduced surface area for agentic AI reconnaissance; implementation consideration requires coordination with IT security.",
-          "Test vendor integration security across all marketing tech and payout platforms; likely benefit is early detection of manipulated business approval relationships; implementation consideration involves mapping all data flows between CRM and payment systems.",
-          "Review incident response protocols to ensure alignment with CERT-In's six-hour reporting mandate for cyber incidents; likely benefit is regulatory compliance and minimized damage; implementation consideration involves establishing clear escalation paths.",
-          "Conduct log analysis across internet-facing applications; likely benefit is spotting autonomous script adjustments or credential misuse; implementation consideration requires centralized log aggregation tools."
-        ],
-        "priority_reason": "It highlights immediate vulnerabilities in business application workflows and vendor payment systems driven by advanced agentic AI, requiring urgent security reviews for B2B tech stacks.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "5422dab5e069e215",
-      "title": "Zavya Nets ₹22.6 Cr To Scale Everyday Silver Jewellery Biz",
-      "url": "https://inc42.com/buzz/zavya-nets-%e2%82%b922-6-cr-to-scale-everyday-silver-jewellery-biz/",
-      "canonical_url": "https://inc42.com/buzz/zavya-nets-%e2%82%b922-6-cr-to-scale-everyday-silver-jewellery-biz",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-23T11:04:56Z",
-      "collected_at": "2026-11-24T08:30:31Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The funding and business operations involve an Indian D2C startup targeting the Indian retail and quick-commerce market.",
-      "priority": "Low",
-      "priority_score": 6,
-      "excerpt": "Budget jewellery startup Zavya has raised ₹22.6 Cr ($2.4 Mn) in a pre-Series A funding round led by Daksham Growth Ventures (DGV), the growth investment arm of Daksham Capital, with participation from existing investor Orios Venture Partners. The investment values the silver jewellery brand at…",
-      "companies": [
-        "Zavya",
-        "Daksham Growth Ventures",
-        "Daksham Capital",
-        "Orios Venture Partners",
-        "Blinkit",
-        "Zepto",
-        "Amazon",
-        "Myntra"
-      ],
-      "topics": [
-        "Funding",
-        "D2C",
-        "Quick Commerce",
-        "Retail",
-        "India Market"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T08:33:23Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that budget jewellery startup Zavya has raised ₹22.6 Cr ($2.4 Mn) in a pre-Series A funding round led by Daksham Growth Ventures, with participation from Orios Venture Partners, valuing the brand at approximately ₹191.5 Cr post-money. Co-founder and CEO Poem Kabra stated that the capital will be used to strengthen its presence across D2C and quick commerce, invest in brand building, and enter physical retail. The brand reported a net profit of ₹54.7 Lakh on a revenue of ₹6 Cr for FY25 while maintaining EBITDA profitability.",
-        "summary": "Zavya secured ₹22.6 Cr in pre-Series A funding to scale its operations across direct-to-consumer channels, quick commerce platforms like Blinkit and Zepto, and upcoming physical retail outlets. The brand targets women aged 22-35 with affordable 925 sterling silver jewellery and launches over 50 new styles monthly. Operating in India's expanding silver jewellery market, Zavya competes with both legacy players and modern D2C brands such as Giva and Palmonas. This capital injection aims to sustain its rapid growth while maintaining profitability.",
-        "why_it_matters": "For B2B marketers and tech providers operating in India, the expansion of D2C and quick-commerce native brands highlights a shift in customer acquisition and supply chain strategies. As brands like Zavya scale across multiple digital marketplaces and quick-commerce channels, marketing operations must integrate fragmented sales data and inventory triggers. B2B platforms supporting omnichannel attribution, instant delivery marketing, and localized CRM will see increased demand from high-growth retail startups.",
-        "applications": [
-          "Integrating quick-commerce inventory data with CRM campaigns to trigger targeted re-engagement based on rapid fulfillment cycles.",
-          "Designing automated email and WhatsApp workflows for fast-moving D2C SKU launches, given the brand's cadence of 50 new styles monthly.",
-          "Optimising multi-channel attribution models that span proprietary apps, online marketplaces, and rapid-delivery apps like Zepto and Blinkit.",
-          "Targeting young urban demographics in India with hyper-personalized segmentation based on browsing and purchase velocity."
-        ],
-        "recommendations": [
-          "Explore quick-commerce marketing analytics tools to track real-time stock availability and advertising ROI on platforms like Blinkit.",
-          "Test automated WhatsApp catalogue updates to distribute frequent new product drops directly to high-intent D2C subscribers.",
-          "Implement unified CDP platforms to consolidate customer profiles across marketplaces, D2C websites, and quick-commerce touchpoints.",
-          "Monitor how venture-backed D2C brands restructure their marketing technology stack when expanding from online-only to physical retail."
-        ],
-        "priority_reason": "While a notable funding event for an Indian startup, it does not directly alter B2B marketing platforms or operational workflows.",
         "needs_validation": false,
         "validation_note": ""
       }
