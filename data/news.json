@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-26T08:34:49Z",
-    "last_successful_update": "2026-11-26T08:34:49Z",
+    "generated_at": "2026-11-26T08:48:37Z",
+    "last_successful_update": "2026-11-26T08:48:37Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-26T08:30:35Z",
-      "finished_at": "2026-11-26T08:34:49Z",
+      "started_at": "2026-11-26T08:44:18Z",
+      "finished_at": "2026-11-26T08:48:37Z",
       "status": "partial",
-      "trigger": "workflow_dispatch",
+      "trigger": "schedule",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 58,
-      "skipped_stale": 558,
-      "skipped_irrelevant": 204,
+      "new_articles": 59,
+      "skipped_stale": 524,
+      "skipped_irrelevant": 216,
       "invalid_urls": 0,
-      "duplicates_merged": 2,
+      "duplicates_merged": 1,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 58,
+      "archived_out": 59,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -43,6 +43,70 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "d4519ae6cf7e4f6b",
+      "title": "IndiaMART settles dispute with OpenAI outside court over exclusion from ChatGPT results",
+      "url": "https://www.medianama.com/2026/11/223-indiamart-settle-dispute-openai-outside-court-exclusion-chatgpt/",
+      "canonical_url": "https://medianama.com/2026/11/223-indiamart-settle-dispute-openai-outside-court-exclusion-chatgpt",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-26T08:13:14Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "The dispute involves an Indian B2B marketplace (IndiaMART) litigating in the Calcutta High Court under Indian legal frameworks and statutes.",
+      "priority": "High",
+      "priority_score": 11,
+      "excerpt": "Download the court order here. The Calcutta High Court on November 17 dismissed an appeal filed by IndiaMART InterMESH Ltd against OpenAI Inc. and others , after the parties informed the court that they had settled their dispute outside court . A division bench comprising Justices Debangsu Basak…",
+      "companies": [
+        "IndiaMART",
+        "OpenAI",
+        "DHGate",
+        "Pinduoduo",
+        "Shopee",
+        "Taobao",
+        "Google"
+      ],
+      "topics": [
+        "Generative AI",
+        "B2B Marketplaces",
+        "SEO & Discoverability",
+        "Legal Disputes",
+        "Data Privacy"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-26T08:44:49Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "MediaNama reports that the Calcutta High Court dismissed an appeal filed by IndiaMART InterMESH Ltd against OpenAI after both parties reached an outside-court settlement. IndiaMART had originally approached the court alleging that ChatGPT selectively excluded its platform and seller listings from AI-generated responses while directing traffic to competitors, relying on the USTR Notorious Markets List. The court's earlier May 20 order had refused to grant interim relief, holding that third parties cannot compel service providers to reflect their links and that LLMs synthesise responses rather than act as conventional search engines.",
+        "summary": "MediaNama reports that IndiaMART has settled its legal dispute with OpenAI outside of court following the dismissal of its appeal by the Calcutta High Court. The initial litigation centred on IndiaMART's exclusion from ChatGPT's generative responses, which the platform defended by pointing to internal policies referencing the USTR Notorious Markets List, while IndiaMART argued that its 8.3 million suppliers were unfairly bypassed. The underlying judicial observations noted that LLMs differ from traditional search engines and that businesses hold no inherent legal right to demand visibility within AI outputs. This settlement highlights the growing tensions between large B2B marketplaces and AI platforms regarding data scraping, content gating, and discoverability in generative search.",
+        "why_it_matters": "For B2B marketers and marketplace operators, this case highlights the growing vulnerability of reliance on AI-generated search and chat interfaces for buyer discovery. As generative engines increasingly synthesise answers directly rather than passing referral traffic, B2B brands lose predictable referral paths and must rethink how their products and supplier listings are surfaced. Furthermore, IndiaMART's historical decision to block crawlers and place content behind logins illustrates a defensive shift in data management that directly impacts inbound organic lead generation.",
+        "applications": [
+          "Audit current web traffic acquisition channels to measure reliance on AI-driven referral traffic versus traditional search engines.",
+          "Evaluate the trade-off between protecting proprietary B2B directory data behind login gates versus maintaining public indexability for AI search discovery.",
+          "Monitor how major B2B platforms and marketplaces adapt their SEO and data-sharing strategies in response to generative engine synthesis.",
+          "Develop alternative, direct-to-buyer acquisition channels, such as targeted email nurturing and WhatsApp automation, to offset potential drops in organic AI platform visibility."
+        ],
+        "recommendations": [
+          "Explore data governance tool types to assess proprietary content exposure, balancing the need to protect data moats from agentic AI scraping against the need for brand visibility.",
+          "Test selective content gating strategies to measure the impact on organic search performance and lead capture rates.",
+          "Review current digital visibility strategies to reduce over-reliance on any single generative AI platform for buyer discovery.",
+          "Consult legal and technical stakeholders regarding web crawling policies, robots.txt directives, and terms of service updates concerning LLM scraping."
+        ],
+        "priority_reason": "It sets a significant legal and strategic precedent regarding how B2B marketplaces interact with generative AI platforms, search exclusion, and data protection.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
     {
       "id": "b0134747a9e4c617",
       "title": "Anthropic CEO Accuses Rivals Of Using ‘Human Control’ Slogans Without Tackling AI Risks",
@@ -1165,6 +1229,71 @@
       }
     },
     {
+      "id": "447e236c465329d2",
+      "title": "Flipkart CEO Ousted, PhonePe Revives IPO & More",
+      "url": "https://inc42.com/buzz/flipkart-ceo-ousted-phonepe-revives-ipo-more/",
+      "canonical_url": "https://inc42.com/buzz/flipkart-ceo-ousted-phonepe-revives-ipo-more",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-26T02:30:25Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "India",
+      "region_reason": "The developments directly concern Indian corporate leadership, domestic market IPOs, Indian regulatory filings with SEBI, and Indian enterprise AI deployments.",
+      "priority": "High",
+      "priority_score": 6,
+      "excerpt": "Leadership Crisis At Flipkart Kalyan Krishnamurthy’s decade-long stint as Flipkart group CEO has ended abruptly. Parent Walmart has asked him to step down amid a widening kickback probe and frustration over delayed IPO timelines and steep losses. What Led To The Ouster? An internal investigation…",
+      "companies": [
+        "Flipkart",
+        "Walmart",
+        "PhonePe",
+        "PayU India",
+        "Prosus",
+        "Jio Platforms",
+        "Sarvam",
+        "Tata Capital"
+      ],
+      "topics": [
+        "Flipkart Leadership",
+        "PhonePe IPO",
+        "PayU Profitability",
+        "JioAstro AI",
+        "Sarvam AI Agents"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-26T08:45:00Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that Flipkart group CEO Kalyan Krishnamurthy has stepped down amid a kickback probe involving ₹150 Cr and pressure over delayed IPO timelines and steep losses, with Balaji Thiagarajan stepping in as interim head and McKinsey assessing IPO readiness. PhonePe has revived its IPO plans, intending to file an updated DRHP with SEBI by December-end for a $1.3 Bn OFS-only IPO valuing the firm between $12 Bn and $15 Bn. PayU India reported an adjusted EBITDA profit of $12 Mn in H1 FY27, while Jio Platforms launched JioAstro, an AI-powered Vedic astrology service available in four languages. Additionally, AI unicorn Sarvam is pushing its homegrown AI models, voice AI, document intelligence, and agents, with deployments already seen at Tata Capital and Mahindra Finance.",
+        "summary": "Inc42 outlines major Indian tech and ecommerce developments, highlighting leadership turmoil and profitability mandates at Flipkart following an internal kickback probe. Meanwhile, fintech major PhonePe is reviving its public listing plans for early 2027, and PayU India has posted an adjusted EBITDA profit for H1 FY27 despite declining revenues. Jio Platforms has expanded into the spiritual technology market with JioAstro, utilizing AI models trained in Vedic astrology. Finally, Sarvam continues its enterprise AI push with voice agents and document intelligence tools already adopted by major financial institutions like Tata Capital and Mahindra Finance.",
+        "why_it_matters": "For B2B marketers operating in India, these developments signal shifting ecosystem dynamics, particularly regarding enterprise software adoption and vendor governance. The enterprise traction gained by Sarvam’s voice agents and document intelligence at firms like Tata Capital proves that local, sovereign AI solutions are finding a ready market for operational automation. Furthermore, marketplace sellers dependent on Flipkart must brace for potential policy, visibility, and algorithmic adjustments as new leadership enforces strict internal governance and profitability targets under Walmart's directive.",
+        "applications": [
+          "Test localized vernacular voice AI agents from providers like Sarvam for automated customer support and lead qualification in the Indian market.",
+          "Audit existing marketplace vendor management and lead-generation partnerships to ensure alignment with tighter governance and compliance standards.",
+          "Monitor fintech ecosystem shifts, such as PhonePe's upcoming IPO and PayU's profitability focus, to anticipate changes in digital payment gateway integrations and merchant terms.",
+          "Evaluate AI-driven document intelligence tools to streamline high-volume B2B contract processing and data extraction."
+        ],
+        "recommendations": [
+          "Explore Sarvam's sovereign voice AI and document intelligence APIs to automate routine customer interactions and lead routing, leveraging their local language capabilities.",
+          "Review vendor onboarding workflows and seller relationships on major Indian ecommerce marketplaces to mitigate risk from potential visibility algorithm changes following Flipkart's internal probes.",
+          "Monitor enterprise tech spending patterns as major financial institutions adopt local AI agents, signaling readiness for domestic generative AI integration.",
+          "Assess current CRM and payment gateway dependencies in light of financial restructuring and public listing preparations among major Indian fintech players."
+        ],
+        "priority_reason": "Major leadership churn at India's largest ecommerce player, combined with significant enterprise AI adoption milestones and fintech IPO revivals, directly impacts market operations.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
       "id": "96236bc2385f8ea0",
       "title": "Anthropic says it moved its Claude API from Python to Rust with no downtime",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNT0hkbjZpczkxRkxndVZvU0g5OHBwUjBhdDBTSF9DSExpOVpZQU1pblNRU0hBSmtaQU42aDMxamtPLVpnWGd1TUFzUTRNdVZvWHdYdHoyMUZjTFdDb1pYODhiOU9BejU2Sjc1ZjZ1elJCV0dMZ256M3pzLW15SHpIdjNqR0lEc0ZxelB3TjBqa3lTZ3BDRFpaYXdzbnFVbUE3UzFTdTJFQVFpWUxBVkZoUEdSMWlBN0NVRmJQcVZ6TQ?oc=5",
@@ -1186,6 +1315,315 @@
       "topics": [
         "anthropic",
         "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "a090a4e34591f67a",
+      "title": "Claude Plugin Store Launches with Over 10,000 Plugins as Anthropic Makes Another Play for the Agent-Era Distribution Gateway",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAydnRYczhWc3JlekpLZFNSUmEtZm1qWk1DeUIwWHFfZllpVDJLUC1zeGZXaUR3ckZnRjBIYUdBN1F3UHdUcTBIS01LbHo2UV9UQ2pWaVFHbVRMOHNNdUpXUWE1c2Jsam1EbV9uWWJwYWM3Y3hXbkE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAydnRYczhWc3JlekpLZFNSUmEtZm1qWk1DeUIwWHFfZllpVDJLUC1zeGZXaUR3ckZnRjBIYUdBN1F3UHdUcTBIS01LbHo2UV9UQ2pWaVFHbVRMOHNNdUpXUWE1c2Jsam1EbV9uWWJwYWM3Y3hXbkE?oc=5",
+      "source": "BigGo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T02:25:00Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "High",
+      "priority_score": 13,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "7e08f76a47bc26f9",
+      "title": "Will Claude Opus 5.5 go away when Opus 5.6 comes out? Not right away, by Anthropic's own rules",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ2JuSm9ZNjhEYkxxWHZUd1o0NmVoWjNqbFdaMGFIcDI5QldTSzJwejFvZkh5bXBGbW5XcDZHOGY3SnBmelY5cjlsNGpUc3BiRmdmUmw2ZlVtcEdSRXJzbDQ5VnMxNHpsbzY4WUN5S3ZTVHJMNDN5WXJ4eDhkNHM0ZThzWThGTTUyOS01SlRhak1RaGdjbXhCVHlnMkJnX1g4MGxfVzFuVnVybTkxUHhzRmtKLXV4eG1LLUxreS1R?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ2JuSm9ZNjhEYkxxWHZUd1o0NmVoWjNqbFdaMGFIcDI5QldTSzJwejFvZkh5bXBGbW5XcDZHOGY3SnBmelY5cjlsNGpUc3BiRmdmUmw2ZlVtcEdSRXJzbDQ5VnMxNHpsbzY4WUN5S3ZTVHJMNDN5WXJ4eDhkNHM0ZThzWThGTTUyOS01SlRhak1RaGdjbXhCVHlnMkJnX1g4MGxfVzFuVnVybTkxUHhzRmtKLXV4eG1LLUxreS1R?oc=5",
+      "source": "Nacionale",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T00:49:00Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "831b1da23e065d93",
+      "title": "Vegapay Bags $10 Mn To Scale Credit Line On UPI Infrastructure",
+      "url": "https://inc42.com/buzz/vegapay-bags-10-mn-to-scale-credit-line-on-upi-infrastructure/",
+      "canonical_url": "https://inc42.com/buzz/vegapay-bags-10-mn-to-scale-credit-line-on-upi-infrastructure",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-26T00:30:23Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "India",
+      "region_reason": "The development focuses on Vegapay, an Indian fintech startup operating within India's UPI infrastructure and banking ecosystem.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "Mumbai-based fintech startup Vegapay has raised $10 Mn (₹92.3 Cr) in a Series A funding round co-led by Vertex Ventures Southeast Asia and India and Prosus. The round also saw participation from existing investors Elevation Capital and Eximius Ventures. The funding round comprises both primary and…",
+      "companies": [
+        "Vegapay",
+        "Vertex Ventures Southeast Asia and India",
+        "Prosus",
+        "Elevation Capital",
+        "Eximius Ventures",
+        "YES BANK",
+        "Unity Small Finance Bank",
+        "Suryoday Small Finance Bank"
+      ],
+      "topics": [
+        "Fintech",
+        "UPI",
+        "Credit Line",
+        "Funding",
+        "Payments Infrastructure"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-26T08:45:11Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that Mumbai-based fintech startup Vegapay has raised $10 million in a Series A funding round co-led by Vertex Ventures Southeast Asia and India and Prosus, with participation from Elevation Capital and Eximius Ventures. The company provides a technology platform that enables banks to launch and manage Credit Line on UPI, credit cards, and prepaid programmes. Vegapay plans to use the fresh capital to onboard more banks, introduce secured credit lines, expand card offerings, and strengthen its engineering and risk teams.",
+        "summary": "Fintech startup Vegapay secured $10 million in Series A funding to expand its infrastructure supporting Credit Line on UPI and card programmes for banks and consumer platforms. The round included primary and secondary transactions, allowing employees to liquidate a portion of their ESOPs. The capital will fund the onboarding of additional banking partners, the introduction of asset-backed secured credit lines, and team expansion. Vegapay's technology currently powers credit programmes for institutions such as YES BANK and consumer platforms like Paytm and BharatPe.",
+        "why_it_matters": "The expansion of credit infrastructure on UPI represents a significant shift in digital lending and consumer transaction methods within the Indian market. For B2B marketers and fintech operators, the growth of Credit Line on UPI provides new transactional pathways and potential partnership ecosystems for embedded finance, digital wallets, and reward structures.",
+        "applications": [
+          "Explore integrating Credit Line on UPI payment options into B2B checkout flows or high-value B2C purchasing journeys.",
+          "Evaluate co-branded credit card or prepaid card programmes through banking partners using infrastructure platforms like Vegapay.",
+          "Design promotional campaigns targeted at consumers utilising pre-sanctioned credit lines via existing UPI apps.",
+          "Partner with fintech platforms that leverage UPI credit infrastructure to offer targeted financing solutions."
+        ],
+        "recommendations": [
+          "Explore partnerships with fintech providers offering Credit Line on UPI to enable flexible payment terms for customers, using relevant API integration tool types to assess potential conversion uplifts.",
+          "Test embedded finance messaging within email campaigns and WhatsApp automations to target users engaging with digital credit products, aiming to increase average order values.",
+          "Evaluate the feasibility of co-branded prepaid or forex card programmes for corporate expense management or B2B loyalty incentives.",
+          "Monitor regulatory and technological updates regarding UPI credit integration to ensure compliance and early adoption advantages."
+        ],
+        "priority_reason": "It highlights significant funding and infrastructure scaling for UPI credit lines, which influences digital payment trends in the Indian market.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "8e9d594e3e297f3c",
+      "title": "Anthropic brings Skills over MCP to Claude and Claude Code in public beta",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1VTFhNSWpCLW5XUVZCTkhwZ0RwRndGUVNWeXhIbUVhX2hMOWhBazFlZlQ4SXRFTkFJNElubTBvMXBtVFJUSV9zcmN0TlZWM0V4bWJhNG9DQzRpMFdSTU5vUXZIc1NvR1FtZ2NKYV9aNExveHM?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1VTFhNSWpCLW5XUVZCTkhwZ0RwRndGUVNWeXhIbUVhX2hMOWhBazFlZlQ4SXRFTkFJNElubTBvMXBtVFJUSV9zcmN0TlZWM0V4bWJhNG9DQzRpMFdSTU5vUXZIc1NvR1FtZ2NKYV9aNExveHM?oc=5",
+      "source": "Crypto Briefing",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-25T23:08:49Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "82b551504ca020e0",
+      "title": "IT Secy Defends Sarvam’s Token Factory Over Chinese LLM Debate",
+      "url": "https://inc42.com/buzz/it-secy-defends-sarvams-token-factory-over-chinese-llm-debate/",
+      "canonical_url": "https://inc42.com/buzz/it-secy-defends-sarvams-token-factory-over-chinese-llm-debate",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-25T22:49:02Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "The development directly concerns Indian government policy, the IndiaAI Mission, and an Indian AI startup's local operations.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "Reacting to the ongoing controversy around Sarvam AI hosting Chinese AI models on its new inference service Token Factory, MeitY secretary S Krishnan has reportedly said that offering overseas LLMs does not constitute a violation of the principles of the IndiaAI Mission. “I don’t think there is any…",
+      "companies": [
+        "Sarvam AI",
+        "Google",
+        "DeepSeek"
+      ],
+      "topics": [
+        "AI inference",
+        "Sovereign AI",
+        "Language models",
+        "MeitY",
+        "Martech infrastructure"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-26T08:45:25Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that MeitY secretary S Krishnan defended Sarvam AI’s Token Factory inference service amid controversies over hosting Chinese and overseas AI models. Krishnan stated that offering overseas LLMs does not violate the principles of the IndiaAI Mission and that commercial monetisation is necessary for AI companies. Sarvam launched Token Factory to give enterprises access to Indian and global models through a single API while running workloads on GPUs in India, relying on privately procured GPUs rather than state-sponsored subsidies.",
+        "summary": "MeitY secretary S Krishnan has publicly defended Sarvam AI against criticism that hosting foreign open-weight models on its Token Factory platform contradicts its sovereign AI mission. Krishnan clarified that commercial monetisation and providing global inference services are separate from indigenous model development and do not violate IndiaAI Mission guidelines. The controversy arose after Sarvam launched Token Factory, which allows enterprises to access both local and international models through a single API using Indian-hosted GPUs. In response to the debate, Sarvam maintained that the platform uses private GPUs to reduce latency and build commercial viability, while simultaneously releasing updates to its homegrown 105B model. Furthermore, the government announced plans to introduce a scheme supporting AI inference going forward.",
+        "why_it_matters": "For B2B marketers operating in India, the rise of localized inference platforms like Token Factory signals a shift toward lower-latency, domestically hosted multi-model architectures. Marketers evaluating enterprise AI tools, chatbots, or WhatsApp automation platforms can potentially leverage single-API access to both local and global LLMs without breaching data residency or latency hurdles. Understanding this regulatory stance helps validate the compliance and practical viability of utilizing hybrid AI models hosted on Indian infrastructure.",
+        "applications": [
+          "Evaluating unified API platforms that host both Indian and global LLMs for regional multilingual customer support chatbots.",
+          "Assessing localized GPU inference providers to reduce latency in real-time WhatsApp automation and CRM workflows.",
+          "Integrating vernacular dictation APIs across 22 Indian languages into lead generation and data collection pipelines.",
+          "Designing multi-model marketing automation workflows that balance sovereign compliance requirements with international LLM performance."
+        ],
+        "recommendations": [
+          "Explore multi-model inference APIs hosted locally in India to test latency improvements for customer engagement tools.",
+          "Test platform tool types that combine global open-weight models with localized Indian language capabilities for regional campaigns.",
+          "Monitor upcoming MeitY schemes supporting AI inference to identify potential cost subsidies or infrastructure benefits for marketing tech stacks.",
+          "Review enterprise data residency and GPU hosting arrangements when selecting vendors for conversational AI and messaging automation."
+        ],
+        "priority_reason": "It highlights evolving infrastructure options and government stances on AI inference in India, which impacts local tech selection without changing campaign workflows immediately.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "c7f5b22ddad24f7d",
+      "title": "What is Claude Opus 5.5? The model Opus 5.6 would replace, and what it costs",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcUtKd2h2ckYtMHhlVUpGaThFZXAxc0lESmVCNTJkbGNhdFpJdWpjUHNQRXFpTTJlQlgzTERaa285ZXpLOVUwaVBoOXJmV3ZaSUwzSE9pZUhqRmNieGdKb1owcnlvXzNOeFRrMmg0RTVKVjlSb085THJ1UXRwRWtRMlZ1M2R4dzlUVDN1bkZYSHcxekpvWE1Ra3dwQjNYR2g2aENFdmJNbkI?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcUtKd2h2ckYtMHhlVUpGaThFZXAxc0lESmVCNTJkbGNhdFpJdWpjUHNQRXFpTTJlQlgzTERaa285ZXpLOVUwaVBoOXJmV3ZaSUwzSE9pZUhqRmNieGdKb1owcnlvXzNOeFRrMmg0RTVKVjlSb085THJ1UXRwRWtRMlZ1M2R4dzlUVDN1bkZYSHcxekpvWE1Ra3dwQjNYR2g2aENFdmJNbkI?oc=5",
+      "source": "Nacionale",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-25T22:29:03Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "23e00468cf307b84",
+      "title": "When will Claude Opus 5.6 come out? Anthropic has set no date; here's what its past launches show",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSF9uZmdpQmRaUmlvb0xXdDVNOFFhZXVoN3A1eUI5Q2pqcVFSRDI1TThTWXZXSVRGV0pxUE05WFpIeHVGZ25JOWF4WUhPa3A4WUx4bHlnWld3dDZJbVFRbW1uS0NEam9tV2dKbEhnOWVuc1FHNVRNZlNvVXJIWFZSUVFjTnFaWW4tcG1KRS05Yk01S29UZVR2SkdqaDY0LVlYXzhYSFNlQ1JTRU0yX0E?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSF9uZmdpQmRaUmlvb0xXdDVNOFFhZXVoN3A1eUI5Q2pqcVFSRDI1TThTWXZXSVRGV0pxUE05WFpIeHVGZ25JOWF4WUhPa3A4WUx4bHlnWld3dDZJbVFRbW1uS0NEam9tV2dKbEhnOWVuc1FHNVRNZlNvVXJIWFZSUVFjTnFaWW4tcG1KRS05Yk01S29UZVR2SkdqaDY0LVlYXzhYSFNlQ1JTRU0yX0E?oc=5",
+      "source": "Nacionale",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-25T21:30:16Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "High",
+      "priority_score": 13,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "6ed3c05511de988f",
+      "title": "Anthropic's customers are doing what a leaked Google memo predicted",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1EdS00NHNvMkEtbU9kYVVzb0x0M1NiVlFId3hMeFJYYWwzc3pqVy15XzdCcEE2TWZ0bkdoZEI5TVBoUFRub3hSSmFoVlpVc1lNU0xXWnJ0N2hBT1RvbmdKQkltc19iYlZWWmhFOXB6dG50bGdFY3E2cG82NEQ4Zw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1EdS00NHNvMkEtbU9kYVVzb0x0M1NiVlFId3hMeFJYYWwzc3pqVy15XzdCcEE2TWZ0bkdoZEI5TVBoUFRub3hSSmFoVlpVc1lNU0xXWnJ0N2hBT1RvbmdKQkltc19iYlZWWmhFOXB6dG50bGdFY3E2cG82NEQ4Zw?oc=5",
+      "source": "Quartz",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-25T21:19:35Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -1604,6 +2042,34 @@
       "topics": [
         "hubspot"
       ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "a8b5d1ac631908f2",
+      "title": "Best AI Tools for Startups: 5 Platforms Worth Considering",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfREZLVUVsbkVsZVBwNWNnUG5JQm01aldveFE5Q3U2V1JVbFczMUM4NjU0a2JVYmlYd2tBQzA5U0pOcmRKcHR6QjZwNmdMNHBuU2pPLWlCZkxIUkVLa0lLclRDVDZRTjR0ODM4RnNR?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfREZLVUVsbkVsZVBwNWNnUG5JQm01aldveFE5Q3U2V1JVbFczMUM4NjU0a2JVYmlYd2tBQzA5U0pOcmRKcHR6QjZwNmdMNHBuU2pPLWlCZkxIUkVLa0lLclRDVDZRTjR0ODM4RnNR?oc=5",
+      "source": "Cybernews",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-25T15:04:57Z",
+      "collected_at": "2026-11-26T08:44:18Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "",
+      "companies": [],
+      "topics": [],
       "also_covered_by": [],
       "url_check": "valid",
       "classification": "rules",
@@ -4312,517 +4778,6 @@
         "priority_reason": "It introduces a competitively priced, localized voice-to-text API that can improve CRM data capture and regional campaign workflows, though direct implementation requires integration work.",
         "needs_validation": false,
         "validation_note": ""
-      }
-    },
-    {
-      "id": "62eb515cae512a0f",
-      "title": "Fintech startup Vegapay to raise Rs 38.4 Cr in Series A funding round led by Prosus",
-      "url": "https://yourstory.com/2026/11/vegapay-to-raise-rs-384-cr-series-a-funding-led-by-prosus",
-      "canonical_url": "https://yourstory.com/2026/11/vegapay-to-raise-rs-384-cr-series-a-funding-led-by-prosus",
-      "source": "YourStory",
-      "source_id": "yourstory",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T12:07:53Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "India",
-      "region_reason": "The development focuses on an Indian digital lending platform raising funds for operations in the Indian market.",
-      "priority": "Low",
-      "priority_score": 11,
-      "excerpt": "Vegapay, the Mumbai-headquartered digital lending and card management platform, will be raising Rs 38.4 crore in a Series A round of funding led by Prosus. The regulatory filings of Vegapay reveal that this round will also see participation from existing investors, Elevation Capital, Vertex…",
-      "companies": [
-        "Vegapay",
-        "Prosus",
-        "Elevation Capital",
-        "Vertex Ventures",
-        "Eximius Ventures",
-        "Navi",
-        "Bachatt"
-      ],
-      "topics": [
-        "Funding",
-        "Fintech",
-        "Digital Lending",
-        "Card Management"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:47:25Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "YourStory reports that Mumbai-headquartered digital lending and card management platform Vegapay is raising Rs 38.4 crore in a Series A funding round led by Prosus, with participation from existing investors Elevation Capital, Vertex Ventures, and Eximius Ventures. Regulatory filings show the funding involves issuing 18,090 compulsory convertible preference shares at Rs 21,221.92 each, with Prosus investing Rs 28.80 crore. Founded in 2022, the company builds lending technology stacks and card management systems for regulated entities and fintech firms in India.",
-        "summary": "Vegapay, a digital lending and card management platform based in Mumbai, has secured a Series A funding round of Rs 38.4 crore led by Prosus, alongside continuing support from Elevation Capital, Vertex Ventures, and Eximius Ventures. The capital will be issued via compulsory convertible preference shares, with Prosus contributing the majority share of Rs 28.80 crore. Founded in 2022, Vegapay provides a lending tech stack and card management system targeted at helping regulated entities and fintechs issue and expand card and lending products across India. This funding indicates continued investor interest in India's fintech infrastructure and enablement sector.",
-        "why_it_matters": "For B2B marketers operating in the Indian fintech and financial services sector, well-funded infrastructure providers like Vegapay often signal expanding partnership and co-marketing opportunities. As digital lending and card issuance platforms scale their operations following fresh capital injections, B2B vendors servicing this ecosystem—such as marketing automation, CRM, and analytics providers—may find increased demand for specialized acquisition and retention tools. Tracking the growth of such enablement platforms helps identify emerging clients and ecosystem collaborators within the regional market.",
-        "applications": [
-          "Identify Vegapay and its institutional backers as potential targets for B2B marketing tech or data analytics software sales.",
-          "Monitor partnership opportunities with digital lending infrastructure providers to co-market financial technology solutions.",
-          "Analyze the expansion strategies of Indian fintech enablers to tailor account-based marketing campaigns for financial services clients.",
-          "Evaluate integration partnerships with card management platforms if offering complementary marketing automation or customer engagement tools."
-        ],
-        "recommendations": [
-          "Explore account-based marketing campaigns targeting high-growth Indian fintech infrastructure providers",
-          "Use B2B intelligence tools to track executive movements and partnership announcements from Vegapay and Prosus portfolio companies",
-          "Assess sales pipeline alignment for targeting recently funded fintech enablers needing advanced analytics or CRM capabilities",
-          "Monitor regulatory and market updates in the Indian digital lending space to time marketing outreach effectively"
-        ],
-        "priority_reason": "While significant for the company's growth, a funding round is a corporate milestone rather than an immediate change to marketing operations or platforms.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "68222318bbc620bf",
-      "title": "Matters.AI Funding Round News, Insights & Timeline",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdndFN1o0OGZEQ2VESUZleXU2QV8xcVEza2R1dGg5UGw5LWFYVHB2eFljRUsyeHN5UC13MDBVZFU2eXd0U1lPNGU3WTZBMk5GR1lPcHBPUmVRaW5JcXdweDFQSzN1Y09LSy1UTnN3blRlVjRpWU5IUHU5cVlpcFZPdElJOA?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdndFN1o0OGZEQ2VESUZleXU2QV8xcVEza2R1dGg5UGw5LWFYVHB2eFljRUsyeHN5UC13MDBVZFU2eXd0U1lPNGU3WTZBMk5GR1lPcHBPUmVRaW5JcXdweDFQSzN1Y09LSy1UTnN3blRlVjRpWU5IUHU5cVlpcFZPdElJOA?oc=5",
-      "source": "Exchange4Media",
-      "source_id": "gnews-exchange4media",
-      "via": "Google News: exchange4media",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T11:52:38Z",
-      "collected_at": "2026-11-25T00:47:14Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "Global",
-      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
-      "priority": "Low",
-      "priority_score": 5,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "funding round"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "e1cc5245ce5001b0",
-      "title": "GalaxEye Awards Bellatrix Propulsion Contract For 30 Satellites",
-      "url": "https://inc42.com/buzz/galaxeye-awards-bellatrix-propulsion-contract-for-30-satellites/",
-      "canonical_url": "https://inc42.com/buzz/galaxeye-awards-bellatrix-propulsion-contract-for-30-satellites",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T11:39:51Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The developments involve Indian startups (GalaxEye, Bellatrix, Pixxel) operating within the Indian space and tech ecosystem.",
-      "priority": "Low",
-      "priority_score": 7,
-      "excerpt": "Bengaluru-based spacetech startup GalaxEye has awarded Bellatrix Aerospace a multi-year contract to supply propulsion systems for its next 30 Drishti Gen-II satellites, part of an OptoSAR constellation it aims to deploy by 2030. Under the phased delivery schedule, Bellatrix will design, build…",
-      "companies": [
-        "GalaxEye",
-        "Bellatrix Aerospace",
-        "Pixxel",
-        "Centum Electronics",
-        "CS TECH Ai",
-        "Cactus Partners",
-        "StarOps"
-      ],
-      "topics": [
-        "Spacetech",
-        "B2B Partnerships",
-        "Indian Startups",
-        "Manufacturing Supply Chain"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:47:35Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that Bengaluru-based spacetech startup GalaxEye has awarded Bellatrix Aerospace a multi-year contract to supply Arka Hall-effect electric propulsion systems for its next 30 Drishti Gen-II satellites. The companies did not disclose the contract value, but the agreement was announced at the fifth India International Space Conclave as India's largest order between private space companies by satellite count. GalaxEye also noted ongoing discussions with other domestic companies for subsystems, while fellow Earth observation startup Pixxel signed MoUs with Centum Electronics and CS TECH Ai.",
-        "summary": "GalaxEye has awarded Bellatrix Aerospace a multi-year contract to supply propulsion systems for 30 Drishti Gen-II satellites as part of its upcoming OptoSAR constellation. The collaboration highlights a growing trend of private B2B partnerships within the Indian spacetech ecosystem, moving away from sole reliance on government manufacturing. Additionally, Earth observation startup Pixxel announced parallel partnerships with Centum Electronics and CS TECH Ai to advance its satellite hardware and geospatial applications. While this development is firmly rooted in the aerospace manufacturing sector, it illustrates robust supply chain scaling and local B2B vendor ecosystems in India.",
-        "why_it_matters": "For B2B marketers operating outside the aerospace sector, this news has minimal direct operational impact on marketing automation, CRM management, or lead generation campaigns. However, it signals an expanding industrial B2B vendor network within India's high-tech manufacturing economy, which may influence local B2B buying committees and industrial tech marketing strategies. B2B marketers targeting Indian manufacturing or deep-tech sectors can observe how these startups position capability, scale, and local partnerships in public announcements.",
-        "applications": [
-          "Monitor enterprise relationship trends in the expanding Indian deep-tech and spacetech sectors for potential account-based marketing (ABM) targets.",
-          "Study how specialized manufacturing startups structure press releases and announce major multi-year vendor contracts for PR benchmarking.",
-          "Evaluate local industrial supply chains if marketing B2B products or services tailored to high-tech hardware manufacturers in India."
-        ],
-        "recommendations": [
-          "What to explore/test: Assess whether deep-tech or industrial engineering startups fit your B2B ideal customer profile (ICP) before allocating ad spend.",
-          "Relevant tool types: Account-based intelligence platforms to track funding, partnerships, and executive changes in emerging Indian tech sectors.",
-          "Likely benefit: Better alignment of niche B2B targeting with emerging regional industry clusters.",
-          "Implementation considerations: Ensure your sales and marketing teams understand the long sales cycles typical of aerospace and deep-tech B2B contracts."
-        ],
-        "priority_reason": "While significant for the Indian spacetech industry, it has no direct operational impact on B2B marketing tactics, campaign execution, or martech stacks.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "4f09394bf5e912d0",
-      "title": "SEBI warns investors of impersonation fraud on WhatsApp and other closed user groups on SM platforms",
-      "url": "https://www.medianama.com/2026/11/223-sebi-investors-fraud-whatsapp-platforms/",
-      "canonical_url": "https://medianama.com/2026/11/223-sebi-investors-fraud-whatsapp-platforms",
-      "source": "MediaNama",
-      "source_id": "medianama",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T11:36:11Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "India",
-      "region_reason": "The development directly involves the Securities and Exchange Board of India (SEBI) issuing warnings and regulations regarding financial fraud within the Indian market.",
-      "priority": "High",
-      "priority_score": 7,
-      "excerpt": "Download the press release here. The Securities and Exchange Board of India (SEBI) has warned investors about fraudsters impersonating SEBI-registered intermediaries in closed social media groups , including WhatsApp and Telegram, to solicit investments through unauthorised trading platforms. In a…",
-      "companies": [
-        "SEBI",
-        "MediaNama",
-        "Association of Portfolio Managers in India"
-      ],
-      "topics": [
-        "WhatsApp marketing",
-        "regulatory compliance",
-        "fraud prevention",
-        "lead generation",
-        "India"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:48:01Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MediaNama reports that the Securities and Exchange Board of India (SEBI) has warned investors about fraudsters impersonating SEBI-registered intermediaries on WhatsApp, Telegram, and other closed social media groups. According to the press release, fraudsters are using unauthorised trading platforms, fake SEBI credentials, and third-party bank accounts to solicit investments and display false portfolio balances. SEBI outlined 11 warning signs, including suspicious international admin numbers, unverified investment apps, and promises of assured returns or foreign trading opportunities.",
-        "summary": "SEBI has issued a public warning regarding widespread impersonation scams operating within closed messaging groups on platforms like WhatsApp and Telegram. Fraudsters are reportedly using fake credentials, forged SEBI letterheads, and fraudulent trading apps to trick investors into transferring funds to unregistered entities. The advisory highlights the regulatory scrutiny facing closed-group communications, which directly impacts how financial services and investment ideas are marketed via messaging apps. B2B marketers operating in the fintech and financial advisory space must note the heightened compliance environment surrounding closed-group lead generation in India.",
-        "why_it_matters": "For B2B marketers running lead generation or community-building campaigns on WhatsApp and Telegram in the financial sector, this regulatory crackdown increases compliance risks and scrutiny. Stricter oversight of closed user groups means campaigns must prominently display registration details and avoid aggressive or guaranteed-return pitches. Marketers must ensure their outreach strategies do not mirror the tactics flagged by SEBI, such as unverified links or third-party bank transfers, to maintain brand trust and avoid regulatory penalties.",
-        "applications": [
-          "Audit existing WhatsApp and Telegram community-building campaigns to ensure all administrator profiles clearly display valid SEBI registration numbers and verified brand names.",
-          "Review lead generation workflows to eliminate any reliance on unverified third-party payment links or direct bank transfers into unregistered accounts.",
-          "Update compliance training for sales and marketing teams engaging prospects in closed messaging groups to prevent the use of high-pressure tactics or unregulated investment claims.",
-          "Implement clear disclaimers and verification links in all social media and messaging outreach to reassure prospective clients of institutional legitimacy."
-        ],
-        "recommendations": [
-          "Explore compliant messaging automation tools that integrate explicit brand verification and disclosure features for closed-group marketing.",
-          "Test transparent educational content formats over direct promotional pitches within messaging apps to build trust without triggering regulatory red flags.",
-          "Consult legal and compliance teams to review all WhatsApp marketing templates against current SEBI disclosure mandates for financial services.",
-          "Monitor official SEBI portals and circulars regularly to adapt marketing operations immediately as new restrictions on social media channels emerge."
-        ],
-        "priority_reason": "Increased regulatory scrutiny and compliance requirements for marketing and lead generation via WhatsApp and closed groups directly impact financial sector B2B marketers in India.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "090950d4acd60aab",
-      "title": "Top B2B SaaS Companies in India: 10 Leading Firms",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5iZk5yeXlQZnBLSkpNQVQxd0lrN05mZmFoR0x5a3FvR2VsZ21qUTVUZE00aE9BekFwVEUxTlFFWmxBbzlCaDlhS2JjRmlMVFRSaHc3MGZseFVmZlVKcnV6c1FJUGJyYURUMFdBSHM1SXJtUQ?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5iZk5yeXlQZnBLSkpNQVQxd0lrN05mZmFoR0x5a3FvR2VsZ21qUTVUZE00aE9BekFwVEUxTlFFWmxBbzlCaDlhS2JjRmlMVFRSaHc3MGZseFVmZlVKcnV6c1FJUGJyYURUMFdBSHM1SXJtUQ?oc=5",
-      "source": "Business Outreach Magazine",
-      "source_id": "gnews-india-martech",
-      "via": "Google News India: SaaS & martech",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T10:58:21Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "India",
-      "region_reason": "Headline references India-specific context (india).",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "saas"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "51af60a2f6eb12e7",
-      "title": "Home service provider Pronto to be acquired by physical AI firm Provision Labs",
-      "url": "https://www.medianama.com/2026/11/223-pronto-acquired-provision-labs/",
-      "canonical_url": "https://medianama.com/2026/11/223-pronto-acquired-provision-labs",
-      "source": "MediaNama",
-      "source_id": "medianama",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T10:45:35Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "India",
-      "region_reason": "The development directly involves an Indian home service platform, Indian labour markets, and regulatory scrutiny by the Indian government (MeitY).",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "Provision Labs, a physical AI startup, is in the process of acquiring on-demand domestic help platform Pronto, Moneycontrol reported . This is being done to position Provision as a larger platform that can leverage real-world data to train physical AI systems. Pronto’s existing investors will…",
-      "companies": [
-        "Provision Labs",
-        "Pronto",
-        "Glade Brook Capital",
-        "Snabbit"
-      ],
-      "topics": [
-        "Data Privacy",
-        "Regulatory Compliance",
-        "Alternative Data",
-        "MeitY"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:48:11Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MediaNama reports that physical AI startup Provision Labs is in the process of acquiring on-demand domestic help platform Pronto. According to the report, Pronto workers were previously seen wearing cameras to record household tasks to generate real-world training data for robotics labs. The Ministry of Electronics and Information Technology (MeitY) subsequently took cognisance of these practices, holding meetings to question companies regarding data privacy, security, and data-sharing contracts.",
-        "summary": "Provision Labs is acquiring the domestic help platform Pronto to leverage real-world data from India's informal labour market for training physical AI systems. Pronto previously used workers wearing cameras to record in-home tasks, creating a data business model that has drawn regulatory scrutiny from India's MeitY concerning consumer privacy and data handling. While framed around robotics and physical AI training, this development highlights the intersection of alternative data collection methods and strict regulatory oversight in emerging markets.",
-        "why_it_matters": "For B2B marketers operating in India or handling alternative data collection, this case highlights growing regulatory and privacy scrutiny around unconventional data sourcing. Marketers relying on user-generated or third-party physical data capture must closely monitor compliance with local data protection laws, as government bodies like MeitY are actively questioning cross-border data flows and consent mechanisms.",
-        "applications": [
-          "Review existing data collection and sourcing vendors to ensure absolute transparency and compliance with Indian privacy regulations",
-          "Audit CRM and customer data pipelines to verify that customer consent for data capture and processing is explicitly documented",
-          "Assess data-sharing agreements with third-party vendors to evaluate exposure to regulatory inquiries regarding data retention and offshore transfers"
-        ],
-        "recommendations": [
-          "Explore compliance audit tool types to verify data provenance; expected benefit is reduced exposure to sudden regulatory penalties; implementation consideration requires legal review of all vendor data contracts.",
-          "Test transparent consent workflows in data-gathering campaigns; expected benefit is higher consumer trust and regulatory safety; implementation consideration involves updating terms of service and privacy notices.",
-          "Monitor MeitY policy updates regarding alternative data harvesting; expected benefit is early adaptation to shifting compliance rules; implementation consideration involves assigning regulatory tracking to operations teams."
-        ],
-        "priority_reason": "It highlights significant regulatory interest in data collection practices in India, which could impact data-driven marketing and operational compliance.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "d657e29b3bccdc8f",
-      "title": "AidenAI Nets $32 Mn To Scale Enterprise AI Workflows",
-      "url": "https://inc42.com/buzz/aidenai-nets-32-mn-to-scale-enterprise-ai-workflows/",
-      "canonical_url": "https://inc42.com/buzz/aidenai-nets-32-mn-to-scale-enterprise-ai-workflows",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T10:23:27Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "The company maintains a majority of its workforce in Hyderabad and the development directly references the Indian enterprise AI market context and projections.",
-      "priority": "Medium",
-      "priority_score": 11,
-      "excerpt": "Enterprise AI startup AidenAI has raised $32 Mn (₹297.1 Cr) in a Series A funding round led by growth investment firm A91 Partners, as it looks to expand its AI platform and engineering capabilities. The fresh capital will be used to invest in its platform and engineering talent as it looks to…",
-      "companies": [
-        "AidenAI",
-        "A91 Partners",
-        "Infosys"
-      ],
-      "topics": [
-        "Enterprise AI",
-        "Funding",
-        "Agentic AI",
-        "Legacy Modernisation"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:48:27Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that enterprise AI startup AidenAI has raised $32 million in a Series A funding round led by A91 Partners. Founded in 2023 by former Infosys executive Srinivas Kamadi, the New Jersey-based startup with a workforce mostly in Hyderabad offers an AI Builder Platform and an AI-driven technology modernisation platform called AiDAP. The company plans to use the fresh capital to scale its platform, expand engineering capabilities, and build a team of over 1,000 frontier AI engineers through its AidenAI Builder Academy.",
-        "summary": "Inc42 reports that AidenAI secured $32 million in Series A funding led by A91 Partners to scale its enterprise AI platform and engineering teams. The startup addresses enterprise bottlenecks by integrating AI into existing workflows, legacy systems, and data infrastructure through its AI Builder Platform and AiDAP modernisation tool. Operating across six countries with over 30 enterprise clients, AidenAI intends to deploy its new capital to expand its workforce, establish the AidenAI Builder Academy, and meet growing demand for agentic AI workflows. (Interpretation: This funding indicates strong investor confidence in infrastructure that moves enterprises past isolated AI experiments into operational deployment.)",
-        "why_it_matters": "As B2B enterprises move from isolated AI experiments to integrated operational workflows, platforms that bridge legacy systems with modern AI agents will become critical infrastructure. For marketing operations and data teams, this signals a broader industry shift toward automating multi-step business processes across functions like finance, HR, and analytics. Marketers operating in markets like India can expect enterprise clients to demand tighter integration between marketing tech stacks and custom AI applications.",
-        "applications": [
-          "Explore integrating custom AI agents into existing CRM and marketing automation workflows to handle multi-step lead nurturing tasks.",
-          "Evaluate legacy data infrastructure readiness to determine if modern tech stack updates are required prior to deploying advanced AI analytics.",
-          "Assess how enterprise clients adopting agentic AI across business functions will alter B2B buying cycles and procurement requirements.",
-          "Monitor enterprise modernization trends in regional markets like India to align B2B service offerings with broader digital transformation budgets."
-        ],
-        "recommendations": [
-          "Explore enterprise AI orchestration tool types that connect legacy databases with modern LLMs; this will help automate complex campaign data operations.",
-          "Test small-scale internal agentic AI workflows for lead routing before deploying customer-facing automation to validate data security and output quality.",
-          "Audit current marketing analytics and CRM architectures to identify integration bottlenecks that could hinder future AI adoption.",
-          "Monitor enterprise funding and platform announcements in the B2B SaaS space to benchmark upcoming marketing technology capabilities."
-        ],
-        "priority_reason": "While a funding announcement, it highlights the broader scaling of enterprise AI and agentic workflow infrastructure relevant to B2B operations.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "53ff68ff3bdc2fa1",
-      "title": "Sana Shaikh joins OpenAI as Global Ads Solutions (India)",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSEZLQWtOR0NSQ2taWHl1VTQyOXczOXZpUnB1SjNyZ0JIbjZwVFU4R2VCZ0hTRTViNHVGSWFDLTZtR01ndjJJSWQ0VUlndUIxSmhFRXpHYk5MeEJTd1MtZVJFN0JlNmdkX0k5d0VIcVJGa2hiYTdLWUwwYUhKc0pyNjluQnIxQ3doeFZQRVl2a2hPVldiNm1sR2NTcGJlcHZBWk9aWVpJeW1oS2VELTVkREhXaGlQQy1VbXc?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSEZLQWtOR0NSQ2taWHl1VTQyOXczOXZpUnB1SjNyZ0JIbjZwVFU4R2VCZ0hTRTViNHVGSWFDLTZtR01ndjJJSWQ0VUlndUIxSmhFRXpHYk5MeEJTd1MtZVJFN0JlNmdkX0k5d0VIcVJGa2hiYTdLWUwwYUhKc0pyNjluQnIxQ3doeFZQRVl2a2hPVldiNm1sR2NTcGJlcHZBWk9aWVpJeW1oS2VELTVkREhXaGlQQy1VbXc?oc=5",
-      "source": "Exchange4Media",
-      "source_id": "gnews-exchange4media",
-      "via": "Google News: exchange4media",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T10:03:41Z",
-      "collected_at": "2026-11-24T10:14:22Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "Headline references India-specific context (india).",
-      "priority": "Low",
-      "priority_score": 5,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "openai"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "e2d4ae690d34abcd",
-      "title": "Sana Shaikh Joins OpenAI News, Insights & Timeline",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVTI5X2xmMTlMN05DUmFOTkk5OEZxS2dPaTA3Tl9PZ3RlamhpZ1RWdU5PZlZtOUtSemM2Vk92cFJ1ZUo1aFlMdTNuUzFOSlFSZU1mRzVNN3FNcmZCZkJPUVlMTDFKMXRLTlZBN2YzZ0k4X2ZyNTRxdjBMX1VidnBUSWgwcDY?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVTI5X2xmMTlMN05DUmFOTkk5OEZxS2dPaTA3Tl9PZ3RlamhpZ1RWdU5PZlZtOUtSemM2Vk92cFJ1ZUo1aFlMdTNuUzFOSlFSZU1mRzVNN3FNcmZCZkJPUVlMTDFKMXRLTlZBN2YzZ0k4X2ZyNTRxdjBMX1VidnBUSWgwcDY?oc=5",
-      "source": "Exchange4Media",
-      "source_id": "gnews-exchange4media",
-      "via": "Google News: exchange4media",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T10:03:41Z",
-      "collected_at": "2026-11-25T00:47:14Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
-      "priority": "Low",
-      "priority_score": 5,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "openai"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "2104d086d30a8cfd",
-      "title": "Prime Minister asks for “data and analytics system” for children over 3: The risks of the APAAR ID",
-      "url": "https://www.medianama.com/2026/11/223-prime-minister-data-analytics-children-apaar-id/",
-      "canonical_url": "https://medianama.com/2026/11/223-prime-minister-data-analytics-children-apaar-id",
-      "source": "MediaNama",
-      "source_id": "medianama",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T09:59:20Z",
-      "collected_at": "2026-11-24T10:14:22Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "India",
-      "region_reason": "The article discusses Indian government policies, Prime Minister Narendra Modi, the APAAR ID system, Indian courts, and the Digital Personal Data Protection Act, 2023.",
-      "priority": "Low",
-      "priority_score": 7,
-      "excerpt": "On November 21, 2026, Prime Minister Narendra Modi proposed developing a data and analytics platform to track children’s activities from age three , which could help identify their aptitudes and guide their career choices. Interacting with students at the Indian Institute of Technology (IIT)…",
-      "companies": [
-        "MediaNama"
-      ],
-      "topics": [
-        "APAAR ID",
-        "Data Privacy",
-        "DPDP Act",
-        "Analytics",
-        "Surveillance"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-24T10:14:47Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MediaNama reports that on November 21, 2026, Prime Minister Narendra Modi proposed a data and analytics platform to track children's activities from age three to guide career choices, potentially utilising the APAAR ID system. The publication notes that the Supreme Court directed authorities to amend the APAAR ID consent form to allow parents to refuse enrolment and comply with the Digital Personal Data Protection Act, 2023. Additionally, MediaNama highlights privacy and surveillance risks associated with centralised student databases aggregating sensitive personal information.",
-        "summary": "Prime Minister Narendra Modi recently proposed a centralised data and analytics system to track children's activities starting from the age of three to help determine their aptitudes and career paths, likely leveraging the Automated Permanent Academic Account Registry (APAAR) ID. MediaNama discusses the associated privacy risks, noting that such a continuous tracking mechanism could aggregate extensive personal, academic, and behavioural data from early childhood through adulthood. While proponents argue it eliminates the need for expensive external career counselling, legal analysts and recent Supreme Court interventions highlight severe surveillance risks, potential profiling of dissent, and mandatory consent safeguards under the Digital Personal Data Protection Act, 2023.",
-        "why_it_matters": "For B2B marketers operating in India, this development highlights the intensifying regulatory scrutiny around large-scale data collection, consent mechanisms, and database linkages under the Digital Personal Data Protection (DPDP) Act, 2023. While this specific initiative focuses on the public education sector, it reinforces the strict legal boundaries regarding child data, third-party data sharing, and explicit consent that impact any enterprise data-handling practices.",
-        "applications": [
-          "Reviewing enterprise data collection mechanisms to ensure strict compliance with the Digital Personal Data Protection Act, 2023.",
-          "Auditing consent management platforms to guarantee that user opt-ins and opt-outs are explicit, granular, and properly documented.",
-          "Assessing third-party data enrichment practices to ensure customer data is never unlawfully linked across restricted databases.",
-          "Evaluating risk mitigation strategies when targeting younger demographics or educational institutions in marketing campaigns."
-        ],
-        "recommendations": [
-          "Explore automated Consent Management Platforms (CMPs) to handle granular opt-in and opt-out preferences securely, ensuring compliance with the DPDP Act.",
-          "Test current CRM data storage and access permissions to restrict third-party sharing of sensitive demographic or behavioural information.",
-          "Conduct a legal audit of all lead generation forms targeting education or youth sectors to verify that parental or user consent clauses are legally explicit.",
-          "Monitor ongoing regulatory guidelines regarding digital identification frameworks and data localization mandates in India."
-        ],
-        "priority_reason": "While it concerns national data systems and privacy laws in India, it directly impacts public education infrastructure rather than B2B marketing operations or campaign execution.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "fed97f5558ba1a36",
-      "title": "Anthropic’s Claude Ship goes beyond AI coding to let agents approve, push code: How it works",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR3E3R2xNa1NyajRYRXVoZXNFRG5ZVWtLeUJOelJxT1o2amo4djlyekRJLXJud1dUUXd3RXZ5TGE0Y1d3bDdFeHAzOHNiRV8tanBlVlo1S0N0Q0haWmxQQXk0c29LaFd1MVBTVGRrS0R0ckhPZ29XNDItY0RxWmM2UThkWWZ5X085Z2h2c1VFV3g1M29WZHNzNmw5NUhtOGo4dDdEM2lxb1MxWHNpbTE3RTNPZ1d6eVJncmNiNFZNdHpRUdIByAFBVV95cUxNZDlBMDhkZGN2M2ZhRUZOc19ad2ZGN3BYRFRXeEJLU0czb1lwd0pBaU9jc2xwR1c0N1dNT0g1Ti1KVTJVT01UWDdnQ2xGSXpBdV9rUDBtTF84YkVQblNzcE9WUTA1Z0NwNEUwakFHMllOZ2kwdi1BcFBPOF9KV3h6YzQzaHVjUmpPc0hQM1FBQk9SbGZ2SDZ4cjBNSFhpanpGVUFGU0NKY2NpNHN1N1hOb0hlSnF3NnBMdnFWdDhfOUoxLVhsVVFjdA?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR3E3R2xNa1NyajRYRXVoZXNFRG5ZVWtLeUJOelJxT1o2amo4djlyekRJLXJud1dUUXd3RXZ5TGE0Y1d3bDdFeHAzOHNiRV8tanBlVlo1S0N0Q0haWmxQQXk0c29LaFd1MVBTVGRrS0R0ckhPZ29XNDItY0RxWmM2UThkWWZ5X085Z2h2c1VFV3g1M29WZHNzNmw5NUhtOGo4dDdEM2lxb1MxWHNpbTE3RTNPZ1d6eVJncmNiNFZNdHpRUdIByAFBVV95cUxNZDlBMDhkZGN2M2ZhRUZOc19ad2ZGN3BYRFRXeEJLU0czb1lwd0pBaU9jc2xwR1c0N1dNT0g1Ti1KVTJVT01UWDdnQ2xGSXpBdV9rUDBtTF84YkVQblNzcE9WUTA1Z0NwNEUwakFHMllOZ2kwdi1BcFBPOF9KV3h6YzQzaHVjUmpPc0hQM1FBQk9SbGZ2SDZ4cjBNSFhpanpGVUFGU0NKY2NpNHN1N1hOb0hlSnF3NnBMdnFWdDhfOUoxLVhsVVFjdA?oc=5",
-      "source": "The Indian Express",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T09:54:40Z",
-      "collected_at": "2026-11-24T10:14:22Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
       }
     }
   ]
