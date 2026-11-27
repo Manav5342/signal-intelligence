@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-26T18:37:56Z",
-    "last_successful_update": "2026-11-26T18:37:56Z",
+    "generated_at": "2026-11-27T00:33:52Z",
+    "last_successful_update": "2026-11-27T00:33:52Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-26T18:33:21Z",
-      "finished_at": "2026-11-26T18:37:56Z",
+      "started_at": "2026-11-27T00:30:25Z",
+      "finished_at": "2026-11-27T00:33:52Z",
       "status": "partial",
-      "trigger": "schedule",
+      "trigger": "workflow_dispatch",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 56,
-      "skipped_stale": 491,
-      "skipped_irrelevant": 209,
+      "new_articles": 57,
+      "skipped_stale": 658,
+      "skipped_irrelevant": 208,
       "invalid_urls": 0,
-      "duplicates_merged": 2,
+      "duplicates_merged": 3,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 56,
+      "archived_out": 57,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -43,6 +43,220 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "64c0f06140d9689a",
+      "title": "The curious case of the AI dog that hasn’t barked",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUDFPbWRIYVkyc2tWOEFpbW9tTTNOME9JLU5nRnBibVF4Yko3QXRuYVU2OHZzN1UzdDljSk9jMkNhaU1GQ1RhMXBPSVRodHlQWVRyWlJuMFBSLXg5T0Z4dnVCQTJYbXF1Z3F0amhhcFlQYUFibnRONG5Va0l5RG5uVDRQLXduWmRZV1ZaU1JPVWJVeEViOGFQNDJodDY?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUDFPbWRIYVkyc2tWOEFpbW9tTTNOME9JLU5nRnBibVF4Yko3QXRuYVU2OHZzN1UzdDljSk9jMkNhaU1GQ1RhMXBPSVRodHlQWVRyWlJuMFBSLXg5T0Z4dnVCQTJYbXF1Z3F0amhhcFlQYUFibnRONG5Va0l5RG5uVDRQLXduWmRZV1ZaU1JPVWJVeEViOGFQNDJodDY?oc=5",
+      "source": "Breakingviews",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T22:00:23Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 4,
+      "excerpt": "",
+      "companies": [],
+      "topics": [],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "7b56024d6feedd50",
+      "title": "Japan's JERA aims to build Anthropic, Meta data centers near power plants",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN0FKWlltSXhpMTdpTnRja2JXb3VyWlBnVG9ITFA3YnRiN0lYMzYwNE1vMmF0WEZzLTJyM09jMnVoZks4alExa09oUTA5ZnZLYzl4UllpZjBiWHFuazQ4WkFhUGw1SC1nRGNRQUpoZ25sUFMzQ25EckVCSWZCdWJMVmhfR0s0dlBxSUZwYjdyVUUzN1ppbzBDLWw2eEszQUE0NWNKZ0hicF9oVzlmaXFVXzNtR1FVdlBmalNIOU4xZDRLUXp5bFQ0MnZYdWFwR3lRWWF1LUhDTQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN0FKWlltSXhpMTdpTnRja2JXb3VyWlBnVG9ITFA3YnRiN0lYMzYwNE1vMmF0WEZzLTJyM09jMnVoZks4alExa09oUTA5ZnZLYzl4UllpZjBiWHFuazQ4WkFhUGw1SC1nRGNRQUpoZ25sUFMzQ25EckVCSWZCdWJMVmhfR0s0dlBxSUZwYjdyVUUzN1ppbzBDLWw2eEszQUE0NWNKZ0hicF9oVzlmaXFVXzNtR1FVdlBmalNIOU4xZDRLUXp5bFQ0MnZYdWFwR3lRWWF1LUhDTQ?oc=5",
+      "source": "Nikkei Asia",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T21:51:00Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "837236537e004cbc",
+      "title": "Anthropic expands Claude Code’s review tools with automated fixes and approvals",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPemtuRGp4cDNhNVQxdnlfbjlNajlKb2NnZnpiSmF6Z2hCX1E1YnJvZlRLUnVWNzIwakpKVUMwVlJBSmgwZDRJZTgyM0dUNVBIdjYxNnR2UWhlb0laVkJtODB1cjVEQ3NZaGxZbFB3bFpoNTFGUTQ4Y3c0blVpMDdqYW5QVHVDclh5ZmVfVkZBbEFMMXg4UlozNw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPemtuRGp4cDNhNVQxdnlfbjlNajlKb2NnZnpiSmF6Z2hCX1E1YnJvZlRLUnVWNzIwakpKVUMwVlJBSmgwZDRJZTgyM0dUNVBIdjYxNnR2UWhlb0laVkJtODB1cjVEQ3NZaGxZbFB3bFpoNTFGUTQ4Y3c0blVpMDdqYW5QVHVDclh5ZmVfVkZBbEFMMXg4UlozNw?oc=5",
+      "source": "Yahoo Tech",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T20:51:12Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "7450198e5702dc3b",
+      "title": "WhatsApp To Partner Jio To Launch Int’l Data eSIM Feature In India",
+      "url": "https://inc42.com/buzz/whatsapp-to-partner-jio-to-launch-intl-data-esim-feature-in-india/",
+      "canonical_url": "https://inc42.com/buzz/whatsapp-to-partner-jio-to-launch-intl-data-esim-feature-in-india",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-26T20:49:55Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "whatsapp",
+      "category_label": "WhatsApp Marketing",
+      "region": "India",
+      "region_reason": "The development explicitly centers on a partnership with Reliance Jio to launch the feature in India, which represents WhatsApp's largest market.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "Messaging platform WhatsApp plans to roll out a new feature that lets users buy and install international data eSIMs directly within the app. In a blog post, WhatsApp said that the offering will initially be available in select countries. The messaging giant said that it is also “working” with…",
+      "companies": [
+        "WhatsApp",
+        "Reliance Jio",
+        "Smart Axiata",
+        "Smart Communications",
+        "Verizon",
+        "CRED"
+      ],
+      "topics": [
+        "WhatsApp",
+        "Reliance Jio",
+        "eSIM",
+        "Mobile Utilities",
+        "India Market"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-27T00:30:58Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that WhatsApp plans to launch an international data eSIM feature allowing users to buy and install data eSIMs directly within the app. According to the report, WhatsApp is working with Reliance Jio in India, alongside other telecom operators and providers such as Smart Axiata, Smart Communications, and Verizon. Code references in app version 2.26.47.10 indicate the feature will search for compatible eSIM options based on travel destinations and monitor data usage and expiration.",
+        "summary": "Inc42 reports that WhatsApp is developing an in-app international data eSIM feature in partnership with telecom operators like Reliance Jio, allowing users to purchase and install travel data plans without leaving the application. Code analysis from Android Authority reveals functionality for searching destination-specific eSIMs, managing active or expired plans, and receiving low-data warnings. This development forms part of WhatsApp's broader strategic expansion under CEO Kunal Shah to incorporate everyday utility services into the platform. With over 500 million users in India, the integration signals a shift toward super-app capabilities tailored to mobile-first markets. B2B marketers should monitor how these expanding in-app services alter user engagement patterns and session lengths on the platform.",
+        "why_it_matters": "As WhatsApp evolves into a comprehensive utility and transactional platform under its new leadership priorities, B2B marketers must observe changes in user attention and app dependency. While the eSIM feature itself is consumer-focused for travel, its introduction underscores WhatsApp's accelerating trajectory toward embedded financial, utility, and communication services. This expansion deepens user reliance on the ecosystem, which directly influences the infrastructure available for business-to-consumer and business-to-business messaging interactions.",
+        "applications": [
+          "Review current WhatsApp Business automation workflows to anticipate how increased utility usage impacts user engagement habits.",
+          "Monitor user adoption of expanded in-app services in India to assess readiness for advanced transactional messaging.",
+          "Factor broader WhatsApp feature rollouts, such as scheduled messaging and utility integrations, into multi-channel campaign calendars.",
+          "Analyze changing engagement metrics on the platform as users spend more time managing utility services within WhatsApp."
+        ],
+        "recommendations": [
+          "Explore upcoming WhatsApp Business API updates regarding transactional and utility message types to prepare for platform expansion.",
+          "Test current WhatsApp scheduling and automation features using official Meta tools to streamline campaign execution.",
+          "Audit existing regional customer communication workflows in India to identify opportunities for deeper WhatsApp integration.",
+          "Monitor official Meta announcements for enterprise timelines concerning new utility features and API capabilities."
+        ],
+        "priority_reason": "While the eSIM feature is primarily consumer-facing, it highlights major platform evolution and expanding utility capabilities under new leadership that will indirectly impact B2B messaging ecosystems.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "c0eecc2954d7227b",
+      "title": "Anthropic Claude Ship: GitHub AI Code Reviews, Fixes, and Approvals",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbzZmVHNueXZlYVlWR3kySVdJTkptRkVsTDR2dmxGV3l4ejdpbjBlLVR1cTVkS1RVbXhQSEVyX3NFX0ZkYmU1Y2VTQ1lCYXlYTU5LaVZlUmxZcmVlZ3p0N0FZY2Z1RzdfY1J6Y3MxODg1eVBTN09QUnUtTHNXLU5pTl9xVkZJWXZYMk13bFd3?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbzZmVHNueXZlYVlWR3kySVdJTkptRkVsTDR2dmxGV3l4ejdpbjBlLVR1cTVkS1RVbXhQSEVyX3NFX0ZkYmU1Y2VTQ1lCYXlYTU5LaVZlUmxZcmVlZ3p0N0FZY2Z1RzdfY1J6Y3MxODg1eVBTN09QUnUtTHNXLU5pTl9xVkZJWXZYMk13bFd3?oc=5",
+      "source": "TechRepublic",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T19:09:39Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "5ae771c71d0edbd9",
+      "title": "Can You Really Be Banned For Being Mean To Claude? Inside Anthropic’s New AI Rules",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRzduRGx2dWIyN3R1ZUJBRzU5eC1WM2t6MWotNlc2ZHVfd2YxeU5TWWFDb2UwZUpZQjhQN0U2Zmx2WEpBLW13SkNEWnZtbVNvQ1M3UUYzVGJNTVhKSjZ3QkVCbHJxYjhhNGlPZnA1czl1SnhLZU1HVnVPU2VobXZtMFFxck1BTGxCV2RsakM5dzgtblJ3RnBIcl95YzJOdVRvWmZFTFVITmVzZFBvZDc0?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRzduRGx2dWIyN3R1ZUJBRzU5eC1WM2t6MWotNlc2ZHVfd2YxeU5TWWFDb2UwZUpZQjhQN0U2Zmx2WEpBLW13SkNEWnZtbVNvQ1M3UUYzVGJNTVhKSjZ3QkVCbHJxYjhhNGlPZnA1czl1SnhLZU1HVnVPU2VobXZtMFFxck1BTGxCV2RsakM5dzgtblJ3RnBIcl95YzJOdVRvWmZFTFVITmVzZFBvZDc0?oc=5",
+      "source": "TechRound",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T18:52:04Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
     {
       "id": "795a299e76fc1797",
       "title": "Anthropic Adds MCP Skills and Background Tasks to Claude",
@@ -311,6 +525,36 @@
         "priority_reason": "The feed text is a brief excerpt providing commentary rather than actionable platform or policy changes.",
         "needs_validation": true,
         "validation_note": "Read the full article to understand the author's specific arguments regarding Anthropic's IPO and the broader thesis on efficiency versus human effort."
+      }
+    },
+    {
+      "id": "76047ea73a4de3b5",
+      "title": "Anthropic Is Down 7% Since Its IPO. History Says a $5,000 Investment Could Be Worth This Much in a Year.",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQWmk2Z2ZDVmItSXo2eHdwa1lJclR2YVpVcFlNQkxLRmg1Y3JpbXY5cFl5RUswUzRtak5pVHQ0SEJaT001MDR0YnhnYk5OcF9DbzZ0ZmdNT3oyeHVMaVI3TFdBb1dWQTEtTGxRMFN0T3pyc3R6TkNNNWJocnFHWXFXZEZkOFhhbk4xRnU0Z3RpbjJxdmtWODhDX2hGd3ZVME4yUlkwQzNtVG9oR3d2TTVabWk4YlFSZG43alRkc3gwZFF2aGtnSFluQXJiLWxfWmFCSnBHdVYySk1lRjBsRzdJMTlnbWpNM2p4QkVUM2c3NEp2blRmWTdkR1RXbXpxNVFOeGd0bU5ja2JtQkV5TW5sVENkcmw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQWmk2Z2ZDVmItSXo2eHdwa1lJclR2YVpVcFlNQkxLRmg1Y3JpbXY5cFl5RUswUzRtak5pVHQ0SEJaT001MDR0YnhnYk5OcF9DbzZ0ZmdNT3oyeHVMaVI3TFdBb1dWQTEtTGxRMFN0T3pyc3R6TkNNNWJocnFHWXFXZEZkOFhhbk4xRnU0Z3RpbjJxdmtWODhDX2hGd3ZVME4yUlkwQzNtVG9oR3d2TTVabWk4YlFSZG43alRkc3gwZFF2aGtnSFluQXJiLWxfWmFCSnBHdVYySk1lRjBsRzdJMTlnbWpNM2p4QkVUM2c3NEp2blRmWTdkR1RXbXpxNVFOeGd0bU5ja2JtQkV5TW5sVENkcmw?oc=5",
+      "source": "The Globe and Mail",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T15:33:35Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -2565,6 +2809,36 @@
       }
     },
     {
+      "id": "fd04fd0eae68e29e",
+      "title": "HubSpot (HUBS) Brings Back Co Founder Brian Halligan As CEO",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPR05LaFRIdUlQcE1HTGhIRDhNTzlRSVR0aVE4SExzNk1mNEtad00xZlgwNU1WY19PbGMtdVpvblJ6VzhTOUhRYXhicXJCLWd4alJpOGVNcTlNcTRFYTNKQXdMaVU4UWhtbmIwRFZhSlFqUkd6YXVNeVB5M3RTR3R4bEN4ZllaMU5abGRkUFItZUFFMGVWb1o4?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPR05LaFRIdUlQcE1HTGhIRDhNTzlRSVR0aVE4SExzNk1mNEtad00xZlgwNU1WY19PbGMtdVpvblJ6VzhTOUhRYXhicXJCLWd4alJpOGVNcTlNcTRFYTNKQXdMaVU4UWhtbmIwRFZhSlFqUkd6YXVNeVB5M3RTR3R4bEN4ZllaMU5abGRkUFItZUFFMGVWb1o4?oc=5",
+      "source": "Yahoo Finance",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-25T21:10:06Z",
+      "collected_at": "2026-11-27T00:30:25Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "4c44ce30146b120b",
       "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
       "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
@@ -4290,336 +4564,6 @@
         "claude"
       ],
       "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "1334d21d181aa451",
-      "title": "HubSpot Names Karen Burgess as Chief Financial Officer",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yMTVvT21pd2xtOGRMRGxvQWYzbVJOZFQxWUQ5bm15M21wcEQ1OGtjdmtlM2JlbFMtY2pzV2RyVzVoM3RWT1RiSFd3OWxxZEN3aXk0bmRJNnRiSXRSb01FSHhjYjh0bVZNMENTSktuWldVUEdhclJnVjFneWMwSUE?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yMTVvT21pd2xtOGRMRGxvQWYzbVJOZFQxWUQ5bm15M21wcEQ1OGtjdmtlM2JlbFMtY2pzV2RyVzVoM3RWT1RiSFd3OWxxZEN3aXk0bmRJNnRiSXRSb01FSHhjYjh0bVZNMENTSktuWldVUEdhclJnVjFneWMwSUE?oc=5",
-      "source": "https://hrtoday.in/",
-      "source_id": "gnews-hubspot",
-      "via": "Google News: HubSpot",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T21:46:21Z",
-      "collected_at": "2026-11-26T18:33:21Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Low",
-      "priority_score": 5,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "hubspot"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "3a27433fabd08813",
-      "title": "Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQnJkYjV3SVM2d3J1VEtRcFpxbkQtUzZybjhiLVhnQW9qMm14YklTTGNFbnhfRnJ4dWJjN0lqTXFNNFAtZXhPcmFCSDd5MURmWlFUeHRtWVpSZHJWZWY3RloxZ2c5al9VckhJSU95dUc4Ykh3OVBYRDVaMjNJWG5pSVMwQ0I4d2c?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQnJkYjV3SVM2d3J1VEtRcFpxbkQtUzZybjhiLVhnQW9qMm14YklTTGNFbnhfRnJ4dWJjN0lqTXFNNFAtZXhPcmFCSDd5MURmWlFUeHRtWVpSZHJWZWY3RloxZ2c5al9VckhJSU95dUc4Ykh3OVBYRDVaMjNJWG5pSVMwQ0I4d2c?oc=5",
-      "source": "Decrypt",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T21:46:02Z",
-      "collected_at": "2026-11-25T00:47:14Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [
-        {
-          "source": "Yahoo Tech",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0JoOHZpSlQyRXpoVFFXRU95WHBjU0lWNUxQbUlIYy1zXzdlMEpqVHNMUGJuMVZKNXNxUTRSYVlFY3hCb191LUE1c2FQNXZhV1pCS1BzQXczYWNWelN3QURpY2Z4Zy0xMXhNRUNJel9GNWdlQnBZMkVCYzZ3bGo2cTVLaXVXX091bDlrb01QYw?oc=5",
-          "title": "Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code"
-        }
-      ],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "db55f544b8b8a20e",
-      "title": "Anthropic IPO: Here's What a $5,000 Investment Could Look Like in 5 Years",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNREM4N3dOV0pVYXROMG5VMHFTWmZoSHZLaTVjNlo0ckpweGRRQVhWa2lHRTNWVmZuUXctUTUzaGdUMFZjR1RRclhsUGJLYl9FUWdkb2Npc05yZWpYaEpKUWFCaE9EbWNuS3U1MHFJU1FTUThEc3BUT0VKRG0tc2F1bEpZVVVaS0F0OHRiZ3NSUmRhb1RQa19ZR2F6MnBqeVZ4NDVQVkNPbkI0d1Q0ZHZjQUVQUkpRUjZyOFpTcWVVY2NFc29sZmgxLVFQV3oyTUg5SzNBR0RxNzBScWJ2TGN2MlljLXJabVI2bXdDd0Vn?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNREM4N3dOV0pVYXROMG5VMHFTWmZoSHZLaTVjNlo0ckpweGRRQVhWa2lHRTNWVmZuUXctUTUzaGdUMFZjR1RRclhsUGJLYl9FUWdkb2Npc05yZWpYaEpKUWFCaE9EbWNuS3U1MHFJU1FTUThEc3BUT0VKRG0tc2F1bEpZVVVaS0F0OHRiZ3NSUmRhb1RQa19ZR2F6MnBqeVZ4NDVQVkNPbkI0d1Q0ZHZjQUVQUkpRUjZyOFpTcWVVY2NFc29sZmgxLVFQV3oyTUg5SzNBR0RxNzBScWJ2TGN2MlljLXJabVI2bXdDd0Vn?oc=5",
-      "source": "The Globe and Mail",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T21:37:45Z",
-      "collected_at": "2026-11-25T00:47:14Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "71615ee1ebfde345",
-      "title": "Even the best AI agents struggle with everyday life",
-      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-      "canonical_url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T21:33:29Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The report discusses general AI agent benchmarks without specific geographic restriction.",
-      "priority": "Medium",
-      "priority_score": 11,
-      "excerpt": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
-      "companies": [],
-      "topics": [
-        "AI Agents",
-        "Automation",
-        "Artificial Intelligence",
-        "Risk Management"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:31:08Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely. The report notes that these personal AI assistants often introduce potential new problems when attempting to execute tasks.",
-        "summary": "TechCrunch reports that despite millions of users adopting personal AI assistants, a new benchmark test shows that top-tier AI models still fail to handle everyday tasks reliably or safely. This highlights a performance gap between consumer expectations and the current technical capabilities of autonomous agents. While the provided text is brief, it underscores the inherent risks of deploying immature autonomous technologies for routine tasks.",
-        "why_it_matters": "For B2B marketers deploying AI agents in customer service, lead qualification, or sales automation, this benchmark highlights the operational risks of relying on fully autonomous workflows. Premature deployment of unverified AI agents can lead to critical errors, degrading the prospect experience and damaging brand trust.",
-        "applications": [
-          "Audit existing customer-facing AI agents and chatbots to identify vulnerability to failure on multi-step tasks",
-          "Implement strict human-in-the-loop review gates for automated lead nurturing and qualification sequences",
-          "Design fallback protocols for WhatsApp and email automation workflows when AI agents fail to understand user intent"
-        ],
-        "recommendations": [
-          "Explore validation frameworks and reliability benchmarks before adopting new AI agent tools; likely benefit is reduced operational risk; implementation consideration requires establishing robust testing environments.",
-          "Test current CRM-integrated conversational assistants against complex, multi-step queries; likely benefit is uncovering hidden automation flaws; implementation consideration involves manual sampling of chat logs.",
-          "Review escalation paths from automated chat to human sales reps; likely benefit is preventing lost leads due to agent errors; implementation consideration entails retraining support staff on handoff triggers."
-        ],
-        "priority_reason": "It serves as a timely caution for marketers rushing to deploy autonomous AI agents without adequate reliability testing.",
-        "needs_validation": true,
-        "validation_note": "Verify the name of the new benchmark, specific failure rates, and the methodologies used in the original TechCrunch article."
-      }
-    },
-    {
-      "id": "b1e5839c1dc50666",
-      "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
-      "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
-      "canonical_url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T21:32:38Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The partnership involves US-based global companies Meta and Walmart without specific regional market limitation in the text.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
-      "companies": [
-        "Walmart",
-        "Meta"
-      ],
-      "topics": [
-        "AI agents",
-        "Conversational commerce",
-        "Retail tech",
-        "Meta Muse"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:31:17Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that Walmart is allowing customers to shop Black Friday deals directly through Muse, which is Meta's AI agent. The partnership integrates Walmart's retail offerings with Meta's conversational artificial intelligence interface.",
-        "summary": "Walmart has partnered with Meta to enable customers to browse and purchase Black Friday deals using Muse, Meta's AI shopping assistant. This development highlights the growing convergence of conversational commerce and retail, shifting the point of purchase from traditional web interfaces to AI-driven chat environments. While the provided text is brief, it signals a significant shift towards agent-led discovery and transactions.",
-        "why_it_matters": "As major platforms like Meta integrate transactional capabilities into AI agents like Muse, B2B brands and enterprise marketers must prepare for a future where buyers use conversational intermediaries rather than search engines. This shifts the focus of digital acquisition from traditional SEO and display ads to optimization for AI agent retrieval, structured product data, and automated conversational flows. B2B commerce and enterprise sales motions may soon need to accommodate AI-to-AI transactions or assisted buying agents.",
-        "applications": [
-          "Audit existing product catalogs and structured data feeds to ensure AI agents can easily parse and retrieve B2B product specifications and pricing.",
-          "Explore conversational interface design to understand how AI agents present product options, discounts, and terms to prospective buyers.",
-          "Monitor user adoption of AI shopping assistants to gauge whether buyers are shifting away from traditional search-and-form B2B lead generation paths.",
-          "Investigate technical integration options for making B2B SaaS or wholesale catalogs accessible to emerging enterprise AI assistants."
-        ],
-        "recommendations": [
-          "Explore structured data and schema markup tools to ensure product feeds are machine-readable for AI agents, with the likely benefit of improving discoverability in conversational searches.",
-          "Test conversational AI response accuracy for complex product catalogs, keeping in mind that prompt injection or hallucination risks could impact brand presentation.",
-          "Review current CRM and e-commerce infrastructure to assess readiness for API-driven, agent-initiated transactions and lead inquiries.",
-          "Track platform policy updates from Meta and other major AI providers regarding commercial transactions and brand participation within their agent ecosystems."
-        ],
-        "priority_reason": "It signals a broader industry trend toward AI agent commerce that will eventually impact B2B discovery and transactional models.",
-        "needs_validation": true,
-        "validation_note": "Verify the full scope of the Walmart and Meta Muse partnership, including whether transactional capabilities are fully automated within the chat or require handoffs, and check for any B2B applicability."
-      }
-    },
-    {
-      "id": "c783404331fa2077",
-      "title": "Claude can now turn artifacts into semi-independent Mac apps",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT2VaSUlmV0VvY0JWMURIb2JUQlpqRUw3bkhvVTZxSTlQdWlmWmhrNWpnU1dRMC1xZ1NsS2g0bmgwSTlvcEYzcUE5b0xoMlRWTnFrc2lnai00aXdUM0NvcXZmeFJad2lXWkFNMkRVclpFZnFjd0tmTEtYb09PRmd3TVJuSHlFMWVHVjlPZWFDNmJkT0pKTEJtbEJwYnU3WHdLZXhBWmln?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT2VaSUlmV0VvY0JWMURIb2JUQlpqRUw3bkhvVTZxSTlQdWlmWmhrNWpnU1dRMC1xZ1NsS2g0bmgwSTlvcEYzcUE5b0xoMlRWTnFrc2lnai00aXdUM0NvcXZmeFJad2lXWkFNMkRVclpFZnFjd0tmTEtYb09PRmd3TVJuSHlFMWVHVjlPZWFDNmJkT0pKTEJtbEJwYnU3WHdLZXhBWmln?oc=5",
-      "source": "AppleInsider",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T21:27:00Z",
-      "collected_at": "2026-11-25T00:47:14Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "4d83f53e63e2d3da",
-      "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
-      "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
-      "canonical_url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself",
-      "source": "TechCrunch",
-      "source_id": "techcrunch-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-24T21:19:52Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The funding announcement does not specify a target geographic market or restrict its application to India.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
-      "companies": [
-        "Maple",
-        "TechCrunch"
-      ],
-      "topics": [
-        "Artificial Intelligence",
-        "Data Privacy",
-        "Funding",
-        "Security"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T00:31:27Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "TechCrunch reports that the startup Maple has raised $5.3 million to build AI products with an encrypted architecture. According to the text, this architecture is designed to prevent the company itself from accessing users' private data.",
-        "summary": "Maple has secured $5.3 million in funding to develop AI solutions featuring encrypted architecture that restricts access to private user data, even from the platform provider. While the text is brief, this points to a zero-trust approach to artificial intelligence data handling. Such capabilities address growing privacy concerns regarding how AI vendors process enterprise information. B2B marketers evaluating AI tools will need to watch how these privacy-first architectures impact data integration and campaign personalisation.",
-        "why_it_matters": "Data privacy regulations and enterprise security policies frequently restrict B2B marketers from feeding sensitive prospect data into third-party AI tools. If Maple's technology successfully prevents the AI provider from reading underlying data, it could alleviate compliance fears around customer relationship management and lead generation enrichment. This may make enterprise buyers more receptive to adopting advanced AI-driven marketing automation platforms.",
-        "applications": [
-          "Audit current AI vendor data-handling agreements to see how they compare to zero-access encryption models.",
-          "Assess whether privacy-first AI tools can safely process sensitive B2B prospect lists without breaching compliance mandates.",
-          "Incorporate data security architecture questions into standard request-for-proposal processes for new marketing technology."
-        ],
-        "recommendations": [
-          "Explore zero-knowledge encryption tools; relevant tool types include privacy-preserving AI and secure data enclaves; expected benefit is reduced risk of data exposure; implementation requires alignment with corporate legal and IT security teams.",
-          "Test how encrypted AI platforms handle customer segmentation tasks; relevant tool types include secure analytics platforms; expected benefit is compliant lead scoring; implementation requires verifying API compatibility with existing CRMs.",
-          "Review data governance policies for WhatsApp automation and email CRM platforms to identify vulnerabilities where third-party AI processes identifiable customer data."
-        ],
-        "priority_reason": "It highlights an emerging trend in privacy-first AI infrastructure that could eventually influence enterprise marketing technology adoption.",
-        "needs_validation": true,
-        "validation_note": "Verify the full list of products Maple offers, their target enterprise market, and how their encrypted AI architecture integrates with external marketing databases."
-      }
-    },
-    {
-      "id": "f2c47195b7034105",
-      "title": "HubSpot to Present at the Barclays 24th Annual Global Technology Conference",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOcnZCWnZXVWxyQUhFUExxWmlXaVY3eXdLTDRUTTU1ZEpXekxrdk14Zkw2MExqNEU5WWc4OWgwVzI3el9ZdkRXWDRXV3dMX3BwTlZBVVZsUWE3b1l6a01DQUVFdHZVQnJfVWEtNzRsUzQxenRpQUxfLUk2dzJGdUFIV05LNHlnbDZaM0tGNFU2dnBPQWljNGlQX3g0NVh6bHl5cS1mSU1VQUtEQjBnUDRfXzVjaGZGNDI1U19ua0VhTUp4ZUYwckcyYjdxcUY?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOcnZCWnZXVWxyQUhFUExxWmlXaVY3eXdLTDRUTTU1ZEpXekxrdk14Zkw2MExqNEU5WWc4OWgwVzI3el9ZdkRXWDRXV3dMX3BwTlZBVVZsUWE3b1l6a01DQUVFdHZVQnJfVWEtNzRsUzQxenRpQUxfLUk2dzJGdUFIV05LNHlnbDZaM0tGNFU2dnBPQWljNGlQX3g0NVh6bHl5cS1mSU1VQUtEQjBnUDRfXzVjaGZGNDI1U19ua0VhTUp4ZUYwckcyYjdxcUY?oc=5",
-      "source": "Business Wire",
-      "source_id": "gnews-hubspot",
-      "via": "Google News: HubSpot",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T21:05:00Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "hubspot"
-      ],
-      "also_covered_by": [
-        {
-          "source": "Stock Titan",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYU9KUHpENWNmMzBpMHptQ3NKamszT1pPZzBJVVNlWmg5VTFvRzc1Z3BjcjctSzlCWWZJcTZHT2dmZzZFaTBrV05jVnFYSk16cTZKR2prOUdwUWc5STdQWEhTY2Z1R19FMGFfcHd0a21xeDVyTTU0ZkQ3UWkwSTQ3MXBNTVpmWWd3YWszRUE2aHczdTdrUEZqTEpwRGhla2dCYTY0SHNfQjRUQzdpd0Y0Y1ZMNHEtOWdlLVJ4VQ?oc=5",
-          "title": "HubSpot to Present at the Barclays 24th Annual Global Technology Conference"
-        }
-      ],
       "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
