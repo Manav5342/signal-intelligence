@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-27T00:33:52Z",
-    "last_successful_update": "2026-11-27T00:33:52Z",
+    "generated_at": "2026-11-27T08:33:48Z",
+    "last_successful_update": "2026-11-27T08:33:48Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-27T00:30:25Z",
-      "finished_at": "2026-11-27T00:33:52Z",
+      "started_at": "2026-11-27T08:30:32Z",
+      "finished_at": "2026-11-27T08:33:48Z",
       "status": "partial",
       "trigger": "workflow_dispatch",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 57,
-      "skipped_stale": 658,
-      "skipped_irrelevant": 208,
+      "new_articles": 59,
+      "skipped_stale": 591,
+      "skipped_irrelevant": 210,
       "invalid_urls": 0,
-      "duplicates_merged": 3,
+      "duplicates_merged": 1,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 57,
+      "archived_out": 59,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -43,6 +43,643 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "d61b7791660ffa37",
+      "title": "EU-Compliant DMARC Solutions: How to Choose a GDPR-Ready Provider in 2026",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVXFGZm1ENlhBSjBoWmlJNjJpMUFmLXNsRFZMX1UyMXFQWk0xQjJYdFdjZHVIMFZwZmJxeFBWdHNDSGhfZHF5WmVrWXJKOGNyMFlDNHAzQU5MMFJ0ZndKUDMxekVEU1RwZGk3bTgzVzVHQllpRXkyRmIydXhLVF9JOEttZHRMTEFjbUtnemc4UXEwX1ZaUVg2dV9WS2xCMGFnYkVicHBMdG83T0ZpZjUtUA?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVXFGZm1ENlhBSjBoWmlJNjJpMUFmLXNsRFZMX1UyMXFQWk0xQjJYdFdjZHVIMFZwZmJxeFBWdHNDSGhfZHF5WmVrWXJKOGNyMFlDNHAzQU5MMFJ0ZndKUDMxekVEU1RwZGk3bTgzVzVHQllpRXkyRmIydXhLVF9JOEttZHRMTEFjbUtnemc4UXEwX1ZaUVg2dV9WS2xCMGFnYkVicHBMdG83T0ZpZjUtUA?oc=5",
+      "source": "Security Boulevard",
+      "source_id": "gnews-email",
+      "via": "Google News: Email deliverability",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T08:20:06Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "email",
+      "category_label": "Email Marketing",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "dmarc"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "8eb1ebb9c279c9c4",
+      "title": "Anthropic's Claude Gets Scheduled Cloud Tasks as Firms Weigh Agent Lock-In",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tX3dGSUMzRmRWcU5EblNuU2RLaHhCaXlIdG16Ym5Pc2Jwcm5qSEpnaXYwMVVrMTI2ZVFOZHpfUWU4OXdWTzlmc1NYOWdoNXVDRzJWdHBXWks4RmZ1azFPeW1ibUdhZ001ZzFMNzFJd1R6N09reWc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tX3dGSUMzRmRWcU5EblNuU2RLaHhCaXlIdG16Ym5Pc2Jwcm5qSEpnaXYwMVVrMTI2ZVFOZHpfUWU4OXdWTzlmc1NYOWdoNXVDRzJWdHBXWks4RmZ1azFPeW1ibUdhZ001ZzFMNzFJd1R6N09reWc?oc=5",
+      "source": "BigGo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T07:56:00Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "be55de3d45eb65fd",
+      "title": "UK regulator warns AI agents must give users control over data access and autonomy as Meta Muse launches",
+      "url": "https://www.medianama.com/2026/11/223-uk-cma-ai-agent-user-control-meta-muse-launch/",
+      "canonical_url": "https://medianama.com/2026/11/223-uk-cma-ai-agent-user-control-meta-muse-launch",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-27T07:28:15Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "The development focuses on UK regulatory policy issued by the CMA and ICO, which applies to the UK market and sets international precedents for agentic AI.",
+      "priority": "Medium",
+      "priority_score": 14,
+      "excerpt": "The UK Competition and Markets Authority (CMA) has said that personal AI agents must give consumers clear information about their risks, limitations and permissions , following the UK launch of Meta’s Muse. The regulator has warned that businesses offering agentic AI products must ensure consumers…",
+      "companies": [
+        "Meta",
+        "Meta Muse"
+      ],
+      "topics": [
+        "AI agents",
+        "regulation",
+        "data privacy",
+        "consumer protection",
+        "Meta Muse"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-27T08:30:45Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "MediaNama reports that the UK Competition and Markets Authority (CMA) has warned that personal AI agents must provide consumers with clear information about risks, limitations, and permissions following the UK launch of Meta Muse. The regulator stated that businesses offering agentic AI must ensure users control data access and agent autonomy, while confirming that existing UK consumer protection laws apply to these products. Additionally, the CMA outlined safeguards covering transparency, contractual protections, and data access, noting ongoing engagement with Meta regarding the rollout of Muse.",
+        "summary": "The UK Competition and Markets Authority (CMA) has issued warnings regarding personal AI agents, specifically following the UK launch of Meta Muse, requiring businesses to ensure clear consumer controls over data access and agent autonomy. Existing UK consumer protection laws fully apply to these emerging AI tools, placing the burden on suppliers to be transparent about capabilities, risks, and limitations rather than shifting responsibility to the user. Regulators including the CMA and ICO advise that agentic products must maintain consistency between marketing claims and actual operations, while giving users granular permissions over account connections and data retention. B2B marketers deploying or interacting with agentic AI must therefore anticipate tighter regulatory scrutiny regarding consent, privacy defaults, and data usage transparency.",
+        "why_it_matters": "As regulatory bodies tighten requirements around agentic AI, B2B marketers and developers building autonomous agents or integrating with them must implement strict permissioning and transparent data-handling practices. Marketing campaigns promoting agentic capabilities must align precisely with product reality to comply with consumer protection standards and avoid regulatory penalties. Furthermore, user hesitancy around data access and ongoing permissions will directly impact adoption rates for B2B AI tools and automated workflows.",
+        "applications": [
+          "Reviewing onboarding flows for B2B agentic AI products to ensure clear disclosure of data access levels and autonomy limits.",
+          "Auditing marketing and sales claims for AI automation tools to verify they match actual product performance and terms.",
+          "Implementing granular permission settings that allow business users to explicitly approve or restrict agent actions on an ongoing basis.",
+          "Updating privacy documentation and default settings to clarify whether user data is utilized for model training or personalization."
+        ],
+        "recommendations": [
+          "Explore consent-management and permission-auditing tool types to give enterprise users clear control over AI agent data access; likely benefit is increased user trust and regulatory compliance; consider implementation complexity when integrating with third-party apps.",
+          "Test current user onboarding journeys for AI-driven products; relevant tool types include UX analytics and compliance audit software; likely benefit is early identification of misleading claims or hidden data-sharing clauses; consider legal review of terms and conditions.",
+          "Evaluate data retention and model-training opt-outs within existing CRM and automation platforms; relevant tool types include data governance platforms; likely benefit is adherence to evolving regulatory frameworks; implementation consideration involves cross-functional alignment between marketing, legal, and product teams."
+        ],
+        "priority_reason": "It signals a significant shift in regulatory oversight for agentic AI products, impacting how B2B marketers must frame capabilities and manage user data permissions.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "d8c8ba030b5dfd45",
+      "title": "CERT-In flags high-severity vulnerabilities in WhatsApp across Android, iOS and desktop",
+      "url": "https://www.medianama.com/2026/11/223-cert-in-vulnerabilities-whatsapp/",
+      "canonical_url": "https://medianama.com/2026/11/223-cert-in-vulnerabilities-whatsapp",
+      "source": "MediaNama",
+      "source_id": "medianama",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-27T07:05:50Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "whatsapp",
+      "category_label": "WhatsApp Marketing",
+      "region": "India",
+      "region_reason": "The advisory was issued by India's national cybersecurity agency, CERT-In, specifically impacting users and businesses within the Indian market.",
+      "priority": "High",
+      "priority_score": 9,
+      "excerpt": "Access a copy of the CERT-In advisory here: Original Notice | CERT-In Text File | WhatsApp advisory | US NIST India’s cybersecurity agency has flagged five high-severity vulnerabilities in WhatsApp , affecting its Android, iOS, macOS and Windows apps, including WhatsApp Business, and stated that…",
+      "companies": [
+        "CERT-In",
+        "WhatsApp",
+        "Meta",
+        "MediaNama",
+        "eMudhra",
+        "C-DAC"
+      ],
+      "topics": [
+        "WhatsApp Security",
+        "CERT-In",
+        "Vulnerability Disclosure",
+        "WhatsApp Business",
+        "Cybersecurity"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-27T08:31:05Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "MediaNama reports that India's cybersecurity agency, CERT-In, has flagged five high-severity vulnerabilities in WhatsApp affecting Android, iOS, macOS, and Windows apps, including WhatsApp Business. According to the advisory, these flaws involve attachment spoofing, SQL injection, improper certificate chain validation, incomplete validation of AI-rich response messages, and external ad-reply URLs, which could allow remote attackers to execute arbitrary code or access sensitive information via specially crafted messages, URLs, or attachments. WhatsApp stated that it has not seen evidence of exploitation in the wild and has released fixes in newer versions of the affected applications.",
+        "summary": "CERT-In has issued a high-severity vulnerability notice regarding five distinct security flaws present across multiple platforms of WhatsApp and WhatsApp Business. The reported issues stem from technical gaps such as attachment spoofing, SQL injection, improper certificate chain validation, and inadequate validation of AI-rich responses and ad-reply URLs. While WhatsApp maintains there is no evidence of active exploitation, the disclosure underscores critical risks for businesses relying on conversational commerce and customer support via the platform. Organizations must immediately update their WhatsApp and WhatsApp Business deployments across mobile and desktop apps to patch these security holes. Our interpretation is that businesses using WhatsApp for automated customer interactions or sales must treat this as an operational risk, given the potential exposure of customer metadata and chat histories.",
+        "why_it_matters": "For B2B marketers utilizing WhatsApp and WhatsApp Business for customer acquisition, lead generation, and conversational workflows, unpatched vulnerabilities pose severe data security and brand reputation risks. Exploits targeting SQL injection or AI-rich response validation could compromise local chat histories, backend customer data, and metadata gathered from click-to-WhatsApp ad campaigns. Ensuring all corporate devices and managed business accounts are updated prevents potential service disruptions or data breaches stemming from malicious payloads sent through automated or manual messaging channels.",
+        "applications": [
+          "Auditing all corporate devices, mobile phones, and desktop setups running WhatsApp Business to verify they are updated to the vendor's patched versions.",
+          "Reviewing click-to-WhatsApp ad-reply URL configurations and conversational workflows to safeguard against external link exploitation.",
+          "Briefing customer support and sales teams on the risks of interacting with unverified attachments or specially crafted incoming messages.",
+          "Assessing internal data handling practices for customer metadata captured through automated WhatsApp interactions to mitigate potential database exposure risks."
+        ],
+        "recommendations": [
+          "Explore and test immediate software updates across all desktop and mobile builds of WhatsApp and WhatsApp Business; tool types include mobile device management (MDM) and software update managers, with the likely benefit of closing known security vectors.",
+          "Implement strict access controls and device hygiene policies for employees handling business messaging accounts to prevent social engineering via spoofed attachments.",
+          "Review marketing automation workflows that trigger AI-rich responses or handle external ad-reply URLs to ensure they comply with updated platform security standards.",
+          "Coordinate with IT security teams to monitor vendor security advisories regularly and establish a rapid response protocol for future CERT-In alerts."
+        ],
+        "priority_reason": "High-severity vulnerabilities impacting WhatsApp Business across multiple platforms require immediate operational and security updates to protect enterprise communication channels.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
+    {
+      "id": "15698651564eb93a",
+      "title": "Prediction: This Will Be Anthropic’s Stock Price by the End of 2026",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeVpTM1JFbFd4ajNxQjVDYkx3UmtpRHJjX0VCRl9CbHlDOTF3cE5zN2hjSmtSMEsxdE5Nc290dnhHS0lVLUVDZzlxV2ZMYkxsQm9mQmhaOFpVNmZzSXhMc0FBeUNLeXlhM1ExTF9Zd1NFN1g5QWtLdlhyMWg3ZlVBOS1xajhyR09iaFM5WDZUdHpWWG9rWGtMSmQyN2x5ejFuZi1NbHpTNGNLZDljWkE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeVpTM1JFbFd4ajNxQjVDYkx3UmtpRHJjX0VCRl9CbHlDOTF3cE5zN2hjSmtSMEsxdE5Nc290dnhHS0lVLUVDZzlxV2ZMYkxsQm9mQmhaOFpVNmZzSXhMc0FBeUNLeXlhM1ExTF9Zd1NFN1g5QWtLdlhyMWg3ZlVBOS1xajhyR09iaFM5WDZUdHpWWG9rWGtMSmQyN2x5ejFuZi1NbHpTNGNLZDljWkE?oc=5",
+      "source": "The Motley Fool",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T07:03:02Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "20209b61e058b904",
+      "title": "MarTech Trends 2027 News, Insights & Timeline",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9GeGNJMEVpMkJxd2lQTkpJV0NhU1NIcUtXMllzNnh2c0xtcU1nNWt2YVdSM2k4U2o5MVVVR0VZaEhJdXZjS2E3VlNjVmFRZVlkUUtmcnl2NDNZRENBRGZsQXNtSXAzNlBielI0RFUxSFdRMlk1WjVydkhXTTRzZw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9GeGNJMEVpMkJxd2lQTkpJV0NhU1NIcUtXMllzNnh2c0xtcU1nNWt2YVdSM2k4U2o5MVVVR0VZaEhJdXZjS2E3VlNjVmFRZVlkUUtmcnl2NDNZRENBRGZsQXNtSXAzNlBielI0RFUxSFdRMlk1WjVydkhXTTRzZw?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T07:00:00Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "martech"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "e98c2112e20e8e6e",
+      "title": "Swiggy to lay off 340 employees from Instamart amid AI adoption",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVW1MS0dQOEFvNl9YdlRlTGZSSXR6MnRlWFByYllNTnJDMTdueVJuWHBNbXJad2ZNZVBJR1R5Rjg4Rk9zQmQ4Y2JOYVU3bVRiWlVFY3FwSGFuU1FITV8teWJ6czBueTJjYm9JVjFBV3E5RGNyOWRpTTFQR0JGeXZYdEpkdUxVcV9reG5OZVdzZzFBSS1UT1lLZTItU0FFUk51WFBxY0tMMGJXa29CUUVZX3g0ckVsaXRfVmFoU0V6S19GZw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVW1MS0dQOEFvNl9YdlRlTGZSSXR6MnRlWFByYllNTnJDMTdueVJuWHBNbXJad2ZNZVBJR1R5Rjg4Rk9zQmQ4Y2JOYVU3bVRiWlVFY3FwSGFuU1FITV8teWJ6czBueTJjYm9JVjFBV3E5RGNyOWRpTTFQR0JGeXZYdEpkdUxVcV9reG5OZVdzZzFBSS1UT1lLZTItU0FFUk51WFBxY0tMMGJXa29CUUVZX3g0ckVsaXRfVmFoU0V6S19GZw?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T06:44:50Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "ai adoption"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "a46d5ec436b8bc97",
+      "title": "7 MarTech Trends to Watch Out for in 2027",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTUdnbTZyMU81Q1NYUXZmVEpxeUxqcVNUZmZyeURhQi1oLUFjSUU0SjZxMDJCejUza2xEUnBmZ2trR2N4dWJ1QlZDdmMwVkJmLVJVVUtCZ284OHdZVnhIY2lVS2liMDhSaGpfMzVROWRqUC03QlNGNzZqTUwtVWVFOG42Q291TXVBa0p3Y2EtODdHNHU1ejVGNGt3ajJYZUhx?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTUdnbTZyMU81Q1NYUXZmVEpxeUxqcVNUZmZyeURhQi1oLUFjSUU0SjZxMDJCejUza2xEUnBmZ2trR2N4dWJ1QlZDdmMwVkJmLVJVVUtCZ284OHdZVnhIY2lVS2liMDhSaGpfMzVROWRqUC03QlNGNzZqTUwtVWVFOG42Q291TXVBa0p3Y2EtODdHNHU1ejVGNGt3ajJYZUhx?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T06:32:11Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "martech",
+      "category_label": "Marketing Technology",
+      "region": "Global",
+      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
+      "priority": "Low",
+      "priority_score": 5,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "martech"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "15ffa253812c8aab",
+      "title": "BDC CIO Jean-Sébastien Charest joins India Agentic AI, MarTech & CX Week 2027",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdy15QmVjbVdieTVtVk83eGhWcVFOSm41eGVWRDd3V3NIaGtQY1FyVTYxVVdWaDJHMFQzam03VWhKUER3MTZra2JUSF9kOVVKSVdEdWg0dUdtNFB1Y0htb3NuWW1PTG5IdHR2RjYtd3RuYVNEcGNoUWFPRDc5NlI1S09YLXU2MzU2alQyS2duN0RJLVF4cXlSSW1FWlhpT3A1ek1NdVpFdlh5dm54bXY3SzFTQm9ZeFFMSXRORVFxN0k2VlBZY1lURWNGcnI?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdy15QmVjbVdieTVtVk83eGhWcVFOSm41eGVWRDd3V3NIaGtQY1FyVTYxVVdWaDJHMFQzam03VWhKUER3MTZra2JUSF9kOVVKSVdEdWg0dUdtNFB1Y0htb3NuWW1PTG5IdHR2RjYtd3RuYVNEcGNoUWFPRDc5NlI1S09YLXU2MzU2alQyS2duN0RJLVF4cXlSSW1FWlhpT3A1ek1NdVpFdlh5dm54bXY3SzFTQm9ZeFFMSXRORVFxN0k2VlBZY1lURWNGcnI?oc=5",
+      "source": "Exchange4Media",
+      "source_id": "gnews-exchange4media",
+      "via": "Google News: exchange4media",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T06:12:18Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (india).",
+      "priority": "Medium",
+      "priority_score": 8,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "agentic",
+        "agentic ai"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "7c1fab7c4d130be8",
+      "title": "CERT-In flags security vulnerabilities in WhatsApp, ASUS software: Details",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPRF9rZ1psSmRMUUMtcExTSFRlMDI5Tm5jRzgwaWNLelh6Z1Juc1FKb1BTOW42ay1CaFhqUDByS3VZblJNZTR0UFhTUGppLTVtWGxfaE9oQ0VHOXgtczBEeVFhaVZweWZmdnJYR0pGZk11RVBud0ljU1ROREUtMWRObTBFalVDOEFpWDItZVE0Zzd1WlhyN0daclRzOXNNN19xRkU3MUU1RUJLSXZzd1lXN0luZ1lVeUlBMHZPdVpPQkhETTJsOTl1ZlVTdXBaTTZCbmRjTG9xMGZmVi1EUFh3UtIB5gFBVV95cUxNRXQzZlJuNVpkLXJkZU1sUlducWc2cHVnZlNSY3A1WmgzRjlTUVNkazVBWC0zRXBlNFFzMHRfUmhFdWNUOExiNjdka0ZreEVpZjh6bWlaRTU1UUxjWWJWQjMzdXhvVmtVZkVha091UkgyWEYtWjBZUk00ejcxTmhaUHhHX1QyUDhqZjlyaTN6M2Jsdk9kTWNxQkp1c3RONjVZUk96MTByaTUzNXJtQmhvdFZGdTJnbWtzTXdTTm13SXY0TjkyU3B0UllzN2J0QUFwTmc4SDRhZmlONGxNZVFkUVhzcnZ6QQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPRF9rZ1psSmRMUUMtcExTSFRlMDI5Tm5jRzgwaWNLelh6Z1Juc1FKb1BTOW42ay1CaFhqUDByS3VZblJNZTR0UFhTUGppLTVtWGxfaE9oQ0VHOXgtczBEeVFhaVZweWZmdnJYR0pGZk11RVBud0ljU1ROREUtMWRObTBFalVDOEFpWDItZVE0Zzd1WlhyN0daclRzOXNNN19xRkU3MUU1RUJLSXZzd1lXN0luZ1lVeUlBMHZPdVpPQkhETTJsOTl1ZlVTdXBaTTZCbmRjTG9xMGZmVi1EUFh3UtIB5gFBVV95cUxNRXQzZlJuNVpkLXJkZU1sUlducWc2cHVnZlNSY3A1WmgzRjlTUVNkazVBWC0zRXBlNFFzMHRfUmhFdWNUOExiNjdka0ZreEVpZjh6bWlaRTU1UUxjWWJWQjMzdXhvVmtVZkVha091UkgyWEYtWjBZUk00ejcxTmhaUHhHX1QyUDhqZjlyaTN6M2Jsdk9kTWNxQkp1c3RONjVZUk96MTByaTUzNXJtQmhvdFZGdTJnbWtzTXdTTm13SXY0TjkyU3B0UllzN2J0QUFwTmc4SDRhZmlONGxNZVFkUVhzcnZ6QQ?oc=5",
+      "source": "Business Standard",
+      "source_id": "gnews-whatsapp-global",
+      "via": "Google News: WhatsApp Business",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T05:55:15Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "whatsapp",
+      "category_label": "WhatsApp Marketing",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (cert-in).",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "whatsapp"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "6a4696952513d4e6",
+      "title": "Japan's JERA enters talks with Anthropic, Meta to build data centres",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/japans-jera-enters-talks-with-anthropic-meta-to-build-data-centres/articleshow/136210887.cms",
+      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/japans-jera-enters-talks-with-anthropic-meta-to-build-data-centres/articleshow/136210887.cms",
+      "source": "Economic Times Tech",
+      "source_id": "et-tech",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-27T05:46:22Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "The development involves a Japanese energy company negotiating with US-based technology firms regarding global AI infrastructure.",
+      "priority": "Low",
+      "priority_score": 8,
+      "excerpt": "(Adds detail on other discussions in paragraph 2, background in paragraphs 3-4)- Japan's largest power generator, JERA, has entered into talks with Anthropic, Meta, and other US tech",
+      "companies": [
+        "JERA",
+        "Anthropic",
+        "Meta"
+      ],
+      "topics": [
+        "data centres",
+        "artificial intelligence",
+        "infrastructure",
+        "energy"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-27T08:31:14Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "Economic Times Tech reports that Japan's largest power generator, JERA, is in talks with Anthropic, Meta, and other US tech companies to build data centres. The text provides a brief excerpt noting these discussions and mentions that further details and background were included in additional paragraphs.",
+        "summary": "JERA, Japan's largest power generator, has initiated discussions with major US technology firms including Anthropic and Meta regarding the construction of data centres. Because the provided text is only a short excerpt, deeper specifics regarding timelines, scale, or regional deployment remain unconfirmed. This development highlights the growing intersection of energy supply and massive AI infrastructure scaling.",
+        "why_it_matters": "The rapid expansion of AI infrastructure heavily depends on robust power generation capabilities. B2B marketers tracking AI capabilities should note that underlying resource constraints, such as energy supply and data centre availability, will eventually influence the pricing, scalability, and performance of enterprise AI and automation platforms.",
+        "applications": [
+          "Monitor enterprise AI vendor roadmap updates for potential capacity adjustments driven by infrastructure constraints",
+          "Assess energy and infrastructure dependencies when planning long-term adoption of large-scale AI automation tools",
+          "Factor hardware and data centre scaling timelines into projections for advanced CRM and analytics feature rollouts"
+        ],
+        "recommendations": [
+          "Explore vendor infrastructure resilience; tool types: enterprise AI platforms; benefit: risk mitigation against capacity bottlenecks; consideration: check cloud partner dependencies",
+          "Review energy sustainability metrics of marketing tech stack partners; tool types: vendor assessment frameworks; benefit: alignment with corporate sustainability goals; consideration: data availability",
+          "Monitor compute cost trends; tool types: financial forecasting tools; benefit: anticipate pricing shifts in AI-driven marketing automation; consideration: regional electricity market impacts"
+        ],
+        "priority_reason": "The text is an early-stage report on infrastructure talks that does not directly alter day-to-day B2B marketing operations or campaign execution.",
+        "needs_validation": true,
+        "validation_note": "Verify the full article to understand the scale, location, and specific commitments of the JERA data centre talks with Anthropic and Meta."
+      }
+    },
+    {
+      "id": "653ba49dcea18a76",
+      "title": "WhatsApp to let users buy travel eSIMs in app; Jio, Verizon among partners",
+      "url": "https://economictimes.indiatimes.com/tech/tech-bytes/whatsapp-to-let-users-buy-travel-esims-in-app-jio-verizon-among-partners/articleshow/136210712.cms",
+      "canonical_url": "https://economictimes.indiatimes.com/tech/tech-bytes/whatsapp-to-let-users-buy-travel-esims-in-app-jio-verizon-among-partners/articleshow/136210712.cms",
+      "source": "Economic Times Tech",
+      "source_id": "et-tech",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-27T05:38:14Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "whatsapp",
+      "category_label": "WhatsApp Marketing",
+      "region": "Global",
+      "region_reason": "The partnership involves international telecom operators like Verizon and Smart Axiata alongside Jio, with a rollout planned across select global countries.",
+      "priority": "Medium",
+      "priority_score": 6,
+      "excerpt": "The company said it was working with eSIM providers and telecom partners, including Jio, Smart Axiata, Smart Communications and Verizon, and would begin rolling out the feature in select countries soon. It did not name the countries or give pricing details.",
+      "companies": [
+        "WhatsApp",
+        "Jio",
+        "Smart Axiata",
+        "Smart Communications",
+        "Verizon"
+      ],
+      "topics": [
+        "WhatsApp",
+        "eSIM",
+        "Mobile Telecom",
+        "Conversational Commerce"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-27T08:31:23Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "Economic Times Tech reports that WhatsApp is introducing a feature allowing users to buy travel eSIMs directly within the app. According to the company, it is partnering with telecom providers and eSIM suppliers such as Jio, Smart Axiata, Smart Communications, and Verizon to roll out the feature in select countries soon. The publisher notes that specific launch countries and pricing details have not yet been disclosed.",
+        "summary": "WhatsApp is expanding its in-app utility by enabling users to purchase travel eSIMs through partnerships with major telecommunications companies including Jio and Verizon. While specific rollout countries and pricing are currently unannounced, this development signals a push towards embedding broader connectivity services within the messaging ecosystem. As the rollout progresses in select markets, it reinforces WhatsApp's role as an all-in-one platform for user transactions. This move could potentially influence how brands approach in-app user journeys and mobile-first interactions.",
+        "why_it_matters": "For B2B marketers and campaign managers, the integration of transactional capabilities like eSIM purchases within WhatsApp underlines the platform's evolution into a robust commerce and service channel. If this transactional infrastructure extends to business interactions, it may open new avenues for conversational commerce, automated lead conversion, and regional service delivery. Marketers focusing on mobile-heavy or travel-adjacent sectors should monitor how in-app utilities affect user engagement habits on the app.",
+        "applications": [
+          "Explore future conversational commerce frameworks for selling digital services directly via WhatsApp flows",
+          "Monitor user adoption of in-app telecom utilities to gauge readiness for transactional messaging in specific regions",
+          "Prepare customer support workflows on WhatsApp to handle complex queries regarding integrated digital products"
+        ],
+        "recommendations": [
+          "Explore current WhatsApp Business API capabilities for payment integrations to prepare for transactional feature rollouts. Relevant tool types include WhatsApp Business Solution Providers. The likely benefit is reduced friction in lead conversion. Implementation considerations include regional compliance and payment gateway integrations.",
+          "Test conversational flows that guide users through digital service purchases using interactive buttons. Relevant tool types include chatbot builders and CRM automation platforms. The likely benefit is improved engagement rates. Implementation considerations include maintaining a clear fallback to human agents."
+        ],
+        "priority_reason": "It signals WhatsApp's ongoing expansion into transactional services, which is valuable for marketers tracking conversational commerce trends.",
+        "needs_validation": true,
+        "validation_note": "Verify the exact list of launch countries and whether the eSIM purchase feature will be accessible via WhatsApp Business accounts or restricted to peer-to-peer interfaces."
+      }
+    },
+    {
+      "id": "25b714afec37436d",
+      "title": "Anthropic research reveals AI agent sandbox security risks",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRk8xbUpzWkpwTHRqLV9EcEN3cUl3T0RVQVpYWXBxRDhjdFpMVjd3cnBEMXQ3ZmNtRmtnUkZCSXhjSXFPdzR1MGp2SElZdUdEOEFkWTlIQXptWHJJYmxwaC1BWS1hcFREeFp4NnVHbE9BQXY2ZzNjbU5Ea0VfVW9LWQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRk8xbUpzWkpwTHRqLV9EcEN3cUl3T0RVQVpYWXBxRDhjdFpMVjd3cnBEMXQ3ZmNtRmtnUkZCSXhjSXFPdzR1MGp2SElZdUdEOEFkWTlIQXptWHJJYmxwaC1BWS1hcFREeFp4NnVHbE9BQXY2ZzNjbU5Ea0VfVW9LWQ?oc=5",
+      "source": "Tech Wire Asia",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T04:12:12Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "ai agent"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "4d082c89d0727123",
+      "title": "Claude Ship: How Anthropic's AI Agents Approve Your Code",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYNXl5Um5BcDJydlNIaDd0VldkdUhWcHJlNmk2Ym10dEh2Q18zQkhHZVlMTFl3VWRCcTgzRTMyR2pKQnhvQXdpSHVxUTZtclFIZEFpNkRwWHVzckdRMjlQTmJMemtJYUY1?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYNXl5Um5BcDJydlNIaDd0VldkdUhWcHJlNmk2Ym10dEh2Q18zQkhHZVlMTFl3VWRCcTgzRTMyR2pKQnhvQXdpSHVxUTZtclFIZEFpNkRwWHVzckdRMjlQTmJMemtJYUY1?oc=5",
+      "source": "Memeburn",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T03:56:11Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude",
+        "ai agents"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "baf400b6e56c4fd9",
+      "title": "CERT-In warns WhatsApp and WhatsApp Business vulnerabilities risk data theft",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT0t4czJhZUZ6VXY3bjZ3YXhtSV82NEJsaUU3Q180YXM0Q0xYVjYwVU1FNDhGTWVFWTZsNTFDeUpINHJFTzBjbU8ySEZ2Qlg5NlE3RzRKWVpWMVhnSkZ4U3NfRVBwNDFWZGxRcHZFNUMtZmNndlhIUmE0Z2lxOXNfSjNzRFdYYXhPbGRXSzNpU1VnaU9jbVFVMGhRSm5FMFRrVGcxdmhqVDNibFc0SHRfQ3lhZjEtaHdoNDdzc0JQYVk?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT0t4czJhZUZ6VXY3bjZ3YXhtSV82NEJsaUU3Q180YXM0Q0xYVjYwVU1FNDhGTWVFWTZsNTFDeUpINHJFTzBjbU8ySEZ2Qlg5NlE3RzRKWVpWMVhnSkZ4U3NfRVBwNDFWZGxRcHZFNUMtZmNndlhIUmE0Z2lxOXNfSjNzRFdYYXhPbGRXSzNpU1VnaU9jbVFVMGhRSm5FMFRrVGcxdmhqVDNibFc0SHRfQ3lhZjEtaHdoNDdzc0JQYVk?oc=5",
+      "source": "NewsBytes",
+      "source_id": "gnews-whatsapp-global",
+      "via": "Google News: WhatsApp Business",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T03:39:07Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "whatsapp",
+      "category_label": "WhatsApp Marketing",
+      "region": "India",
+      "region_reason": "Headline references India-specific context (cert-in).",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "whatsapp",
+        "whatsapp business"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "ead2198569bb92a2",
+      "title": "D2C’s Red Alert, The Hidden Cost Of Compute & More",
+      "url": "https://inc42.com/buzz/d2cs-red-alert-the-hidden-cost-of-compute-more/",
+      "canonical_url": "https://inc42.com/buzz/d2cs-red-alert-the-hidden-cost-of-compute-more",
+      "source": "Inc42",
+      "source_id": "inc42",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-27T02:30:02Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "b2b",
+      "category_label": "B2B Marketing",
+      "region": "India",
+      "region_reason": "The developments focus on Indian regulatory mandates (Supreme Court and FSSAI), Indian startups (Finnable, Urban Company, IndiaMART, ElecBits), and the Indian market.",
+      "priority": "High",
+      "priority_score": 8,
+      "excerpt": "Red Label Day For D2C Brands India’s food industry is facing its biggest labelling overhaul in years. The SC has directed the FSSAI to ensure that packaged foods carry separate pictorial warnings for high fat, sugar and salt, along with red labels as caution for customers. So, what does the latest…",
+      "companies": [
+        "Inc42",
+        "FSSAI",
+        "Finnable",
+        "Bharat Value Fund",
+        "Urban Company",
+        "IndiaMART",
+        "OpenAI",
+        "ElecBits"
+      ],
+      "topics": [
+        "D2C marketing",
+        "Regulatory compliance",
+        "AI compute costs",
+        "Funding",
+        "B2B SaaS"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-27T08:31:33Z",
+        "evidence": "feed_full_text",
+        "reported_facts": "Inc42 reports that India's Supreme Court directed FSSAI to mandate separate hexagonal pictorial warnings and red labels for packaged foods exceeding thresholds for high fat, sugar, and salt. Inc42 also notes that rising memory chip prices and tightening GPU availability are driving up infrastructure costs for Indian AI and SaaS companies, forcing businesses to rethink computing requirements. Additionally, digital lending startup Finnable raised around $44 Mn in a Series C round led by Bharat Value Fund, Urban Company launched pre-bookings for its new residential AC lines on its app, IndiaMART settled its legal dispute with OpenAI out of court, and ElecBits is in talks to raise $12 Mn to $15 Mn.",
+        "summary": "This news digest covers several major developments in the Indian startup and regulatory ecosystem, including stringent new front-of-pack food labelling mandates and surging infrastructure costs for AI and SaaS firms. Factually, the Supreme Court ordered strict red warning labels for high fat, sugar, and salt in packaged foods, threatening clean-label D2C marketing claims. Simultaneously, escalating compute costs and tightening GPU availability are impacting the profitability of Indian tech companies. Other updates include Finnable's Series C fundraise, Urban Company's expansion into residential ACs, and IndiaMART settling its legal dispute with OpenAI. From a marketing perspective, D2C brands must drastically alter their communication strategies, while AI-driven marketers face cost optimization pressures.",
+        "why_it_matters": "For B2B marketers operating in India, these developments signal shifting operational realities across sectors. B2B SaaS and AI marketing teams face margin pressures as their own infrastructure and compute costs rise, potentially forcing price adjustments for marketing automation and AI-driven analytics tools. Meanwhile, D2C brand marketers must overhaul product messaging, packaging, and digital ad copy to comply with strict new health warning labels, shifting acquisition strategies away from clean-label claims toward ingredient transparency.",
+        "applications": [
+          "Audit current D2C client messaging and ad copy to ensure compliance with upcoming FSSAI red label and pictorial warning mandates.",
+          "Review software and AI tool stack expenditures to account for rising compute and GPU infrastructure costs passed down by vendors.",
+          "Adjust email and WhatsApp campaign templates for D2C food brands to pivot from clean-label positioning to transparent formulation messaging.",
+          "Analyze marketing analytics data to measure how strict packaging warnings impact customer trust, conversion rates, and repeat purchase behavior."
+        ],
+        "recommendations": [
+          "Explore alternative, cost-efficient AI models and quantisation techniques; likely benefit is reduced infrastructure overhead; implementation consideration requires testing model accuracy against campaign needs.",
+          "Conduct a legal and regulatory audit of all D2C client creative assets; relevant tool types include digital asset management and compliance review software; likely benefit is avoiding regulatory penalties.",
+          "Test transparent ingredient marketing angles in email sequences; relevant tool types include CRM and A/B testing platforms; likely benefit is maintaining consumer trust amidst tighter labelling norms.",
+          "Review B2B SaaS vendor pricing contracts to anticipate potential hikes driven by underlying compute cost increases; implementation consideration involves locking in multi-year agreements where feasible."
+        ],
+        "priority_reason": "Changes to FSSAI labelling laws directly disrupt the core marketing and positioning of D2C food brands, while rising compute costs impact the financial viability of AI-driven marketing technologies.",
+        "needs_validation": false,
+        "validation_note": ""
+      }
+    },
     {
       "id": "64c0f06140d9689a",
       "title": "The curious case of the AI dog that hasn’t barked",
@@ -412,6 +1049,36 @@
       }
     },
     {
+      "id": "e88183f14038a50c",
+      "title": "Claude Code vs Codex: $8/$40 vs $2/$10 per Million Tokens",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQUFLZF9VVm9ucjJtVXBmaWgydFZHTFUtN3BBSi1ETDFVa0tCdnM4TWpGa3ZKblp5c0ZxT3JiT3FNZjhwZTZEdEpVMEFiX20yRDVQQzAxT1NmUlByNVR1MVphZ1U1cEdVU3lYWUZWWWcwcVBMdTZEaW9QSXBZVzJmSFZ2WnpWZlE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQUFLZF9VVm9ucjJtVXBmaWgydFZHTFUtN3BBSi1ETDFVa0tCdnM4TWpGa3ZKblp5c0ZxT3JiT3FNZjhwZTZEdEpVMEFiX20yRDVQQzAxT1NmUlByNVR1MVphZ1U1cEdVU3lYWUZWWWcwcVBMdTZEaW9QSXBZVzJmSFZ2WnpWZlE?oc=5",
+      "source": "shattered.io",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T16:34:59Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "2e871d8f853a9495",
       "title": "Top 10 Best Demand Generation Agencies In India In 2027",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRlM1NDdJNjVZQ2ZWOGg2UUFqa0FqNFFZY1pTYU9ZRWJmajJ2NktLUmFtSUpiZl9PQVJJaGcydnZFV0ItdFowODdMbE9CTm5BcmJsWVdMOFZtbkxxTzh6UnF5MzZzMzFVOHJqYkRNdVp4cnNCZzg5UFB0WnJqVWhiTFNLTXRlSXhVX0dIY2t6OHM3ckMyZmc?oc=5",
@@ -525,6 +1192,36 @@
         "priority_reason": "The feed text is a brief excerpt providing commentary rather than actionable platform or policy changes.",
         "needs_validation": true,
         "validation_note": "Read the full article to understand the author's specific arguments regarding Anthropic's IPO and the broader thesis on efficiency versus human effort."
+      }
+    },
+    {
+      "id": "8b70c19a2999a115",
+      "title": "Claude Artifacts as Desktop Apps: Install, Permissions and Limits",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5FLVVaU1hucmRpRmNnT0VYaW90SjUzSDFPNDNYS2hHcTJNWVgyYjZkUndaOU1lZnFjdmlPd2I5Mm9xX3Ruc1A0bnBGR3g0TDNBU2lwT1RUVVplMjAtVmNqRjgwZVVjTGpLLXFOQmJIYUtxby0xLXRybjFR?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5FLVVaU1hucmRpRmNnT0VYaW90SjUzSDFPNDNYS2hHcTJNWVgyYjZkUndaOU1lZnFjdmlPd2I5Mm9xX3Ruc1A0bnBGR3g0TDNBU2lwT1RUVVplMjAtVmNqRjgwZVVjTGpLLXFOQmJIYUtxby0xLXRybjFR?oc=5",
+      "source": "GitHub",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-26T16:00:00Z",
+      "collected_at": "2026-11-27T08:30:32Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
       }
     },
     {
@@ -3769,806 +4466,6 @@
         "priority_reason": "It highlights important regulatory developments and compliance nuances for businesses deploying AI in India, though the guidelines themselves are currently voluntary.",
         "needs_validation": false,
         "validation_note": ""
-      }
-    },
-    {
-      "id": "2f84b815ac62bb0d",
-      "title": "The latest AI-powered martech news and releases",
-      "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
-      "canonical_url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases",
-      "source": "MarTech",
-      "source_id": "martech-org",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T13:02:00Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "Global",
-      "region_reason": "The announcements feature global martech software vendors including ActiveCampaign, Dreamdata, Basis, and CallRail with broad international applicability.",
-      "priority": "High",
-      "priority_score": 11,
-      "excerpt": "Does anyone like the chatbots on B2B websites? “Hi, I’m [insert name here] from [insert brand here]. What types of solutions are you exploring with [insert product name here] today?” They inevitably cover the link I’m looking for and pop up on every page I go to. And they cause even more problems…",
-      "companies": [
-        "ActiveCampaign",
-        "Basis",
-        "Brandi AI",
-        "Callimacus",
-        "CallRail",
-        "Amazon Ads",
-        "Cision",
-        "Brandwatch"
-      ],
-      "topics": [
-        "Model Context Protocol",
-        "B2B Attribution",
-        "OpenAI Ads",
-        "Answer Engine Optimization",
-        "Marketing Automation"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T18:50:37Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MarTech reports a series of AI-driven marketing technology product releases announced for late November 2026. ActiveCampaign, Basis, and Cision launched Model Context Protocol (MCP) integrations to connect external AI agents and tools with CRM data, ad campaign setup, and consumer research. Dreamdata introduced an OpenAI Ads integration with B2B conversion syncs to map ChatGPT ad clicks to sales pipeline, while CallRail, Creatify, Brandi AI, and Constructor unveiled tools spanning offline ad attribution, cross-platform creative generation, and AI answer engine tracking.",
-        "summary": "MarTech details a wave of martech releases focused on AI context protocols, advertising attribution, and answer engine optimization. A key development is the adoption of the Model Context Protocol (MCP) by ActiveCampaign, Basis, and Cision, which allows custom AI agents like Claude and ChatGPT to query CRM databases and execute campaigns. For B2B performance marketers, Dreamdata released conversion tracking that links ChatGPT ad impressions and clicks directly to CRM pipeline revenue. Additionally, platforms including Brandi AI and Constructor introduced monitoring tools to track brand citations and visitor conversion coming from AI answer engines.",
-        "why_it_matters": "The standardisation of Model Context Protocol (MCP) across major martech vendors marks a shift toward interoperable AI agents that can directly read from and act on CRM and advertising stacks. For B2B marketers, dedicated attribution for conversational ad channels like OpenAI Ads enables clear ROI tracking from AI search interactions down to pipeline revenue. Furthermore, the emergence of Answer Engine Optimization (AEO) tools indicates that monitoring brand visibility inside LLMs is becoming as vital as traditional search engine optimization.",
-        "applications": [
-          "Connect internal LLM agents to ActiveCampaign or Basis via MCP servers to draft ad creative, build campaigns, and query performance data using natural language.",
-          "Implement Dreamdata's conversion sync to track B2B buyer journeys from ChatGPT ad clicks through to CRM pipeline and closed revenue.",
-          "Monitor brand citations, share of voice, and competitive positioning across ChatGPT, Bing AI Overviews, and Meta Muse using Brandi AI or Constructor AEO.",
-          "Automate cross-channel ad creation and spend checks across LinkedIn, Google Ads, Meta, and OpenAI Ads using autonomous ad manager tools like Creatify Max."
-        ],
-        "recommendations": [
-          "Audit existing martech stack vendors for MCP (Model Context Protocol) support to enable custom AI workflows without bespoke API integrations.",
-          "Pilot contextual B2B advertising on OpenAI Ads while leveraging pipeline attribution tools to validate lead quality and revenue impact.",
-          "Develop an Answer Engine Optimization (AEO) baseline to audit how AI search assistants reference company products versus key competitors.",
-          "Review cross-channel ad tracking protocols to ensure offline conversion signals from display, audio, and video ads feed back accurately into bidding algorithms."
-        ],
-        "priority_reason": "The widespread adoption of Model Context Protocol (MCP) and dedicated conversion tracking for OpenAI Ads directly affect B2B martech integration strategy and ad spend allocation.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "d8d6fbf2346bb609",
-      "title": "Techmagnate Acquires The Minimalist News, Insights & Timeline",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZmItQlNYSHJEMnI5TlZGY3lHNmw3c1pZOWRwTkp5SXFCT3RUVXhkVkxnUXRiU3pYR200UERzTmROaXZDTV9iYloxTmh4YkthLUFNUzZ5eUUzbW1vUFlkNG9NaGdSWUhqeDZZal95bC1rdzdabUhHRVl3eHZCa0hfbUplTEpxREo3MlFXTkdLVERMM28?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZmItQlNYSHJEMnI5TlZGY3lHNmw3c1pZOWRwTkp5SXFCT3RUVXhkVkxnUXRiU3pYR200UERzTmROaXZDTV9iYloxTmh4YkthLUFNUzZ5eUUzbW1vUFlkNG9NaGdSWUhqeDZZal95bC1rdzdabUhHRVl3eHZCa0hfbUplTEpxREo3MlFXTkdLVERMM28?oc=5",
-      "source": "Exchange4Media",
-      "source_id": "gnews-exchange4media",
-      "via": "Google News: exchange4media",
-      "credibility": "aggregator",
-      "published_at": "2026-11-25T12:12:48Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "Global",
-      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "acquires"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "b0deea04c96bb290",
-      "title": "AI is straining America’s open records systems",
-      "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
-      "canonical_url": "https://technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems",
-      "source": "MIT Technology Review",
-      "source_id": "mit-tech-review-ai",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T10:00:00Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The article discusses open records systems, startups, and legislation within the United States.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in…",
-      "companies": [
-        "SmartProcure",
-        "GovSpend",
-        "Starbridge",
-        "Craft Ventures",
-        "Pursuit",
-        "PinPoint Analytics"
-      ],
-      "topics": [
-        "ai data mining",
-        "public records",
-        "b2g marketing",
-        "sales intelligence",
-        "procurement data"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T18:51:02Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MIT Technology Review reports that AI is straining America's open records systems as venture-backed startups raise upwards of $100 million to collect public data and generate sales signals for government contracting. Companies like SmartProcure (GovSpend), Starbridge, Pursuit, and PinPoint Analytics use automated or high-volume public records requests to mine purchasing, budget, and bidding data. Local clerks are experiencing a surge in longer, broader AI-drafted requests, leading some states to consider legislation making it easier to deny them.",
-        "summary": "Venture-backed startups are using automated and AI-driven tools to scale public records requests at American local and federal government agencies to build sales intelligence databases for B2G (business-to-government) selling. While companies argue this creates market efficiency and helps match vendors with public buyers, resource-constrained municipal clerks are buckling under the volume and considering legislative pushback. For B2B and B2G marketers, this development signals a massive expansion in the availability of granular, AI-processed public procurement intelligence.",
-        "why_it_matters": "The proliferation of AI-driven public sector data platforms changes how businesses approach government sales and market intelligence. B2G marketers will gain unprecedented visibility into competitor pricing, municipal budgets, and agency buying signals, enabling hyper-targeted outreach. However, as agencies become overwhelmed and push back with restrictive legislation or anti-scraping measures, traditional data harvesting methods may face legal and operational roadblocks.",
-        "applications": [
-          "Integrating public sector spending intelligence into CRM systems to trigger alerts when target government agencies allocate budgets for specific categories.",
-          "Using AI-mined municipal data to map competitor pricing and win-loss records in government contracting bids.",
-          "Automating the collection of local board minutes and purchasing records to identify emerging infrastructure or technology needs before formal RFPs are issued.",
-          "Refining target account lists (TALs) for public sector marketing based on historical purchasing frequency and vendor switching patterns."
-        ],
-        "recommendations": [
-          "Explore emerging B2G intelligence platforms (such as those mentioned in the text) to assess whether they can accelerate your government lead generation workflows.",
-          "Audit current data acquisition practices to ensure compliance with evolving state-level public records laws and anti-automation statutes.",
-          "Test targeted email and ABM campaigns using newly accessible public sector intent signals to measure conversion lifts against standard firmographic targeting.",
-          "Assess internal data dependencies on public records feeds to build redundancy in case municipal offices successfully lobby for restrictive transparency rollbacks."
-        ],
-        "priority_reason": "It highlights significant shifts in how public sector market intelligence is gathered via AI, affecting B2G data availability and compliance environments.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "d4271b54af7f645d",
-      "title": "Startup news and updates: Daily roundup (November 25, 2026)",
-      "url": "https://yourstory.com/2026/11/startup-news-and-updates-daily-roundup-november-25-2026",
-      "canonical_url": "https://yourstory.com/2026/11/startup-news-and-updates-daily-roundup-november-25-2026",
-      "source": "YourStory",
-      "source_id": "yourstory",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T09:47:47Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The digest covers corporate filings, venture capital funds, and startups based in Indian cities including Bengaluru, New Delhi, and Chennai.",
-      "priority": "Low",
-      "priority_score": 7,
-      "excerpt": "From Lakshmi Venu filing a suit seeking partition of Venu Srinivasan family assets to Aeravti Ventures launching a Rs 300 crore fund, YourStory brings you today’s headlines with the latest developments across sectors. Latest news Lakshmi Venu files suit seeking partition of Venu Srinivasan family…",
-      "companies": [
-        "YourStory",
-        "TVS Motor",
-        "TVS Holdings",
-        "Aeravti Ventures",
-        "Piramal Alternatives",
-        "Piramal Group",
-        "Ardee Engineering",
-        "Vidyakul"
-      ],
-      "topics": [
-        "Startup Funding",
-        "Venture Capital",
-        "Edtech",
-        "Artificial Intelligence",
-        "Cloud Alliances"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T18:52:57Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "YourStory reports that TVS family member Lakshmi Venu has filed a partition suit in the Madras High Court regarding joint-family assets. Early-stage venture capital firm Aeravti Ventures launched its Rs 300 crore second fund, while Piramal Alternatives invested Rs 225 crore in Ardee Engineering, Vidyakul secured Rs 10 crore debt funding for vernacular edtech and AI tools, and Lakshya Aerotech raised Rs 2.5 crore for physical AI. Additionally, SUK-M secured pre-seed funding for nuclear microreactors, and Minfy extended its strategic partnership with AWS through 2031.",
-        "summary": "YourStory's daily roundup covers funding, expansion, and legal updates across the Indian startup and corporate landscape. Highlights include Aeravti Ventures launching a target Rs 300 crore fund focused on pre-seed to pre-Series A startups, and Piramal Alternatives backing industrial manufacturer Ardee Engineering with Rs 225 crore. Vernacular edtech Vidyakul raised debt funding to expand AI-powered learning tools in Hindi, while Lakshya Aerotech and SUK-M secured seed capital for physical AI and clean energy tech, respectively.",
-        "why_it_matters": "The roundup highlights continued investor interest in vernacular AI tools, industrial manufacturing, and cloud transformation. For B2B enterprise marketers, funding milestones at companies like Ardee Engineering and enterprise alliances like Minfy-AWS signal emerging sales prospects and expanding cloud partner ecosystems. However, as a general news digest, it does not introduce direct changes to marketing operations or campaign platforms.",
-        "applications": [
-          "Identify newly funded startups from Aeravti Ventures' portfolio as potential early-stage accounts for B2B tools and marketing services.",
-          "Benchmark vernacular AI query-handling mechanics used by Vidyakul for localized customer service or chat automation models.",
-          "Monitor enterprise cloud consultancies like Minfy for co-marketing or channel partnership opportunities within the AWS ecosystem."
-        ],
-        "recommendations": [
-          "Explore Account-Based Marketing (ABM) outreach for recently funded industrial and tech firms expanding operational capacity.",
-          "Test localized vernacular content workflows if designing lead capture or campaign copy for regional Indian markets.",
-          "Map out channel partner marketing strategies alongside major cloud providers to leverage co-selling opportunities."
-        ],
-        "priority_reason": "The article is a general startup news roundup with limited direct operational impact on daily martech or campaign workflows.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "163d440768eec00f",
-      "title": "OpenAI, SpaceX Backer VU Venture Partners Enters Indian Startup Market",
-      "url": "https://inc42.com/buzz/openai-spacex-backer-vu-venture-partners-enters-indian-startup-market/",
-      "canonical_url": "https://inc42.com/buzz/openai-spacex-backer-vu-venture-partners-enters-indian-startup-market",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T08:39:20Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The development focuses specifically on VU Venture Partners entering the Indian startup market.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "US-based VC firm VU Venture Partners, which has backed tech giants like OpenAI, SpaceX, Uber at early stages, has entered the Indian market. The firm will look to back early-stage startups (seed, Series A levels) and its ticket sizes would range from $100K to $1 Mn. It will look to build an India…",
-      "companies": [
-        "VU Venture Partners",
-        "OpenAI",
-        "SpaceX",
-        "Uber"
-      ],
-      "topics": [
-        "venture capital",
-        "startups",
-        "funding",
-        "india market"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 2,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:34:26Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Inc42 reports that US-based venture capital firm VU Venture Partners has entered the Indian startup market. The firm plans to invest in early-stage startups at the seed and Series A levels, with ticket sizes ranging from $100K to $1 Mn.",
-        "summary": "VU Venture Partners, known for early-stage investments in tech giants like OpenAI, SpaceX, and Uber, is expanding its footprint into India. The firm targets seed and Series A startups with funding tickets between $100K and $1 Mn. While the excerpt is brief, this entry indicates increased availability of early-stage institutional capital for the Indian tech ecosystem.",
-        "why_it_matters": "An influx of capital from an investor with a history of backing global technology leaders signals potential growth and scaling opportunities for early-stage B2B startups in India. For B2B marketing professionals and agencies working within this ecosystem, increased startup funding often translates to higher marketing budgets, a greater demand for specialized martech, and expanded partnership opportunities.",
-        "applications": [
-          "Target newly funded Indian startups as prospective clients for B2B marketing and lead generation services.",
-          "Pitch advanced marketing automation and CRM implementation tools to startups preparing to scale post-investment.",
-          "Monitor portfolio companies emerging from this fund to identify potential technology integration partners.",
-          "Align agency sales outreach with newly announced seed and Series A funding rounds backed by incoming global VCs."
-        ],
-        "recommendations": [
-          "Explore outreach strategies targeting newly funded seed and Series A startups; relevant tool types include CRM and lead generation platforms; the likely benefit is early-client acquisition; implementation consideration requires tracking funding announcements promptly.",
-          "Test localized B2B service packages tailored to early-stage budgets; relevant tool types include email automation and sales intelligence; the likely benefit is higher conversion rates among lean startups; implementation consideration involves maintaining agile pricing models.",
-          "Monitor VU Venture Partners' initial Indian portfolio announcements; relevant tool types include market intelligence platforms; the likely benefit is identifying niche tech disruptors early; implementation consideration requires establishing automated trigger alerts for press releases."
-        ],
-        "priority_reason": "The entry of a prominent global VC into the Indian startup market creates downstream opportunities for B2B vendors and agencies, though direct operational impacts depend on specific portfolio choices.",
-        "needs_validation": true,
-        "validation_note": "Verify the full list of sectors VU Venture Partners intends to target in India and any specific lead partners managing the fund."
-      }
-    },
-    {
-      "id": "8214b6e0c371f1a6",
-      "title": "Brian Halligan's HubSpot refounding: opening the CRM to AI agents",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMTZWWmdPYUhONXhBY3FPNFNPc1d3ekZ4UjZ5d2d2X0JBMzFiclBoWWQ4eFEwWG82OG56bF95SmtOVDBIVkxhV2tnT0xwUmZTd1Zha21OdmE2NFJ1UTdjS25BNlNwajZ2Wlp5MUlvdFZVWmZSU2FLZ0tWMFNqV2dlQ1NxWnJIcTlzQy1VZEFwMlJEeE9pcUFjUmFSZlp0Uzg?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMTZWWmdPYUhONXhBY3FPNFNPc1d3ekZ4UjZ5d2d2X0JBMzFiclBoWWQ4eFEwWG82OG56bF95SmtOVDBIVkxhV2tnT0xwUmZTd1Zha21OdmE2NFJ1UTdjS25BNlNwajZ2Wlp5MUlvdFZVWmZSU2FLZ0tWMFNqV2dlQ1NxWnJIcTlzQy1VZEFwMlJEeE9pcUFjUmFSZlp0Uzg?oc=5",
-      "source": "Dealroom",
-      "source_id": "gnews-hubspot",
-      "via": "Google News: HubSpot",
-      "credibility": "aggregator",
-      "published_at": "2026-11-25T07:32:20Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "analytics",
-      "category_label": "Marketing Analytics",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "hubspot",
-        "crm"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "e5247c2a24bf02dc",
-      "title": "Prosus to invest Rs 28.8 crore in B2B fintech Vegapay",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTzhNUnJvcndkOUpSRGZqVTRlZi1Yck51bERWRnBaU3llR0o2US1OMGFWdGRyci0wT184Mmh0azJJUGdyMEtoZmdmTFZVZTkyUFJ1MUY1OFk5b0I4V29fcVZ2RURlRVJrS0tPYmt4cmlUN2pNc0p6Y2JCXzlUVkVqbFVNS3dNQU04UnFmc0xRTnFaNW44SUZKemlrbkRaWWlxck05S0R1R3FKRDlRZURr?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTzhNUnJvcndkOUpSRGZqVTRlZi1Yck51bERWRnBaU3llR0o2US1OMGFWdGRyci0wT184Mmh0azJJUGdyMEtoZmdmTFZVZTkyUFJ1MUY1OFk5b0I4V29fcVZ2RURlRVJrS0tPYmt4cmlUN2pNc0p6Y2JCXzlUVkVqbFVNS3dNQU04UnFmc0xRTnFaNW44SUZKemlrbkRaWWlxck05S0R1R3FKRDlRZURr?oc=5",
-      "source": "Exchange4Media",
-      "source_id": "gnews-exchange4media",
-      "via": "Google News: exchange4media",
-      "credibility": "aggregator",
-      "published_at": "2026-11-25T06:34:40Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "Headline references India-specific context (crore).",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "b2b"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "242f8fe15452293d",
-      "title": "Fintech Unicorn Oxyzo Posts 19% Rise In H1 FY27 Profit To ₹208 Cr",
-      "url": "https://inc42.com/buzz/fintech-unicorn-oxyzo-posts-19-rise-in-h1-fy27-profit-to-%e2%82%b9208-cr/",
-      "canonical_url": "https://inc42.com/buzz/fintech-unicorn-oxyzo-posts-19-rise-in-h1-fy27-profit-to-%e2%82%b9208-cr",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T06:14:11Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The development focuses on Oxyzo Financial Services, an Indian fintech unicorn operating primarily within the Indian SME lending and debt capital market.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "Oxyzo Financial Services, the lending arm of OfBusiness, reported a 19% increase in standalone net profit to ₹208.2 Cr in the first half of FY27 from ₹174.9 Cr in the corresponding period last year. Revenue from operations grew 28.4% to ₹874.9 Cr in H1 FY27 from ₹681.2 Cr. Interest income remained…",
-      "companies": [
-        "Oxyzo Financial Services",
-        "OfBusiness",
-        "GoldenPi",
-        "GoldenPi Technologies",
-        "GoldenPi Securities"
-      ],
-      "topics": [
-        "Fintech",
-        "SME Lending",
-        "B2B Growth",
-        "Market Expansion",
-        "India"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T18:54:41Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that fintech unicorn Oxyzo Financial Services posted a 19% increase in standalone net profit to ₹208.2 Cr for H1 FY27, with operational revenue growing 28.4% to ₹874.9 Cr. The company's consolidated loan book expanded by 33.6% to ₹11,531 Cr, while consolidated assets grew 38% to ₹13,289 Cr at September-end. Oxyzo also expanded beyond SME lending by acquiring debt investment and bond distribution platform GoldenPi and launching the Oxyzo Credit Fund I.",
-        "summary": "Oxyzo Financial Services reported strong financial results for the first half of FY27, marked by double-digit growth in standalone net profit, operating revenue, and loan book expansion. Interest income drove the majority of the revenue growth, whereas fee and commission income saw a decline. Beyond its core manufacturing and contracting SME lending, the company is actively diversifying into debt capital markets and alternative investment funds through acquisitions like GoldenPi and new fund launches.",
-        "why_it_matters": "For B2B marketers operating in the Indian fintech, NBFC, and SME sectors, Oxyzo's aggressive expansion into debt capital markets and alternative investment funds indicates shifting enterprise spending and borrowing behaviors. As large fintech players scale their portfolios and acquire specialized platforms like GoldenPi, target audience profiles for B2B tech and financial services are evolving to include mid-sized, investment-grade corporates and alternative fund managers. Marketers targeting financial decision-makers in manufacturing and contracting SMEs must adapt their lead generation and nurturing strategies to align with these broader credit and investment products.",
-        "applications": [
-          "Develop specialized account-based marketing (ABM) campaigns targeting mid-sized manufacturing and contracting SMEs requiring working capital or raw material financing.",
-          "Refine B2B lead scoring models to account for corporate borrowers shifting toward alternative investment funds and structured debt products.",
-          "Create targeted educational content regarding debt investment and bond distribution for enterprise clients acquired through platforms like GoldenPi.",
-          "Align sales and marketing outreach for fintech infrastructure and compliance solutions with expanding NBFC loan books and rising employee benefit expenditures."
-        ],
-        "recommendations": [
-          "Explore segmenting CRM data to isolate manufacturing and contracting SMEs matching Oxyzo's core target criteria to test high-intent campaign messaging.",
-          "Utilize advanced marketing analytics tools to track engagement shifts among enterprise prospects transitioning from traditional SME loans to structured debt products.",
-          "Test LinkedIn and targeted email campaigns focusing on financial controllers and CFOs within mid-market Indian enterprises seeking growth capital.",
-          "Review current compliance and data privacy workflows to ensure alignment when targeting heavily regulated alternative investment and lending ecosystems."
-        ],
-        "priority_reason": "It offers valuable market intelligence regarding SME lending growth and fintech consolidation trends in India, though it does not directly change day-to-day martech operations.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "3dab70958802fdf3",
-      "title": "AI agents set to reshape Indian workplaces as 93% of leaders plan adoption: KPMG-CII report",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-agents-set-to-reshape-indian-workplaces-as-93-of-leaders-plan-adoption-kpmg-cii-report/articleshow/136148551.cms",
-      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-agents-set-to-reshape-indian-workplaces-as-93-of-leaders-plan-adoption-kpmg-cii-report/articleshow/136148551.cms",
-      "source": "Economic Times Tech",
-      "source_id": "et-tech",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T04:50:43Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "The survey data and findings specifically measure AI agent adoption intent and usage among business leaders in India.",
-      "priority": "Medium",
-      "priority_score": 9,
-      "excerpt": "Indian businesses are preparing to increasingly deploy artificial intelligence agents across their operations, with 93 per cent of leaders intending to use the technology to expand workforce capabilities and 59 per cent already using AI agents to automate workstreams or business processes…",
-      "companies": [
-        "KPMG",
-        "Confederation of Indian Industry",
-        "CII"
-      ],
-      "topics": [
-        "AI Agents",
-        "Workplace Automation",
-        "Digital Transformation",
-        "Marketing Operations",
-        "Process Automation"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T18:56:09Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Economic Times Tech reports, citing a joint study by KPMG in India and the Confederation of Indian Industry (CII), that 93 per cent of Indian business leaders plan to deploy artificial intelligence agents to expand workforce capabilities. Additionally, 59 per cent of leaders are already using AI agents to automate business processes or workstreams.",
-        "summary": "According to a KPMG-CII report published by Economic Times Tech, 93 per cent of business leaders in India intend to leverage AI agents to augment workforce capabilities, with 59 per cent already actively utilizing them for workstream automation. This signals a rapid transition from passive AI assistance to autonomous agentic workflows across Indian enterprises. For business leaders and operations teams, the data reflects widespread organisational readiness to integrate intelligent agents into everyday business processes.",
-        "why_it_matters": "High adoption rates of AI agents in India indicate that marketing operations and CRM strategies must evolve to accommodate autonomous workflows. B2B marketers who implement AI agents for lead qualification, WhatsApp handling, and performance tracking can reduce operational overhead and improve response times. Furthermore, as enterprise peers adopt these technologies, sales and marketing alignment will increasingly depend on agentic orchestration to handle complex, multi-touch lead nurture paths.",
-        "applications": [
-          "Deploy AI agents within CRM platforms to clean incoming contact data, enrich profiles, and route qualified leads to sales reps automatically.",
-          "Implement agentic workflows across messaging channels like WhatsApp and live chat to qualify inbound B2B prospects in real time.",
-          "Use intelligent agents to handle routine campaign execution tasks, such as content versioning, email deployment checks, and performance anomaly alerts.",
-          "Orchestrate multi-step operational tasks like lead-to-account matching and data reconciliation across disparate martech stack tools."
-        ],
-        "recommendations": [
-          "Audit existing marketing operations to identify high-volume, multi-step process bottlenecks suitable for AI agent pilot projects.",
-          "Assess current CRM and automation platforms (e.g., Salesforce, HubSpot) for native AI agent capabilities and integration readiness.",
-          "Establish robust human-in-the-loop oversight rules and guardrails before granting AI agents autonomous execution rights in live campaigns.",
-          "Upskill marketing operations talent in agent orchestration and workflow design to successfully manage AI-augmented teams."
-        ],
-        "priority_reason": "The report highlights a significant macro trend in enterprise automation within India, though it does not detail immediate product updates or deadlines.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "8137f8af87904e5f",
-      "title": "Layoffs At JioStar, AidenAI Nets $32 Mn & More",
-      "url": "https://inc42.com/buzz/layoffs-at-jiostar-aidenai-nets-32-mn-more/",
-      "canonical_url": "https://inc42.com/buzz/layoffs-at-jiostar-aidenai-nets-32-mn-more",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T02:30:08Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The developments focus specifically on corporate layoffs, market dynamics, and funding rounds involving Indian entities like JioStar, Google Cloud India, AidenAI, and Turtlemint.",
-      "priority": "High",
-      "priority_score": 7,
-      "excerpt": "JioStar’s Second Round Of Layoffs Layoffs hit two major pillars of India’s digital economy this week. Media giant JioStar is trimming at least 150 jobs, while Google Cloud India confirmed that it slashed around 30 roles last week. But why are corporate giants laying off teams even as digital demand…",
-      "companies": [
-        "JioStar",
-        "Google Cloud",
-        "AidenAI",
-        "A91 Partners",
-        "Turtlemint",
-        "Shadowfax",
-        "Borzo",
-        "GalaxEye"
-      ],
-      "topics": [
-        "layoffs",
-        "enterprise AI",
-        "funding",
-        "cost control",
-        "marketing operations"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-flash-lite-latest",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T18:56:59Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that media giant JioStar is initiating a second round of layoffs impacting at least 150 roles across marketing, production, studios, and operations, driven by shrinking margins and profitability pressures. Additionally, enterprise AI startup AidenAI has raised nearly ₹297 Cr in a Series A round led by A91 Partners to bolster its tech stack, engineering capabilities, and expand its AidenAI Builder Academy. Google Cloud India also confirmed cutting around 30 roles, while broader tech sector job cuts by companies like Oracle, PayPal, Amazon, and Uber reflect a widespread push to control costs and redirect spending towards AI and automation.",
-        "summary": "Inc42 reports on a wave of structural changes across India's digital economy, marked by workforce reductions at major firms like JioStar and Google Cloud, alongside significant funding activity in the enterprise AI space. JioStar is trimming at least 150 jobs due to contracting profit margins despite rising revenues, following an earlier large-scale reduction after its merger. Concurrently, AidenAI secured $32 million to scale its enterprise AI integration and legacy modernization platform, highlighting a market pivot toward workflow automation. Interpretation suggests that while traditional marketing and operational headcount faces severe contraction due to efficiency mandates, budget is actively rotating into agentic AI and technical infrastructure to drive long-term cost containment.",
-        "why_it_matters": "For B2B marketing leaders in India, these workforce reductions signal a tightening of internal marketing operations budgets and an increased expectation to do more with leaner teams. The parallel capital injection into enterprise AI infrastructure like AidenAI underscores that B2B buyers are under pressure to automate manual workflows and modernize legacy stacks. Marketing operations and demand generation teams must align their messaging with efficiency, cost reduction, and AI-driven workflow optimization to resonate with enterprise buyers facing similar margin pressures.",
-        "applications": [
-          "Audit current marketing operations and campaign workflows to identify repetitive tasks that can be automated using enterprise AI tools.",
-          "Refine B2B messaging and positioning to explicitly emphasize how your product or service drives cost efficiency and margin protection for enterprise clients.",
-          "Evaluate internal marketing tech stacks to consolidate redundant tools, mirroring the broader corporate cost-control trend.",
-          "Target enterprise buyers who are actively modernizing their legacy software and data infrastructure with contextualized account-based marketing campaigns."
-        ],
-        "recommendations": [],
-        "priority_reason": "The widespread corporate cost-cutting and strategic pivot toward AI infrastructure directly impacts B2B marketing budgets, resource allocation, and enterprise buyer messaging in the region.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "54d6582a4aa30b97",
-      "title": "Dark patterns in Indian online platforms; Making mobility safer and more accessible for women",
-      "url": "https://yourstory.com/2026/11/dark-patterns-in-indian-online-platforms-making-mobility-safer-and-more-accessible-for-women",
-      "canonical_url": "https://yourstory.com/2026/11/dark-patterns-in-indian-online-platforms-making-mobility-safer-and-more-accessible-for-women",
-      "source": "YourStory",
-      "source_id": "yourstory",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-25T02:00:00Z",
-      "collected_at": "2026-11-25T18:44:51Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The report focuses specifically on Indian online platforms, LocalCircles surveys, and Indian consumer protection regulations.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "Dear Reader, As many as 94% of India's most-used online platforms surveyed by LocalCircles continue to use deceptive design practices, commonly known as dark patterns, despite growing regulatory scrutiny. More on this later in the edition. CortexSpark Ventures, a deeptech and artificial…",
-      "companies": [
-        "LocalCircles",
-        "CortexSpark Ventures",
-        "Vegapay",
-        "Prosus",
-        "Elevation Capital",
-        "Vertex Ventures",
-        "Eximius Ventures",
-        "Turtlemint Insurance Broking Services"
-      ],
-      "topics": [
-        "dark patterns",
-        "regulatory compliance",
-        "b2b marketplaces",
-        "consumer protection",
-        "digital platforms"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-flash-lite-latest",
-        "provider": "gemini",
-        "generated_at": "2026-11-25T18:57:49Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "YourStory reports that LocalCircles surveyed 354 online platforms across 45 sectors in India and found that 94% continue to use deceptive design practices or dark patterns, with B2B marketplaces recording 100% compliance. The findings precede the amended Consumer Protection (E-Commerce) Rules, 2026, taking effect on January 1, 2027, which require e-commerce companies to conduct annual self-audits and display compliance certificates. The text also notes various funding and corporate updates, including CortexSpark Ventures launching a Rs 1,000 crore fund, Vegapay raising Rs 38.4 crore in a Series A round led by Prosus, and Couchbase expanding its Bengaluru centre.",
-        "summary": "YourStory's newsletter highlights that 94% of India's most-used online platforms still employ dark patterns despite regulatory scrutiny, just weeks before stricter compliance rules take effect on January 1, 2027. Interestingly, B2B marketplaces emerged as the only sector with 100% compliance in the LocalCircles survey. The newsletter also covers broader market developments, such as new venture funds, startup funding rounds, and technology centre expansions in India. B2B marketers and platform operators must review their digital interfaces to ensure compliance with upcoming self-audit mandates.",
-        "why_it_matters": "B2B marketplaces currently show high compliance regarding dark patterns, but digital platforms generally face heightened regulatory scrutiny under upcoming consumer protection rules in India. For B2B lead generation, website forms, and subscription sign-ups, deceptive design practices risk falling foul of upcoming mandates and damaging user trust. Marketers must audit conversion funnels, consent mechanisms, and form fields to ensure transparent user experiences.",
-        "applications": [
-          "Audit B2B lead generation forms, pop-ups, and subscription checkouts to eliminate any deceptive design elements or forced continuity.",
-          "Prepare compliance frameworks for annual self-audits ahead of the Consumer Protection (E-Commerce) Rules taking effect in January 2027.",
-          "Review cookie consents, data collection disclosures, and opt-in/opt-out toggles across marketing landing pages for absolute clarity.",
-          "Leverage transparent UI practices as a brand differentiator in B2B marketing communications to build trust with enterprise buyers."
-        ],
-        "recommendations": [
-          "Explore UI/UX review tools and compliance software; Benefit: Identify hidden friction or deceptive patterns in conversion flows; Implementation: Conduct a comprehensive audit of all active web properties before January 2027.",
-          "Consult legal and compliance teams on Consumer Protection Rules; Benefit: Align lead capture methods with forthcoming self-audit requirements; Implementation: Build mandatory review gates into the deployment of new landing pages.",
-          "Test transparent, friction-free opt-in forms against legacy designs; Benefit: Measure the impact of ethical UX on lead quality and brand sentiment; Implementation: Run A/B tests on email newsletter sign-up modules."
-        ],
-        "priority_reason": "Upcoming regulatory changes regarding dark patterns require Indian digital platforms and marketers to review compliance practices before January 2027.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "728fc1fb34890b94",
-      "title": "Latest AI Models Repeatedly Mistook Civilians for Military Targets; Anthropic Worst, Vals Testing Finds",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1MdlJGYm91QjZ3YmdRNDhXZW1ybnV3VHVIZHJCN2g4WjFfc1NEeEhkR2FBNTNKbXBxWXhnaE9HT0gwbmFocHVsQnlTVkg4SktOajd3amJDeWZKcmdBaGxwSjJ3UHp6SXN1c3JZTmNNb2ZBY2NXMXc?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1MdlJGYm91QjZ3YmdRNDhXZW1ybnV3VHVIZHJCN2g4WjFfc1NEeEhkR2FBNTNKbXBxWXhnaE9HT0gwbmFocHVsQnlTVkg4SktOajd3amJDeWZKcmdBaGxwSjJ3UHp6SXN1c3JZTmNNb2ZBY2NXMXc?oc=5",
-      "source": "BigGo Finance",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T23:25:00Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "ai models"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "d1d0129f8b896915",
-      "title": "Anthropic rolls out “Install as app” on Mac and PC for Claude’s mini-app Artifacts.",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU0xZQzZCR0pyRUpraGZFLWVNWk5TOEc0R1pTNnZQNXBKWk9GRFBBTTFpQnhIUGFyWTZRVG00ZmVTU2RDZTloRFc2S000MWNFN2xCN0JHTDdfSV9NM0NFWEdjT3BWWHR3VnM3elJPc0dobnRMdnZ1UF9jRlA2VU50ak1TYkd2Q1JVbi1sc1lyQnRvai10NlBFV3FmWFp3eFVIclk0MWdn?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU0xZQzZCR0pyRUpraGZFLWVNWk5TOEc0R1pTNnZQNXBKWk9GRFBBTTFpQnhIUGFyWTZRVG00ZmVTU2RDZTloRFc2S000MWNFN2xCN0JHTDdfSV9NM0NFWEdjT3BWWHR3VnM3elJPc0dobnRMdnZ1UF9jRlA2VU50ak1TYkd2Q1JVbi1sc1lyQnRvai10NlBFV3FmWFp3eFVIclk0MWdn?oc=5",
-      "source": "The Verge",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T23:04:09Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "High",
-      "priority_score": 13,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "18bea9ea539c49df",
-      "title": "Anthropic’s Siren tests whether Claude models will break out of an insecure sandbox",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUFlGbnVuVnBtSFJ4d1hzaTd3anYzS3kyQzVmU1JYRVBjUndkODBGMGdmXzc4YnpqWWFOU2xUbnZYOE9jUFV1Y2pFTWY5VS1oOXpxN2gtZ0FvR1pRQnB3U3lPTm1URzA5aE95YkFfdmRUX3hLRjlNcEhGZVRxZ1hxQjhYZkpLZ0N5T0M0SnVOaG1Ra0tra0RlX2ZQNHFacUNZTXFTbG5YVExXWUdhT1laczJlMzV0bFVqWVNn?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUFlGbnVuVnBtSFJ4d1hzaTd3anYzS3kyQzVmU1JYRVBjUndkODBGMGdmXzc4YnpqWWFOU2xUbnZYOE9jUFV1Y2pFTWY5VS1oOXpxN2gtZ0FvR1pRQnB3U3lPTm1URzA5aE95YkFfdmRUX3hLRjlNcEhGZVRxZ1hxQjhYZkpLZ0N5T0M0SnVOaG1Ra0tra0RlX2ZQNHFacUNZTXFTbG5YVExXWUdhT1laczJlMzV0bFVqWVNn?oc=5",
-      "source": "SiliconANGLE",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T22:56:00Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "2279970918d7fa86",
-      "title": "AI Cracks 47-Year-Old Math Problem: Anthropic and OpenAI Claim Same-Day Proof of \"Algebraic P≠NP\"",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5lN0xDdzBkbEh0c1ZaUTF6X0N4Nm1TakJWN0RCbmxfM1dZV2paUXdiWXBQQ3FtMDdpd1RwZ2FUeXJ0ajBlc3l2c1RjN0RnZTZJaGRDODcyUUpod0sxVW9LV1dqUmd0Ukk3V1Uxak96NXBERWYtc1E?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5lN0xDdzBkbEh0c1ZaUTF6X0N4Nm1TakJWN0RCbmxfM1dZV2paUXdiWXBQQ3FtMDdpd1RwZ2FUeXJ0ajBlc3l2c1RjN0RnZTZJaGRDODcyUUpod0sxVW9LV1dqUmd0Ukk3V1Uxak96NXBERWYtc1E?oc=5",
-      "source": "BigGo Finance",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T22:55:00Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "openai",
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "71286cc67f671ccb",
-      "title": "New AI watermarks blur the line on who wrote what",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd2p0VzNmWUxOUVNnaDN4NUI2U2tBQTlFbDk3T29zR29iRjBqUE5TUlJwYy10UUFYamJpbzAxZ2dONFA2ZTBnNk1tUTctbHpxaVJlU1dQMkJEQlplRHQ1YnZWZUxGT2dNY2RycWttaU1qZTRXVDhFRU15YVhVbWd1ckhyRmZsclhITmlEeXBUeDA?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd2p0VzNmWUxOUVNnaDN4NUI2U2tBQTlFbDk3T29zR29iRjBqUE5TUlJwYy10UUFYamJpbzAxZ2dONFA2ZTBnNk1tUTctbHpxaVJlU1dQMkJEQlplRHQ1YnZWZUxGT2dNY2RycWttaU1qZTRXVDhFRU15YVhVbWd1ckhyRmZsclhITmlEeXBUeDA?oc=5",
-      "source": "New University",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T22:12:51Z",
-      "collected_at": "2026-11-25T00:47:14Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Low",
-      "priority_score": 4,
-      "excerpt": "",
-      "companies": [],
-      "topics": [],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "85e0bc72685ef452",
-      "title": "Anthropic plunges below IPO price in renewed tech sell-off",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOTBDZ1RTajVERWdSaEtQOEpVbkdHSmpsaXJ2UU9pQTFGVUFPa09PLUVhdHhudmd2OGs3TVRzakE4X25aN3JXLUsxSnVTVmd0MThNWnJubms1NzRQSkJVRHlpSkpEZHAzVkx1TTV5NFk0Wi1oSkFXZFJXeUE0RDVhT2VIZ243dnpxdlBTUFJGSW5mblR2X3JVektn?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOTBDZ1RTajVERWdSaEtQOEpVbkdHSmpsaXJ2UU9pQTFGVUFPa09PLUVhdHhudmd2OGs3TVRzakE4X25aN3JXLUsxSnVTVmd0MThNWnJubms1NzRQSkJVRHlpSkpEZHAzVkx1TTV5NFk0Wi1oSkFXZFJXeUE0RDVhT2VIZ243dnpxdlBTUFJGSW5mblR2X3JVektn?oc=5",
-      "source": "Sky News",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T21:52:25Z",
-      "collected_at": "2026-11-25T00:47:14Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "c81cfef05c36747c",
-      "title": "Anthropic launches Claude Ship for AI-driven code management with GitHub integration",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNWh4MGxXOWNSZWJXaTBSa0NUXzBMbWMwY2ZGT1d2NG5rWV9mc29xOFRXN2tFb0k3eDJJTldWYzFaRTh4WVpaZXNQNFJOeU5yOGhKNzNiWFFtdUs2Mm9qMm92YlVCQWdINVFHdERfc05TNHpDZGR4R05XVEJ2UUlwR1VGaGk3WEZMV0t4VnhHa2YxcGJhdWtrRU54cnhCTXZwUmc?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNWh4MGxXOWNSZWJXaTBSa0NUXzBMbWMwY2ZGT1d2NG5rWV9mc29xOFRXN2tFb0k3eDJJTldWYzFaRTh4WVpaZXNQNFJOeU5yOGhKNzNiWFFtdUs2Mm9qMm92YlVCQWdINVFHdERfc05TNHpDZGR4R05XVEJ2UUlwR1VGaGk3WEZMV0t4VnhHa2YxcGJhdWtrRU54cnhCTXZwUmc?oc=5",
-      "source": "Crypto Briefing",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-24T21:48:56Z",
-      "collected_at": "2026-11-25T00:30:26Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "High",
-      "priority_score": 13,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
       }
     }
   ]

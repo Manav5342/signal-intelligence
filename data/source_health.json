@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T00:30:33Z",
+  "checked_at": "2026-11-27T08:30:35Z",
   "total": 32,
   "ok": 31,
   "failed": 1,
@@ -110,8 +110,8 @@
       "url": "https://news.google.com/rss/search?q=%22B2B+marketing%22+OR+%22account-based+marketing%22+OR+%22demand+generation%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 100,
-      "usable_items": 100,
+      "entries": 48,
+      "usable_items": 48,
       "error": null
     },
     {
@@ -170,8 +170,8 @@
       "url": "https://news.google.com/rss/search?q=%22email+deliverability%22+OR+DMARC+OR+%22bulk+sender%22+OR+%22cold+email%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 49,
-      "usable_items": 49,
+      "entries": 100,
+      "usable_items": 100,
       "error": null
     },
     {
@@ -190,8 +190,8 @@
       "url": "https://news.google.com/rss/search?q=Wati+WhatsApp&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 55,
-      "usable_items": 55,
+      "entries": 14,
+      "usable_items": 14,
       "error": null
     },
     {
@@ -200,8 +200,8 @@
       "url": "https://news.google.com/rss/search?q=%22WhatsApp+Business%22+OR+%22WhatsApp+Business+Platform%22+OR+%22Click-to-WhatsApp%22&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 100,
-      "usable_items": 100,
+      "entries": 53,
+      "usable_items": 53,
       "error": null
     },
     {
@@ -210,8 +210,8 @@
       "url": "https://news.google.com/rss/search?q=%22WhatsApp+Business%22+OR+%22WhatsApp+marketing%22+India&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 50,
-      "usable_items": 50,
+      "entries": 49,
+      "usable_items": 49,
       "error": null
     },
     {
@@ -250,8 +250,8 @@
       "url": "https://news.google.com/rss/search?q=HubSpot+announces+OR+HubSpot+launches+OR+HubSpot+AI&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "status_code": 200,
-      "entries": 100,
-      "usable_items": 100,
+      "entries": 69,
+      "usable_items": 69,
       "error": null
     },
     {
@@ -320,8 +320,8 @@
       "url": "https://news.google.com/rss/search?q=India+SaaS+OR+martech+OR+%22B2B+marketing%22+OR+%22marketing+technology%22&hl=en-IN&gl=IN&ceid=IN:en",
       "ok": true,
       "status_code": 200,
-      "entries": 43,
-      "usable_items": 43,
+      "entries": 100,
+      "usable_items": 100,
       "error": null
     }
   ]
