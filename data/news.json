@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-27T18:24:41Z",
-    "last_successful_update": "2026-11-27T18:24:41Z",
+    "generated_at": "2026-11-28T00:33:43Z",
+    "last_successful_update": "2026-11-28T00:33:43Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,25 +18,24 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-27T18:21:26Z",
-      "finished_at": "2026-11-27T18:24:41Z",
+      "started_at": "2026-11-28T00:30:27Z",
+      "finished_at": "2026-11-28T00:33:43Z",
       "status": "partial",
-      "trigger": "schedule",
+      "trigger": "workflow_dispatch",
       "sources_total": 32,
-      "sources_ok": 30,
-      "sources_failed": 2,
-      "new_articles": 60,
-      "skipped_stale": 557,
-      "skipped_irrelevant": 211,
+      "sources_ok": 31,
+      "sources_failed": 1,
+      "new_articles": 59,
+      "skipped_stale": 613,
+      "skipped_irrelevant": 203,
       "invalid_urls": 0,
-      "duplicates_merged": 0,
+      "duplicates_merged": 1,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 60,
+      "archived_out": 59,
       "errors": [
-        "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/",
-        "source:martech-org: HTTPError: 429 Client Error: Too Many Requests for url: https://martech.org/feed/"
+        "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
     },
     "ai_enabled": true,
@@ -44,6 +43,214 @@
     "ai_model": "gemini-3.5-flash-lite"
   },
   "articles": [
+    {
+      "id": "9b06ddd3eb8a365c",
+      "title": "Anthropic's Best Customers Spend 20 Times More Than the Rest. That's Why I'm Buying the Stock.",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdFlVeVlFc21rUWVCcERGUEtmTDdpWGZITTZXY2ZzQzBiT1pLLURsNFhLR3d2ODJUVEo3OEltNnhlZzVSRDljRXZGLU1XR0Vpb2NGbXZhbFlOa1JCY2N1ZV9qZTBwRW05TWJ0WUgwTEJ4ZHc5NjBjQUlwaEg1VkNRVUlEc20ta3UzNGFtempvNDNnRElhU21KbzBLd0dmY1NlRmFObVFtODNIbC12dkpVMlQ4UVhPOU9qRWQ4YUY5ZC1lNUdoMGZvdG9tR25iYnNv?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdFlVeVlFc21rUWVCcERGUEtmTDdpWGZITTZXY2ZzQzBiT1pLLURsNFhLR3d2ODJUVEo3OEltNnhlZzVSRDljRXZGLU1XR0Vpb2NGbXZhbFlOa1JCY2N1ZV9qZTBwRW05TWJ0WUgwTEJ4ZHc5NjBjQUlwaEg1VkNRVUlEc20ta3UzNGFtempvNDNnRElhU21KbzBLd0dmY1NlRmFObVFtODNIbC12dkpVMlQ4UVhPOU9qRWQ4YUY5ZC1lNUdoMGZvdG9tR25iYnNv?oc=5",
+      "source": "The Motley Fool",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-28T00:09:00Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "c010a705d8303f62",
+      "title": "Anthropic Shares Climb 11% to $91.88, Reclaiming $83 IPO Price After Rocky First Week",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwRWFqUkE3UG5PV3B6Y0pCUy1SYkFDZUVUUjQ0QmtVMDVpUUY5MVlmSHI1WVpwSEhTd0FiZ3hIXzRYbzNZd25VYW5vanFiZlg2aWk1UFNxaTN3OWs5cS1Xd3Q0ZVdPNjdhR1FQazR0TUZyemxZZ3c?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwRWFqUkE3UG5PV3B6Y0pCUy1SYkFDZUVUUjQ0QmtVMDVpUUY5MVlmSHI1WVpwSEhTd0FiZ3hIXzRYbzNZd25VYW5vanFiZlg2aWk1UFNxaTN3OWs5cS1Xd3Q0ZVdPNjdhR1FQazR0TUZyemxZZ3c?oc=5",
+      "source": "BigGo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T23:35:00Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "79302e53bd2898f7",
+      "title": "Know What To Fix Before Scaling AI Agents For AEO In 2027 via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/know-what-to-fix-before-scaling-ai-agents-for-aeo-in-2027/598837/",
+      "canonical_url": "https://searchenginejournal.com/know-what-to-fix-before-scaling-ai-agents-for-aeo-in-2027/598837",
+      "source": "Search Engine Journal",
+      "source_id": "search-engine-journal",
+      "via": null,
+      "credibility": "publication",
+      "published_at": "2026-11-27T22:41:34Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "The publication and topic address global enterprise marketing strategies without specific regional limitation.",
+      "priority": "Low",
+      "priority_score": 9,
+      "excerpt": "Join us on December 2 to learn where enterprise AI agent programs stall and how to choose your AEO data, measurement, and investment priorities for 2027. The post Know What To Fix Before Scaling AI Agents For AEO In 2027 appeared first on Search Engine Journal .",
+      "companies": [
+        "Search Engine Journal"
+      ],
+      "topics": [
+        "AI Agents",
+        "AEO",
+        "Enterprise Marketing",
+        "Measurement"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "ai",
+      "ai_attempts": 1,
+      "analysis": {
+        "status": "complete",
+        "model": "gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "generated_at": "2026-11-28T00:30:49Z",
+        "evidence": "feed_excerpt",
+        "reported_facts": "Search Engine Journal reports an upcoming webinar on December 2 addressing where enterprise AI agent programmes stall. The session focuses on choosing AEO data, measurement, and investment priorities for 2027.",
+        "summary": "Search Engine Journal announces a webinar scheduled for December 2 to discuss the common bottlenecks in enterprise AI agent programmes. The session aims to guide marketers on selecting appropriate data, measurement frameworks, and investment priorities for Answer Engine Optimisation (AEO) heading into 2027. Based on the excerpt, specific technical details, platform features, or actionable steps are not disclosed as the text is a promotional feed excerpt.",
+        "why_it_matters": "As search evolves towards answer engines and autonomous agents, B2B marketers must adapt their measurement and data strategies to remain visible. Understanding where enterprise AI deployments typically fail helps marketing operations teams allocate budget effectively and avoid premature scaling.",
+        "applications": [
+          "Audit current enterprise data structures to ensure readiness for AI agent consumption and AEO.",
+          "Evaluate existing attribution and analytics frameworks to identify gaps in measuring AI-driven discovery.",
+          "Plan 2027 budget allocations for AI agent integration and advanced search optimisation.",
+          "Review current content workflows to support machine-readable answer formats."
+        ],
+        "recommendations": [
+          "Explore upcoming webinars and industry sessions on AEO data priorities to benchmark internal readiness; benefit is early strategic alignment; consideration is time investment versus depth of insights provided.",
+          "Audit current marketing analytics and measurement stacks; relevant tool types include marketing attribution and data intelligence platforms; benefit is identifying visibility gaps in non-traditional search; consideration requires cross-functional data access.",
+          "Test structured data markup across high-value B2B web pages; relevant tool types include schema generators and technical SEO checkers; benefit is improved machine readability for AI agents; consideration requires developer resources.",
+          "Review enterprise AI pilot performance to date; benefit is identifying operational bottlenecks before scaling; consideration requires defining clear operational KPIs."
+        ],
+        "priority_reason": "The text is a short excerpt promoting an upcoming webinar rather than a definitive strategy, data release, or product launch.",
+        "needs_validation": true,
+        "validation_note": "Verify the full content, key frameworks, and data priorities discussed in the December 2 webinar."
+      }
+    },
+    {
+      "id": "bbd3b66b48879762",
+      "title": "Stock Market Today, Nov. 27: Anthropic Jumps 11%, Reclaiming Its $83 IPO Price as Wall Street Rallies",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQT25Fb3hZdXhWamtsWTR6QlVjX1o0cjhFSlRWU0J6YVB1QVBNVUJPOW9NNmlKUlBwdFFGTlZsaU5iSm40M3N0T09FVlFDUnlTWXZHc0tnVy13c1d2OWpsRm1ENFNsU3JlTldOTTRUMGpjTzhfdGtJN2xBUWZpRWQ5QjRVY3JBdDFGejVOTkJmVElNN1lqX1VXS1ExNS1PS2Z1dFFXbUdnMnAtakxRY01PZUMxOTJBNXVQY2w5NHJOZjFrcnRHTjF0WnZRLTZvV0Jvd1BFekN4Xzk1VEpKOFFDMnZuVDR5em41Znc1SGR6TU1EQ2hkN3k1MktCVk1YckRpX3NYRzgtbENGUm8y?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQT25Fb3hZdXhWamtsWTR6QlVjX1o0cjhFSlRWU0J6YVB1QVBNVUJPOW9NNmlKUlBwdFFGTlZsaU5iSm40M3N0T09FVlFDUnlTWXZHc0tnVy13c1d2OWpsRm1ENFNsU3JlTldOTTRUMGpjTzhfdGtJN2xBUWZpRWQ5QjRVY3JBdDFGejVOTkJmVElNN1lqX1VXS1ExNS1PS2Z1dFFXbUdnMnAtakxRY01PZUMxOTJBNXVQY2w5NHJOZjFrcnRHTjF0WnZRLTZvV0Jvd1BFekN4Xzk1VEpKOFFDMnZuVDR5em41Znc1SGR6TU1EQ2hkN3k1MktCVk1YckRpX3NYRzgtbENGUm8y?oc=5",
+      "source": "The Globe and Mail",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T22:39:35Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "62a67b17b2aed507",
+      "title": "Yamini Rangan Steps Down as HubSpot CEO; Co-Founder Brian Halligan Returns to Lead Company’s ‘Refounding’",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYUhmMzhXZlB5eUZnZ2dCLTM3V2FMTXFrUGhleHBneGhfcFRTdkI5T3RNSnkxWjJQbFJ5cUM2OG9td0JVYU9wYy10U1UwM3dsR09XUTNuZ2ZTblBvMEFHc3dlOGdQRDBwcEJZMVh4X2FDZVNEc09CcXpRd0xPUU5DUjNBWTFlNzVIakwwMWJsUVY4RG9lOVFmend1eVJHbjB3UDVHY2FQZXJZUFRRcFZQTFBiaDFPTm01QVFfaWRncWFTS0xWNFhrZGZR?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYUhmMzhXZlB5eUZnZ2dCLTM3V2FMTXFrUGhleHBneGhfcFRTdkI5T3RNSnkxWjJQbFJ5cUM2OG9td0JVYU9wYy10U1UwM3dsR09XUTNuZ2ZTblBvMEFHc3dlOGdQRDBwcEJZMVh4X2FDZVNEc09CcXpRd0xPUU5DUjNBWTFlNzVIakwwMWJsUVY4RG9lOVFmend1eVJHbjB3UDVHY2FQZXJZUFRRcFZQTFBiaDFPTm01QVFfaWRncWFTS0xWNFhrZGZR?oc=5",
+      "source": "INDIA New England News",
+      "source_id": "gnews-hubspot",
+      "via": "Google News: HubSpot",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T21:37:07Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "analytics",
+      "category_label": "Marketing Analytics",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "hubspot"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "d598a4fd39b066d4",
+      "title": "Claude accused of sabotaging ML research, an Anthropic employee responds",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUnRYbW5ITG5uMU5ra3JyeWtHLTBZamx5alM2QTJQay1LSnd1Q2RadG5SQVo2OUZCcEZTQ05nc0wtdzJEb0gtbmlCNy05a09TRXRWYk9JMjNGY3VRWXE2UC1PcS0tWTdDTTN2MC05aVZOZ2NENEt6SHJaN29zSUVJX25ONWN5MHRFXzNWRUF3Z2RpamhFczBiN0VwWUMtcDF4TlE5M0J5MHVQNGIyRGc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUnRYbW5ITG5uMU5ra3JyeWtHLTBZamx5alM2QTJQay1LSnd1Q2RadG5SQVo2OUZCcEZTQ05nc0wtdzJEb0gtbmlCNy05a09TRXRWYk9JMjNGY3VRWXE2UC1PcS0tWTdDTTN2MC05aVZOZ2NENEt6SHJaN29zSUVJX25ONWN5MHRFXzNWRUF3Z2RpamhFczBiN0VwWUMtcDF4TlE5M0J5MHVQNGIyRGc?oc=5",
+      "source": "Pasquale Pillitteri",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T21:13:18Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
     {
       "id": "f806a5a3e3ca67f9",
       "title": "Anthropic Stock Investors Face Major December Test",
@@ -95,6 +302,37 @@
       "companies": [],
       "topics": [
         "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "8010a34667d5e182",
+      "title": "Anthropic Stock Price Forecast: Rewriting Messaging API in Rust Expected to Lower Claude Service Costs, Stock Poised to Rise Further to $94",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPV2tWSHBkR202ZFh6Nl9DczVvQUM2QlpuTVBxWjJ5Y09tVTZWUmhNM0htMFFKaWU1alJYNGlPNk9ZdS10LUNxeW1mNFoxLWlCVERvVUhOQUNadUROLUFJSEQwTjlfZXk5T2RJSlBOUW9scnJPSDNFNnU0Vy11Rl9CSnJIbEs4RnJJV202eXZUUU5kdXc2UWhxX2tMU1VMck5hZ3hGbEMybklUNUxJTEJ0ZWxYLU1JU1VNTk9VcThvQU9XY1FmSTMzcTlmRTJwaFozREx5eGNkdU54bHlrTXc?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPV2tWSHBkR202ZFh6Nl9DczVvQUM2QlpuTVBxWjJ5Y09tVTZWUmhNM0htMFFKaWU1alJYNGlPNk9ZdS10LUNxeW1mNFoxLWlCVERvVUhOQUNadUROLUFJSEQwTjlfZXk5T2RJSlBOUW9scnJPSDNFNnU0Vy11Rl9CSnJIbEs4RnJJV202eXZUUU5kdXc2UWhxX2tMU1VMck5hZ3hGbEMybklUNUxJTEJ0ZWxYLU1JU1VNTk9VcThvQU9XY1FmSTMzcTlmRTJwaFozREx5eGNkdU54bHlrTXc?oc=5",
+      "source": "TradingKey",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T16:33:57Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -276,6 +514,36 @@
       "companies": [],
       "topics": [
         "openai",
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "d12d1e299acd3819",
+      "title": "Hunger Strike at Anthropic's Doorstep Enters Day Three as Protester Vows to Hold Out 40 Days",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvQ0pzSHJnVmpMZ0JHNE1ranM0Z1BzZTQyMWhPR19HUlZqWG5CTmtnQXFpRzd5Mko4WG5mWXhNNzJKeXJPRWRzM1FKcFBaaloteHRUUEJhcHlBak9VM0FXb2F5UnBjTjB3NVRMblB2clZRdDFaX2c?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvQ0pzSHJnVmpMZ0JHNE1ranM0Z1BzZTQyMWhPR19HUlZqWG5CTmtnQXFpRzd5Mko4WG5mWXhNNzJKeXJPRWRzM1FKcFBaaloteHRUUEJhcHlBak9VM0FXb2F5UnBjTjB3NVRMblB2clZRdDFaX2c?oc=5",
+      "source": "BigGo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T14:55:00Z",
+      "collected_at": "2026-11-28T00:30:27Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
         "anthropic"
       ],
       "also_covered_by": [],
@@ -1502,7 +1770,13 @@
       "topics": [
         "whatsapp"
       ],
-      "also_covered_by": [],
+      "also_covered_by": [
+        {
+          "source": "Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNRXQzZlJuNVpkLXJkZU1sUlducWc2cHVnZlNSY3A1WmgzRjlTUVNkazVBWC0zRXBlNFFzMHRfUmhFdWNUOExiNjdka0ZreEVpZjh6bWlaRTU1UUxjWWJWQjMzdXhvVmtVZkVha091UkgyWEYtWjBZUk00ejcxTmhaUHhHX1QyUDhqZjlyaTN6M2Jsdk9kTWNxQkp1c3RONjVZUk96MTByaTUzNXJtQmhvdFZGdTJnbWtzTXdTTm13SXY0TjkyU3B0UllzN2J0QUFwTmc4SDRhZmlONGxNZVFkUVhzcnZ6QdIB5gFBVV95cUxNRXQzZlJuNVpkLXJkZU1sUlducWc2cHVnZlNSY3A1WmgzRjlTUVNkazVBWC0zRXBlNFFzMHRfUmhFdWNUOExiNjdka0ZreEVpZjh6bWlaRTU1UUxjWWJWQjMzdXhvVmtVZkVha091UkgyWEYtWjBZUk00ejcxTmhaUHhHX1QyUDhqZjlyaTN6M2Jsdk9kTWNxQkp1c3RONjVZUk96MTByaTUzNXJtQmhvdFZGdTJnbWtzTXdTTm13SXY0TjkyU3B0UllzN2J0QUFwTmc4SDRhZmlONGxNZVFkUVhzcnZ6QQ?oc=5",
+          "title": "CERT-In flags security vulnerabilities in WhatsApp, ASUS software: Details"
+        }
+      ],
       "url_check": "valid",
       "classification": "rules",
       "ai_attempts": 0,
@@ -4029,359 +4303,6 @@
           "Review regional customer success data frameworks in emerging markets like the GCC and India to leverage localised feedback collection tools; relevant tool types include survey and customer journey mapping software. Expected benefit is improved regional campaign customisation based on local consumer insights."
         ],
         "priority_reason": "While it represents a notable funding round and expansion in the customer experience and AI stack, it is a vendor-specific funding announcement rather than an immediate platform change for marketers.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "a2255c7ae1b674d5",
-      "title": "New WhatsApp Scheduled Messages Feature: Here's How It Works",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdFlaei1JcGhZZGVYTUJQcjFlUF9VNWZNSDA5Q0tUTmMwdFpUTFNueHVNcE50RmJ4dUM3VjV4WWpQMVl6RjBiMzBjd2czT1k2M3kwalhXMWFaWHhSWlVFcWRSNDR0czlCNnEtel90bjVNbWFDeldaQk9GYWIyaXR0TGxxcVZFQTNYV043ZV9ZYzViUTQ0?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdFlaei1JcGhZZGVYTUJQcjFlUF9VNWZNSDA5Q0tUTmMwdFpUTFNueHVNcE50RmJ4dUM3VjV4WWpQMVl6RjBiMzBjd2czT1k2M3kwalhXMWFaWHhSWlVFcWRSNDR0czlCNnEtel90bjVNbWFDeldaQk9GYWIyaXR0TGxxcVZFQTNYV043ZV9ZYzViUTQ0?oc=5",
-      "source": "Tempo.co English",
-      "source_id": "gnews-whatsapp-global",
-      "via": "Google News: WhatsApp Business",
-      "credibility": "aggregator",
-      "published_at": "2026-11-26T04:47:00Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "whatsapp",
-      "category_label": "WhatsApp Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "whatsapp"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "e834ea01206630c1",
-      "title": "OpenAI Isn’t Planning Prompt-Level Reports For ChatGPT Ads via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/openai-isnt-planning-prompt-level-reports-for-chatgpt-ads/599126/",
-      "canonical_url": "https://searchenginejournal.com/openai-isnt-planning-prompt-level-reports-for-chatgpt-ads/599126",
-      "source": "Search Engine Journal",
-      "source_id": "search-engine-journal",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T04:15:54Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The report covers OpenAI and ChatGPT advertising policies without specifying a regional limitation.",
-      "priority": "Medium",
-      "priority_score": 11,
-      "excerpt": "OpenAI says ChatGPT advertisers can see aggregate results but won’t get reports showing the prompts or intent behind their ads. The post OpenAI Isn’t Planning Prompt-Level Reports For ChatGPT Ads appeared first on Search Engine Journal .",
-      "companies": [
-        "OpenAI"
-      ],
-      "topics": [
-        "ChatGPT Ads",
-        "OpenAI",
-        "Attribution",
-        "Advertising Analytics"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:32:52Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Search Engine Journal reports that OpenAI will provide ChatGPT advertisers with aggregate results. However, the publisher states that advertisers will not receive reports showing the specific prompts or intent behind their ads.",
-        "summary": "Search Engine Journal reports that OpenAI is withholding prompt-level reporting and user intent data for advertisements served within ChatGPT, limiting advertisers to aggregate performance metrics only. This approach balances monetization with user privacy concerns by preventing brands from mapping ads directly to individual conversational queries. While marketers will still measure top-level campaign outcomes, the lack of granular intent data changes how performance analysis and audience discovery must be approached on the platform. Consequently, B2B marketers cannot rely on direct keyword-to-prompt attribution models previously standard in traditional search advertising.",
-        "why_it_matters": "The absence of prompt-level reporting restricts granular audience insight, making it harder for B2B marketers to map conversational intent to specific conversion paths in their CRM or marketing analytics. Without granular prompt data, optimizing ad copy based on exact user phrasing becomes difficult, shifting the focus entirely to broader contextual targeting and aggregate ROI measurement. This limitation forces marketing operations teams to rethink multi-touch attribution and rely more heavily on post-click analytics rather than in-platform conversational data.",
-        "applications": [
-          "Design broader contextual ad themes rather than hyper-specific keyword-matched messaging for ChatGPT campaigns.",
-          "Rely on landing page analytics and CRM tracking to attribute leads generated from ChatGPT ads back to specific campaigns.",
-          "Structure aggregate performance dashboards to measure overall pipeline impact instead of granular keyword-level success.",
-          "Develop alternative audience segmentation methods based on broader aggregate metrics rather than individual prompt behaviors."
-        ],
-        "recommendations": [
-          "Explore advanced landing page analytics tool types to capture post-click user behavior, helping to bridge the gap left by missing prompt data.",
-          "Test broader thematic ad variations to see which aggregate messaging yields the best conversion rates without relying on keyword optimization.",
-          "Review CRM attribution models to ensure they account for aggregated traffic sources from emerging AI platforms.",
-          "Monitor OpenAI platform updates closely to see if reporting granularity expands as the ad product matures."
-        ],
-        "priority_reason": "It affects how B2B marketers plan measurement and attribution strategies for emerging AI-driven advertising channels.",
-        "needs_validation": true,
-        "validation_note": "Verify the full article to check if any alternative reporting tiers, metrics, or future roadmap details were mentioned by OpenAI."
-      }
-    },
-    {
-      "id": "ba0c85905b75e6bd",
-      "title": "Judge of the Day: Ricky Abbott on the bravery B2B marketing keeps skipping",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVFNiYnRPN3pkSGpFckhnMlM4QndrUlFQVDRMYTA3b093VjVqWjRtVlB5MEhNcWN3Y01oWUo5Q085UnBqRDRRS0pBcHRrVmZfRVVlNk1pdzBTU1VVSF9SeWk4Wjk3RVlIc0o0R1hFTkc1b2ZfSVZCeTdnN0ZmZXNUNWJNNVJ2OUFOeklqYUZxR1ljczJ1Z1FSZzBWeFBFWTFRbTJJMg?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVFNiYnRPN3pkSGpFckhnMlM4QndrUlFQVDRMYTA3b093VjVqWjRtVlB5MEhNcWN3Y01oWUo5Q085UnBqRDRRS0pBcHRrVmZfRVVlNk1pdzBTU1VVSF9SeWk4Wjk3RVlIc0o0R1hFTkc1b2ZfSVZCeTdnN0ZmZXNUNWJNNVJ2OUFOeklqYUZxR1ljczJ1Z1FSZzBWeFBFWTFRbTJJMg?oc=5",
-      "source": "The Drum",
-      "source_id": "gnews-b2b",
-      "via": "Google News: B2B marketing",
-      "credibility": "aggregator",
-      "published_at": "2026-11-26T04:13:47Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 7,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "b2b"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "629f5e34ead0b9f9",
-      "title": "Anthropic chief Dario Amodei denies wanting humans to 'surrender' free will to AI",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-chief-dario-amodei-denies-wanting-humans-to-surrender-free-will-to-ai/articleshow/136178073.cms",
-      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-chief-dario-amodei-denies-wanting-humans-to-surrender-free-will-to-ai/articleshow/136178073.cms",
-      "source": "Economic Times Tech",
-      "source_id": "et-tech",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T04:02:36Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The report covers statements by a global AI CEO and industry-wide debates regarding AI governance without specific focus on the Indian market.",
-      "priority": "Low",
-      "priority_score": 8,
-      "excerpt": "Anthropic chief executive Dario Amodei on Wednesday denied wanting humanity to give up its free will to AI, calling it \"absurd\" to attribute the idea to him as rival tech leaders push back. \"No, I do not believe that we should 'surrender human free will' to AI systems, and it's absurd to suggest…",
-      "companies": [
-        "Anthropic"
-      ],
-      "topics": [
-        "Artificial Intelligence",
-        "AI Governance",
-        "Leadership",
-        "Ethics"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:33:03Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Economic Times Tech reports that Anthropic chief executive Dario Amodei denied wanting humanity to give up its free will to AI, calling the idea absurd. Amodei responded in a post on X following criticism from rival tech leaders and a week after Anthropic's stock market debut.",
-        "summary": "Anthropic CEO Dario Amodei publicly rejected claims that he advocates for humans to surrender their free will to artificial intelligence. Writing on X, he dismissed such interpretations of his stance as absurd amidst growing pushback from rival technology leaders. This exchange follows closely on the heels of Anthropic's significant stock market debut.",
-        "why_it_matters": "Public debates between major AI figures regarding human agency and control shape public perception, regulatory scrutiny, and enterprise trust in AI tools. For B2B marketers leveraging generative AI, shifts in industry leadership narratives can influence client sentiment, ethical compliance standards, and platform adoption roadmaps.",
-        "applications": [
-          "Monitor AI leadership statements to anticipate shifts in enterprise sentiment and buyer hesitation regarding automation.",
-          "Align AI-driven lead generation and content strategies with transparent, human-in-the-loop governance to reassure clients.",
-          "Review internal messaging around AI capabilities to ensure teams do not over-promise autonomous decision-making."
-        ],
-        "recommendations": [
-          "Explore ethical AI guidelines and governance frameworks to safeguard brand reputation when deploying marketing automation.",
-          "Test clear disclosure practices in AI-assisted B2B communications to maintain trust with prospects.",
-          "Monitor vendor roadmaps to ensure human oversight features remain central in CRM and email tools.",
-          "Consider the implementation considerations of relying too heavily on autonomous agents versus human-curated campaigns."
-        ],
-        "priority_reason": "It is a high-level executive statement and industry debate that does not immediately alter daily marketing operations or technical integrations.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "a848412fc4ee982e",
-      "title": "How an early stage startup founder can win first customers with cold email",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Gb09TSlJ4QWQ3T3NMRFkzVFdjcXFQVkVRdGFZeVpURGdLOVFiUVJnOWZVNzRmU011QllTdEpMMVdReUM0Q1IybWFadTBCRnpWTzlyLXZBUXA1bVdKY1RYQjdFaXJtaFRlTzJ4OXpSZ0k?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Gb09TSlJ4QWQ3T3NMRFkzVFdjcXFQVkVRdGFZeVpURGdLOVFiUVJnOWZVNzRmU011QllTdEpMMVdReUM0Q1IybWFadTBCRnpWTzlyLXZBUXA1bVdKY1RYQjdFaXJtaFRlTzJ4OXpSZ0k?oc=5",
-      "source": "SugerMint",
-      "source_id": "gnews-email",
-      "via": "Google News: Email deliverability",
-      "credibility": "aggregator",
-      "published_at": "2026-11-26T03:57:51Z",
-      "collected_at": "2026-11-27T18:21:26Z",
-      "category": "email",
-      "category_label": "Email Marketing",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Low",
-      "priority_score": 5,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "cold email"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "d425d23f88ba314c",
-      "title": "Green Aero Raises $14 Mn To Build Jet Engines, Combat Drones",
-      "url": "https://inc42.com/buzz/green-aero-raises-14-mn-to-build-jet-engines-combat-drones/",
-      "canonical_url": "https://inc42.com/buzz/green-aero-raises-14-mn-to-build-jet-engines-combat-drones",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T03:55:05Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The development focuses on an Indian deeptech startup based in Bengaluru raising funds to build capabilities for Indian and global markets.",
-      "priority": "Low",
-      "priority_score": 10,
-      "excerpt": "Deeptech startup Green Aero has raised $14 Mn (₹129.2 Cr) in a Series A funding round led by Crane Ventures, as it looks to scale indigenous jet engine development and build autonomous combat aircraft for India and global markets. The round also saw participation from 3one4 Capital, Antler Elevate…",
-      "companies": [
-        "Green Aero",
-        "Crane Ventures",
-        "3one4 Capital",
-        "Antler Elevate",
-        "pi Ventures",
-        "Antler India",
-        "Rebalance",
-        "D-Propulse"
-      ],
-      "topics": [
-        "funding",
-        "deeptech",
-        "aerospace",
-        "startups",
-        "india"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:33:15Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that deeptech startup Green Aero has raised $14 Mn in a Series A funding round led by Crane Ventures, with participation from 3one4 Capital, Antler Elevate, pi Ventures, Antler India, and Rebalance. Founded in 2023 and operating out of Bengaluru, the company is developing jet propulsion systems, avionics, and airframes for high-speed drones and autonomous combat aircraft. The newly raised capital will be deployed over the next 12-18 months to expand testing infrastructure, hire engineers, develop larger-thrust engines, and accelerate flight qualification.",
-        "summary": "Deeptech startup Green Aero secured $14 Mn in Series A funding to scale its indigenous jet engine development and autonomous combat aircraft offerings for domestic and global markets. The company plans to use the capital over the next year to 18 months to build out engine testing infrastructure, hire engineering talent, and progress its transonic and supersonic drone platforms toward commercial deployment. While this hardware development is primarily relevant to the aerospace and defence sector rather than standard B2B marketing, it highlights the expanding deeptech venture ecosystem in India. Interpretation suggests that growth in specialised sectors like aerospace hardware will eventually trickle down into niche B2B supply chains and industrial marketing services.",
-        "why_it_matters": "For standard B2B marketing, CRM, or lead generation operations, this article holds minimal direct relevance because Green Aero operates in aerospace hardware manufacturing rather than marketing technology or enterprise software. However, for B2B agencies and industrial marketers operating within India's deeptech ecosystem, it signals emerging opportunities to service hardware startups scaling their commercialisation efforts. Marketers targeting engineering, manufacturing, or B2B deeptech niches can monitor these funding trends to identify potential enterprise clients requiring branding, supply chain marketing, or PR support.",
-        "applications": [
-          "Identify and map funded deeptech startups in India as potential targets for specialised industrial B2B marketing services.",
-          "Monitor B2B PR and communications trends around aerospace and defence tech start-ups scaling commercial operations.",
-          "Benchmark venture capital funding patterns in the Indian deeptech hardware sector to inform B2B agency growth strategies."
-        ],
-        "recommendations": [
-          "Explore mapping tools or startup databases to track newly funded Indian deeptech firms; likely benefit is early-stage client acquisition; implementation consideration requires filtering for hardware versus software focus.",
-          "Test account-based marketing (ABM) campaigns tailored to manufacturing and deeptech founders; likely benefit is higher relevance in niche sectors; implementation consideration involves highly technical messaging.",
-          "Review industry-specific publication lists for PR placement opportunities; likely benefit is enhanced brand visibility among engineering decision-makers."
-        ],
-        "priority_reason": "The funding event pertains to aerospace hardware manufacturing and defence tech, which does not impact day-to-day B2B marketing operations, martech tools, or CRM strategies.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "1d7841bead81ab80",
-      "title": "WPP Media's New Acquisition News, Insights & Timeline",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTWZSaHRJbmY5eWdKNTRIMmp3MExmX3dDLVdOSHM4MDRuc1BIQlVnUGtTSGFLVTQ0MzJvUUN4NmRrLXBvX3NMalZkUjllVDBPUDN1TEFya3Bia05EWF9vZlEtZU4ySG5BaDJ3eExyZVQ5TzFhaUxJSEhuWnZYWGlGVDhvMjZJbVU?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTWZSaHRJbmY5eWdKNTRIMmp3MExmX3dDLVdOSHM4MDRuc1BIQlVnUGtTSGFLVTQ0MzJvUUN4NmRrLXBvX3NMalZkUjllVDBPUDN1TEFya3Bia05EWF9vZlEtZU4ySG5BaDJ3eExyZVQ5TzFhaUxJSEhuWnZYWGlGVDhvMjZJbVU?oc=5",
-      "source": "Exchange4Media",
-      "source_id": "gnews-exchange4media",
-      "via": "Google News: exchange4media",
-      "credibility": "aggregator",
-      "published_at": "2026-11-26T03:22:15Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "martech",
-      "category_label": "Marketing Technology",
-      "region": "Global",
-      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
-      "priority": "Medium",
-      "priority_score": 8,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "acquisition"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "5725805983580780",
-      "title": "OpenAI taps Cravath litigator for court showdown with Musk over AI dominance",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-taps-cravath-litigator-for-court-showdown-with-musk-over-ai-dominance/articleshow/136176645.cms",
-      "canonical_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-taps-cravath-litigator-for-court-showdown-with-musk-over-ai-dominance/articleshow/136176645.cms",
-      "source": "Economic Times Tech",
-      "source_id": "et-tech",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T02:41:13Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The litigation involves US-based entities OpenAI and Elon Musk in a federal court, impacting the global AI ecosystem.",
-      "priority": "Low",
-      "priority_score": 8,
-      "excerpt": "OpenAI said Cravath's Gary Bornstein, co-head of the New York firm's litigation department, will be lead trial counsel in federal court in Fort Worth, where the case is set to be heard by a jury in March.",
-      "companies": [
-        "OpenAI",
-        "Cravath"
-      ],
-      "topics": [
-        "AI litigation",
-        "OpenAI",
-        "Elon Musk",
-        "Legal developments"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:33:32Z",
-        "evidence": "feed_excerpt",
-        "reported_facts": "Economic Times Tech reports that OpenAI has appointed Gary Bornstein of Cravath, co-head of the firm's litigation department, as lead trial counsel in a federal court case against Elon Musk. The legal showdown over AI dominance is scheduled to be heard by a jury in Fort Worth in March.",
-        "summary": "OpenAI has enlisted high-profile litigator Gary Bornstein from Cravath to represent them in an upcoming jury trial in Fort Worth against Elon Musk, focusing on the competitive landscape of AI dominance. Based on the provided text, this highlights escalating legal battles over market positioning in the artificial intelligence sector. The trial is set to commence in March.",
-        "why_it_matters": "High-stakes legal battles involving foundational AI providers can significantly impact market stability, platform accessibility, and the future availability of generative AI tools used in B2B marketing stacks. Shifts in market dominance or governance resulting from such litigation may alter vendor pricing, enterprise agreements, and API reliability for marketing automation platforms.",
-        "applications": [
-          "Audit dependency on OpenAI infrastructure to evaluate business continuity risks associated with ongoing litigation.",
-          "Monitor legal developments for potential shifts in enterprise data privacy terms and model availability.",
-          "Review vendor risk management policies regarding third-party AI dependencies in marketing operations."
-        ],
-        "recommendations": [
-          "Explore multi-model strategies by testing alternative LLM providers for content generation and campaign automation to reduce platform risk.",
-          "Relevant tool types include LLM orchestration platforms and model-agnostic marketing automation software.",
-          "Likely benefit is enhanced operational resilience against vendor disruptions.",
-          "Implementation considerations require evaluating API response times and output consistency across different AI providers."
-        ],
-        "priority_reason": "While involving major industry players, the legal counsel appointment is a procedural development that does not immediately change day-to-day B2B marketing operations.",
         "needs_validation": false,
         "validation_note": ""
       }
