@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": 1,
     "project": "Signal",
-    "generated_at": "2026-11-28T08:19:17Z",
-    "last_successful_update": "2026-11-28T08:19:17Z",
+    "generated_at": "2026-11-28T08:33:47Z",
+    "last_successful_update": "2026-11-28T08:33:47Z",
     "archive_limit": 100,
     "schedule_utc": [
       "30 0 * * *",
@@ -18,22 +18,22 @@
       "martech": "Marketing Technology"
     },
     "last_run": {
-      "started_at": "2026-11-28T08:15:58Z",
-      "finished_at": "2026-11-28T08:19:17Z",
+      "started_at": "2026-11-28T08:30:30Z",
+      "finished_at": "2026-11-28T08:33:47Z",
       "status": "partial",
-      "trigger": "schedule",
+      "trigger": "workflow_dispatch",
       "sources_total": 32,
       "sources_ok": 31,
       "sources_failed": 1,
-      "new_articles": 59,
-      "skipped_stale": 688,
+      "new_articles": 60,
+      "skipped_stale": 576,
       "skipped_irrelevant": 207,
       "invalid_urls": 0,
-      "duplicates_merged": 2,
+      "duplicates_merged": 0,
       "ai_processed": 20,
       "ai_failed": 0,
       "ai_rate_limited": false,
-      "archived_out": 58,
+      "archived_out": 60,
       "errors": [
         "source:demand-gen-report: HTTPError: 403 Client Error: Forbidden for url: https://www.demandgenreport.com/feed/"
       ]
@@ -422,6 +422,36 @@
       }
     },
     {
+      "id": "d6a11aa552827816",
+      "title": "Claude Says It Solved Another Decades-Old Math Problem",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRjA3TEVTdWZ6R0p5RkQ4R29PVjRhbW5qVFBxYkI5YkxRSTBoQU9Wdzl4NEVzUkZjcXhraUh5SFhDeGVYMFVCSVNQeXJzLVVxZ3lJeF9YU1RySVFXY3pLakhGYnlnU3l5ODJJR1ZUOWdaeDRxdDdYUEhHMzdOMjB2V215ZDU1MEpVOXBXSXFUR01aWENfcTVWd2JBSk96X0pLaGpoa1J5MW5HZXpqQnBnODBn?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRjA3TEVTdWZ6R0p5RkQ4R29PVjRhbW5qVFBxYkI5YkxRSTBoQU9Wdzl4NEVzUkZjcXhraUh5SFhDeGVYMFVCSVNQeXJzLVVxZ3lJeF9YU1RySVFXY3pLakhGYnlnU3l5ODJJR1ZUOWdaeDRxdDdYUEhHMzdOMjB2V215ZDU1MEpVOXBXSXFUR01aWENfcTVWd2JBSk96X0pLaGpoa1J5MW5HZXpqQnBnODBn?oc=5",
+      "source": "The Defiant",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-28T03:20:14Z",
+      "collected_at": "2026-11-28T08:30:30Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "24fd793d4eb362a9",
       "title": "Haleon HealthKart Acquisition Talks News, Insights & Timeline",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRmgzRWFzOFFQRGVVVWhxUXBjSE1mcENvbXZmLWJRU0VZOWJKb0JzMlV6NklnWjhUWlRxZjZtSUhfV251MHBIT0p0RDdvZ0xQb1JfeTh5Nl9TNFBvanUzZTF1SWpQZ3F3cWhXT3FTaGdJMDg0bDRGVVl2TmRveFlRTU5NMFJoMHZZN1RZXzJnODdHc28?oc=5",
@@ -452,6 +482,97 @@
       }
     },
     {
+      "id": "f2bb68707198d146",
+      "title": "Here's Why Anthropic Stock Rallied on Friday -- and Why Wall Street Analysts Say It's Still a Buy Right Now",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOZ1htcVJwM2tQQ2NlakZPN2l0TXRKOEQ0MFFGT3JPQ3BXMFUzNlNSLXJ4UFhxUzk1U0R6ekZyZFdzcklrRy1pRk9RbVVUQzFvTzNKZEs3dFJEck5oelJ6SVBOYVJVXzB0OTZDWTAxNmlUVm96ajVEb3JSX0Vvb3RsVmhSdXN0UldTbHpoVVlSMHlWOEtNdzBaRDJEYnNWZnYzaE5SaEhXaHNhRW41NlRnTG1CU3VtSElYY0RCMVJqaXBPOE5LaFFvVXh4djEyal9qcDJWOWg5anBNSHVadUNMaFhYVW5DYUNBLTk3LUVzSE5OQlo5RWp1a3lZZUZmYWFRNjc4SnF2RzFXU0FIanFCSDFkLTdfZw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOZ1htcVJwM2tQQ2NlakZPN2l0TXRKOEQ0MFFGT3JPQ3BXMFUzNlNSLXJ4UFhxUzk1U0R6ekZyZFdzcklrRy1pRk9RbVVUQzFvTzNKZEs3dFJEck5oelJ6SVBOYVJVXzB0OTZDWTAxNmlUVm96ajVEb3JSX0Vvb3RsVmhSdXN0UldTbHpoVVlSMHlWOEtNdzBaRDJEYnNWZnYzaE5SaEhXaHNhRW41NlRnTG1CU3VtSElYY0RCMVJqaXBPOE5LaFFvVXh4djEyal9qcDJWOWg5anBNSHVadUNMaFhYVW5DYUNBLTk3LUVzSE5OQlo5RWp1a3lZZUZmYWFRNjc4SnF2RzFXU0FIanFCSDFkLTdfZw?oc=5",
+      "source": "The Globe and Mail",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-28T02:33:27Z",
+      "collected_at": "2026-11-28T08:30:30Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "66d63c8032f20f84",
+      "title": "Claude Accused of Covertly Sabotaging AI Research: Lowering Learning Rates, Tampering with Scores; Anthropic Admits Training-Stage Limits on Model R&D Capabilities",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1LMmRlenhRVksydDl4MkNNb2Q2YnNlMjAxOWZndUxIaEFjcmhZUVdOWm41UFppamFGcmJwNTBBcE80RVZ5MzVVWkZqWjdaMmJJWkdpTGhZcHdpX1lMYUZuMDNtVHdnOWJkbDk4al9wRmJKc0d5TlE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1LMmRlenhRVksydDl4MkNNb2Q2YnNlMjAxOWZndUxIaEFjcmhZUVdOWm41UFppamFGcmJwNTBBcE80RVZ5MzVVWkZqWjdaMmJJWkdpTGhZcHdpX1lMYUZuMDNtVHdnOWJkbDk4al9wRmJKc0d5TlE?oc=5",
+      "source": "BigGo Finance",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-28T02:25:00Z",
+      "collected_at": "2026-11-28T08:30:30Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 10,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "anthropic",
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "81e15d1cd44991ce",
+      "title": "Clear Rules Curbed Claude’s Sandbox Probing in Tests",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTjhYNUdfRk9mbU9uVGtzY3I2TG9BZG5ESEZjMWxEbkd0UDNkaU1RbzdaTHNUMFlVNjcycnhzbnBxZjk3R1phcFdrNXhzb1Q5c1R1V1Vkay1CSERUMUY5N0pzRWNWYVhpX3ltZ3NvdG5BNkV4Ym1JRFBnVHBJMkUwc2Q1Q0Y1b1FCRTJmbHlYUQ?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTjhYNUdfRk9mbU9uVGtzY3I2TG9BZG5ESEZjMWxEbkd0UDNkaU1RbzdaTHNUMFlVNjcycnhzbnBxZjk3R1phcFdrNXhzb1Q5c1R1V1Vkay1CSERUMUY5N0pzRWNWYVhpX3ltZ3NvdG5BNkV4Ym1JRFBnVHBJMkUwc2Q1Q0Y1b1FCRTJmbHlYUQ?oc=5",
+      "source": "The Defiant",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-28T01:08:19Z",
+      "collected_at": "2026-11-28T08:30:30Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
       "id": "9b06ddd3eb8a365c",
       "title": "Anthropic's Best Customers Spend 20 Times More Than the Rest. That's Why I'm Buying the Stock.",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdFlVeVlFc21rUWVCcERGUEtmTDdpWGZITTZXY2ZzQzBiT1pLLURsNFhLR3d2ODJUVEo3OEltNnhlZzVSRDljRXZGLU1XR0Vpb2NGbXZhbFlOa1JCY2N1ZV9qZTBwRW05TWJ0WUgwTEJ4ZHc5NjBjQUlwaEg1VkNRVUlEc20ta3UzNGFtempvNDNnRElhU21KbzBLd0dmY1NlRmFObVFtODNIbC12dkpVMlQ4UVhPOU9qRWQ4YUY5ZC1lNUdoMGZvdG9tR25iYnNv?oc=5",
@@ -472,6 +593,36 @@
       "companies": [],
       "topics": [
         "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "3a835da3bcce4125",
+      "title": "Claude Opt Out of Training: Settings vs HN (Nov 2026)",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWkMxeF9wbm1pMEs1NlFUbVQwX0ZDUlE4TzBCb2dreHZNZjRrNGp4MDF1d2t4V0xHRUJMOVE5TkhQaXlwYUh0S3Q3Rk5WSzEwb3FEYU5UQ0R2ZVpUaEZyQmxWRkZ5MldrT1lPTk5wZ05pbzQxZlp5RWpvbEJQcnduNE1nZkFXYUJtUnR0c1hhUXdvenRDS0E1TWtEZTFIM29oOFE?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWkMxeF9wbm1pMEs1NlFUbVQwX0ZDUlE4TzBCb2dreHZNZjRrNGp4MDF1d2t4V0xHRUJMOVE5TkhQaXlwYUh0S3Q3Rk5WSzEwb3FEYU5UQ0R2ZVpUaEZyQmxWRkZ5MldrT1lPTk5wZ05pbzQxZlp5RWpvbEJQcnduNE1nZkFXYUJtUnR0c1hhUXdvenRDS0E1TWtEZTFIM29oOFE?oc=5",
+      "source": "explainx.ai",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-28T00:00:00Z",
+      "collected_at": "2026-11-28T08:30:30Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -589,6 +740,36 @@
       "companies": [],
       "topics": [
         "anthropic"
+      ],
+      "also_covered_by": [],
+      "url_check": "valid",
+      "classification": "rules",
+      "ai_attempts": 0,
+      "analysis": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "682cc8bd1a48f057",
+      "title": "If Claude won’t do the work, it should say so",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Zbm1vcC00bWR2Z3dWLWg0Q3BBdDd4ckFFdjhjX0lNWmN0c2NjQ0xZX21hVW1FU3h5cTlVTUJSZ1NCZ0VhTFhFbTlwdjRUSUhSdFhqY0RPNUlzOUloaW82RmRJUTdkdFBKWGxjN1J3bw?oc=5",
+      "canonical_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Zbm1vcC00bWR2Z3dWLWg0Q3BBdDd4ckFFdjhjX0lNWmN0c2NjQ0xZX21hVW1FU3h5cTlVTUJSZ1NCZ0VhTFhFbTlwdjRUSUhSdFhqY0RPNUlzOUloaW82RmRJUTdkdFBKWGxjN1J3bw?oc=5",
+      "source": "Kingy AI",
+      "source_id": "gnews-anthropic",
+      "via": "Google News: Anthropic & Claude",
+      "credibility": "aggregator",
+      "published_at": "2026-11-27T22:10:58Z",
+      "collected_at": "2026-11-28T08:30:30Z",
+      "category": "ai",
+      "category_label": "AI & Technology",
+      "region": "Global",
+      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
+      "priority": "Medium",
+      "priority_score": 7,
+      "excerpt": "",
+      "companies": [],
+      "topics": [
+        "claude"
       ],
       "also_covered_by": [],
       "url_check": "valid",
@@ -3893,316 +4074,6 @@
         "priority_reason": "It provides critical benchmark data on how Indian SMBs are adopting AI, WhatsApp, and CRM automation, directly impacting B2B go-to-market strategies.",
         "needs_validation": false,
         "validation_note": ""
-      }
-    },
-    {
-      "id": "d4519ae6cf7e4f6b",
-      "title": "IndiaMART settles dispute with OpenAI outside court over exclusion from ChatGPT results",
-      "url": "https://www.medianama.com/2026/11/223-indiamart-settle-dispute-openai-outside-court-exclusion-chatgpt/",
-      "canonical_url": "https://medianama.com/2026/11/223-indiamart-settle-dispute-openai-outside-court-exclusion-chatgpt",
-      "source": "MediaNama",
-      "source_id": "medianama",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T08:13:14Z",
-      "collected_at": "2026-11-26T08:44:18Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "India",
-      "region_reason": "The dispute involves an Indian B2B marketplace (IndiaMART) litigating in the Calcutta High Court under Indian legal frameworks and statutes.",
-      "priority": "High",
-      "priority_score": 11,
-      "excerpt": "Download the court order here. The Calcutta High Court on November 17 dismissed an appeal filed by IndiaMART InterMESH Ltd against OpenAI Inc. and others , after the parties informed the court that they had settled their dispute outside court . A division bench comprising Justices Debangsu Basak…",
-      "companies": [
-        "IndiaMART",
-        "OpenAI",
-        "DHGate",
-        "Pinduoduo",
-        "Shopee",
-        "Taobao",
-        "Google"
-      ],
-      "topics": [
-        "Generative AI",
-        "B2B Marketplaces",
-        "SEO & Discoverability",
-        "Legal Disputes",
-        "Data Privacy"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:44:49Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "MediaNama reports that the Calcutta High Court dismissed an appeal filed by IndiaMART InterMESH Ltd against OpenAI after both parties reached an outside-court settlement. IndiaMART had originally approached the court alleging that ChatGPT selectively excluded its platform and seller listings from AI-generated responses while directing traffic to competitors, relying on the USTR Notorious Markets List. The court's earlier May 20 order had refused to grant interim relief, holding that third parties cannot compel service providers to reflect their links and that LLMs synthesise responses rather than act as conventional search engines.",
-        "summary": "MediaNama reports that IndiaMART has settled its legal dispute with OpenAI outside of court following the dismissal of its appeal by the Calcutta High Court. The initial litigation centred on IndiaMART's exclusion from ChatGPT's generative responses, which the platform defended by pointing to internal policies referencing the USTR Notorious Markets List, while IndiaMART argued that its 8.3 million suppliers were unfairly bypassed. The underlying judicial observations noted that LLMs differ from traditional search engines and that businesses hold no inherent legal right to demand visibility within AI outputs. This settlement highlights the growing tensions between large B2B marketplaces and AI platforms regarding data scraping, content gating, and discoverability in generative search.",
-        "why_it_matters": "For B2B marketers and marketplace operators, this case highlights the growing vulnerability of reliance on AI-generated search and chat interfaces for buyer discovery. As generative engines increasingly synthesise answers directly rather than passing referral traffic, B2B brands lose predictable referral paths and must rethink how their products and supplier listings are surfaced. Furthermore, IndiaMART's historical decision to block crawlers and place content behind logins illustrates a defensive shift in data management that directly impacts inbound organic lead generation.",
-        "applications": [
-          "Audit current web traffic acquisition channels to measure reliance on AI-driven referral traffic versus traditional search engines.",
-          "Evaluate the trade-off between protecting proprietary B2B directory data behind login gates versus maintaining public indexability for AI search discovery.",
-          "Monitor how major B2B platforms and marketplaces adapt their SEO and data-sharing strategies in response to generative engine synthesis.",
-          "Develop alternative, direct-to-buyer acquisition channels, such as targeted email nurturing and WhatsApp automation, to offset potential drops in organic AI platform visibility."
-        ],
-        "recommendations": [
-          "Explore data governance tool types to assess proprietary content exposure, balancing the need to protect data moats from agentic AI scraping against the need for brand visibility.",
-          "Test selective content gating strategies to measure the impact on organic search performance and lead capture rates.",
-          "Review current digital visibility strategies to reduce over-reliance on any single generative AI platform for buyer discovery.",
-          "Consult legal and technical stakeholders regarding web crawling policies, robots.txt directives, and terms of service updates concerning LLM scraping."
-        ],
-        "priority_reason": "It sets a significant legal and strategic precedent regarding how B2B marketplaces interact with generative AI platforms, search exclusion, and data protection.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "b0134747a9e4c617",
-      "title": "Anthropic CEO Accuses Rivals Of Using ‘Human Control’ Slogans Without Tackling AI Risks",
-      "url": "https://inc42.com/buzz/anthropic-ceo-accuses-rivals-of-using-human-control-slogans-without-tackling-ai-risks/",
-      "canonical_url": "https://inc42.com/buzz/anthropic-ceo-accuses-rivals-of-using-human-control-slogans-without-tackling-ai-risks",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T08:13:13Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "The article discusses global AI industry leaders including Anthropic, OpenAI, and Meta, covering international debates and product releases without a specific India-only market focus.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "Nasdaq-listed Anthropic’s CEO Dario Amodei has criticised rival AI companies for promoting slogans such as “human control and agency” and “AI should be just a tool” without adequately addressing the risks of increasingly autonomous systems. In a lengthy post on X, Amodei accused some rival CEOs of…",
-      "companies": [
-        "Anthropic",
-        "OpenAI",
-        "Meta",
-        "Google DeepMind"
-      ],
-      "topics": [
-        "AI Safety",
-        "Generative AI",
-        "Data Privacy",
-        "AI Governance"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:30:49Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that Anthropic CEO Dario Amodei criticized rival AI companies for using slogans like \"human control and agency\" as commercial and political pitches without addressing autonomous system risks. The report notes Amodei rejected suggestions that he supports handing governance to AI, distinguishing between task automation and AI governance. Additionally, OpenAI's Sam Altman announced the testing of 'Private Inference' for private safety processing and zero data retention with a small group of customers.",
-        "summary": "Inc42 reports that Anthropic CEO Dario Amodei has accused competing AI chief executives of relying on empty slogans regarding human control and agency to market their products without confronting real safety trade-offs. Amodei drew a sharp distinction between automating specific tasks and handing overarching governance to AI systems, which he called a terrible idea that undermines democratic processes. Meanwhile, OpenAI announced the limited testing of 'Private Inference' and zero data retention features designed to improve enterprise data privacy during safety processing. Based on the text, these developments highlight ongoing industry debates surrounding AI safety, model capabilities pacing, and enterprise data security features.",
-        "why_it_matters": "For B2B marketers utilizing generative AI and LLMs in campaigns, CRM workflows, and lead generation, the underlying debate over AI safety and control impacts vendor selection and risk management. As platforms like OpenAI introduce enhanced privacy features such as Private Inference and zero data retention, marketers gain more secure avenues to process sensitive customer data and proprietary lead generation insights. Understanding the ideological and safety stances of foundational AI providers helps marketing operations teams align their tech stack choices with corporate data governance policies.",
-        "applications": [
-          "Evaluate current generative AI vendor contracts against data privacy standards like zero data retention and private inference capabilities.",
-          "Review internal AI usage policies to ensure clear distinctions between task automation in marketing operations and autonomous system governance.",
-          "Monitor safety and capability updates from foundation model providers when planning long-term AI-driven CRM and email automation workflows.",
-          "Assess enterprise risk when integrating third-party LLMs for handling sensitive customer segment data and lead scoring metrics."
-        ],
-        "recommendations": [],
-        "priority_reason": "While it does not directly alter day-to-day campaign execution immediately, it highlights critical industry discourse on AI safety and introduces enterprise privacy features relevant to B2B martech stacks.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "7d35666640407087",
-      "title": "Finnable Nets ₹405 Cr To Scale Digital Lending Business",
-      "url": "https://inc42.com/buzz/finnable-nets-%e2%82%b9405-cr-to-scale-digital-lending-business/",
-      "canonical_url": "https://inc42.com/buzz/finnable-nets-%e2%82%b9405-cr-to-scale-digital-lending-business",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T08:09:00Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The development focuses on an Indian digital lending startup operating in Bengaluru and raising funds within the Indian fintech market.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "Bengaluru-based digital lending startup Finnable has raised ₹405 Cr ($43.8 Mn) in a Series C funding round led by Bharat Value Fund (BVF), which invested ₹150 Cr in the startup. The round also saw participation from Pratithi Investments and NK Squared, along with existing investors TVS Capital and…",
-      "companies": [
-        "Finnable",
-        "Bharat Value Fund",
-        "Pratithi Investments",
-        "NK Squared",
-        "TVS Capital",
-        "MEMG Family Office",
-        "Equifax India"
-      ],
-      "topics": [
-        "Digital Lending",
-        "Fintech Funding",
-        "NBFC",
-        "Retail Credit",
-        "India Market"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:31:03Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that Bengaluru-based digital lending startup Finnable has raised ₹405 Cr ($43.8 Mn) in a Series C funding round led by Bharat Value Fund (BVF). The round also included participation from Pratithi Investments, NK Squared, TVS Capital, and MEMG Family Office. Finnable plans to use the capital to expand its lending portfolio, strengthen its tech stack, and forge new partnerships.",
-        "summary": "Finnable secured ₹405 Cr in Series C funding to scale its digital lending operations, strengthen its technology stack, and expand its lending portfolio into areas like loans against property. The company targets mid-income salaried professionals and reported a profit after tax of ₹51 Cr in the first half of FY27, with consolidated assets under management exceeding ₹4,600 Cr. This funding reflects broader growth in India's digital lending market, driven by rising demand from aspirational retail borrowers and increasing NBFC retail lending activity.",
-        "why_it_matters": "For B2B marketers operating in the Indian fintech, NBFC, and lending-tech ecosystems, well-capitalised players like Finnable increasing their technology and partnership investments signals a fertile ground for B2B tech vendors, compliance platforms, and marketing automation providers. Growth in digital lending budgets often correlates with increased spending on customer acquisition infrastructure, digital KYC, WhatsApp verification workflows, and lead generation analytics. Marketers targeting financial services clients should monitor Finnable's vendor ecosystem and partnership expansions for integration opportunities.",
-        "applications": [
-          "Targeting fintech and NBFC platforms with B2B SaaS solutions for customer onboarding and document verification",
-          "Partnering with digital lenders to offer embedded finance or complementary marketing technology tools",
-          "Analysing retail credit trends in India to shape regional ABM (Account-Based Marketing) campaigns for financial tech clients",
-          "Refining lead generation campaigns for financial services by understanding the target profile of mid-income salaried professionals"
-        ],
-        "recommendations": [
-          "Explore outbound campaigns targeting scaling NBFCs upgrading their tech stacks; tool types include CRM integration and customer data platforms (CDPs), with the benefit of shorter sales cycles during funding phases.",
-          "Test WhatsApp automation workflows for document collection and instant loan status updates, which are critical for digital lending user acquisition in India.",
-          "Audit current lead scoring models for Indian financial services clients to account for the rapid rise in aspirational retail borrowers.",
-          "Monitor Finnable's upcoming partnership announcements to identify potential channel or integration marketing opportunities."
-        ],
-        "priority_reason": "While it indicates healthy market activity and technology spending in the Indian lending sector, it is a funding announcement rather than a direct platform or policy shift for B2B marketers.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "0270d2220f9694eb",
-      "title": "Jio enters digital astrology market with AI-powered JioAstro platform",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQk1KM2pHelI3Qk1mVFZsNzJzU2RNVWZ5d1NFMVdRanJvaDRRTE03X01pQ2lUTlZQRVpLNDVrdmpkaUdBU0xZd0J6MHkycjVBUE9JUk1Ybm5selgtMlNGR3AzVWkxVXlmaWZwSXUyVzZoQzcwYzBDbUhEbnlIZGRqeERoYldHdFF6YVNLcjh4R0ZCNTloRWFpbU1rSXZZdW1iODQzaElwUnJYTlJ1QklTaXBpSG03eDdENHZJR3A4dFBVa1didlJQaVBsQ2dvTzBj?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQk1KM2pHelI3Qk1mVFZsNzJzU2RNVWZ5d1NFMVdRanJvaDRRTE03X01pQ2lUTlZQRVpLNDVrdmpkaUdBU0xZd0J6MHkycjVBUE9JUk1Ybm5selgtMlNGR3AzVWkxVXlmaWZwSXUyVzZoQzcwYzBDbUhEbnlIZGRqeERoYldHdFF6YVNLcjh4R0ZCNTloRWFpbU1rSXZZdW1iODQzaElwUnJYTlJ1QklTaXBpSG03eDdENHZJR3A4dFBVa1didlJQaVBsQ2dvTzBj?oc=5",
-      "source": "Exchange4Media",
-      "source_id": "gnews-exchange4media",
-      "via": "Google News: exchange4media",
-      "credibility": "aggregator",
-      "published_at": "2026-11-26T07:51:43Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "Indian publisher, but no India-specific market, regulatory or geographic focus was detected.",
-      "priority": "Low",
-      "priority_score": 5,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "ai-powered"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
-      }
-    },
-    {
-      "id": "62f468a8f0ad0f35",
-      "title": "Exclusive: Electronics Manufacturing Startup Elecbits To Raise Up To $15 Mn From Xponentia Capital",
-      "url": "https://inc42.com/buzz/exclusive-electronics-manufacturing-startup-elecbits-to-raise-up-to-15-mn-from-xponentia-capital/",
-      "canonical_url": "https://inc42.com/buzz/exclusive-electronics-manufacturing-startup-elecbits-to-raise-up-to-15-mn-from-xponentia-capital",
-      "source": "Inc42",
-      "source_id": "inc42",
-      "via": null,
-      "credibility": "publication",
-      "published_at": "2026-11-26T07:30:16Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "b2b",
-      "category_label": "B2B Marketing",
-      "region": "India",
-      "region_reason": "The development focuses on an Indian electronics manufacturing startup raising funds within the Indian market, supported by Indian government schemes.",
-      "priority": "Medium",
-      "priority_score": 6,
-      "excerpt": "Electronics design and manufacturing startup Elecbits is in talks to raise fresh capital in the range of $12-15 Mn in a fresh funding round led by PE firm Xponentia Capital, sources familiar with the development told Inc42. Existing investors, including Nexus Venture Partners, are also likely to…",
-      "companies": [
-        "Elecbits",
-        "Xponentia Capital",
-        "Nexus Venture Partners",
-        "Panasonic",
-        "Schneider Electric",
-        "Motherson",
-        "Maruti Suzuki",
-        "Urban Company"
-      ],
-      "topics": [
-        "Funding",
-        "Electronics Manufacturing",
-        "B2B Supply Chain",
-        "India Startups",
-        "AI Platform"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "ai",
-      "ai_attempts": 1,
-      "analysis": {
-        "status": "complete",
-        "model": "gemini-3.5-flash-lite",
-        "provider": "gemini",
-        "generated_at": "2026-11-26T08:31:17Z",
-        "evidence": "feed_full_text",
-        "reported_facts": "Inc42 reports that electronics design and manufacturing startup Elecbits is in talks to raise $12-15 Mn in a funding round led by Xponentia Capital, with participation expected from existing investor Nexus Venture Partners. Founded in 2019, the company operates a full-stack platform and Elecbits XOR, an AI-powered engineering and manufacturing tool, serving over 200 clients including Panasonic, Schneider Electric, and Ola Electric. The reported fundraising follows a $5.5 Mn Series A round in December 2025 and occurs amid growing domestic investments in India's electronics sector driven by government initiatives like the PLI scheme.",
-        "summary": "Inc42 reports that Elecbits, an Indian electronics design and manufacturing startup, is in discussions to secure up to $15 Mn in fresh capital led by Xponentia Capital. The platform combines traditional manufacturing services with an AI-driven tool named Elecbits XOR to handle component sourcing, PCB design, and supply chain management for enterprise clients across sectors like automotive and consumer electronics. This development highlights the rapid growth of India's hardware manufacturing ecosystem, which is benefiting from macro trends like the China+1 supply chain shift and supportive government schemes. From an interpretation standpoint, increased capital injection into such B2B platforms typically accelerates their enterprise sales capabilities, technology scaling, and market acquisition efforts.",
-        "why_it_matters": "For B2B marketers operating in the industrial, manufacturing, and hardware sectors in India, the expansion of well-funded supply chain platforms like Elecbits signals a shift toward digitized, transparent procurement ecosystems. Marketers targeting hardware companies, original equipment manufacturers (OEMs), or industrial supply chains can expect increased demand for specialized B2B marketing, account-based marketing (ABM), and digital trust-building initiatives. As these platforms scale their technology stacks and enterprise outreach using fresh capital, competing industrial suppliers must modernise their digital acquisition strategies and CRM-driven pipeline visibility to match rising buyer expectations.",
-        "applications": [
-          "Refining account-based marketing (ABM) campaigns to target decision-makers in automotive, IT hardware, and consumer electronics who use digital manufacturing platforms.",
-          "Integrating CRM and marketing analytics to track long B2B sales cycles typical of hardware procurement and custom electronics manufacturing.",
-          "Positioning B2B agency or technology services alongside India's expanding electronics manufacturing ecosystem to capture supply chain diversification demand.",
-          "Leveraging market trends around the China+1 strategy and government PLI schemes in thought leadership content and demand generation campaigns."
-        ],
-        "recommendations": [
-          "Explore ABM software to target enterprise clients in the electronics and hardware sectors; expected benefit is higher conversion rates among niche industrial buyers; implementation requires alignment with sales teams on target account lists.",
-          "Test LinkedIn lead generation campaigns focused on supply chain diversification and domestic manufacturing in India; expected benefit is direct reach to procurement and engineering decision-makers; implementation involves creating localized whitepapers on the China+1 shift.",
-          "Audit current CRM data hygiene for manufacturing and industrial leads; expected benefit is improved lead scoring and better attribution for multi-touch B2B campaigns; implementation requires collaboration with marketing operations.",
-          "Monitor competitor digital footprints in the industrial technology space; expected benefit is staying ahead of market positioning shifts; implementation involves setting up automated brand and market intelligence alerts."
-        ],
-        "priority_reason": "It highlights a significant funding round and growth trend within the Indian B2B manufacturing and supply chain tech ecosystem, useful for marketers targeting industrial sectors.",
-        "needs_validation": false,
-        "validation_note": ""
-      }
-    },
-    {
-      "id": "c5460ef783d6a491",
-      "title": "Anthropic loses another Claude Code engineer to OpenAI, and the internet is asking why everyone is leaving",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNX18xOGNMeDc3UkQ3TGI5OWtlVGwtdHRrbmVKZ1BnUFJySF9FR2VfU0VOam5FQ2FQaTg1b1lrdEVlbEM1b2VPbzc2UnlWWHNhQ3pSVzRwNkNQaEd6UlB5NERQbGFJU1I5M2o1LVh2WXhRZ3FwSEpmVkFQbk81ZnRZQmFybE5VS3RQVUV3R0RqdTZsbThzVzY3UllwaHc0Qmc5cDJHaWdMSm9FU0Flal95bnkwV1QwUjdGZk5lNjY1WkhvaWpxMVlUVUVKVW96WUhMSFpaRDVXWDM2M2dkU1FJbXViSlVGY1VfUXFBOE9yc2NsN21sdWtCeGxqX25ZMVV3dUHSAYcCQVVfeXFMTXd2eXVrQm9VT0tSZkpMWG45MmJOZTFDSjRWb29SXy15VC1BelY5aDZwcVNxLWxNcjRjNHJpaE1SbEx4NTRlWjRPMVdOSWdiczNrSjh6UTRSWFZWME1qOHBRSEh2QUFiOUx5anQtZHFqX1otRDJvc2UxZ0xoUTVyMThkYVpHaDFIVFpWSHJxMGdXUURPZ0FhV0E5YU9ZWDhNOWkxTVZmWnpJM0wza0RmN1Q0UzdOUlhQOVB3UlA0Nzd4Y1lHVFFDN3hMM3FIZ2JjR2FQbTdLZEs1VGtPM0lJQ3RkV2xPeDRVYjhtM09OMzNROHVmd3hnaW8xQzV6c1kwQTBtTkpzLVE?oc=5",
-      "canonical_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNX18xOGNMeDc3UkQ3TGI5OWtlVGwtdHRrbmVKZ1BnUFJySF9FR2VfU0VOam5FQ2FQaTg1b1lrdEVlbEM1b2VPbzc2UnlWWHNhQ3pSVzRwNkNQaEd6UlB5NERQbGFJU1I5M2o1LVh2WXhRZ3FwSEpmVkFQbk81ZnRZQmFybE5VS3RQVUV3R0RqdTZsbThzVzY3UllwaHc0Qmc5cDJHaWdMSm9FU0Flal95bnkwV1QwUjdGZk5lNjY1WkhvaWpxMVlUVUVKVW96WUhMSFpaRDVXWDM2M2dkU1FJbXViSlVGY1VfUXFBOE9yc2NsN21sdWtCeGxqX25ZMVV3dUHSAYcCQVVfeXFMTXd2eXVrQm9VT0tSZkpMWG45MmJOZTFDSjRWb29SXy15VC1BelY5aDZwcVNxLWxNcjRjNHJpaE1SbEx4NTRlWjRPMVdOSWdiczNrSjh6UTRSWFZWME1qOHBRSEh2QUFiOUx5anQtZHFqX1otRDJvc2UxZ0xoUTVyMThkYVpHaDFIVFpWSHJxMGdXUURPZ0FhV0E5YU9ZWDhNOWkxTVZmWnpJM0wza0RmN1Q0UzdOUlhQOVB3UlA0Nzd4Y1lHVFFDN3hMM3FIZ2JjR2FQbTdLZEs1VGtPM0lJQ3RkV2xPeDRVYjhtM09OMzNROHVmd3hnaW8xQzV6c1kwQTBtTkpzLVE?oc=5",
-      "source": "India Today",
-      "source_id": "gnews-anthropic",
-      "via": "Google News: Anthropic & Claude",
-      "credibility": "aggregator",
-      "published_at": "2026-11-26T07:05:39Z",
-      "collected_at": "2026-11-26T08:30:35Z",
-      "category": "ai",
-      "category_label": "AI & Technology",
-      "region": "Global",
-      "region_reason": "No India-specific market, regulatory or geographic focus detected.",
-      "priority": "Medium",
-      "priority_score": 10,
-      "excerpt": "",
-      "companies": [],
-      "topics": [
-        "openai",
-        "anthropic",
-        "claude"
-      ],
-      "also_covered_by": [],
-      "url_check": "valid",
-      "classification": "rules",
-      "ai_attempts": 0,
-      "analysis": {
-        "status": "pending"
       }
     }
   ]
